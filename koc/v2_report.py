@@ -11,14 +11,19 @@ from typing import Any
 from .enrich import format_meta, _compact
 
 
-def render_v2_report(result: dict[str, Any], run_label: str = "") -> str:
+def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: int = 3) -> str:
     """渲染4段式日报HTML。
 
     Args:
         result: pipeline运行结果字典，包含 items, daily_brief, author_profiles 等
-        run_label: 可读的运行标签，如 "2026-06-12 14:30 CST · 今日第2次更新"
+        run_label: 可读的运行标签，如 "2026-06-12 14:30 · 第2次更新"
+        page_depth: 页面所在深度 (root=1, archive/date/run/=3)
     """
     date = run_label or (result.get("created_at") or "")[:10]
+    # Archive link: from root (depth=1) → "archive/index.html", from run (depth=3) → "../../archive/index.html"
+    archive_href = "archive/index.html"
+    if page_depth >= 3:
+        archive_href = "../../archive/index.html"
     items = result.get("items", [])
     daily_brief = result.get("daily_brief", [])
     author_profiles = result.get("author_profiles", [])
@@ -171,7 +176,7 @@ def render_v2_report(result: dict[str, Any], run_label: str = "") -> str:
 <div class="shell">
   <div class="topbar">
     <div class="brand">📋 每日简报</div>
-    <a class="archive-link" href="../archive/index.html">← 历史归档</a>
+    <a class="archive-link" href="{archive_href}">← 历史归档</a>
   </div>
 
   <h1 style="font-size:24px;margin-bottom:4px;">每日简报 · {_t(date)}</h1>

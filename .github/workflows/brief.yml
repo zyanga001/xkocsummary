@@ -43,6 +43,7 @@ jobs:
           AI_API_KEY: ${{ secrets.AI_API_KEY }}
           AI_BASE_URL: ${{ secrets.AI_BASE_URL }}
           AI_MODEL: ${{ secrets.AI_MODEL }}
+          ENABLE_ENRICH: '0'
         run: python run_brief.py
 
       - name: Deploy to GitHub Pages

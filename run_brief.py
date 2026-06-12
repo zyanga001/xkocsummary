@@ -14,7 +14,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -29,6 +29,12 @@ from koc.watchlist import load_authors, load_schedule
 OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "output"))
 WATCHLIST_PATH = os.getenv("WATCHLIST_FILE", "watchlist.txt")
 SCHEDULE_PATH = os.getenv("SCHEDULE_FILE", "config/schedule.json")
+ENABLE_ENRICH = os.getenv("ENABLE_ENRICH", "0") == "1"
+BEIJING = timezone(timedelta(hours=8))
+
+
+def _beijing_now() -> datetime:
+    return datetime.now(timezone.utc).astimezone(BEIJING)
 
 
 def main() -> int:
@@ -114,9 +120,12 @@ def main() -> int:
     print(f"[brief] 共 {len(all_items)} 条推文，{active_authors}/{len(authors)} 位博主有更新", flush=True)
 
     t2 = time.time()
-    print("[brief] 获取博主信息和互动数据...", flush=True)
-    all_items = enrich_all(all_items)
-    print(f"[brief] 数据获取完成 ({time.time() - t2:.0f}s)", flush=True)
+    if ENABLE_ENRICH:
+        print("[brief] 获取博主信息和互动数据...", flush=True)
+        all_items = enrich_all(all_items)
+        print(f"[brief] 数据获取完成 ({time.time() - t2:.0f}s)", flush=True)
+    else:
+        print("[brief] 跳过 enrich（ENABLE_ENRICH=0），节省 ~15-20 分钟", flush=True)
 
     print("[brief] 阶段1: 质量分类...", flush=True)
     t3 = time.time()
@@ -124,12 +133,10 @@ def main() -> int:
     result = pipeline.run(all_items)
     print(f"[brief] AI分析完成 ({time.time() - t3:.0f}s) — 高{result.high_count} / 中{result.medium_count} / 低{result.low_count}", flush=True)
 
-    # Build run label with precise time
-    created_at = datetime.now(timezone.utc)
-    local_now = created_at.astimezone()
-    local_tz = local_now.strftime("%Z")
-    local_time_str = local_now.strftime("%Y-%m-%d %H:%M") + f" {local_tz}"
-    date_str = created_at.strftime("%Y-%m-%d")
+    # Build run label — always Beijing time
+    beijing_now = _beijing_now()
+    local_time_str = beijing_now.strftime("%m-%d %H:%M")
+    date_str = beijing_now.strftime("%Y-%m-%d")
 
     archive_dir = OUTPUT_DIR / "archive"
     date_dir = archive_dir / date_str
@@ -143,7 +150,7 @@ def main() -> int:
     run_dir = date_dir / f"run-{run_num}"
     run_dir.mkdir(parents=True, exist_ok=False)
 
-    run_label = f"{local_time_str} · 今日第{run_num}次更新"
+    run_label = f"{date_str} {local_time_str} · 第{run_num}次更新"
 
     run_dict = {
         "run_id": result.run_id,
@@ -166,15 +173,16 @@ def main() -> int:
         "errors": result.errors,
     }
 
-    html = render_v2_report(run_dict, run_label=run_label)
+    html = render_v2_report(run_dict, run_label=run_label, page_depth=1)
 
     (run_dir / "report.html").write_text(html, encoding="utf-8")
     (run_dir / "run.json").write_text(
         json.dumps(run_dict, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    # Root index.html = latest report
-    (OUTPUT_DIR / "index.html").write_text(html, encoding="utf-8")
+    # Root index.html — same report but link depth is 1 (site root), not 3 (archive/date/run/)
+    root_html = render_v2_report(run_dict, run_label=run_label, page_depth=1)
+    (OUTPUT_DIR / "index.html").write_text(root_html, encoding="utf-8")
 
     # .nojekyll for GitHub Pages
     (OUTPUT_DIR / ".nojekyll").write_text("")
@@ -205,7 +213,7 @@ def _build_archive_history(archive_dir: Path) -> list[dict]:
             key=lambda d: d.name,
             reverse=True,
         )
-        for run_dir in runs:
+        for run_index, run_dir in enumerate(runs):
             run_json = run_dir / "run.json"
             total = 0
             label = ""
@@ -218,7 +226,7 @@ def _build_archive_history(archive_dir: Path) -> list[dict]:
                     pass
             history.append({
                 "date": date_entry.name,
-                "run": run_dir.name,
+                "run": f"{date_entry.name} 第{run_index+1}次更新",
                 "path": f"archive/{date_entry.name}/{run_dir.name}/report.html",
                 "total_tweets": total,
                 "label": label,

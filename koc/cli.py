@@ -2,9 +2,16 @@ from __future__ import annotations
 
 import argparse
 import json as json_module
+import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+
+BEIJING = timezone(timedelta(hours=8))
+
+
+def _beijing_now() -> datetime:
+    return datetime.now(timezone.utc).astimezone(BEIJING)
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -131,8 +138,11 @@ def command_run_v2(args: argparse.Namespace) -> int:
 
     t2 = time.time()
     progress.log("正在获取博主信息和互动数据...")
-    all_items = enrich_all(all_items)
-    progress.log(f"博主信息和互动数据获取完成 ({time.time() - t2:.0f}s)")
+    if os.environ.get("ENABLE_ENRICH", "0") == "1":
+        all_items = enrich_all(all_items)
+        progress.log(f"博主信息和互动数据获取完成 ({time.time() - t2:.0f}s)")
+    else:
+        progress.log("跳过 enrich（ENABLE_ENRICH=0），节省 ~15-20 分钟")
 
     progress.log("阶段1: 质量分类...")
     t3 = time.time()
@@ -146,10 +156,9 @@ def command_run_v2(args: argparse.Namespace) -> int:
 
     progress.log("生成HTML报告...")
 
-    created_at = datetime.now(timezone.utc)
-    local_now = created_at.astimezone()
-    local_tz = local_now.strftime("%Z")
-    local_time_str = local_now.strftime("%Y-%m-%d %H:%M") + f" {local_tz}"
+    beijing_now = _beijing_now()
+    local_time_str = beijing_now.strftime("%m-%d %H:%M")
+    date_str = beijing_now.strftime("%Y-%m-%d")
 
     run_dict = {
         "run_id": result.run_id,
@@ -173,7 +182,6 @@ def command_run_v2(args: argparse.Namespace) -> int:
     }
 
     output_dir = Path(args.output)
-    date_str = created_at.strftime("%Y-%m-%d")
     archive_dir = output_dir / "archive"
     date_dir = archive_dir / date_str
     date_dir.mkdir(parents=True, exist_ok=True)
@@ -186,16 +194,18 @@ def command_run_v2(args: argparse.Namespace) -> int:
     run_dir = date_dir / f"run-{run_num}"
     run_dir.mkdir(parents=True, exist_ok=False)
 
-    run_label = f"{local_time_str} · 今日第{run_num}次更新"
+    run_label = f"{date_str} {local_time_str} · 第{run_num}次更新"
 
-    html = render_v2_report(run_dict, run_label=run_label)
+    html = render_v2_report(run_dict, run_label=run_label, page_depth=3)
 
     (run_dir / "report.html").write_text(html, encoding="utf-8")
     (run_dir / "run.json").write_text(
         json_module.dumps(run_dict, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    (output_dir / "index.html").write_text(html, encoding="utf-8")
+    (output_dir / "index.html").write_text(
+        render_v2_report(run_dict, run_label=run_label, page_depth=1), encoding="utf-8"
+    )
 
     history = _build_archive_history(archive_dir)
     (archive_dir / "index.html").write_text(
@@ -261,7 +271,7 @@ def _build_archive_history(archive_dir: Path) -> list[dict]:
             key=lambda d: d.name,
             reverse=True,
         )
-        for run_dir in runs:
+        for run_index, run_dir in enumerate(runs):
             run_json = run_dir / "run.json"
             total = 0
             if run_json.exists():
@@ -272,7 +282,7 @@ def _build_archive_history(archive_dir: Path) -> list[dict]:
                     pass
             history.append({
                 "date": date_entry.name,
-                "run": run_dir.name,
+                "run": f"{date_entry.name} 第{run_index+1}次更新",
                 "path": f"archive/{date_entry.name}/{run_dir.name}/report.html",
                 "total_tweets": total,
                 "label": _run_label_from_json(run_json),
