@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>推文评价</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; min-height: 100vh; }
+.container { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+.header { text-align: center; margin-bottom: 24px; }
+.header h1 { font-size: 20px; margin-bottom: 12px; }
+.progress-bar { width: 100%; height: 8px; background: #e0e0e0; border-radius: 4px; overflow: hidden; margin-bottom: 8px; }
+.progress-fill { height: 100%; background: #4caf50; transition: width 0.3s; }
+.progress-text { font-size: 14px; color: #666; }
+.card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 20px; }
+.card .author { font-size: 14px; color: #999; margin-bottom: 8px; }
+.card .link { display: inline-block; color: #1a73e8; text-decoration: none; font-size: 14px; margin-bottom: 16px; word-break: break-all; }
+.card .link:hover { text-decoration: underline; }
+.card .content { background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 16px; font-size: 15px; white-space: pre-wrap; word-break: break-word; max-height: 300px; overflow-y: auto; margin-bottom: 20px; }
+.rating { display: flex; gap: 12px; margin-bottom: 16px; }
+.rating button { flex: 1; padding: 18px 12px; border: 2px solid #ddd; border-radius: 8px; background: #fff; font-size: 16px; cursor: pointer; transition: all 0.15s; -webkit-tap-highlight-color: transparent; user-select: none; }
+.rating button:hover { border-color: #999; }
+.rating button:active { transform: scale(0.97); }
+.rating button.low.selected { border-color: #e53935; border-width: 3px; background: #ffebee; color: #e53935; font-weight: 700; }
+.rating button.medium.selected { border-color: #fb8c00; border-width: 3px; background: #fff3e0; color: #fb8c00; font-weight: 700; }
+.rating button.high.selected { border-color: #43a047; border-width: 3px; background: #e8f5e9; color: #43a047; font-weight: 700; }
+.field { margin-bottom: 16px; }
+.field label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; color: #555; }
+.field label .required { color: #e53935; }
+.field .textarea-wrap { position: relative; }
+.field textarea { width: 100%; padding: 10px; padding-right: 48px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; font-family: inherit; resize: vertical; min-height: 60px; }
+.field textarea:focus { outline: none; border-color: #1a73e8; }
+.field .voice-btn { position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; border: none; border-radius: 50%; background: #f0f0f0; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: background 0.15s; color: #666; line-height: 1; }
+.field .voice-btn:hover { background: #e0e0e0; }
+.field .voice-btn.listening { background: #e53935; color: #fff; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(229,57,53,0.4); } 50% { box-shadow: 0 0 0 8px rgba(229,57,53,0); } }
+.submit-btn { width: 100%; padding: 14px; background: #1a73e8; color: #fff; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; font-weight: 600; transition: background 0.15s; }
+.submit-btn:hover { background: #1557b0; }
+.submit-btn:disabled { background: #ccc; cursor: not-allowed; }
+.pick-label { font-size: 13px; color: #999; margin-bottom: 4px; }
+.pick-label .badge { display: inline-block; margin-left: 4px; padding: 2px 10px; border-radius: 12px; font-size: 13px; font-weight: 600; }
+.pick-label .badge.low { background: #ffebee; color: #e53935; }
+.pick-label .badge.medium { background: #fff3e0; color: #fb8c00; }
+.pick-label .badge.high { background: #e8f5e9; color: #43a047; }
+.done { text-align: center; padding: 60px 20px; }
+.done h2 { font-size: 24px; color: #43a047; margin-bottom: 12px; }
+.done p { color: #666; font-size: 16px; }
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 12px 24px; border-radius: 8px; font-size: 14px; opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 100; }
+.toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="container" id="app"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function() {
+  'use strict';
+  var API = '';
+  var tweets = [];
+  var currentIdx = 0;
+  var total = 0;
+  var done = 0;
+  var _selected = null;    // current rating: '低' | '中' | '高' | null
+  var _recognition = null;
+
+  function showToast(msg) {
+    var el = document.getElementById('toast');
+    el.textContent = msg;
+    el.classList.add('show');
+    setTimeout(function() { el.classList.remove('show'); }, 2000);
+  }
+
+  // ====== INIT ======
+  function init() {
+    fetch(API + '/api/tweets')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        tweets = data.tweets;
+        total = data.total;
+        done = data.done;
+        currentIdx = parseInt(localStorage.getItem('eval_idx') || '0', 10);
+        if (currentIdx >= tweets.length) {
+          renderDone();
+        } else {
+          renderCard();
+        }
+      })
+      .catch(function(e) {
+        showToast('加载数据失败: ' + e.message);
+      });
+  }
+
+  // ====== RENDER ======
+  function renderProgress() {
+    var pct = total > 0 ? Math.round((done + currentIdx) / total * 100) : 0;
+    var num = done + currentIdx + 1;
+    return '<div class="progress-bar"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
+      '<div class="progress-text">' + num + ' / ' + total + ' (' + pct + '%)</div>';
+  }
+
+  function renderCard() {
+    var t = tweets[currentIdx];
+    _selected = null;
+    var username = (t['用户名'] || '').replace(/"/g, '&quot;');
+    var time = (t['发布时间'] || '').replace(/"/g, '&quot;');
+    var link = (t['推文链接'] || '').replace(/"/g, '&quot;');
+    var content = (t['正文'] || '(无内容)').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    var html =
+      '<div class="header"><h1>推文评价</h1>' + renderProgress() + '</div>' +
+      '<div class="card">' +
+        '<div class="author">@' + username + ' &middot; ' + time + '</div>' +
+        '<a class="link" href="' + link + '" target="_blank" rel="noopener">' + link + '</a>' +
+        '<div class="content">' + content + '</div>' +
+
+        '<div class="pick-label">信息价值 <span id="badge"></span></div>' +
+        '<div class="rating">' +
+          '<button class="low" data-action="rate" data-value="低">低</button>' +
+          '<button class="medium" data-action="rate" data-value="中">中</button>' +
+          '<button class="high" data-action="rate" data-value="高">高</button>' +
+        '</div>' +
+
+        '<div class="field">' +
+          '<label><span class="required">*</span> 用户想法</label>' +
+          '<div class="textarea-wrap">' +
+            '<textarea id="userThought" placeholder="这条推文的价值判断依据？"></textarea>' +
+            '<button class="voice-btn" data-action="voice" data-target="userThought" title="语音输入">🎤</button>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="field">' +
+          '<label>建议 AI 思路</label>' +
+          '<div class="textarea-wrap">' +
+            '<textarea id="aiSuggestion" placeholder="如果让 AI 来判断，应该关注哪些特征？"></textarea>' +
+            '<button class="voice-btn" data-action="voice" data-target="aiSuggestion" title="语音输入">🎤</button>' +
+          '</div>' +
+        '</div>' +
+
+        '<button class="submit-btn" data-action="submit">提交并继续</button>' +
+      '</div>';
+
+    document.getElementById('app').innerHTML = html;
+    window.scrollTo(0, 0);
+  }
+
+  function renderDone() {
+    document.getElementById('app').innerHTML =
+      '<div class="done"><h2>已完成全部评价</h2><p>共评价 ' + total + ' 条推文</p>' +
+      '<p style="margin-top:12px;font-size:14px;color:#999;">结果保存在 eval/data/评价结果.csv</p></div>';
+    localStorage.removeItem('eval_idx');
+  }
+
+  // ====== EVENT DELEGATION on stable #app container ======
+  document.getElementById('app').addEventListener('click', function(e) {
+    var el = e.target;
+    // Walk up to find a button with data-action
+    while (el && el !== this) {
+      if (el.tagName === 'BUTTON' && el.getAttribute('data-action')) break;
+      el = el.parentNode;
+    }
+    if (!el || el === this) return;
+
+    var action = el.getAttribute('data-action');
+
+    if (action === 'rate') {
+      var val = el.getAttribute('data-value');
+      _selected = val;
+      // Update button styles
+      var btns = document.querySelectorAll('.rating button');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].className = btns[i].getAttribute('data-value') || '';
+      }
+      el.classList.add('selected');
+      // Update badge
+      var badge = document.getElementById('badge');
+      if (badge) {
+        badge.className = 'badge ' + (val === '低' ? 'low' : val === '中' ? 'medium' : 'high');
+        badge.textContent = val;
+      }
+    }
+
+    else if (action === 'voice') {
+      var targetId = el.getAttribute('data-target');
+      toggleVoice(targetId);
+    }
+
+    else if (action === 'submit') {
+      doSubmit();
+    }
+  });
+
+  // ====== VOICE ======
+  function toggleVoice(textareaId) {
+    if (_recognition) {
+      stopVoice();
+      return;
+    }
+    var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      showToast('当前浏览器不支持语音识别，请使用 Chrome');
+      return;
+    }
+    var recognition = new SpeechRecognition();
+    recognition.lang = 'zh-CN';
+    recognition.interimResults = false;
+    recognition.continuous = false;
+    recognition.maxAlternatives = 1;
+
+    var btn = document.querySelector('[data-target="' + textareaId + '"]');
+    recognition.onstart = function() {
+      if (btn) { btn.classList.add('listening'); btn.textContent = '⏹'; }
+    };
+    recognition.onresult = function(event) {
+      var ta = document.getElementById(textareaId);
+      var t = '';
+      for (var i = 0; i < event.results.length; i++) {
+        if (event.results[i].isFinal) t += event.results[i][0].transcript;
+      }
+      if (t && ta) {
+        ta.value = ta.value ? ta.value + t : t;
+      }
+      stopVoice();
+    };
+    recognition.onerror = function(event) {
+      if (event.error === 'no-speech') showToast('未检测到语音');
+      else if (event.error === 'not-allowed') showToast('麦克风权限未开启');
+      else showToast('语音错误: ' + event.error);
+      stopVoice();
+    };
+    recognition.onend = function() { stopVoice(); };
+    _recognition = recognition;
+    recognition.start();
+  }
+
+  function stopVoice() {
+    if (_recognition) { try { _recognition.stop(); } catch(e) {} _recognition = null; }
+    var btns = document.querySelectorAll('.voice-btn');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].classList.remove('listening');
+      btns[i].textContent = '🎤';
+    }
+  }
+
+  // ====== SUBMIT ======
+  function doSubmit() {
+    if (!_selected) { showToast('请先选择信息价值（低/中/高）'); return; }
+    var ta = document.getElementById('userThought');
+    if (!ta) return;
+    var userThought = ta.value.trim();
+    if (!userThought) { showToast('请填写用户想法'); return; }
+
+    var t = tweets[currentIdx];
+    var submitBtn = document.querySelector('[data-action="submit"]');
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '提交中...'; }
+
+    fetch(API + '/api/evaluate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        '用户名': t['用户名'] || '',
+        '推文链接': t['推文链接'] || '',
+        '正文': t['正文'] || '',
+        '发布时间': t['发布时间'] || '',
+        '信息价值': _selected,
+        '用户想法': userThought,
+        'AI思路建议': (document.getElementById('aiSuggestion') || {}).value || '',
+      }),
+    })
+    .then(function(r) { return r.json(); })
+    .then(function() {
+      currentIdx++;
+      localStorage.setItem('eval_idx', currentIdx.toString());
+      if (currentIdx >= tweets.length) {
+        renderDone();
+      } else {
+        renderCard();
+      }
+    })
+    .catch(function(e) {
+      showToast('提交失败: ' + e.message);
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = '提交并继续'; }
+    });
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

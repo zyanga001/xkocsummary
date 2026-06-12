@@ -1,0 +1,57 @@
+name: DAZA Brief
+
+on:
+  schedule:
+    # Default: every 6 hours. Edit to match config/schedule.json → interval_minutes.
+    # Cron is in UTC. Examples:
+    #   "0 */6 * * *" — every 6 hours
+    #   "0 */4 * * *" — every 4 hours
+    #   "0 */2 * * *" — every 2 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'watchlist.txt'
+      - 'config/schedule.json'
+      - 'koc/**'
+      - 'run_brief.py'
+      - '.github/workflows/brief.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daza-brief
+  cancel-in-progress: false
+
+jobs:
+  generate-brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Generate DAZA Brief
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_BASE_URL: ${{ secrets.AI_BASE_URL }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+        run: python run_brief.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
+          enable_jekyll: false
+          keep_files: true
+          force_orphan: false
+          commit_message: 'brief: ${{ github.run_id }}'

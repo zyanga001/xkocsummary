@@ -1,0 +1,12 @@
+[project]
+name = "koc-intelligence-hub"
+version = "0.1.0"
+description = "Local-first KOC intelligence pipeline for scanning, reading, and analyzing recent posts."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools]
+packages = ["koc"]
