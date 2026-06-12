@@ -1,6 +1,6 @@
-# DAZA Brief — X/Twitter 每日情报简报
+# Xkocsummary — X/Twitter 每日情报简报
 
-自动扫描你关注的 X/Twitter 博主，用 AI 分析帖子价值，生成一份可直接阅读的 HTML 日报。部署到 GitHub Pages 后，每天定时更新，打开专属网址即可阅读。
+自动扫描你关注的 X 博主，用 AI 分析帖子价值，生成一份可直接阅读的 HTML 日报。部署到 GitHub Pages 后，每天定时更新，打开专属网址即可阅读。
 
 ## 快速开始（GitHub Pages 部署）
 
