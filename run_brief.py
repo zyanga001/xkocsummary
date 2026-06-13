@@ -18,10 +18,12 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from koc.archive import build_archive_history, next_run_dir
 from koc.enrich import enrich_all
 from koc.llm import LlmClient
 from koc.reader import Reader
 from koc.robust_scanner import RobustScanner
+from koc.scanner_config import scanner_config_from_env
 from koc.v2_pipeline import V2Pipeline
 from koc.v2_report import render_v2_report, render_v2_index
 from koc.watchlist import load_authors, load_schedule
@@ -46,7 +48,19 @@ def main() -> int:
     print(f"[brief] 时间窗口: 过去 {window}", flush=True)
     print(f"[brief] 关注博主: {len(authors)} 个", flush=True)
 
-    scanner = RobustScanner(timeout=15, max_retries=3, request_delay=0.3)
+    scanner_config = scanner_config_from_env(os.environ)
+    print(
+        "[brief] 扫描参数: "
+        f"timeout={scanner_config.timeout}s, "
+        f"retries={scanner_config.max_retries}, "
+        f"workers={scanner_config.max_workers}",
+        flush=True,
+    )
+    scanner = RobustScanner(
+        timeout=scanner_config.timeout,
+        max_retries=scanner_config.max_retries,
+        request_delay=scanner_config.request_delay,
+    )
     reader = Reader(prefer_rss_summary=True, request_delay_seconds=0.3)
 
     all_items: list[dict] = []
@@ -56,7 +70,7 @@ def main() -> int:
     scan_errors: list[str] = []
     t_start = time.time()
 
-    scan_max_workers = min(4, len(authors))
+    scan_max_workers = min(scanner_config.max_workers, len(authors))
     now_ts = datetime.now(timezone.utc)
 
     def scan_one(author: str) -> dict:
@@ -136,22 +150,18 @@ def main() -> int:
     # Build run label — always Beijing time
     beijing_now = _beijing_now()
     local_time_str = beijing_now.strftime("%m-%d %H:%M")
+    time_str = beijing_now.strftime("%H:%M")
     date_str = beijing_now.strftime("%Y-%m-%d")
 
     archive_dir = OUTPUT_DIR / "archive"
     date_dir = archive_dir / date_str
     date_dir.mkdir(parents=True, exist_ok=True)
 
-    existing = sorted(
-        [d for d in date_dir.iterdir() if d.is_dir() and d.name.startswith("run-")],
-        key=lambda d: d.name,
-    )
-    run_num = len(existing) + 1
-    run_dir = date_dir / f"run-{run_num}"
+    run_num, run_dir = next_run_dir(date_dir)
     run_dir.mkdir(parents=True, exist_ok=False)
 
     run_label = f"{local_time_str} · 第{run_num}次更新"
-    run_date_label = f"{date_str} {local_time_str} · 第{run_num}次更新"
+    run_date_label = f"{date_str} {time_str} · 第{run_num}次更新"
 
     run_dict = {
         "run_id": result.run_id,
@@ -189,7 +199,7 @@ def main() -> int:
     (OUTPUT_DIR / ".nojekyll").write_text("")
 
     # Regenerate archive index
-    history = _build_archive_history(archive_dir)
+    history = build_archive_history(archive_dir)
     (archive_dir / "index.html").write_text(
         render_v2_index(history), encoding="utf-8"
     )
@@ -200,40 +210,6 @@ def main() -> int:
     print(f"  运行: {run_dir}", flush=True)
     print(f"  归档: {archive_dir / 'index.html'}", flush=True)
     return 0
-
-
-def _build_archive_history(archive_dir: Path) -> list[dict]:
-    history: list[dict] = []
-    if not archive_dir.exists():
-        return history
-    for date_entry in sorted(archive_dir.iterdir(), reverse=True):
-        if not date_entry.is_dir():
-            continue
-        runs = sorted(
-            [d for d in date_entry.iterdir() if d.is_dir() and d.name.startswith("run-")],
-            key=lambda d: d.name,
-            reverse=True,
-        )
-        for run_index, run_dir in enumerate(runs):
-            run_json = run_dir / "run.json"
-            total = 0
-            label = ""
-            if run_json.exists():
-                try:
-                    data = json.loads(run_json.read_text(encoding="utf-8"))
-                    total = data.get("total_tweets", 0)
-                    label = str(data.get("created_at", ""))
-                except Exception:
-                    pass
-            history.append({
-                "date": date_entry.name,
-                "run": f"{date_entry.name} 第{run_index+1}次更新",
-                "path": f"archive/{date_entry.name}/{run_dir.name}/report.html",
-                "total_tweets": total,
-                "label": label,
-            })
-    return history
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

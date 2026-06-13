@@ -20,10 +20,10 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
         page_depth: 页面所在深度 (root=1, archive/date/run/=3)
     """
     date = run_label or (result.get("created_at") or "")[:10]
-    # Archive link: from root (depth=1) → "archive/index.html", from run (depth=3) → "../../archive/index.html"
+    # Archive link: from root (depth=1) -> "archive/index.html", from archive/date/run/ -> "../../index.html"
     archive_href = "archive/index.html"
     if page_depth >= 3:
-        archive_href = "../../archive/index.html"
+        archive_href = "../../index.html"
     items = result.get("items", [])
     daily_brief = result.get("daily_brief", [])
     author_profiles = result.get("author_profiles", [])
@@ -41,6 +41,7 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
   <title>每日简报 · {date}</title>
   <style>
     :root {{
@@ -149,10 +150,11 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
     .author-list {{ display: grid; gap: 10px; }}
     .author-row {{
       background: var(--card); border: 1px solid var(--border); border-radius: 6px;
-      padding: 12px 16px; display: flex; align-items: center; gap: 12px;
+      padding: 12px 16px;
       cursor: pointer; transition: background 0.1s;
     }}
     .author-row:hover {{ background: #f6f8fa; }}
+    .author-summary {{ display: flex; align-items: center; gap: 12px; }}
     .author-name {{ font-weight: 700; min-width: 130px; }}
     .author-stats {{ font-size: 13px; color: var(--muted); flex: 1; }}
     .author-tweets {{ display: none; padding: 12px 0 0; border-top: 1px solid var(--border); margin-top: 8px; }}
@@ -169,6 +171,8 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
       .shell {{ padding: 12px 10px 40px; }}
       .card {{ padding: 14px; }}
       .nav-tab {{ font-size: 13px; padding: 8px 6px; }}
+      .author-summary {{ display: block; }}
+      .author-name {{ min-width: 0; margin-bottom: 6px; }}
     }}
   </style>
 </head>
@@ -244,7 +248,8 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
 
   // Author expand/collapse
   document.querySelectorAll('.author-row').forEach(function(row) {{
-    row.addEventListener('click', function() {{
+    row.addEventListener('click', function(e) {{
+      if (e.target.closest('a')) return;
       this.classList.toggle('open');
     }});
   }});
@@ -378,10 +383,12 @@ def _render_authors(profiles: list, items: list) -> str:
             warning = ' <span class="warning-chip">⚠ 长期低质量，考虑取关</span>'
 
         rows.append(f"""<div class="author-row">
-  <div class="author-name">{_t(display)} (@{_t(author)}){warning}</div>
-  <div class="author-stats">
-    <span class="{quality_badge}">{_t(quality)}</span>
-    {_t(follower_str)} · 今日 {_t(count)} 条 · {_t(one_liner)}
+  <div class="author-summary">
+    <div class="author-name">{_t(display)} (@{_t(author)}){warning}</div>
+    <div class="author-stats">
+      <span class="{quality_badge}">{_t(quality)}</span>
+      {_t(follower_str)} · 今日 {_t(count)} 条 · {_t(one_liner)}
+    </div>
   </div>
   <div class="author-tweets">{tweet_items or '<div style="padding:8px;color:var(--muted);">今日无推文数据</div>'}</div>
 </div>""")
@@ -401,7 +408,7 @@ def render_v2_index(history: list[dict]) -> str:
             date = h.get("date", "")
             run = h.get("run", "")
             path = h.get("path", "")
-            label = h.get("label", "")
+            label = _display_label(h.get("label", ""))
             count = h.get("total_tweets", 0)
             if date != current_date:
                 if current_date:
@@ -422,6 +429,7 @@ def render_v2_index(history: list[dict]) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
   <title>历史归档 · 每日简报</title>
   <style>
     :root {{
@@ -450,8 +458,16 @@ def render_v2_index(history: list[dict]) -> str:
   <h1>📋 历史归档</h1>
   <p style="color:var(--muted);margin-bottom:8px;">点击日期查看当天的每日简报</p>
   <div class="card">
-    <ul>{items_html}</ul>
+    {items_html}
   </div>
 </main>
 </body>
 </html>"""
+
+
+def _display_label(label: Any) -> str:
+    text = str(label or "")
+    parts = text.split(" ", 2)
+    if len(parts) == 3 and parts[0].count("-") == 2 and parts[1].count("-") == 1:
+        return f"{parts[0]} {parts[2]}"
+    return text

@@ -6,20 +6,22 @@ import os
 import sys
 import time
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 BEIJING = timezone(timedelta(hours=8))
 
 
 def _beijing_now() -> datetime:
     return datetime.now(timezone.utc).astimezone(BEIJING)
-from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from .archive import build_archive_history, next_run_dir
 from .enrich import enrich_all
 from .llm import LlmClient
 from .output import Progress
 from .reader import Reader
 from .robust_scanner import RobustScanner
+from .scanner_config import scanner_config_from_env
 from .v2_eval import run_eval
 from .v2_pipeline import V2Pipeline
 from .v2_report import render_v2_report, render_v2_index
@@ -57,10 +59,17 @@ def command_run_v2(args: argparse.Namespace) -> int:
     progress.log(f"时间窗口：过去 {window}")
     progress.log(f"关注博主：{len(authors)} 个")
 
+    scanner_config = scanner_config_from_env(os.environ)
+    progress.log(
+        "扫描参数："
+        f"timeout={scanner_config.timeout}s, "
+        f"retries={scanner_config.max_retries}, "
+        f"workers={scanner_config.max_workers}"
+    )
     scanner = RobustScanner(
-        timeout=15,
-        max_retries=3,
-        request_delay=0.3,
+        timeout=scanner_config.timeout,
+        max_retries=scanner_config.max_retries,
+        request_delay=scanner_config.request_delay,
         log_fn=lambda msg: progress.log(msg),
     )
     reader = Reader(prefer_rss_summary=True, request_delay_seconds=0.3)
@@ -72,7 +81,7 @@ def command_run_v2(args: argparse.Namespace) -> int:
     scan_errors: list[str] = []
     t_start = time.time()
 
-    scan_max_workers = min(4, len(authors))
+    scan_max_workers = min(scanner_config.max_workers, len(authors))
     now_ts = datetime.now(timezone.utc)
 
     def scan_one(author: str) -> dict:
@@ -158,7 +167,17 @@ def command_run_v2(args: argparse.Namespace) -> int:
 
     beijing_now = _beijing_now()
     local_time_str = beijing_now.strftime("%m-%d %H:%M")
+    time_str = beijing_now.strftime("%H:%M")
     date_str = beijing_now.strftime("%Y-%m-%d")
+
+    output_dir = Path(args.output)
+    archive_dir = output_dir / "archive"
+    date_dir = archive_dir / date_str
+    run_num, run_dir = next_run_dir(date_dir)
+    run_dir.mkdir(parents=True, exist_ok=False)
+
+    run_label = f"{local_time_str} · 第{run_num}次更新"
+    run_date_label = f"{date_str} {time_str} · 第{run_num}次更新"
 
     run_dict = {
         "run_id": result.run_id,
@@ -181,22 +200,6 @@ def command_run_v2(args: argparse.Namespace) -> int:
         "errors": result.errors,
     }
 
-    output_dir = Path(args.output)
-    archive_dir = output_dir / "archive"
-    date_dir = archive_dir / date_str
-    date_dir.mkdir(parents=True, exist_ok=True)
-
-    existing = sorted(
-        [d for d in date_dir.iterdir() if d.is_dir() and d.name.startswith("run-")],
-        key=lambda d: d.name,
-    )
-    run_num = len(existing) + 1
-    run_dir = date_dir / f"run-{run_num}"
-    run_dir.mkdir(parents=True, exist_ok=False)
-
-    run_label = f"{local_time_str} · 第{run_num}次更新"
-    run_date_label = f"{date_str} {local_time_str} · 第{run_num}次更新"
-
     html = render_v2_report(run_dict, run_label=run_label, page_depth=3)
 
     (run_dir / "report.html").write_text(html, encoding="utf-8")
@@ -207,8 +210,9 @@ def command_run_v2(args: argparse.Namespace) -> int:
     (output_dir / "index.html").write_text(
         render_v2_report(run_dict, run_label=run_label, page_depth=1), encoding="utf-8"
     )
+    (output_dir / ".nojekyll").write_text("")
 
-    history = _build_archive_history(archive_dir)
+    history = build_archive_history(archive_dir)
     (archive_dir / "index.html").write_text(
         render_v2_index(history), encoding="utf-8"
     )
@@ -258,48 +262,6 @@ def command_eval_v2(args: argparse.Namespace) -> int:
             print(f"  {s}")
 
     return 0
-
-
-def _build_archive_history(archive_dir: Path) -> list[dict]:
-    history: list[dict] = []
-    if not archive_dir.exists():
-        return history
-    for date_entry in sorted(archive_dir.iterdir(), reverse=True):
-        if not date_entry.is_dir() or date_entry.name == "index.html":
-            continue
-        runs = sorted(
-            [d for d in date_entry.iterdir() if d.is_dir() and d.name.startswith("run-")],
-            key=lambda d: d.name,
-            reverse=True,
-        )
-        for run_index, run_dir in enumerate(runs):
-            run_json = run_dir / "run.json"
-            total = 0
-            if run_json.exists():
-                try:
-                    data = json_module.loads(run_json.read_text(encoding="utf-8"))
-                    total = data.get("total_tweets", 0)
-                except Exception:
-                    pass
-            history.append({
-                "date": date_entry.name,
-                "run": f"{date_entry.name} 第{run_index+1}次更新",
-                "path": f"archive/{date_entry.name}/{run_dir.name}/report.html",
-                "total_tweets": total,
-                "label": _run_label_from_json(run_json),
-            })
-    return history
-
-
-def _run_label_from_json(run_json: Path) -> str:
-    if not run_json.exists():
-        return ""
-    try:
-        data = json_module.loads(run_json.read_text(encoding="utf-8"))
-        return str(data.get("created_at", ""))
-    except Exception:
-        return ""
-
 
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()

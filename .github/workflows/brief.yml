@@ -23,20 +23,30 @@ permissions:
 
 concurrency:
   group: daza-brief
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   generate-brief:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 60
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+
+      - name: Restore existing Pages output
+        run: |
+          mkdir -p output
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git fetch origin gh-pages --depth=1
+            git archive FETCH_HEAD | tar -x -C output
+          fi
 
       - name: Generate DAZA Brief
         env:
