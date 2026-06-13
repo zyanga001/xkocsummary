@@ -150,11 +150,12 @@ def main() -> int:
     run_dir = date_dir / f"run-{run_num}"
     run_dir.mkdir(parents=True, exist_ok=False)
 
-    run_label = f"{date_str} {local_time_str} · 第{run_num}次更新"
+    run_label = f"{local_time_str} · 第{run_num}次更新"
+    run_date_label = f"{date_str} {local_time_str} · 第{run_num}次更新"
 
     run_dict = {
         "run_id": result.run_id,
-        "created_at": local_time_str,
+        "created_at": run_date_label,
         "window": window,
         "total_tweets": result.total_tweets,
         "authors_count": result.authors_count,
@@ -173,7 +174,7 @@ def main() -> int:
         "errors": result.errors,
     }
 
-    html = render_v2_report(run_dict, run_label=run_label, page_depth=1)
+    html = render_v2_report(run_dict, run_label=run_label, page_depth=3)
 
     (run_dir / "report.html").write_text(html, encoding="utf-8")
     (run_dir / "run.json").write_text(
