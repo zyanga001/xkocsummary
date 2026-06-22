@@ -9,7 +9,7 @@ WATCHLIST_CONFIG = Path("watchlist.txt")
 SCHEDULE_CONFIG = Path("config/schedule.json")
 
 DEFAULT_SCHEDULE: dict[str, Any] = {
-    "interval_minutes": 360,
+    "interval_minutes": 720,
     "window": "12h",
 }
 

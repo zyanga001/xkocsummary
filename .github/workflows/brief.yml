@@ -2,12 +2,9 @@ name: DAZA Brief
 
 on:
   schedule:
-    # Default: every 6 hours. Edit to match config/schedule.json → interval_minutes.
-    # Cron is in UTC. Examples:
-    #   "0 */6 * * *" — every 6 hours
-    #   "0 */4 * * *" — every 4 hours
-    #   "0 */2 * * *" — every 2 hours
-    - cron: '0 */6 * * *'
+    # Beijing time 09:00 and 21:00 every day.
+    # GitHub Actions cron uses UTC, so this is 01:00 and 13:00 UTC.
+    - cron: '0 1,13 * * *'
   workflow_dispatch:
   push:
     branches: [main]

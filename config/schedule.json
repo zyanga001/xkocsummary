@@ -1,4 +1,4 @@
 {
-  "interval_minutes": 360,
+  "interval_minutes": 720,
   "window": "12h"
 }
