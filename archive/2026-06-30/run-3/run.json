@@ -1,0 +1,22 @@
+{
+  "run_id": "v2-20260630-152823",
+  "created_at": "2026-06-30 23:30 · 第3次更新",
+  "window": "12h",
+  "total_tweets": 302,
+  "authors_count": 93,
+  "total_authors": 250,
+  "high_count": 32,
+  "medium_count": 51,
+  "low_count": 97,
+  "scan_ok": 93,
+  "scan_empty": 152,
+  "scan_fail": 5,
+  "scan_elapsed": 395.8728024959564,
+  "items": [],
+  "daily_brief": [],
+  "author_profiles": [],
+  "medium_merge": "",
+  "errors": [
+    "流水线异常: Expecting ',' delimiter: line 241 column 27 (char 4927)"
+  ]
+}
