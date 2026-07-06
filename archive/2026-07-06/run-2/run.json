@@ -1,0 +1,58 @@
+{
+  "run_id": "v2-20260706-134847",
+  "status": "success",
+  "slot": "evening",
+  "slot_label": "晚报",
+  "created_at": "2026-07-06 21:52 · 第2次更新",
+  "window": "12h",
+  "planned_at": "2026-07-06 21:00",
+  "started_at": "2026-07-06 21:44",
+  "finished_at": "2026-07-06 21:52",
+  "window_start": "2026-07-06 09:00",
+  "window_end": "2026-07-06 21:00",
+  "delay_seconds": 2665,
+  "elapsed_seconds": 473.2,
+  "total_tweets": 281,
+  "authors_count": 81,
+  "total_authors": 250,
+  "high_count": 42,
+  "medium_count": 81,
+  "low_count": 117,
+  "scan_ok": 81,
+  "scan_empty": 163,
+  "scan_fail": 6,
+  "scan_elapsed": 473.17043900489807,
+  "scan_errors": [
+    {
+      "author": "memekiller69420",
+      "error": "https://nitter.privacydev.net/memekiller69420/rss: Network error while fetching "
+    },
+    {
+      "author": "0xXIAOc",
+      "error": "https://nitter.privacydev.net/0xXIAOc/rss: Network error while fetching https://"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://xcancel.com/0xliuqingyu/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "dan326714",
+      "error": "https://nitter.poast.org/dan326714/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://nitter.poast.org/LiHuanLH/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "jiao_newlife",
+      "error": "https://nitter.poast.org/jiao_newlife/rss: HTTP 403 while fetching https://nitte"
+    }
+  ],
+  "items": [],
+  "daily_brief": [],
+  "author_profiles": [],
+  "medium_merge": "",
+  "errors": [
+    "流水线异常: Expecting ',' delimiter: line 131 column 36 (char 2793)"
+  ]
+}
