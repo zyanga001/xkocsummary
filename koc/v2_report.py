@@ -81,6 +81,25 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
     .topbar .brand {{ font-size: 18px; font-weight: 700; }}
     .topbar .archive-link {{ font-size: 14px; color: var(--muted); }}
 
+    .run-details {{
+      margin: 8px 0 20px; color: var(--muted); font-size: 13px;
+    }}
+    .run-details summary {{
+      cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+      color: var(--muted); user-select: none;
+    }}
+    .run-details summary:hover {{ color: var(--text); }}
+    .run-details-grid {{
+      margin-top: 10px; padding: 12px; background: var(--card);
+      border: 1px solid var(--border); border-radius: 6px;
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px;
+    }}
+    .run-detail-item strong {{ color: var(--text); font-weight: 600; }}
+    .run-detail-errors {{
+      grid-column: 1 / -1; padding-top: 8px; border-top: 1px solid #f0f0f0;
+      white-space: pre-wrap;
+    }}
+
     /* Nav tabs */
     .nav-tabs {{
       display: flex; gap: 2px; margin-bottom: 24px;
@@ -187,6 +206,7 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
   <p style="color:var(--muted);margin-bottom:20px;font-size:14px;">
     共关注 {_t(total_authors)} 位博主 · {_t(active_authors)} 位有更新 · {_t(total)} 条推文 · 窗口 {_t(result.get('window','12h'))}
   </p>
+  {_render_run_details(result)}
 
   <nav class="nav-tabs" id="nav">
     <button class="nav-tab active" data-panel="brief">日报<span class="count"> · {_t(len(daily_brief))}话题</span></button>
@@ -265,6 +285,81 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
 
 def _t(val: Any) -> str:
     return escape(str(val or ""))
+
+
+def _format_duration(seconds: Any) -> str:
+    try:
+        total = int(float(seconds or 0))
+    except (TypeError, ValueError):
+        return ""
+    if total <= 0:
+        return "0秒"
+    hours, rem = divmod(total, 3600)
+    minutes, secs = divmod(rem, 60)
+    parts = []
+    if hours:
+        parts.append(f"{hours}小时")
+    if minutes:
+        parts.append(f"{minutes}分钟")
+    if secs or not parts:
+        parts.append(f"{secs}秒")
+    return "".join(parts)
+
+
+def _render_run_details(result: dict[str, Any]) -> str:
+    fields = [
+        ("状态", result.get("status") or "success"),
+        ("报告类型", result.get("slot_label")),
+        ("计划时间", result.get("planned_at")),
+        ("实际开始", result.get("started_at")),
+        ("实际完成", result.get("finished_at") or result.get("created_at")),
+        ("呈现时间", result.get("created_at")),
+        ("覆盖窗口", _join_range(result.get("window_start"), result.get("window_end"))),
+        ("延迟", _format_duration(result.get("delay_seconds"))),
+        ("总耗时", _format_duration(result.get("elapsed_seconds") or result.get("scan_elapsed"))),
+        ("抓取成功", result.get("scan_ok")),
+        ("无更新", result.get("scan_empty")),
+        ("抓取失败", result.get("scan_fail")),
+    ]
+    rows = [
+        f'<div class="run-detail-item"><strong>{_t(label)}:</strong> {_t(value)}</div>'
+        for label, value in fields
+        if value not in (None, "")
+    ]
+
+    errors = _render_scan_errors(result.get("scan_errors", []))
+    if errors:
+        rows.append(f'<div class="run-detail-errors"><strong>失败名单:</strong>\n{errors}</div>')
+
+    if not rows:
+        return ""
+
+    return f"""<details class="run-details">
+    <summary>运行详情</summary>
+    <div class="run-details-grid">
+      {''.join(rows)}
+    </div>
+  </details>"""
+
+
+def _join_range(start: Any, end: Any) -> str:
+    if start and end:
+        return f"{start} - {end}"
+    return str(start or end or "")
+
+
+def _render_scan_errors(errors: Any) -> str:
+    if not errors:
+        return ""
+    parts = []
+    for error in errors[:20]:
+        if isinstance(error, dict):
+            author = error.get("author", "")
+            message = error.get("error", "")
+            parts.append(f"@{author}: {message}" if author else str(message))
+        else:
+            parts.append(str(error))
+    return _t("\n".join(parts))
 
 
 def _render_brief(daily_brief: list, medium_merge: str, brief_items: list) -> str:

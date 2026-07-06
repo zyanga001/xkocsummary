@@ -48,15 +48,25 @@ class RobustScanner:
         username: str,
         window: str = "12h",
         now: datetime | None = None,
+        window_start: datetime | None = None,
+        window_end: datetime | None = None,
     ) -> ScanResult:
-        now = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
-        scan_from = now - parse_window(window)
+        if window_start is not None or window_end is not None:
+            if window_start is None or window_end is None:
+                raise ValueError("window_start and window_end must be provided together")
+            scan_from = window_start.astimezone(timezone.utc)
+            scan_to = window_end.astimezone(timezone.utc)
+            if scan_from >= scan_to:
+                raise ValueError("window_start must be before window_end")
+        else:
+            scan_to = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+            scan_from = scan_to - parse_window(window)
         result = ScanResult(
             username=username,
             source_url="",
             window=window,
             scan_from=to_utc_iso(scan_from),
-            scan_to=to_utc_iso(now),
+            scan_to=to_utc_iso(scan_to),
             debug={"rss_items_found": 0, "inside_window": 0, "outside_window": 0, "time_uncertain": 0},
         )
 
@@ -142,7 +152,7 @@ class RobustScanner:
             item.published_at = to_utc_iso(published_at)
             item.time_source = "rss_pubDate"
             item.time_confidence = "high"
-            if scan_from <= published_at <= now:
+            if scan_from <= published_at <= scan_to:
                 result.items.append(item)
                 result.debug["inside_window"] += 1
             else:

@@ -30,7 +30,7 @@ class CliTest(unittest.TestCase):
             def __init__(self, *args, **kwargs):
                 pass
 
-            def scan_user(self, author, window, now):
+            def scan_user(self, author, window, now, window_start=None, window_end=None):
                 item = IntelligenceItem(
                     account_id=author,
                     username=author,

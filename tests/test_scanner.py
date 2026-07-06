@@ -56,6 +56,24 @@ class ScannerTest(unittest.TestCase):
         self.assertEqual(result.debug["outside_window"], 1)
         self.assertEqual(result.debug["time_uncertain"], 1)
 
+    def test_scan_filters_by_explicit_utc_window(self):
+        scanner = RobustScanner(fetch_text=lambda url, timeout: RSS)
+        window_start = datetime(2026, 6, 8, 10, 30, tzinfo=timezone.utc)
+        window_end = datetime(2026, 6, 8, 11, 30, tzinfo=timezone.utc)
+
+        result = scanner.scan_user(
+            "sama",
+            window="12h",
+            window_start=window_start,
+            window_end=window_end,
+        )
+
+        self.assertEqual(result.scan_from, "2026-06-08T10:30:00Z")
+        self.assertEqual(result.scan_to, "2026-06-08T11:30:00Z")
+        self.assertEqual([item.tweet_id for item in result.items], ["3"])
+        self.assertEqual(result.debug["inside_window"], 1)
+        self.assertEqual(result.debug["outside_window"], 1)
+
     def test_scan_tolerates_leading_whitespace_before_xml_declaration(self):
         now = datetime(2026, 6, 8, 12, 0, tzinfo=timezone.utc)
         scanner = RobustScanner(fetch_text=lambda url, timeout: "\n " + RSS)

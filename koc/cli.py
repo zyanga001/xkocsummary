@@ -5,15 +5,9 @@ import json as json_module
 import os
 import sys
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
-
-BEIJING = timezone(timedelta(hours=8))
-
-
-def _beijing_now() -> datetime:
-    return datetime.now(timezone.utc).astimezone(BEIJING)
 
 from .archive import build_archive_history, next_run_dir
 from .enrich import enrich_all
@@ -22,6 +16,7 @@ from .output import Progress
 from .reader import Reader
 from .robust_scanner import RobustScanner
 from .scanner_config import scanner_config_from_env
+from .schedule import BEIJING, format_beijing, resolve_report_window
 from .v2_eval import run_eval
 from .v2_pipeline import V2Pipeline
 from .v2_report import render_v2_report, render_v2_index
@@ -51,12 +46,19 @@ def build_parser() -> argparse.ArgumentParser:
 
 def command_run_v2(args: argparse.Namespace) -> int:
     progress = Progress("v2-run", enabled=args.format == "human")
+    started_at = datetime.now(timezone.utc)
+    report_window = resolve_report_window(started_at)
 
     authors = load_authors(args.watchlist)
     schedule = load_schedule(args.schedule)
     window = str(schedule.get("window") or "12h")
 
-    progress.log(f"时间窗口：过去 {window}")
+    progress.log(
+        "时间窗口："
+        f"{report_window.label} {format_beijing(report_window.window_start)}"
+        f" - {format_beijing(report_window.window_end)}"
+    )
+    progress.log(f"计划时间：{format_beijing(report_window.planned_at)}")
     progress.log(f"关注博主：{len(authors)} 个")
 
     scanner_config = scanner_config_from_env(os.environ)
@@ -78,15 +80,20 @@ def command_run_v2(args: argparse.Namespace) -> int:
     scan_ok = 0
     scan_empty = 0
     scan_fail = 0
-    scan_errors: list[str] = []
+    scan_errors: list[dict[str, str]] = []
     t_start = time.time()
 
     scan_max_workers = min(scanner_config.max_workers, len(authors))
-    now_ts = datetime.now(timezone.utc)
 
     def scan_one(author: str) -> dict:
         try:
-            result = scanner.scan_user(author, window=window, now=now_ts)
+            result = scanner.scan_user(
+                author,
+                window=window,
+                now=report_window.window_end,
+                window_start=report_window.window_start,
+                window_end=report_window.window_end,
+            )
             out: dict = {"author": author, "items": [], "error": None}
             for item in result.items:
                 fetched = reader.fetch_item(item)
@@ -125,7 +132,7 @@ def command_run_v2(args: argparse.Namespace) -> int:
             error = out.get("error")
             if error:
                 scan_fail += 1
-                scan_errors.append(f"@{author}: {error}")
+                scan_errors.append({"author": author, "error": str(error)})
                 progress.log(f"[{done}/{len(authors)}] @{author} ❌ {error[:40]} | 已用{elapsed:.0f}s 剩余{eta:.0f}s")
             elif count == 0:
                 scan_empty += 1
@@ -138,7 +145,8 @@ def command_run_v2(args: argparse.Namespace) -> int:
     if not all_items:
         progress.log("没有抓取到任何推文，终止")
         if scan_errors:
-            progress.log(f"扫描错误摘要: {'; '.join(scan_errors[:5])}")
+            error_summary = "; ".join(f"@{e['author']}: {e['error']}" for e in scan_errors[:5])
+            progress.log(f"扫描错误摘要: {error_summary}")
         return 1
 
     progress.log(f"扫描完成：{scan_ok} OK / {scan_empty} 无更新 / {scan_fail} 失败")
@@ -165,10 +173,11 @@ def command_run_v2(args: argparse.Namespace) -> int:
 
     progress.log("生成HTML报告...")
 
-    beijing_now = _beijing_now()
+    finished_at = datetime.now(timezone.utc)
+    beijing_now = finished_at.astimezone(BEIJING)
     local_time_str = beijing_now.strftime("%m-%d %H:%M")
     time_str = beijing_now.strftime("%H:%M")
-    date_str = beijing_now.strftime("%Y-%m-%d")
+    date_str = report_window.planned_at.astimezone(BEIJING).strftime("%Y-%m-%d")
 
     output_dir = Path(args.output)
     archive_dir = output_dir / "archive"
@@ -181,8 +190,18 @@ def command_run_v2(args: argparse.Namespace) -> int:
 
     run_dict = {
         "run_id": result.run_id,
+        "status": "success",
+        "slot": report_window.slot,
+        "slot_label": report_window.label,
         "created_at": run_date_label,
         "window": window,
+        "planned_at": format_beijing(report_window.planned_at),
+        "started_at": format_beijing(started_at),
+        "finished_at": format_beijing(finished_at),
+        "window_start": format_beijing(report_window.window_start),
+        "window_end": format_beijing(report_window.window_end),
+        "delay_seconds": report_window.delay_seconds,
+        "elapsed_seconds": round(time.time() - t_start, 1),
         "total_tweets": result.total_tweets,
         "authors_count": result.authors_count,
         "total_authors": len(authors),
@@ -193,6 +212,7 @@ def command_run_v2(args: argparse.Namespace) -> int:
         "scan_empty": scan_empty,
         "scan_fail": scan_fail,
         "scan_elapsed": time.time() - t_start,
+        "scan_errors": scan_errors,
         "items": result.items,
         "daily_brief": result.daily_brief,
         "author_profiles": result.author_profiles,
@@ -223,7 +243,8 @@ def command_run_v2(args: argparse.Namespace) -> int:
     print(f"扫描: {scan_ok} OK / {scan_empty} 无更新 / {scan_fail} 失败")
     print(f"高 {result.high_count} / 中 {result.medium_count} / 低 {result.low_count}")
     if scan_errors:
-        print(f"扫描异常: {'; '.join(scan_errors[:3])}")
+        error_summary = "; ".join(f"@{e['author']}: {e['error']}" for e in scan_errors[:3])
+        print(f"扫描异常: {error_summary}")
     print()
     print("输出文件：")
     print(f"  本期报告: {run_dir}/report.html")

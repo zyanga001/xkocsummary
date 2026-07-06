@@ -2,9 +2,10 @@ name: DAZA Brief
 
 on:
   schedule:
-    # Beijing time 09:00 and 21:00 every day.
-    # GitHub Actions cron uses UTC, so this is 01:00 and 13:00 UTC.
-    - cron: '0 1,13 * * *'
+    # Beijing time 09:10 and 21:10 every day.
+    # GitHub Actions cron uses UTC, so this is 01:10 and 13:10 UTC.
+    # The report itself still uses fixed 09:00/21:00 Beijing windows.
+    - cron: '10 1,13 * * *'
   workflow_dispatch:
   push:
     branches: [main]

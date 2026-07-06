@@ -14,7 +14,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -24,6 +24,7 @@ from koc.llm import LlmClient
 from koc.reader import Reader
 from koc.robust_scanner import RobustScanner
 from koc.scanner_config import scanner_config_from_env
+from koc.schedule import BEIJING, format_beijing, resolve_report_window
 from koc.v2_pipeline import V2Pipeline
 from koc.v2_report import render_v2_report, render_v2_index
 from koc.watchlist import load_authors, load_schedule
@@ -32,20 +33,23 @@ OUTPUT_DIR = Path(os.getenv("OUTPUT_DIR", "output"))
 WATCHLIST_PATH = os.getenv("WATCHLIST_FILE", "watchlist.txt")
 SCHEDULE_PATH = os.getenv("SCHEDULE_FILE", "config/schedule.json")
 ENABLE_ENRICH = os.getenv("ENABLE_ENRICH", "0") == "1"
-BEIJING = timezone(timedelta(hours=8))
-
-
-def _beijing_now() -> datetime:
-    return datetime.now(timezone.utc).astimezone(BEIJING)
 
 
 def main() -> int:
+    started_at = datetime.now(timezone.utc)
+    report_window = resolve_report_window(started_at)
     print(f"[brief] 读取关注列表: {WATCHLIST_PATH}", flush=True)
     authors = load_authors(WATCHLIST_PATH)
     schedule = load_schedule(SCHEDULE_PATH)
     window = str(schedule.get("window") or "12h")
 
-    print(f"[brief] 时间窗口: 过去 {window}", flush=True)
+    print(
+        "[brief] 时间窗口: "
+        f"{report_window.label} {format_beijing(report_window.window_start)}"
+        f" - {format_beijing(report_window.window_end)}",
+        flush=True,
+    )
+    print(f"[brief] 计划时间: {format_beijing(report_window.planned_at)}", flush=True)
     print(f"[brief] 关注博主: {len(authors)} 个", flush=True)
 
     scanner_config = scanner_config_from_env(os.environ)
@@ -67,15 +71,20 @@ def main() -> int:
     scan_ok = 0
     scan_empty = 0
     scan_fail = 0
-    scan_errors: list[str] = []
+    scan_errors: list[dict[str, str]] = []
     t_start = time.time()
 
     scan_max_workers = min(scanner_config.max_workers, len(authors))
-    now_ts = datetime.now(timezone.utc)
 
     def scan_one(author: str) -> dict:
         try:
-            result = scanner.scan_user(author, window=window, now=now_ts)
+            result = scanner.scan_user(
+                author,
+                window=window,
+                now=report_window.window_end,
+                window_start=report_window.window_start,
+                window_end=report_window.window_end,
+            )
             out: dict = {"author": author, "items": [], "error": None}
             for item in result.items:
                 fetched = reader.fetch_item(item)
@@ -113,7 +122,7 @@ def main() -> int:
             error = out.get("error")
             if error:
                 scan_fail += 1
-                scan_errors.append(f"@{author}: {error}")
+                scan_errors.append({"author": author, "error": str(error)})
                 print(f"[brief] [{done}/{len(authors)}] @{author} ❌ {error[:50]} | {elapsed:.0f}s eta {eta:.0f}s", flush=True)
             elif count == 0:
                 scan_empty += 1
@@ -126,7 +135,8 @@ def main() -> int:
     if not all_items:
         print("[brief] 没有抓取到任何推文，退出", flush=True)
         if scan_errors:
-            print(f"[brief] 错误摘要: {'; '.join(scan_errors[:5])}", flush=True)
+            error_summary = "; ".join(f"@{e['author']}: {e['error']}" for e in scan_errors[:5])
+            print(f"[brief] 错误摘要: {error_summary}", flush=True)
         return 1
 
     print(f"[brief] 扫描完成: {scan_ok} OK / {scan_empty} 无更新 / {scan_fail} 失败", flush=True)
@@ -148,10 +158,11 @@ def main() -> int:
     print(f"[brief] AI分析完成 ({time.time() - t3:.0f}s) — 高{result.high_count} / 中{result.medium_count} / 低{result.low_count}", flush=True)
 
     # Build run label — always Beijing time
-    beijing_now = _beijing_now()
+    finished_at = datetime.now(timezone.utc)
+    beijing_now = finished_at.astimezone(BEIJING)
     local_time_str = beijing_now.strftime("%m-%d %H:%M")
     time_str = beijing_now.strftime("%H:%M")
-    date_str = beijing_now.strftime("%Y-%m-%d")
+    date_str = report_window.planned_at.astimezone(BEIJING).strftime("%Y-%m-%d")
 
     archive_dir = OUTPUT_DIR / "archive"
     date_dir = archive_dir / date_str
@@ -165,8 +176,18 @@ def main() -> int:
 
     run_dict = {
         "run_id": result.run_id,
+        "status": "success",
+        "slot": report_window.slot,
+        "slot_label": report_window.label,
         "created_at": run_date_label,
         "window": window,
+        "planned_at": format_beijing(report_window.planned_at),
+        "started_at": format_beijing(started_at),
+        "finished_at": format_beijing(finished_at),
+        "window_start": format_beijing(report_window.window_start),
+        "window_end": format_beijing(report_window.window_end),
+        "delay_seconds": report_window.delay_seconds,
+        "elapsed_seconds": round(time.time() - t_start, 1),
         "total_tweets": result.total_tweets,
         "authors_count": result.authors_count,
         "total_authors": len(authors),
@@ -177,6 +198,7 @@ def main() -> int:
         "scan_empty": scan_empty,
         "scan_fail": scan_fail,
         "scan_elapsed": time.time() - t_start,
+        "scan_errors": scan_errors,
         "items": result.items,
         "daily_brief": result.daily_brief,
         "author_profiles": result.author_profiles,
