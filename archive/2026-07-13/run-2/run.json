@@ -1,0 +1,54 @@
+{
+  "run_id": "v2-20260713-155416",
+  "status": "success",
+  "slot": "evening",
+  "slot_label": "晚报",
+  "created_at": "2026-07-13 23:54 · 第2次更新",
+  "window": "12h",
+  "planned_at": "2026-07-13 21:00",
+  "started_at": "2026-07-13 23:50",
+  "finished_at": "2026-07-13 23:54",
+  "window_start": "2026-07-13 09:00",
+  "window_end": "2026-07-13 21:00",
+  "delay_seconds": 10223,
+  "elapsed_seconds": 270.4,
+  "total_tweets": 294,
+  "authors_count": 94,
+  "total_authors": 250,
+  "high_count": 14,
+  "medium_count": 19,
+  "low_count": 27,
+  "scan_ok": 94,
+  "scan_empty": 151,
+  "scan_fail": 5,
+  "scan_elapsed": 270.4030969142914,
+  "scan_errors": [
+    {
+      "author": "memekiller69420",
+      "error": "https://nitter.privacydev.net/memekiller69420/rss: Network error while fetching "
+    },
+    {
+      "author": "0xXIAOc",
+      "error": "https://nitter.privacydev.net/0xXIAOc/rss: Network error while fetching https://"
+    },
+    {
+      "author": "KillaXBT",
+      "error": "https://nitter.privacydev.net/KillaXBT/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://nitter.poast.org/0xliuqingyu/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://xcancel.com/LiHuanLH/rss: HTTP 400 while fetching https://xcancel.com/Li"
+    }
+  ],
+  "items": [],
+  "daily_brief": [],
+  "author_profiles": [],
+  "medium_merge": "",
+  "errors": [
+    "流水线异常: HTTP Error 503: Service Unavailable"
+  ]
+}
