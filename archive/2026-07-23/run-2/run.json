@@ -1,0 +1,178 @@
+{
+  "run_id": "v2-20260723-152705",
+  "status": "success",
+  "slot": "evening",
+  "slot_label": "晚报",
+  "created_at": "2026-07-23 23:27 · 第2次更新",
+  "window": "12h",
+  "planned_at": "2026-07-23 21:00",
+  "started_at": "2026-07-23 23:21",
+  "finished_at": "2026-07-23 23:27",
+  "window_start": "2026-07-23 09:00",
+  "window_end": "2026-07-23 21:00",
+  "delay_seconds": 8506,
+  "elapsed_seconds": 336.8,
+  "total_tweets": 275,
+  "authors_count": 81,
+  "total_authors": 250,
+  "high_count": 0,
+  "medium_count": 0,
+  "low_count": 0,
+  "scan_ok": 81,
+  "scan_empty": 133,
+  "scan_fail": 36,
+  "scan_elapsed": 336.7525861263275,
+  "scan_errors": [
+    {
+      "author": "memekiller69420",
+      "error": "https://nitter.net/memekiller69420/rss: HTTP 404 while fetching https://nitter.n"
+    },
+    {
+      "author": "qinbafrank",
+      "error": "https://nitter.poast.org/qinbafrank/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "0xXIAOc",
+      "error": "https://nitter.privacydev.net/0xXIAOc/rss: Network error while fetching https://"
+    },
+    {
+      "author": "The_PeopleDAO",
+      "error": "https://nitter.privacydev.net/The_PeopleDAO/rss: Network error while fetching ht"
+    },
+    {
+      "author": "KillaXBT",
+      "error": "https://xcancel.com/KillaXBT/rss: HTTP 400 while fetching https://xcancel.com/Ki"
+    },
+    {
+      "author": "liuyanxue2",
+      "error": "https://nitter.poast.org/liuyanxue2/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "JeffLia12309881",
+      "error": "https://nitter.net/JeffLia12309881/rss: HTTP 404 while fetching https://nitter.n"
+    },
+    {
+      "author": "shabi2026",
+      "error": "https://nitter.net/shabi2026/rss: HTTP 404 while fetching https://nitter.net/sha"
+    },
+    {
+      "author": "luckyrrbb",
+      "error": "https://nitter.poast.org/luckyrrbb/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "xiaotongir",
+      "error": "https://xcancel.com/xiaotongir/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "UpchainDAO",
+      "error": "https://xcancel.com/UpchainDAO/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://nitter.poast.org/0xliuqingyu/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "acc116453",
+      "error": "https://nitter.net/acc116453/rss: HTTP 404 while fetching https://nitter.net/acc"
+    },
+    {
+      "author": "maohei16",
+      "error": "https://xcancel.com/maohei16/rss: HTTP 400 while fetching https://xcancel.com/ma"
+    },
+    {
+      "author": "shenghanjun8",
+      "error": "https://nitter.privacydev.net/shenghanjun8/rss: Network error while fetching htt"
+    },
+    {
+      "author": "0xKaKa03",
+      "error": "https://nitter.poast.org/0xKaKa03/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "0xCryptoFries",
+      "error": "https://nitter.privacydev.net/0xCryptoFries/rss: Network error while fetching ht"
+    },
+    {
+      "author": "0xcbhz",
+      "error": "https://nitter.net/0xcbhz/rss: HTTP 429 while fetching https://nitter.net/0xcbhz"
+    },
+    {
+      "author": "dan326714",
+      "error": "https://nitter.privacydev.net/dan326714/rss: Network error while fetching https:"
+    },
+    {
+      "author": "FarmMaster_bot",
+      "error": "https://nitter.poast.org/FarmMaster_bot/rss: HTTP 403 while fetching https://nit"
+    },
+    {
+      "author": "chaozuoye",
+      "error": "https://nitter.privacydev.net/chaozuoye/rss: Network error while fetching https:"
+    },
+    {
+      "author": "Wave_Tool",
+      "error": "https://xcancel.com/Wave_Tool/rss: HTTP 400 while fetching https://xcancel.com/W"
+    },
+    {
+      "author": "xss4755",
+      "error": "https://xcancel.com/xss4755/rss: HTTP 400 while fetching https://xcancel.com/xss"
+    },
+    {
+      "author": "KernelVentures",
+      "error": "https://xcancel.com/KernelVentures/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "iqxsol",
+      "error": "https://nitter.poast.org/iqxsol/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "0xbrush_bots",
+      "error": "https://nitter.net/0xbrush_bots/rss: HTTP 404 while fetching https://nitter.net/"
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://xcancel.com/LiHuanLH/rss: HTTP 400 while fetching https://xcancel.com/Li"
+    },
+    {
+      "author": "Cryptowushi",
+      "error": "https://nitter.privacydev.net/Cryptowushi/rss: Network error while fetching http"
+    },
+    {
+      "author": "lumaoyangmao",
+      "error": "https://nitter.privacydev.net/lumaoyangmao/rss: Network error while fetching htt"
+    },
+    {
+      "author": "bigbottle44",
+      "error": "https://nitter.poast.org/bigbottle44/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "liyuanqion55768",
+      "error": "https://nitter.net/liyuanqion55768/rss: HTTP 404 while fetching https://nitter.n"
+    },
+    {
+      "author": "Z_Lib_official",
+      "error": "https://nitter.poast.org/Z_Lib_official/rss: HTTP 403 while fetching https://nit"
+    },
+    {
+      "author": "xiaoyubtc",
+      "error": "https://nitter.poast.org/xiaoyubtc/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "decision_BTC",
+      "error": "https://xcancel.com/decision_BTC/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "JYHNCZR_",
+      "error": "https://xcancel.com/JYHNCZR_/rss: HTTP 400 while fetching https://xcancel.com/JY"
+    },
+    {
+      "author": "guanliange",
+      "error": "https://xcancel.com/guanliange/rss: HTTP 400 while fetching https://xcancel.com/"
+    }
+  ],
+  "items": [],
+  "daily_brief": [],
+  "author_profiles": [],
+  "medium_merge": "",
+  "errors": [
+    "流水线异常: 'str' object has no attribute 'get'"
+  ]
+}
