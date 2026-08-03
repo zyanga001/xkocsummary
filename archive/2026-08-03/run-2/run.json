@@ -1,0 +1,74 @@
+{
+  "run_id": "v2-20260803-155442",
+  "status": "success",
+  "slot": "evening",
+  "slot_label": "晚报",
+  "created_at": "2026-08-03 00:00 · 第2次更新",
+  "window": "12h",
+  "planned_at": "2026-08-03 21:00",
+  "started_at": "2026-08-03 23:50",
+  "finished_at": "2026-08-04 00:00",
+  "window_start": "2026-08-03 09:00",
+  "window_end": "2026-08-03 21:00",
+  "delay_seconds": 10219,
+  "elapsed_seconds": 594.9,
+  "total_tweets": 263,
+  "authors_count": 86,
+  "total_authors": 250,
+  "high_count": 44,
+  "medium_count": 73,
+  "low_count": 123,
+  "scan_ok": 86,
+  "scan_empty": 154,
+  "scan_fail": 10,
+  "scan_elapsed": 594.8977098464966,
+  "scan_errors": [
+    {
+      "author": "memekiller69420",
+      "error": "https://nitter.net/memekiller69420/rss: HTTP 404 while fetching https://nitter.n"
+    },
+    {
+      "author": "The_PeopleDAO",
+      "error": "https://nitter.poast.org/The_PeopleDAO/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "Xinjue1",
+      "error": "https://nitter.net/Xinjue1/rss: HTTP 404 while fetching https://nitter.net/Xinju"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://nitter.net/0xliuqingyu/rss: HTTP 404 while fetching https://nitter.net/0"
+    },
+    {
+      "author": "dan326714",
+      "error": "https://nitter.privacydev.net/dan326714/rss: Network error while fetching https:"
+    },
+    {
+      "author": "TingHu888",
+      "error": "https://nitter.privacydev.net/TingHu888/rss: Network error while fetching https:"
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://xcancel.com/LiHuanLH/rss: HTTP 400 while fetching https://xcancel.com/Li"
+    },
+    {
+      "author": "0x_Northland",
+      "error": "https://xcancel.com/0x_Northland/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "lumaoyangmao",
+      "error": "https://nitter.net/lumaoyangmao/rss: HTTP 429 while fetching https://nitter.net/"
+    },
+    {
+      "author": "liyuanqion55768",
+      "error": "https://xcancel.com/liyuanqion55768/rss: HTTP 400 while fetching https://xcancel"
+    }
+  ],
+  "items": [],
+  "daily_brief": [],
+  "author_profiles": [],
+  "medium_merge": "",
+  "errors": [
+    "流水线异常: The read operation timed out"
+  ]
+}
