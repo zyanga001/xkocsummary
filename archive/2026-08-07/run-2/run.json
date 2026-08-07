@@ -1,0 +1,70 @@
+{
+  "run_id": "v2-20260807-142205",
+  "status": "success",
+  "slot": "evening",
+  "slot_label": "晚报",
+  "created_at": "2026-08-07 22:27 · 第2次更新",
+  "window": "12h",
+  "planned_at": "2026-08-07 21:00",
+  "started_at": "2026-08-07 22:17",
+  "finished_at": "2026-08-07 22:27",
+  "window_start": "2026-08-07 09:00",
+  "window_end": "2026-08-07 21:00",
+  "delay_seconds": 4648,
+  "elapsed_seconds": 577.6,
+  "total_tweets": 252,
+  "authors_count": 82,
+  "total_authors": 250,
+  "high_count": 16,
+  "medium_count": 18,
+  "low_count": 26,
+  "scan_ok": 82,
+  "scan_empty": 159,
+  "scan_fail": 9,
+  "scan_elapsed": 577.6012320518494,
+  "scan_errors": [
+    {
+      "author": "memekiller69420",
+      "error": "https://xcancel.com/memekiller69420/rss: HTTP 400 while fetching https://xcancel"
+    },
+    {
+      "author": "hellosuoha",
+      "error": "https://xcancel.com/hellosuoha/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "Xinjue1",
+      "error": "https://nitter.poast.org/Xinjue1/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://nitter.privacydev.net/0xliuqingyu/rss: Network error while fetching http"
+    },
+    {
+      "author": "fwy2026",
+      "error": "https://nitter.privacydev.net/fwy2026/rss: Network error while fetching https://"
+    },
+    {
+      "author": "dan326714",
+      "error": "https://nitter.net/dan326714/rss: HTTP 404 while fetching https://nitter.net/dan"
+    },
+    {
+      "author": "TingHu888",
+      "error": "https://xcancel.com/TingHu888/rss: HTTP 400 while fetching https://xcancel.com/T"
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://nitter.poast.org/LiHuanLH/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "liyuanqion55768",
+      "error": "https://nitter.net/liyuanqion55768/rss: HTTP 404 while fetching https://nitter.n"
+    }
+  ],
+  "items": [],
+  "daily_brief": [],
+  "author_profiles": [],
+  "medium_merge": "",
+  "errors": [
+    "流水线异常: The read operation timed out"
+  ]
+}
