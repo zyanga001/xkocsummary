@@ -1,0 +1,1774 @@
+{
+  "run_id": "v2-20260818-024804",
+  "status": "success",
+  "slot": "morning",
+  "slot_label": "早报",
+  "created_at": "2026-08-18 10:49 · 第1次更新",
+  "window": "12h",
+  "planned_at": "2026-08-18 09:00",
+  "started_at": "2026-08-18 10:19",
+  "finished_at": "2026-08-18 10:49",
+  "window_start": "2026-08-17 21:00",
+  "window_end": "2026-08-18 09:00",
+  "delay_seconds": 4799,
+  "elapsed_seconds": 1796.3,
+  "total_tweets": 51,
+  "authors_count": 24,
+  "total_authors": 250,
+  "high_count": 13,
+  "medium_count": 16,
+  "low_count": 22,
+  "scan_ok": 24,
+  "scan_empty": 39,
+  "scan_fail": 187,
+  "scan_elapsed": 1796.2826881408691,
+  "scan_errors": [
+    {
+      "author": "VIP8888883",
+      "error": "https://nitter.privacydev.net/VIP8888883/rss: Network error while fetching https"
+    },
+    {
+      "author": "domaprotocol",
+      "error": "https://nitter.poast.org/domaprotocol/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "hanking66",
+      "error": "https://nitter.poast.org/hanking66/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "memekiller69420",
+      "error": "https://nitter.privacydev.net/memekiller69420/rss: Network error while fetching "
+    },
+    {
+      "author": "The_PeopleDAO",
+      "error": "https://xcancel.com/The_PeopleDAO/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "Caidaobaba",
+      "error": "https://xcancel.com/Caidaobaba/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "JeffLia12309881",
+      "error": "https://xcancel.com/JeffLia12309881/rss: HTTP 400 while fetching https://xcancel"
+    },
+    {
+      "author": "hellosuoha",
+      "error": "https://nitter.net/hellosuoha/rss: HTTP 404 while fetching https://nitter.net/he"
+    },
+    {
+      "author": "Xinjue1",
+      "error": "https://nitter.poast.org/Xinjue1/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "0xProbable",
+      "error": "https://nitter.poast.org/0xProbable/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "hazenlee",
+      "error": "https://xcancel.com/hazenlee/rss: HTTP 400 while fetching https://xcancel.com/ha"
+    },
+    {
+      "author": "youknow028",
+      "error": "https://nitter.net/youknow028/rss: HTTP 404 while fetching https://nitter.net/yo"
+    },
+    {
+      "author": "hunterweb303",
+      "error": "https://nitter.net/hunterweb303/rss: HTTP 404 while fetching https://nitter.net/"
+    },
+    {
+      "author": "buckyandlucky",
+      "error": "https://xcancel.com/buckyandlucky/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "BlockFocus11",
+      "error": "https://nitter.poast.org/BlockFocus11/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "0x_Fenda",
+      "error": "https://nitter.privacydev.net/0x_Fenda/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "0xLuge",
+      "error": "https://nitter.net/0xLuge/rss: HTTP 404 while fetching https://nitter.net/0xLuge"
+    },
+    {
+      "author": "xiaozhang2331",
+      "error": "https://nitter.poast.org/xiaozhang2331/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "KKY8848",
+      "error": "https://nitter.net/KKY8848/rss: HTTP 404 while fetching https://nitter.net/KKY88"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://xcancel.com/0xliuqingyu/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "lucky_spring369",
+      "error": "https://xcancel.com/lucky_spring369/rss: HTTP 400 while fetching https://xcancel"
+    },
+    {
+      "author": "gch_enbsbxbs",
+      "error": "https://xcancel.com/gch_enbsbxbs/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "fwy2026",
+      "error": "https://nitter.poast.org/fwy2026/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "maohei16",
+      "error": "https://nitter.poast.org/maohei16/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "aling2000520",
+      "error": "https://nitter.poast.org/aling2000520/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "cryptoresetlife",
+      "error": "https://nitter.privacydev.net/cryptoresetlife/rss: Network error while fetching "
+    },
+    {
+      "author": "0x_mmc",
+      "error": "https://xcancel.com/0x_mmc/rss: HTTP 400 while fetching https://xcancel.com/0x_m"
+    },
+    {
+      "author": "33357xyz",
+      "error": "https://xcancel.com/33357xyz/rss: HTTP 400 while fetching https://xcancel.com/33"
+    },
+    {
+      "author": "lofy22479013",
+      "error": "https://nitter.net/lofy22479013/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "little_sci",
+      "error": "https://nitter.privacydev.net/little_sci/rss: Network error while fetching https"
+    },
+    {
+      "author": "chainbird_eth",
+      "error": "https://nitter.poast.org/chainbird_eth/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "0xNaiXi",
+      "error": "https://nitter.poast.org/0xNaiXi/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "annitoBtc",
+      "error": "https://nitter.poast.org/annitoBtc/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "Big_Tea_Rice",
+      "error": "https://nitter.poast.org/Big_Tea_Rice/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "0xbaoan",
+      "error": "https://nitter.net/0xbaoan/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "0x13904b",
+      "error": "https://nitter.poast.org/0x13904b/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "Shelbyserves",
+      "error": "https://xcancel.com/Shelbyserves/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "Miles082510",
+      "error": "https://nitter.privacydev.net/Miles082510/rss: Network error while fetching http"
+    },
+    {
+      "author": "0xcbhz",
+      "error": "https://nitter.privacydev.net/0xcbhz/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "uarizona",
+      "error": "https://nitter.net/uarizona/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "GoudanWoo",
+      "error": "https://nitter.net/GoudanWoo/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "qiye_btc",
+      "error": "https://nitter.poast.org/qiye_btc/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "SteinAmour",
+      "error": "https://nitter.privacydev.net/SteinAmour/rss: Network error while fetching https"
+    },
+    {
+      "author": "AKAKAY04",
+      "error": "https://nitter.net/AKAKAY04/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "taoli_tools",
+      "error": "https://xcancel.com/taoli_tools/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "0xCryptoFries",
+      "error": "https://nitter.privacydev.net/0xCryptoFries/rss: Network error while fetching ht"
+    },
+    {
+      "author": "Murphychen888",
+      "error": "https://xcancel.com/Murphychen888/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "xiaomustock",
+      "error": "https://xcancel.com/xiaomustock/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "0x_zibu",
+      "error": "https://nitter.privacydev.net/0x_zibu/rss: Network error while fetching https://"
+    },
+    {
+      "author": "yuyuvkx",
+      "error": "https://xcancel.com/yuyuvkx/rss: HTTP 400 while fetching https://xcancel.com/yuy"
+    },
+    {
+      "author": "0xquqi",
+      "error": "https://nitter.privacydev.net/0xquqi/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "CodeNightOwl",
+      "error": "https://nitter.net/CodeNightOwl/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "dan326714",
+      "error": "https://xcancel.com/dan326714/rss: HTTP 400 while fetching https://xcancel.com/d"
+    },
+    {
+      "author": "hs_gogogo",
+      "error": "https://nitter.net/hs_gogogo/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "fbot_app",
+      "error": "https://nitter.poast.org/fbot_app/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "lipoded",
+      "error": "https://nitter.poast.org/lipoded/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "ETH3210",
+      "error": "https://xcancel.com/ETH3210/rss: HTTP 400 while fetching https://xcancel.com/ETH"
+    },
+    {
+      "author": "yixing_web3",
+      "error": "https://nitter.privacydev.net/yixing_web3/rss: Network error while fetching http"
+    },
+    {
+      "author": "ziyourenya",
+      "error": "https://nitter.net/ziyourenya/rss: Network error while fetching https://nitter.n"
+    },
+    {
+      "author": "wangy112375",
+      "error": "https://nitter.poast.org/wangy112375/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "Essen1645",
+      "error": "https://xcancel.com/Essen1645/rss: HTTP 400 while fetching https://xcancel.com/E"
+    },
+    {
+      "author": "sellen1124",
+      "error": "https://nitter.poast.org/sellen1124/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "xiadadhaida",
+      "error": "https://nitter.net/xiadadhaida/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "FarmMaster_bot",
+      "error": "https://nitter.privacydev.net/FarmMaster_bot/rss: Network error while fetching h"
+    },
+    {
+      "author": "TingHu888",
+      "error": "https://xcancel.com/TingHu888/rss: HTTP 400 while fetching https://xcancel.com/T"
+    },
+    {
+      "author": "Ray80230",
+      "error": "https://nitter.net/Ray80230/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "airdropalchemis",
+      "error": "https://nitter.net/airdropalchemis/rss: Network error while fetching https://nit"
+    },
+    {
+      "author": "Airdrop_Guard",
+      "error": "https://xcancel.com/Airdrop_Guard/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "33daoweb3",
+      "error": "https://nitter.privacydev.net/33daoweb3/rss: Network error while fetching https:"
+    },
+    {
+      "author": "BQnanqiao",
+      "error": "https://nitter.poast.org/BQnanqiao/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "yupaopao0",
+      "error": "https://nitter.privacydev.net/yupaopao0/rss: Network error while fetching https:"
+    },
+    {
+      "author": "solana_zh",
+      "error": "https://nitter.net/solana_zh/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "Greta0086",
+      "error": "https://nitter.privacydev.net/Greta0086/rss: Network error while fetching https:"
+    },
+    {
+      "author": "GaoHeadmaster",
+      "error": "https://xcancel.com/GaoHeadmaster/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "Jasonwang1211",
+      "error": "https://nitter.poast.org/Jasonwang1211/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "0x_xifeng",
+      "error": "https://nitter.poast.org/0x_xifeng/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "y_cryptoanalyst",
+      "error": "https://nitter.privacydev.net/y_cryptoanalyst/rss: Network error while fetching "
+    },
+    {
+      "author": "chaozuoye",
+      "error": "https://nitter.poast.org/chaozuoye/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "0xzheng888",
+      "error": "https://nitter.net/0xzheng888/rss: Network error while fetching https://nitter.n"
+    },
+    {
+      "author": "UMich",
+      "error": "https://nitter.privacydev.net/UMich/rss: Network error while fetching https://ni"
+    },
+    {
+      "author": "Assassin_Malvo",
+      "error": "https://xcancel.com/Assassin_Malvo/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "web3beinian",
+      "error": "https://nitter.poast.org/web3beinian/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "mundane799699",
+      "error": "https://nitter.poast.org/mundane799699/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "0xinfini",
+      "error": "https://nitter.net/0xinfini/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "xxiaoxiongmao",
+      "error": "https://xcancel.com/xxiaoxiongmao/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "PIIG_me",
+      "error": "https://nitter.poast.org/PIIG_me/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "tmm_club",
+      "error": "https://nitter.poast.org/tmm_club/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "Wave_Tool",
+      "error": "https://nitter.poast.org/Wave_Tool/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "silverfang88",
+      "error": "https://xcancel.com/silverfang88/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "3PDAO",
+      "error": "https://nitter.privacydev.net/3PDAO/rss: Network error while fetching https://ni"
+    },
+    {
+      "author": "conso_tg",
+      "error": "https://nitter.poast.org/conso_tg/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "CuishuoB",
+      "error": "https://nitter.privacydev.net/CuishuoB/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "SunnyHumorDay",
+      "error": "https://nitter.poast.org/SunnyHumorDay/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "xss4755",
+      "error": "https://nitter.net/xss4755/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "SpiderPool_com",
+      "error": "https://nitter.net/SpiderPool_com/rss: Network error while fetching https://nitt"
+    },
+    {
+      "author": "RivermenNFT",
+      "error": "https://nitter.privacydev.net/RivermenNFT/rss: Network error while fetching http"
+    },
+    {
+      "author": "CMhOeNnExY",
+      "error": "https://xcancel.com/CMhOeNnExY/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "0xcoolkhz",
+      "error": "https://nitter.privacydev.net/0xcoolkhz/rss: Network error while fetching https:"
+    },
+    {
+      "author": "xychso",
+      "error": "https://xcancel.com/xychso/rss: HTTP 400 while fetching https://xcancel.com/xych"
+    },
+    {
+      "author": "cursor_ai",
+      "error": "https://nitter.net/cursor_ai/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "i_icepy",
+      "error": "https://xcancel.com/i_icepy/rss: HTTP 400 while fetching https://xcancel.com/i_i"
+    },
+    {
+      "author": "guiyuan313",
+      "error": "https://nitter.privacydev.net/guiyuan313/rss: Network error while fetching https"
+    },
+    {
+      "author": "Predator_fund",
+      "error": "https://nitter.net/Predator_fund/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "KernelVentures",
+      "error": "https://xcancel.com/KernelVentures/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "0xMayyy",
+      "error": "https://nitter.privacydev.net/0xMayyy/rss: Network error while fetching https://"
+    },
+    {
+      "author": "ariel_sands_dan",
+      "error": "https://nitter.net/ariel_sands_dan/rss: Network error while fetching https://nit"
+    },
+    {
+      "author": "nil_0x",
+      "error": "https://nitter.net/nil_0x/rss: Network error while fetching https://nitter.net/n"
+    },
+    {
+      "author": "BlockBeatsAsia",
+      "error": "https://nitter.poast.org/BlockBeatsAsia/rss: HTTP 403 while fetching https://nit"
+    },
+    {
+      "author": "EvaCmore",
+      "error": "https://xcancel.com/EvaCmore/rss: HTTP 400 while fetching https://xcancel.com/Ev"
+    },
+    {
+      "author": "iqxsol",
+      "error": "https://nitter.net/iqxsol/rss: Network error while fetching https://nitter.net/i"
+    },
+    {
+      "author": "zhaoliu911899",
+      "error": "https://nitter.poast.org/zhaoliu911899/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "0x_Northland",
+      "error": "https://nitter.privacydev.net/0x_Northland/rss: Network error while fetching htt"
+    },
+    {
+      "author": "0xbrush_bots",
+      "error": "https://nitter.poast.org/0xbrush_bots/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "Fisher0815",
+      "error": "https://nitter.poast.org/Fisher0815/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://nitter.poast.org/LiHuanLH/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "Cryptowushi",
+      "error": "https://nitter.net/Cryptowushi/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "jiao_newlife",
+      "error": "https://nitter.poast.org/jiao_newlife/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "cryptolfggo",
+      "error": "https://nitter.net/cryptolfggo/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "lumaoyangmao",
+      "error": "https://nitter.net/lumaoyangmao/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "WalrusProtocol",
+      "error": "https://nitter.net/WalrusProtocol/rss: Network error while fetching https://nitt"
+    },
+    {
+      "author": "kinotd_com",
+      "error": "https://nitter.privacydev.net/kinotd_com/rss: Network error while fetching https"
+    },
+    {
+      "author": "nft_hu",
+      "error": "https://nitter.poast.org/nft_hu/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "kevin_airdrop",
+      "error": "https://nitter.net/kevin_airdrop/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "bigbottle44",
+      "error": "https://xcancel.com/bigbottle44/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "bu_xiang888",
+      "error": "https://nitter.net/bu_xiang888/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "zhao_p42510",
+      "error": "https://xcancel.com/zhao_p42510/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "WY_mask",
+      "error": "https://nitter.privacydev.net/WY_mask/rss: Network error while fetching https://"
+    },
+    {
+      "author": "btc_hamsters",
+      "error": "https://nitter.poast.org/btc_hamsters/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "BaleYoba",
+      "error": "https://xcancel.com/BaleYoba/rss: HTTP 400 while fetching https://xcancel.com/Ba"
+    },
+    {
+      "author": "tenlly_ly",
+      "error": "https://nitter.poast.org/tenlly_ly/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "evooves",
+      "error": "https://nitter.privacydev.net/evooves/rss: Network error while fetching https://"
+    },
+    {
+      "author": "hualun",
+      "error": "https://nitter.privacydev.net/hualun/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "Nazarick_eth",
+      "error": "https://nitter.privacydev.net/Nazarick_eth/rss: Network error while fetching htt"
+    },
+    {
+      "author": "lin_btc",
+      "error": "https://nitter.net/lin_btc/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "liyuanqion55768",
+      "error": "https://nitter.privacydev.net/liyuanqion55768/rss: Network error while fetching "
+    },
+    {
+      "author": "toupaiwang",
+      "error": "https://xcancel.com/toupaiwang/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "lufushage",
+      "error": "https://nitter.net/lufushage/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "0xleng1",
+      "error": "https://nitter.net/0xleng1/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "Benjieming1Q84",
+      "error": "https://nitter.privacydev.net/Benjieming1Q84/rss: Network error while fetching h"
+    },
+    {
+      "author": "Maybe2024slow",
+      "error": "https://nitter.poast.org/Maybe2024slow/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "zicai222222",
+      "error": "https://xcancel.com/zicai222222/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "SeomunW",
+      "error": "https://xcancel.com/SeomunW/rss: HTTP 400 while fetching https://xcancel.com/Seo"
+    },
+    {
+      "author": "Bigdevilbtc",
+      "error": "https://nitter.privacydev.net/Bigdevilbtc/rss: Network error while fetching http"
+    },
+    {
+      "author": "Z_Lib_official",
+      "error": "https://nitter.net/Z_Lib_official/rss: Network error while fetching https://nitt"
+    },
+    {
+      "author": "0xweiqigaoshou",
+      "error": "https://nitter.privacydev.net/0xweiqigaoshou/rss: Network error while fetching h"
+    },
+    {
+      "author": "kyeast",
+      "error": "https://xcancel.com/kyeast/rss: HTTP 400 while fetching https://xcancel.com/kyea"
+    },
+    {
+      "author": "jiamigou",
+      "error": "https://nitter.net/jiamigou/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "jiji_eth",
+      "error": "https://nitter.privacydev.net/jiji_eth/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "xiaoyubtc",
+      "error": "https://nitter.net/xiaoyubtc/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "Oceansky_web3",
+      "error": "https://nitter.privacydev.net/Oceansky_web3/rss: Network error while fetching ht"
+    },
+    {
+      "author": "XBITDEX_ZH",
+      "error": "https://xcancel.com/XBITDEX_ZH/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "cosy_white",
+      "error": "https://nitter.net/cosy_white/rss: Network error while fetching https://nitter.n"
+    },
+    {
+      "author": "kuangshenbtc",
+      "error": "https://xcancel.com/kuangshenbtc/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "PhyrexNi",
+      "error": "https://nitter.poast.org/PhyrexNi/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "useXXYYio",
+      "error": "https://nitter.privacydev.net/useXXYYio/rss: Network error while fetching https:"
+    },
+    {
+      "author": "0xCryptoUni",
+      "error": "https://nitter.net/0xCryptoUni/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "Rats_Friend",
+      "error": "https://nitter.net/Rats_Friend/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "decision_BTC",
+      "error": "https://nitter.poast.org/decision_BTC/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "yunknkn2",
+      "error": "https://nitter.privacydev.net/yunknkn2/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Ice_Frog666666",
+      "error": "https://xcancel.com/Ice_Frog666666/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "0xKevin00",
+      "error": "https://nitter.poast.org/0xKevin00/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "wwfhbz",
+      "error": "https://nitter.privacydev.net/wwfhbz/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "crypto_biubiu",
+      "error": "https://xcancel.com/crypto_biubiu/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "BitCloutCat",
+      "error": "https://nitter.poast.org/BitCloutCat/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "Naive_BNB",
+      "error": "https://nitter.poast.org/Naive_BNB/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "bitfool1",
+      "error": "https://xcancel.com/bitfool1/rss: HTTP 400 while fetching https://xcancel.com/bi"
+    },
+    {
+      "author": "cyberport_hk",
+      "error": "https://xcancel.com/cyberport_hk/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "Seaxing777",
+      "error": "https://xcancel.com/Seaxing777/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "JYHNCZR_",
+      "error": "https://nitter.net/JYHNCZR_/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "EmberCN",
+      "error": "https://nitter.privacydev.net/EmberCN/rss: Network error while fetching https://"
+    },
+    {
+      "author": "web3vip",
+      "error": "https://nitter.net/web3vip/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "Yale",
+      "error": "https://nitter.poast.org/Yale/rss: HTTP 403 while fetching https://nitter.poast."
+    },
+    {
+      "author": "Nicole58004351",
+      "error": "https://nitter.privacydev.net/Nicole58004351/rss: Network error while fetching h"
+    },
+    {
+      "author": "followin_io_zh",
+      "error": "https://nitter.privacydev.net/followin_io_zh/rss: Network error while fetching h"
+    },
+    {
+      "author": "nirvana_hui",
+      "error": "https://nitter.privacydev.net/nirvana_hui/rss: Network error while fetching http"
+    },
+    {
+      "author": "ether",
+      "error": "https://nitter.net/ether/rss: Network error while fetching https://nitter.net/et"
+    },
+    {
+      "author": "HyperliquidX",
+      "error": "https://nitter.poast.org/HyperliquidX/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "zerowu97",
+      "error": "https://xcancel.com/zerowu97/rss: HTTP 400 while fetching https://xcancel.com/ze"
+    },
+    {
+      "author": "ki_smoon12",
+      "error": "https://xcancel.com/ki_smoon12/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "JackGui14",
+      "error": "https://nitter.net/JackGui14/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "xiaoyinsi2025",
+      "error": "https://nitter.net/xiaoyinsi2025/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "cishanjia",
+      "error": "https://xcancel.com/cishanjia/rss: HTTP 400 while fetching https://xcancel.com/c"
+    },
+    {
+      "author": "DrcDAO",
+      "error": "https://xcancel.com/DrcDAO/rss: HTTP 400 while fetching https://xcancel.com/DrcD"
+    },
+    {
+      "author": "wufantouzi",
+      "error": "https://nitter.net/wufantouzi/rss: Network error while fetching https://nitter.n"
+    },
+    {
+      "author": "hebi555",
+      "error": "https://xcancel.com/hebi555/rss: HTTP 400 while fetching https://xcancel.com/heb"
+    },
+    {
+      "author": "guanliange",
+      "error": "https://nitter.privacydev.net/guanliange/rss: Network error while fetching https"
+    },
+    {
+      "author": "youyou5202",
+      "error": "https://nitter.net/youyou5202/rss: Network error while fetching https://nitter.n"
+    }
+  ],
+  "items": [
+    {
+      "post_id": "0",
+      "author": "aleabitoreddit",
+      "display_name": "aleabitoreddit",
+      "url": "https://x.com/aleabitoreddit/status/2089422562019393654",
+      "content": "I've decided to name my next two pets Applied Optoelectronics and Sivers Semiconductors",
+      "content_full": "I've decided to name my next two pets Applied Optoelectronics and Sivers Semiconductors",
+      "published_at": "2026-08-17T18:42:13Z",
+      "importance": "低",
+      "summary": "个人宠物命名玩笑，无实质信息。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "1",
+      "author": "aleabitoreddit",
+      "display_name": "aleabitoreddit",
+      "url": "https://x.com/aleabitoreddit/status/2089355682286092748",
+      "content": "It's official, Unitree the 8000x+ retail oversubscribed humanoid company in China.\nIs expected to go public in 2 days! So the 19th.\nOpening is implied to be around ~$41.66B MC per derivatives, around +363.3% above its ~$9B IPO valuation.\nFun times for humanoids this week.",
+      "content_full": "It's official, Unitree the 8000x+ retail oversubscribed humanoid company in China.\nIs expected to go public in 2 days! So the 19th.\nOpening is implied to be around ~$41.66B MC per derivatives, around +363.3% above its ~$9B IPO valuation.\nFun times for humanoids this week.",
+      "published_at": "2026-08-17T14:16:27Z",
+      "importance": "中",
+      "summary": "Unitree拟IPO，隐含开盘估值约416亿美元，较IPO估值涨约363%。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "2",
+      "author": "predictdotfun",
+      "display_name": "predictdotfun",
+      "url": "https://x.com/predictdotfun/status/2089386556792733890",
+      "content": "Finished in the top 1,000 on the Group Stage leaderboard?\nIt's time to claim your USDT. PP will be distributed as part of the usual weekly cycle.\nBut it's not over yet. There's still $75,000 (and 4,000,000 PP) to play for in the Final.\nActivity Points carry over. Markets open soon.\n🏆predict.fun/dota2-activity\nVideo",
+      "content_full": "Finished in the top 1,000 on the Group Stage leaderboard?\nIt's time to claim your USDT. PP will be distributed as part of the usual weekly cycle.\nBut it's not over yet. There's still $75,000 (and 4,000,000 PP) to play for in the Final.\nActivity Points carry over. Markets open soon.\n🏆predict.fun/dota2-activity\nVideo",
+      "published_at": "2026-08-17T16:19:08Z",
+      "importance": "高",
+      "summary": "predict.fun Dota2活动进入决赛阶段，前1000名可领取USDT，还有7.5万USDT及400万PP待争夺。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Dota 2赛事活动奖励发放通知，提醒Top 1000参赛者领取USDT和PP代币。对参与用户有直接领取价值，同时展示预测.fun平台生态活跃度。"
+    },
+    {
+      "post_id": "3",
+      "author": "predictdotfun",
+      "display_name": "predictdotfun",
+      "url": "https://x.com/predictdotfun/status/2089339504222216260",
+      "content": "🔮 NEW MARKET - What Market Cap will $牛来 hit before November, 2026?\npredict.fun/market/what-mark…\nLink\nWhat Market Cap will $牛来 hit before November, 2026? | Predict\npredict.fun",
+      "content_full": "🔮 NEW MARKET - What Market Cap will $牛来 hit before November, 2026?\npredict.fun/market/what-mark…\nLink\nWhat Market Cap will $牛来 hit before November, 2026? | Predict\npredict.fun",
+      "published_at": "2026-08-17T13:12:10Z",
+      "importance": "低",
+      "summary": "predict.fun推出新预测市场，仅含链接无实质分析。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "4",
+      "author": "BroBean88",
+      "display_name": "BroBean88",
+      "url": "https://x.com/BroBean88/status/2089374704385810785",
+      "content": "今晚，你要想这个问题。\n黄仁勋的做法是否利好你的持仓标的？\n长文里有个细节。他自己造了个词叫LPS。Land, Power, Shell。土地、电力、机房外壳。\n意思是GPU产能已经不是瓶颈了。现在卡脖子的是物理层面的东西。地在哪？电从哪来？房子谁建？\n英伟达从上到下一层一层锁。先锁芯片产能，然后锁内存，锁光互连，现在连地皮和电力都开始锁了。\n4.25GW初始容量。150万张GPU一代。这150万张GPU需要配多少HBM，需要多少光互连，需要多少变压器和冷却系统？\n我们跟了四个月的存储，三个月的光互连，两个月的电力基建。今晚这个推文把三条线全串起来了。\n循环融资的事市场会继续吵。短期股价怎么走Bean哥不猜。\n但有一个事实。1050亿签了，6000亿排上了。不管你叫它飞轮还是循环融资，供应链上的采购订单是实打实的。\nGPU要造，内存要配，光模块要装，电要送。\n这么看，利好你的持仓标的吗？\nBean哥 (@BroBean88)\n很大胆。黄仁勋今晚把自己押上去了。\n6000亿。一个客户。这个需求你说是假的？\n英伟达、软银、OpenAI，三家搞俄亥俄的超大AI数据中心。软银建，OpenAI租",
+      "content_full": "今晚，你要想这个问题。\n黄仁勋的做法是否利好你的持仓标的？\n长文里有个细节。他自己造了个词叫LPS。Land, Power, Shell。土地、电力、机房外壳。\n意思是GPU产能已经不是瓶颈了。现在卡脖子的是物理层面的东西。地在哪？电从哪来？房子谁建？\n英伟达从上到下一层一层锁。先锁芯片产能，然后锁内存，锁光互连，现在连地皮和电力都开始锁了。\n4.25GW初始容量。150万张GPU一代。这150万张GPU需要配多少HBM，需要多少光互连，需要多少变压器和冷却系统？\n我们跟了四个月的存储，三个月的光互连，两个月的电力基建。今晚这个推文把三条线全串起来了。\n循环融资的事市场会继续吵。短期股价怎么走Bean哥不猜。\n但有一个事实。1050亿签了，6000亿排上了。不管你叫它飞轮还是循环融资，供应链上的采购订单是实打实的。\nGPU要造，内存要配，光模块要装，电要送。\n这么看，利好你的持仓标的吗？\nBean哥 (@BroBean88)\n很大胆。黄仁勋今晚把自己押上去了。\n6000亿。一个客户。这个需求你说是假的？\n英伟达、软银、OpenAI，三家搞俄亥俄的超大AI数据中心。软银建，OpenAI租20年，英伟达提供最高1050亿美元的残值担保。硬件全部英伟达的。\n英伟达一个季度营收500多亿。这张担保差不多两个季度。一家芯片公司拿自己去担保数据中心的地皮和电费。这事以前没人干过。\n看到这我第一反应是想起了Burry。\n我们之前聊过。Burry说英伟达搞的是循环融资。黄仁勋在博客里专门写了个标题\"Is this circular financing?\"，CEO亲自下场回应做空者。\n今晚这篇长文里，同一个标题又出现了。同一个问题，一个月内回应两次。\n你觉得他心虚吗？心虚的人不会主动把质疑摆在标题里正面硬怼。那为啥要回应两次？因为这个问题大到不能不回答。\n他的回答五个字。\"No. OpenAI will pay the lease.\"\n市场又吵起来了。飞轮逻辑拆出来很清楚。英伟达担保，软银建厂，OpenAI租，OpenAI买英伟达芯片，英伟达拿订单，继续担保下一个。拆开看就是闭环。\n我之前说过一句话。循环融资本身不是关键。关键是底层需求是真是假。\n2008年底层是还不起房贷的人。假的。Burry赢了。\n2026年呢？OpenAI一家签20年。到2030年代表6000亿美元的英伟达算力采购。每一代装150万张GPU。20年反复升级。\n6000亿。一个客户。这个需求你说是假的？\n— https://nitter.net/BroBean88/status/2089354094175768954#m",
+      "published_at": "2026-08-17T15:32:02Z",
+      "importance": "高",
+      "summary": "深度分析英伟达1050亿美元担保OpenAI俄亥俄数据中心交易，指出GPU产能瓶颈已转向物理基础设施（土地/电力/机房）。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "深度拆解黄仁勋提出的LPS（土地、电力、机房）概念，串联存储、光互连、电力基建三条投资主线。帮助投资者理解AI芯片产能瓶颈已转向物理基础设施，指导持仓布局。"
+    },
+    {
+      "post_id": "5",
+      "author": "BroBean88",
+      "display_name": "BroBean88",
+      "url": "https://x.com/BroBean88/status/2089354094175768954",
+      "content": "很大胆。黄仁勋今晚把自己押上去了。\n6000亿。一个客户。这个需求你说是假的？\n英伟达、软银、OpenAI，三家搞俄亥俄的超大AI数据中心。软银建，OpenAI租20年，英伟达提供最高1050亿美元的残值担保。硬件全部英伟达的。\n英伟达一个季度营收500多亿。这张担保差不多两个季度。一家芯片公司拿自己去担保数据中心的地皮和电费。这事以前没人干过。\n看到这我第一反应是想起了Burry。\n我们之前聊过。Burry说英伟达搞的是循环融资。黄仁勋在博客里专门写了个标题\"Is this circular financing?\"，CEO亲自下场回应做空者。\n今晚这篇长文里，同一个标题又出现了。同一个问题，一个月内回应两次。\n你觉得他心虚吗？心虚的人不会主动把质疑摆在标题里正面硬怼。那为啥要回应两次？因为这个问题大到不能不回答。\n他的回答五个字。\"No. OpenAI will pay the lease.\"\n市场又吵起来了。飞轮逻辑拆出来很清楚。英伟达担保，软银建厂，OpenAI租，OpenAI买英伟达芯片，英伟达拿订单，继续担保下一个。拆开看就是闭环。\n我之前说过一句话。循环融资本身不是关键。关",
+      "content_full": "很大胆。黄仁勋今晚把自己押上去了。\n6000亿。一个客户。这个需求你说是假的？\n英伟达、软银、OpenAI，三家搞俄亥俄的超大AI数据中心。软银建，OpenAI租20年，英伟达提供最高1050亿美元的残值担保。硬件全部英伟达的。\n英伟达一个季度营收500多亿。这张担保差不多两个季度。一家芯片公司拿自己去担保数据中心的地皮和电费。这事以前没人干过。\n看到这我第一反应是想起了Burry。\n我们之前聊过。Burry说英伟达搞的是循环融资。黄仁勋在博客里专门写了个标题\"Is this circular financing?\"，CEO亲自下场回应做空者。\n今晚这篇长文里，同一个标题又出现了。同一个问题，一个月内回应两次。\n你觉得他心虚吗？心虚的人不会主动把质疑摆在标题里正面硬怼。那为啥要回应两次？因为这个问题大到不能不回答。\n他的回答五个字。\"No. OpenAI will pay the lease.\"\n市场又吵起来了。飞轮逻辑拆出来很清楚。英伟达担保，软银建厂，OpenAI租，OpenAI买英伟达芯片，英伟达拿订单，继续担保下一个。拆开看就是闭环。\n我之前说过一句话。循环融资本身不是关键。关键是底层需求是真是假。\n2008年底层是还不起房贷的人。假的。Burry赢了。\n2026年呢？OpenAI一家签20年。到2030年代表6000亿美元的英伟达算力采购。每一代装150万张GPU。20年反复升级。\n6000亿。一个客户。这个需求你说是假的？\nJensen Huang (@JensenHuang)\nArticle\nSecuring the Infrastructure of Intelligence\nLand, power and shell: The next critical resource for AI factories.\nAI factories are the defining infrastructure of the AI era—where compute transforms energy and data into intelligence that powers\n— https://nitter.net/JensenHuang/status/2089331487342829862#m",
+      "published_at": "2026-08-17T14:10:09Z",
+      "importance": "高",
+      "summary": "详解英伟达-软银-OpenAI三家俄亥俄AI工厂交易闭环逻辑，回应Burry循环融资质疑。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "解析英伟达为OpenAI数据中心提供1050亿担保的闭环融资逻辑，回应'Burry式'循环融资质疑。帮助投资者判断AI需求真实性，评估英伟达商业模式可持续性和投资风险。"
+    },
+    {
+      "post_id": "6",
+      "author": "BroBean88",
+      "display_name": "BroBean88",
+      "url": "https://x.com/BroBean88/status/2089343556712534204",
+      "content": "也许 AI 投资没那么复杂？跟着黄仁勋的动作走就行？\n他每一步都是明牌，只是大部分人选择不看。\n为啥说他一直在明牌。25年英伟达悄悄把 EML 和激光器的产能全锁了。印象里蛮多人都在笑。光子学泡沫，激光器是meme股。\n后来呢。LITE涨。AAOI涨。连COHR都在拉。其中最狠的就是AXTI，小 40 倍。\n这些公司半年前就是这些公司。英伟达去锁产能的时候答案就已经写在那了。大部分人没当回事。\n今天翻到白毛的推，我觉得说到点子上了。\n她把2025年的事串了一遍。英伟达买EML产能，市场笑。股价翻几倍，市场追认。\n然后26年英伟达又在做一模一样的事。签CW长单，推800V，布局CPO，押物理AI。市场又在笑。\n她原话意思就是，AI投资没那么复杂，跟着黄仁勋的动作走就行。他每一步都是明牌，只是大部分人选择不看。\n我看完想了一下，这跟这几个月我们跟存储是一个道理。\n当时所有人说存储完了。我说定价权在卖方。凭什么？英伟达的HBM采购量在涨，美光的合同价在涨，海力士产能利用率拉满了。\n最大的买家在疯狂下单，你告诉我需求见顶了？\n2025年英伟达买光互连，光互连爆了。\n2026年它又在买什么？",
+      "content_full": "也许 AI 投资没那么复杂？跟着黄仁勋的动作走就行？\n他每一步都是明牌，只是大部分人选择不看。\n为啥说他一直在明牌。25年英伟达悄悄把 EML 和激光器的产能全锁了。印象里蛮多人都在笑。光子学泡沫，激光器是meme股。\n后来呢。LITE涨。AAOI涨。连COHR都在拉。其中最狠的就是AXTI，小 40 倍。\n这些公司半年前就是这些公司。英伟达去锁产能的时候答案就已经写在那了。大部分人没当回事。\n今天翻到白毛的推，我觉得说到点子上了。\n她把2025年的事串了一遍。英伟达买EML产能，市场笑。股价翻几倍，市场追认。\n然后26年英伟达又在做一模一样的事。签CW长单，推800V，布局CPO，押物理AI。市场又在笑。\n她原话意思就是，AI投资没那么复杂，跟着黄仁勋的动作走就行。他每一步都是明牌，只是大部分人选择不看。\n我看完想了一下，这跟这几个月我们跟存储是一个道理。\n当时所有人说存储完了。我说定价权在卖方。凭什么？英伟达的HBM采购量在涨，美光的合同价在涨，海力士产能利用率拉满了。\n最大的买家在疯狂下单，你告诉我需求见顶了？\n2025年英伟达买光互连，光互连爆了。\n2026年它又在买什么？",
+      "published_at": "2026-08-17T13:28:16Z",
+      "importance": "高",
+      "summary": "总结AI投资方法论：跟随英伟达供应链明牌布局（光互连、存储、电力基建），案例包括AXTI涨40倍等。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "提出'跟随黄仁勋明牌投资'策略，回顾2025年英伟达锁EML产能带动光互连板块爆发的案例。为AI投资提供简单有效的选股方法论，降低信息筛选成本。"
+    },
+    {
+      "post_id": "7",
+      "author": "yujuhao",
+      "display_name": "yujuhao",
+      "url": "https://x.com/yujuhao/status/2089342656765931745",
+      "content": "领取一下积分吧\n如果你之前做过 @GenLayer 那就可以去认领你的 GLP\n第 1 季已开始：总共有 1000 万 GLP，\n已经分发了600万，还有400万积分\n每周日，建设者和社区积分将转换为 GenLayer 积分\n✅🔗：portal.genlayer.foundation/p…\n领取截止时间：2026 年 8 月 31 日\n任何未领取的 GLP 将退回第一季可用池中",
+      "content_full": "领取一下积分吧\n如果你之前做过 @GenLayer 那就可以去认领你的 GLP\n第 1 季已开始：总共有 1000 万 GLP，\n已经分发了600万，还有400万积分\n每周日，建设者和社区积分将转换为 GenLayer 积分\n✅🔗：portal.genlayer.foundation/p…\n领取截止时间：2026 年 8 月 31 日\n任何未领取的 GLP 将退回第一季可用池中",
+      "published_at": "2026-08-17T13:24:42Z",
+      "importance": "高",
+      "summary": "GenLayer GLP积分领取教程：第一季剩余400万积分，每周日转换，截止2026年8月31日。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "GenLayer GLP积分领取教程，第1季已发600万，剩余400万待领。对做过GenLayer的用户有直接空投价值，截止日期8月31日，错过将退回池中。"
+    },
+    {
+      "post_id": "8",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2089383386246971883",
+      "content": "8月这一波美股行情跟4-5月行情的比较：\n1）底层驱动\n4月是是Authropic的ARR加速+云厂商的业绩；\n8月这一次主要是云厂商的财报让市场确认了AI需求还在飙升商业化继续加速。就是7月份nitter.net/qinbafrank/status/2074…聊到的超大csp的业绩成为衡量AI商业化更重要的指标和权重；\n2）发送机板块到扩散节奏\n4月份板块的发动机是英伟达+存储、然后扩散到光互连、CPU、800V/电力、然后是设备；\n8月这一次板块的发动机则变成了英伟达+CSP/软件+光互连，核心逻辑是数据中心越建越多也越多、互连的需求进一步放大，达子cpo交换机的量产也让互连从之前的预期开始走到业绩兑现的地步。\nCSP和软件其实意味着AI采用越来越深化。\n行情最近几个交易日才开始扩散到存储、封装测试，而CPU、800V/电看上去才开始冒头。\n3）宏观环境\n油价都是一个大涨后的高位震荡期：4月是100上下、最近是85-90之间；差异是当时市场预期会更快解决、现在博弈有点长期化趋势。\n长端利率：\n4-6月US10Y中位值4.4%多、当下则是明显抬升到了4.65%到4.7%。\n但近期市场",
+      "content_full": "8月这一波美股行情跟4-5月行情的比较：\n1）底层驱动\n4月是是Authropic的ARR加速+云厂商的业绩；\n8月这一次主要是云厂商的财报让市场确认了AI需求还在飙升商业化继续加速。就是7月份nitter.net/qinbafrank/status/2074…聊到的超大csp的业绩成为衡量AI商业化更重要的指标和权重；\n2）发送机板块到扩散节奏\n4月份板块的发动机是英伟达+存储、然后扩散到光互连、CPU、800V/电力、然后是设备；\n8月这一次板块的发动机则变成了英伟达+CSP/软件+光互连，核心逻辑是数据中心越建越多也越多、互连的需求进一步放大，达子cpo交换机的量产也让互连从之前的预期开始走到业绩兑现的地步。\nCSP和软件其实意味着AI采用越来越深化。\n行情最近几个交易日才开始扩散到存储、封装测试，而CPU、800V/电看上去才开始冒头。\n3）宏观环境\n油价都是一个大涨后的高位震荡期：4月是100上下、最近是85-90之间；差异是当时市场预期会更快解决、现在博弈有点长期化趋势。\n长端利率：\n4-6月US10Y中位值4.4%多、当下则是明显抬升到了4.65%到4.7%。\n但近期市场加息预期相比二季度是要更低的。\nqinbafrank (@qinbafrank)\n八月才是最好的夏天？现在回头再来看29号聊到那时已经不宜过分悲观，如果越跌反倒越要看机会。当时聊到：\n带动市场回暖的因素是联储不加息；\n而驱动市场下一波行情主要催化剂CSP毛利大爆发，回本周期缩短。这一点基本上也被这两天微软和亚马逊的财报验证了。\n现在看昨天走强最直接的驱动因素就是上面说的这两点。\n1、关于高性价比区间\n28号这里就聊nitter.net/qinbafrank/status/2081…到很多标的又进入了高性价比区间、可以逐步买入。如果大家有印象上一次我说到市场进入高性价比区间是今年4月初这里nitter.net/qinbafrank/status/2041…。\n能看出当我说“高性价比区间”时候的含金量。\n2、接下来是怎么看？\n1）去杠杆大概率是差不多了\n美股以Leopold的对冲基金被清算为标志、算是一个最重要的边际卖家被解决；\n韩股则是前两天摩根大通估计韩国资产相关杠杆ETF的去杠杆基本完成：\n相关AUM从6月底约500亿美元下降至约170亿美元；对冲基金去杠杆约完成90%；\nJ.P. Morgan Prime Brokerage口径的多空杠杆比率，从最高约5.7倍下降至7月27日的3.2倍，接近2025年正常区间上沿。\n2）而产业最重要的进展\n首先毫无疑问是微软和亚马逊的财报，这两天有写过多篇推文。核心就是这两家云业务增长在加速、订单质量在提高、已经给市场提供了投入产出回报的证明。\n微软对整个AI平台组合如何提高ROIC解释得更完整；亚马逊对单批资本投入的回本周期解释得更清楚。其实谷歌财报也证明了云业务在超预期增长。\n这个最为关键\n其次 昨天openai给出了7月ARR加速增长、也是进一步AI商业化在加速的证明。\n总结下来就是去杠杆差不多了，最最关键继一季度财报后市场又再次看到AI商业化加速、投入回报节奏越来越越清晰的证据。\n个人看好八月份的行情的、昨晚不仅仅是个反弹、向上走势持续性至少周级别的行情。\n3、美股看好哪些？\n1）7月24日这里nitter.net/qinbafrank/status/2080… 最后部分也聊到AI算力产业链上认为仍然还有空间。科技资本开支，晶圆厂资本开支，越往上游还是会越受益。订单的确定性没问题，而且兑现速度会更快：\n第一、存储还有不小的空间，但也得承认过去一年涨幅最暴力的阶段也过去了；\n第二、光互联看兑现的节奏，如果落地兑现节奏快，空间也很好；\n第三、设备、材料、封装测试等环节是可以，大厂和晶圆厂的钱都要流到更上的环节流。\n2）超大csp价值重塑、软件重估\n这一部分的逻辑在月中这篇长文nitter.net/qinbafrank/status/2076…里有详细聊到。\n超大CSP会是横向AI底座；\n软件或者saas（非通用）成为业务执行层。\n4、未来宏观潜在的风险是什么？\n1）首先是油价\n油价又直接受到美伊冲突走势的影响，前两天这里nitter.net/qinbafrank/status/2082…聊到川普最终可能是不得不接受伊朗对霍尔木兹海峡的控制权，但是时间节奏和路径还不清晰。至少现在还不明朗\n博弈的时间长了，市场还会担心通胀问题。特别是8月中旬的7月cpi。\n如果未来美伊能尽快重回停火，海峡开通，则对宏观又是一个提振。\n2）中期选举的选情会给市场带来影响\n如果选情并不明朗、政治的不确定性会导致部分资金先行避险。\n一般来说中期选举可能在9月前后开始影响到市场预期和情绪了。\n— https://nitter.net/qinbafrank/status/2083185986616357116#m",
+      "published_at": "2026-08-17T16:06:32Z",
+      "importance": "高",
+      "summary": "对比4月与8月美股行情差异：驱动因素从Anthropic加速转向CSP财报验证AI商业化，板块扩散节奏及宏观环境变化分析。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "对比4月与8月美股AI行情差异，分析CSP财报验证AI商业化加速的核心逻辑。提供去杠杆进度、宏观风险（油价、中期选举）的全面框架，指导持仓节奏和板块轮动判断。"
+    },
+    {
+      "post_id": "9",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2089354210425086123",
+      "content": "从卖芯片/系统到帮助建AI工厂，7月底传出来的这场AI热潮中雄心勃勃的交易终于落定：\n1）英伟达宣布向SB Energy投资15亿美元（与SoftBank、OpenAI并列股东）；2）SB Energy负责建设、拥有并运营数据中心，与OpenAI签20年租约；\n3）英伟达提供LPS（Land, power and shell土地、电力与壳层建筑，简称LPS建设）相关的信用支持/残值担保（初始4.25 GW，有扩展选项可覆盖剩余约3.75 GW，总计约8 GW）；\n4）产能分阶段上线，预计从2028年开始。\n老黄认为LPS建设已成为AI工厂的下一个关键战略资源，在AI经济中算力即收入，而AI工厂需要完整资源栈：先进芯片、封装、内存、网络 + LPS。大多数客户仍自行解决LPS，但前沿AI实验室对训练与推理算力的需求极其巨大，增长速度超过自身资产负债表与长期信用能力。英伟达因此主动介入，帮助锁定物理基础设施。\n从这里我们也能看到NVIDIA的角色演进：\n从芯片 → 系统 → 网络 → CUDA → 全栈AI工厂 → 现在进一步向上游延伸，帮助安全锁定AI工厂的“长寿命基础”LPS。\n这也标",
+      "content_full": "从卖芯片/系统到帮助建AI工厂，7月底传出来的这场AI热潮中雄心勃勃的交易终于落定：\n1）英伟达宣布向SB Energy投资15亿美元（与SoftBank、OpenAI并列股东）；2）SB Energy负责建设、拥有并运营数据中心，与OpenAI签20年租约；\n3）英伟达提供LPS（Land, power and shell土地、电力与壳层建筑，简称LPS建设）相关的信用支持/残值担保（初始4.25 GW，有扩展选项可覆盖剩余约3.75 GW，总计约8 GW）；\n4）产能分阶段上线，预计从2028年开始。\n老黄认为LPS建设已成为AI工厂的下一个关键战略资源，在AI经济中算力即收入，而AI工厂需要完整资源栈：先进芯片、封装、内存、网络 + LPS。大多数客户仍自行解决LPS，但前沿AI实验室对训练与推理算力的需求极其巨大，增长速度超过自身资产负债表与长期信用能力。英伟达因此主动介入，帮助锁定物理基础设施。\n从这里我们也能看到NVIDIA的角色演进：\n从芯片 → 系统 → 网络 → CUDA → 全栈AI工厂 → 现在进一步向上游延伸，帮助安全锁定AI工厂的“长寿命基础”LPS。\n这也标志着N英伟达从“卖芯片/系统”正式向“帮助客户安全构建整个AI工厂物理层”迈进。\n上周英伟达宣布nitter.net/qinbafrank/status/2087…与六大金融机构联合建立“独立算力融资平台”本质也是这次与SB Energy、OpenAI合作的升级版。\nqinbafrank (@qinbafrank)\n我们要看到美国AI热潮中最雄心勃勃的金融交易么？看华尔街日报报道Nvidia正与OpenAI商谈提供约2500亿美元的背书担保，支持俄亥俄州南部一个10GW超大型数据中心项目（SoftBank Energy开发）。项目总造价（含芯片）可能超5000亿美元，是目前宣布的最大数据中心项目，交易尚未敲定，可能告吹。OpenAI近期将2030年前算力支出预期上调至约7500亿美元。\n1、项目相关信息\n10GW数据中心园区（约可供应数百万户家庭电力），位于南部俄亥俄州已退役的铀浓缩厂址（哥伦布以南约50英里），使用联邦土地，以减少许可和本地反对阻力。首期约800兆瓦预计2028年完工，整体需多年建设。开发商为软银旗下SoftBan Energy（孙正义相关）\n电力由美国政府控制，日本根据近期贸易协议单独投资约330亿美元建设天然气发电项目。美国向运营方支付费用，日本收回投资前与美方分享售电收入，之后美国拿90%。商务部长Howard Lutnick参与分配哪些公司获得电力接入。OpenAI谈判最积极，Anthropic、微软、谷歌也表达过兴趣。\n英伟达角色\n提供约2500亿美元“背书”，覆盖OpenAI的数据中心租赁和建设债务，不覆盖内部Nvidia芯片。另有单独讨论为芯片采购融资，可能达3500亿美元。\n2、这其实属于“信用包装”安排。\nOpenAI作为未盈利的私人公司，无投资级信用评级，直接融资成本高、难度大。英伟达凭借自身强大资产负债表（市值约5万亿美元级别、投资级信用）提供担保，相当于把违约风险转移到自己身上。\n这让开发商更容易以更优惠条件向银行/债市融资，降低租赁和建设资金成本。本质是供应商（芯片卖家）用信用为客户（算力买家）背书，锁定长期GPU需求。\n3、意义及影响\n如果敲定成行，这应该美国AI热潮中最雄心勃勃的金融交易之一。\n1）加速AI基础设施军备竞赛\n直接缓解算力和电力瓶颈。10GW规模属于“AI工厂”级别，有助于OpenAI训练下一代模型并可能向云服务扩展。政府-私人合作（联邦土地+日美贸易电力安排）显示美国正用政策工具加速关键产业，与中国竞争意味浓厚。\n2）英伟达角色深化：\n真正升级为“基础设施银行/中央银行”。它不仅供应芯片，还深度介入融资和需求锁定，进一步巩固CUDA生态和市场份额。类似backstop可能扩散到更多neocloud和项目，推动整体资本支出\n3）产业模式转变\nAI公司从纯租云转向长期租赁/自建超大规模园区，降低对超大规模云厂商的依赖，但也加剧电力、冷却、铜材、变压器等上游需求。\n4）竞争格局\n10GW如果建成绝对是重塑了AI算力贷竞争格局，很大程度上能缓解当前的电力紧张。\n整体科技/AI板块可能因“大单落地”情绪升温。\n4、风险是什么？\n循环融资特征明显：Nvidia投资OpenAI → OpenAI租用/购买Nvidia驱动的基础设施 → Nvidia通过担保确保项目落地并持续卖芯片。若项目推进，OpenAI可从主要依赖云厂商（微软、亚马逊、甲骨文等）转向更大程度自控基础设施。\n但市场会更关注信用风险增加、潜在被触发担保的敞口，以及是否稀释近端现金流。估值和支出高度互锁，市场愈发不能承担一丝不及预期的风险。\n芯片商直接用资产负债表为超大规模算力工厂担保。一方面加速美国AI能力建设，另一方面也包含了高度循环、高杠杆的脆弱性。\n当然交易还在谈判中，也要看最终条款、落地进度和实际触发概率将决定真实影响。\n— https://nitter.net/qinbafrank/status/2081563262571954207#m",
+      "published_at": "2026-08-17T14:10:36Z",
+      "importance": "高",
+      "summary": "详解英伟达向SB Energy投资15亿+开放俄亥俄8GW数据中心交易，解读NVIDIA从芯片商向AI工厂物理层服务商的角色演进。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "深度解读英伟达从芯片商向'基础设施银行'角色转型，通过担保锁定OpenAI 6000亿算力订单。帮助投资者理解AI产业链金融创新模式和英伟达护城河演进。"
+    },
+    {
+      "post_id": "10",
+      "author": "lumaogou_web3",
+      "display_name": "lumaogou_web3",
+      "url": "https://x.com/lumaogou_web3/status/2089439917579649033",
+      "content": "更新脚本：Startale、X1 EcoChain、BulkTrade、Litvm、Hertzflow、KieDex",
+      "content_full": "更新脚本：Startale、X1 EcoChain、BulkTrade、Litvm、Hertzflow、KieDex",
+      "published_at": "2026-08-17T19:51:10Z",
+      "importance": "低",
+      "summary": "简单罗列多个项目脚本更新，无具体操作指引。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "11",
+      "author": "lumaogou_web3",
+      "display_name": "lumaogou_web3",
+      "url": "https://x.com/lumaogou_web3/status/2089439109706395913",
+      "content": "Quanttoken自动领取机器人（免费开源）\n自动连接 EVM 钱包（只需地址，无需私钥，安全第一）\n自动绑定推荐码（支持单码/多码，按行分配）\n全自动任务执行：开始任务 → 等待 → 领取\n所有任务完成后，自动领取代币/点数\n支持 静态代理 / 动态代理 / 直连，按配置自动切换\n加入频道:t.me/+1HqWNX3P99IxZmRl\n再前往tg机器人:t.me/Lumaogoubot\n撸毛狗🕶️ (@lumaogou_web3)\n领取Robinhood Chain 的meme币\n入口：quanttoken.org/?ref=EBEBD594\n有风险提示，但查过网址没有发现风险点，打开网址时大家尽量粘贴板没有密钥复制记录\n只需填写地址即可领取\n— https://nitter.net/lumaogou_web3/status/2089419920115376372#m",
+      "content_full": "Quanttoken自动领取机器人（免费开源）\n自动连接 EVM 钱包（只需地址，无需私钥，安全第一）\n自动绑定推荐码（支持单码/多码，按行分配）\n全自动任务执行：开始任务 → 等待 → 领取\n所有任务完成后，自动领取代币/点数\n支持 静态代理 / 动态代理 / 直连，按配置自动切换\n加入频道:t.me/+1HqWNX3P99IxZmRl\n再前往tg机器人:t.me/Lumaogoubot\n撸毛狗🕶️ (@lumaogou_web3)\n领取Robinhood Chain 的meme币\n入口：quanttoken.org/?ref=EBEBD594\n有风险提示，但查过网址没有发现风险点，打开网址时大家尽量粘贴板没有密钥复制记录\n只需填写地址即可领取\n— https://nitter.net/lumaogou_web3/status/2089419920115376372#m",
+      "published_at": "2026-08-17T19:47:58Z",
+      "importance": "高",
+      "summary": "Quanttoken自动领取机器人开源，支持EVM钱包自动绑定推荐码、执行任务并领取代币，附入口链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "开源Quanttoken自动领取机器人，支持EVM钱包多任务自动化和推荐码分配。为Web3撸毛玩家提供高效工具，降低多钱包操作成本，但需注意私钥安全风险。"
+    },
+    {
+      "post_id": "12",
+      "author": "lumaogou_web3",
+      "display_name": "lumaogou_web3",
+      "url": "https://x.com/lumaogou_web3/status/2089419920115376372",
+      "content": "领取Robinhood Chain 的meme币\n入口：quanttoken.org/?ref=EBEBD594\n有风险提示，但查过网址没有发现风险点，打开网址时大家尽量粘贴板没有密钥复制记录\n只需填写地址即可领取\n撸毛狗🕶️ (@lumaogou_web3)\nRobinhood 测试网自动化机器人\n✅ 12项核心功能：自动GM、部署合约、购买 .hood 域名、Mint 6大NFT合集、Synthra 兑换+LP。\n✅ 智能分配系统：独创 Robin Hood 模式，自动“劫富济贫”平衡钱包余额，无需手动充值。\n✅ 极致性能：支持 10+ 多线程并行，轻松处理 1000+ 钱包，24/7 自动循环运行。\n✅ 安全第一：私钥本地签名，100% 链上操作，代码开源透明。\n📍 核心亮点：\n1.Robin Hood 智能转账：只需给主钱包充值，系统自动检测并分配给“贫困”钱包。\n2.全方位交互：从每日 GM 到合约部署，从域名购买到 6 大 NFT 合集 Mint，一键全包。\n3.DeFi 深度参与：自动完成 Synthra 兑换、封装及提供 LP 流动性。\n📍 技术优势：\n⚡ 多线程并发：",
+      "content_full": "领取Robinhood Chain 的meme币\n入口：quanttoken.org/?ref=EBEBD594\n有风险提示，但查过网址没有发现风险点，打开网址时大家尽量粘贴板没有密钥复制记录\n只需填写地址即可领取\n撸毛狗🕶️ (@lumaogou_web3)\nRobinhood 测试网自动化机器人\n✅ 12项核心功能：自动GM、部署合约、购买 .hood 域名、Mint 6大NFT合集、Synthra 兑换+LP。\n✅ 智能分配系统：独创 Robin Hood 模式，自动“劫富济贫”平衡钱包余额，无需手动充值。\n✅ 极致性能：支持 10+ 多线程并行，轻松处理 1000+ 钱包，24/7 自动循环运行。\n✅ 安全第一：私钥本地签名，100% 链上操作，代码开源透明。\n📍 核心亮点：\n1.Robin Hood 智能转账：只需给主钱包充值，系统自动检测并分配给“贫困”钱包。\n2.全方位交互：从每日 GM 到合约部署，从域名购买到 6 大 NFT 合集 Mint，一键全包。\n3.DeFi 深度参与：自动完成 Synthra 兑换、封装及提供 LP 流动性。\n📍 技术优势：\n⚡ 多线程并发：支持 10+ 线程，哪怕你有 5000 个钱包也能轻松应对。\n🔄 24/7 循环：设置好时间，每 24 小时自动重跑，实时倒计时显示。\n🛡 错误隔离：单个钱包报错不影响全局，确保系统稳健运行。\n🎯 智能 Gas：采用 EIP-1559 动态估算，不浪费任何一个 wei.\n📊 低成本：全功能运行每日仅需约 0.015 ETH 测试币。\n📍 安全与配置：\n🔒 本地签名：私钥永不离开设备，无后端交互，安全可靠。\n🛠 极简配置：Node.js 环境，只需在 accounts.txt 放入私钥即可启动。\n— https://nitter.net/lumaogou_web3/status/2023823273512108485#m",
+      "published_at": "2026-08-17T18:31:43Z",
+      "importance": "高",
+      "summary": "Robinhood Chain测试网自动化机器人开源，支持12项核心功能、多线程并行、私钥本地签名，附配置说明。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Robinhood Chain测试网自动化机器人，支持10+线程并行、智能余额分配和24/7循环。为多钱包撸毛提供一站式解决方案，日成本仅0.015 ETH，适合大规模空投参与。"
+    },
+    {
+      "post_id": "13",
+      "author": "ccjing_eth",
+      "display_name": "ccjing_eth",
+      "url": "https://x.com/ccjing_eth/status/2089409457344401739",
+      "content": "gpt-5.6-sol原本就支持1M上下文\n但是在你使用Codex的时候上下文默认配置是不打开1M的\n现在你只需要在配置文件里面修改即可：\n打开 ~/.codex/config.toml，在最上面添加或更新这些设置：\nmodel = \"gpt-5.6-sol\"\nmodel_context_window = 1000000 model_auto_compact_token_limit = 900000\n第一个设置选择模型。第二个设置告诉 Codex 使用一百万令牌的上下文预算。第三个设置在大约 900,000 令牌时启动自动历史压缩，为其留出一些余量。保存后，重启 Codex 客户端并启动新会话。\nTibo (@thsottiaux)\nHere is how to enable a 1M-token context window in Codex for GPT-5.6 Sol.\nEven though we have tuned the context limit in Codex to be set optimally when it comes to performance and",
+      "content_full": "gpt-5.6-sol原本就支持1M上下文\n但是在你使用Codex的时候上下文默认配置是不打开1M的\n现在你只需要在配置文件里面修改即可：\n打开 ~/.codex/config.toml，在最上面添加或更新这些设置：\nmodel = \"gpt-5.6-sol\"\nmodel_context_window = 1000000 model_auto_compact_token_limit = 900000\n第一个设置选择模型。第二个设置告诉 Codex 使用一百万令牌的上下文预算。第三个设置在大约 900,000 令牌时启动自动历史压缩，为其留出一些余量。保存后，重启 Codex 客户端并启动新会话。\nTibo (@thsottiaux)\nHere is how to enable a 1M-token context window in Codex for GPT-5.6 Sol.\nEven though we have tuned the context limit in Codex to be set optimally when it comes to performance and cost, this is a common ask, so here it is documented.\nA larger context window lets Codex retain more code, tool output, and conversation history before summarizing older material. You need a model that supports it. And GPT-5.6 Sol, for example, has a documented 1,050,000-token window.\nOpen ~/.codex/config.toml and add or update these settings at the top level, before any [section] headers:\n```\nmodel = \"gpt-5.6-sol\"\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n```\nThe first setting selects the model. The second tells Codex to use a one-million-token context budget. The third starts automatic history compaction around 900,000 tokens, leaving some headroom. Restart Codex client and start a new session after saving.\nTo try the configuration for a single CLI session without changing your defaults:\n```\ncodex -m gpt-5.6-sol \\\n-c model_context_window=1000000 \\\n-c model_auto_compact_token_limit=900000\n```\nHave fun, but also know that we tuned the default carefully!\n— https://nitter.net/thsottiaux/status/2089082893804896524#m",
+      "published_at": "2026-08-17T17:50:08Z",
+      "importance": "高",
+      "summary": "Codex启用GPT-5.6-Sol 100万token上下文窗口配置教程，提供具体config.toml参数修改方案。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "提供Codex启用1M上下文窗口的具体配置方法，利用GPT-5.6-Sol的完整上下文能力。对AI开发者有实用价值，帮助处理大型代码库和长对话历史，提升编程效率。"
+    },
+    {
+      "post_id": "14",
+      "author": "AbstractChain",
+      "display_name": "AbstractChain",
+      "url": "https://x.com/RajPatel/status/2089394649769132514",
+      "content": "I’m incredibly excited to announce that I am the new Head of Ecosystem at @AbstractChain\nThe last year and a half of working in this ecosystem has been one of the most rewarding experiences, seeing incredible apps launch on Abstract and shape both onchain culture and community that remains unmatched\nIt is now time to take the Abstract ecosystem to the next level. We are going to be much more detailed and active with our current builders, and as always, go above and beyond to support all new proj",
+      "content_full": "I’m incredibly excited to announce that I am the new Head of Ecosystem at @AbstractChain\nThe last year and a half of working in this ecosystem has been one of the most rewarding experiences, seeing incredible apps launch on Abstract and shape both onchain culture and community that remains unmatched\nIt is now time to take the Abstract ecosystem to the next level. We are going to be much more detailed and active with our current builders, and as always, go above and beyond to support all new projects that want to launch on Abstract.\nEverything starts tomorrow with the launch of Builder XP, our reward system made for builders that have/will contribute value to the chain in all forms, whether it is culture, community, apps, or onchain experiments.\nFrom here on I will be the main point of contract for every builder on Abstract, whether it’s an existing team, a new builder looking to enter the ecosystem, or someone looking to get feedback on their project\nMy DMs / TG are open to anyone that wants to jump on a call and discuss.\nI couldn’t be more excited for this next chapter",
+      "published_at": "2026-08-17T16:51:18Z",
+      "importance": "中",
+      "summary": "AbstractChain宣布新任生态负责人，预告明日上线Builder XP奖励系统。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "15",
+      "author": "AbstractChain",
+      "display_name": "AbstractChain",
+      "url": "https://x.com/CashBowie/status/2089432467682058386",
+      "content": "Builder XP is an important new mechanism for recognizing and rewarding projects contributing to the Abstract ecosystem.\nAbstract has attracted some of the best startup builders in crypto from gaming and NFT projects to RWA collectible companies.\nRewarding contribution and encouraging experimentation should create the conditions for faster innovation, greater creativity, and continued network adoption.\nAbstract (@AbstractChain)\nIntroducing Builder XP: An expansion to our XP system aimed at reward",
+      "content_full": "Builder XP is an important new mechanism for recognizing and rewarding projects contributing to the Abstract ecosystem.\nAbstract has attracted some of the best startup builders in crypto from gaming and NFT projects to RWA collectible companies.\nRewarding contribution and encouraging experimentation should create the conditions for faster innovation, greater creativity, and continued network adoption.\nAbstract (@AbstractChain)\nIntroducing Builder XP: An expansion to our XP system aimed at rewarding the builders that contribute to Abstract.\nEach week, projects earn Builder XP based on their overall impact to the chain.\nLearn more 👇\n— https://nitter.net/AbstractChain/status/2089392165130580445#m",
+      "published_at": "2026-08-17T19:21:34Z",
+      "importance": "中",
+      "summary": "Abstract推出Builder XP机制，按周根据项目对链上影响 rewarding builders。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "16",
+      "author": "AbstractChain",
+      "display_name": "AbstractChain",
+      "url": "https://x.com/AbstractChain/status/2089392165130580445",
+      "content": "Introducing Builder XP: An expansion to our XP system aimed at rewarding the builders that contribute to Abstract.\nEach week, projects earn Builder XP based on their overall impact to the chain.\nLearn more 👇",
+      "content_full": "Introducing Builder XP: An expansion to our XP system aimed at rewarding the builders that contribute to Abstract.\nEach week, projects earn Builder XP based on their overall impact to the chain.\nLearn more 👇",
+      "published_at": "2026-08-17T16:41:25Z",
+      "importance": "中",
+      "summary": "Abstract Builder XP系统介绍，每周末根据项目对链贡献奖励XP。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "17",
+      "author": "AbstractChain",
+      "display_name": "AbstractChain",
+      "url": "https://x.com/AbstractChain/status/2089392168007786945",
+      "content": "Builders and teams can now track their Builder XP privately through the Developer Portal.\nBuilder XP isn’t just a score, it’s a recognition of your project and community’s impact on Abstract. Projects have been awarded with backdated XP for their historical contributions to Abstract.\nPlease note that Builder XP is a separate system and will not affect User XP.",
+      "content_full": "Builders and teams can now track their Builder XP privately through the Developer Portal.\nBuilder XP isn’t just a score, it’s a recognition of your project and community’s impact on Abstract. Projects have been awarded with backdated XP for their historical contributions to Abstract.\nPlease note that Builder XP is a separate system and will not affect User XP.",
+      "published_at": "2026-08-17T16:41:26Z",
+      "importance": "中",
+      "summary": "Builder XP可通过Developer Portal查看，历史贡献已回溯奖励，不影响User XP。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "18",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2089412469357736108",
+      "content": "$BTC\nAre they really going to let everyone long the sweep?\nCause it sure as hell looks like that's what people want...",
+      "content_full": "$BTC\nAre they really going to let everyone long the sweep?\nCause it sure as hell looks like that's what people want...",
+      "published_at": "2026-08-17T18:02:06Z",
+      "importance": "低",
+      "summary": "BTC短线投机讨论，问是否会让所有人做多扫盘。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "19",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2089404227625922792",
+      "content": "$BTC\nFunny enough, it seems like shorts have been squeezed throughout this entire move.\nI’ve mentioned numerous times to either keep shorts small or avoid shorting altogether, because a year from now, shorting these areas is going to look pretty stupid.\nKilla (@KillaXBT)\nWelp... by no surprise, exactly what I said would happen is happening.\nWe’re now at that stage of the cycle where everyone starts getting impatient due to the lack of volatility. Their dopamine levels die down, so naturally, the",
+      "content_full": "$BTC\nFunny enough, it seems like shorts have been squeezed throughout this entire move.\nI’ve mentioned numerous times to either keep shorts small or avoid shorting altogether, because a year from now, shorting these areas is going to look pretty stupid.\nKilla (@KillaXBT)\nWelp... by no surprise, exactly what I said would happen is happening.\nWe’re now at that stage of the cycle where everyone starts getting impatient due to the lack of volatility. Their dopamine levels die down, so naturally, they feel the need to overleverage even further.\nIt already looks like that frustration is starting to play out, with OI absolutely flying through the roof.\nThe only people who survive conditions like this are the ones who are simply sitting on their hands, patiently waiting for the market to show its hand, or those trading with significantly lower leverage & are buying long term bags.\nWe should see some nice $BTC volatility soon.\n— https://nitter.net/KillaXBT/status/2088228524310089885#m",
+      "published_at": "2026-08-17T17:29:21Z",
+      "importance": "中",
+      "summary": "BTC周期性分析：当前处于OI飙升阶段，建议避免做空，耐心等待市场波动回归。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "20",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2089373916112236892",
+      "content": "You’ll never find me personally marrying myself to one particular target, even if the majority are.\nThat’s exactly how you become sidelined.\nEither we’re already in the bottoming phase, or we’re in the range preceding it.\nOne month left. Then we fuck around and find out... $BTC\nKalshi Crypto (@Kalshi_Crypto)\nBREAKING: Our traders forecast Bitcoin will crash to $54,000 this year\n— https://nitter.net/Kalshi_Crypto/status/2089360211093995916#m",
+      "content_full": "You’ll never find me personally marrying myself to one particular target, even if the majority are.\nThat’s exactly how you become sidelined.\nEither we’re already in the bottoming phase, or we’re in the range preceding it.\nOne month left. Then we fuck around and find out... $BTC\nKalshi Crypto (@Kalshi_Crypto)\nBREAKING: Our traders forecast Bitcoin will crash to $54,000 this year\n— https://nitter.net/Kalshi_Crypto/status/2089360211093995916#m",
+      "published_at": "2026-08-17T15:28:54Z",
+      "importance": "低",
+      "summary": "BTC散户赌注评论，提及Kalshi预测BTC年底跌至54000美元的预测。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "21",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2089361738323964167",
+      "content": "$BTC\nStructurally, we need to reclaim the 65K region. Right now, BTC is rejecting and compressing below it.\nIf we fail to flip 65K, the probability of testing the weekly open at 62.8K increases.\nLose the weekly open, and 61.8K–61.3K becomes likely.",
+      "content_full": "$BTC\nStructurally, we need to reclaim the 65K region. Right now, BTC is rejecting and compressing below it.\nIf we fail to flip 65K, the probability of testing the weekly open at 62.8K increases.\nLose the weekly open, and 61.8K–61.3K becomes likely.",
+      "published_at": "2026-08-17T14:40:31Z",
+      "importance": "中",
+      "summary": "BTC技术面分析：需收复65K区域，否则可能测试62.8K周开盘价及61.8K-61.3K支撑。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "22",
+      "author": "aiqiang888",
+      "display_name": "aiqiang888",
+      "url": "https://x.com/aiqiang888/status/2089354085246091690",
+      "content": "费劲了，还Token2049，还包机酒\n现实大部分人周边都要舔\n当然不包括我，因为我舔了没舔到🤡\n麦克 (@mk66623)\n一个 KOL 想要全方位地判断自己有没有商业价值？\n去一次 TOKEN2049 就行，稍微有点价值的 KOL，499U 那张门票会有人提前帮你买好，基本上都会提前给你包机酒。\n有的人可能要犟嘴，说自己拿到了什么项目方的 VIP 票。那些都是小会场，VIP 票大量滥发跟普通票没啥区别。\n然后就是各大交易所的私局了，通常他们会私下组个小局，邀请一些他们认可的 KOL 吃饭。\n最后这一项含金量比较高，就是看一些项目方会不会单独约见你，比如给你早期的筹码和投资额度。\n如果以上都没有，那就不用去线下了。好好做内容，把钱和精力用在提高账号质量上。\n— https://nitter.net/mk66623/status/2089352493759168662#m",
+      "content_full": "费劲了，还Token2049，还包机酒\n现实大部分人周边都要舔\n当然不包括我，因为我舔了没舔到🤡\n麦克 (@mk66623)\n一个 KOL 想要全方位地判断自己有没有商业价值？\n去一次 TOKEN2049 就行，稍微有点价值的 KOL，499U 那张门票会有人提前帮你买好，基本上都会提前给你包机酒。\n有的人可能要犟嘴，说自己拿到了什么项目方的 VIP 票。那些都是小会场，VIP 票大量滥发跟普通票没啥区别。\n然后就是各大交易所的私局了，通常他们会私下组个小局，邀请一些他们认可的 KOL 吃饭。\n最后这一项含金量比较高，就是看一些项目方会不会单独约见你，比如给你早期的筹码和投资额度。\n如果以上都没有，那就不用去线下了。好好做内容，把钱和精力用在提高账号质量上。\n— https://nitter.net/mk66623/status/2089352493759168662#m",
+      "published_at": "2026-08-17T14:10:06Z",
+      "importance": "低",
+      "summary": "调侃Token2049活动中KOL商业价值判断方式，纯情绪输出。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "23",
+      "author": "linwanwan823",
+      "display_name": "linwanwan823",
+      "url": "https://x.com/linwanwan823/status/2089387990040953190",
+      "content": "夜深人静，适合许愿。\n请告诉我：你最想拿到的Trust Wallet周边是什么？\n来吧你们尽情许愿，\n我记着。",
+      "content_full": "夜深人静，适合许愿。\n请告诉我：你最想拿到的Trust Wallet周边是什么？\n来吧你们尽情许愿，\n我记着。",
+      "published_at": "2026-08-17T16:24:50Z",
+      "importance": "低",
+      "summary": "Trust Wallet周边许愿互动帖，无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "24",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089502635946602555",
+      "content": "this and crypto conversations",
+      "content_full": "this and crypto conversations",
+      "published_at": "2026-08-18T00:00:24Z",
+      "importance": "低",
+      "summary": "Binance内容不完整，无实质信息。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "25",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089457376994759135",
+      "content": "Binance Square Skill, explained\nSet up a posting API key, connect it to a supported agent, and publish Square posts in a few steps.\nRead more 👇\nbinance.com/en/academy/artic…\nLink\nBinance Square Skill: What It Is and How to Use It | Binance Academy\nBinance Square Skill lets creators automate Square posts via AI agents like OpenClaw. Learn setup, API key security, and posting limits.\nbinance.com",
+      "content_full": "Binance Square Skill, explained\nSet up a posting API key, connect it to a supported agent, and publish Square posts in a few steps.\nRead more 👇\nbinance.com/en/academy/artic…\nLink\nBinance Square Skill: What It Is and How to Use It | Binance Academy\nBinance Square Skill lets creators automate Square posts via AI agents like OpenClaw. Learn setup, API key security, and posting limits.\nbinance.com",
+      "published_at": "2026-08-17T21:00:33Z",
+      "importance": "高",
+      "summary": "Binance Square Skill使用教程：通过API Key连接AI Agent自动发布Square内容，附Binance Academy详细文档链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "币安官方发布Square Skill API功能说明，允许创作者通过AI agent自动化发布内容。为内容创作者和开发者提供新的流量获取工具，体现交易所对创作者经济的基建投入。"
+    },
+    {
+      "post_id": "26",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089412161462296900",
+      "content": "Your weekly market watch is here.\nFrom FOMC minutes to key earnings, here’s what’s on the calendar for August 17–21.",
+      "content_full": "Your weekly market watch is here.\nFrom FOMC minutes to key earnings, here’s what’s on the calendar for August 17–21.",
+      "published_at": "2026-08-17T18:00:53Z",
+      "importance": "中",
+      "summary": "8月17-21日市场日历：FOMC纪要及重要财报预告。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "27",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089351546706202916",
+      "content": "Gen Z may have a reputation for chasing hype and quick wins, but their trading behavior defies the stereotype.\n📊 76% of Gen Z bStocks accounts are net accumulators, the highest share of any generation, while one in five Gen Z direct-equity accounts has never placed a sell order.\nIn our latest article, three Gen Z users share the experiences that shaped how they invest today.\nRead their stories 👉 binance.com/en/blog/research…",
+      "content_full": "Gen Z may have a reputation for chasing hype and quick wins, but their trading behavior defies the stereotype.\n📊 76% of Gen Z bStocks accounts are net accumulators, the highest share of any generation, while one in five Gen Z direct-equity accounts has never placed a sell order.\nIn our latest article, three Gen Z users share the experiences that shaped how they invest today.\nRead their stories 👉 binance.com/en/blog/research…",
+      "published_at": "2026-08-17T14:00:01Z",
+      "importance": "中",
+      "summary": "Binance研究：76% Gen Z交易者账户为净买入，20%从未卖出，揭示年轻投资者长期持有趋势。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "28",
+      "author": "liuyanxue2",
+      "display_name": "liuyanxue2",
+      "url": "https://x.com/liuyanxue2/status/2089359883737137641",
+      "content": "Solar Heavy - Nobody (Chillout Mix)\nnice\nVideo",
+      "content_full": "Solar Heavy - Nobody (Chillout Mix)\nnice\nVideo",
+      "published_at": "2026-08-17T14:33:09Z",
+      "importance": "低",
+      "summary": "音乐分享（Solar Heavy - Nobody Chillout Mix），无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "29",
+      "author": "liuyanxue2",
+      "display_name": "liuyanxue2",
+      "url": "https://x.com/liuyanxue2/status/2089359128284336130",
+      "content": "Solar Heavy - Nobody (Chillout Mix)",
+      "content_full": "Solar Heavy - Nobody (Chillout Mix)",
+      "published_at": "2026-08-17T14:30:09Z",
+      "importance": "低",
+      "summary": "同上音乐分享，纯链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "30",
+      "author": "variational_io",
+      "display_name": "variational_io",
+      "url": "https://x.com/variational_io/status/2089393073256333715",
+      "content": "Today, we hit our goal of listing 100 TradFi markets over 90 days.\nIn the near future, we'll begin listing swaps alongside even more TradFi perps.\nVariational (@variational_io)\nApplied Materials $AMAT perps are now live with zero fees and up to 20x leverage.\nWe are now 100% complete with our Phase 1 listing plan of 100 Tradfi Markets in 90 days.\nNew Tradfi Perps will be listed alongside our Phase 2 Swaps listings.\n— https://nitter.net/variational_io/status/2089350977388523871#m",
+      "content_full": "Today, we hit our goal of listing 100 TradFi markets over 90 days.\nIn the near future, we'll begin listing swaps alongside even more TradFi perps.\nVariational (@variational_io)\nApplied Materials $AMAT perps are now live with zero fees and up to 20x leverage.\nWe are now 100% complete with our Phase 1 listing plan of 100 Tradfi Markets in 90 days.\nNew Tradfi Perps will be listed alongside our Phase 2 Swaps listings.\n— https://nitter.net/variational_io/status/2089350977388523871#m",
+      "published_at": "2026-08-17T16:45:02Z",
+      "importance": "高",
+      "summary": "Variational.io完成90天100个TradFi市场上线目标，Applied Materials (AMAT)永续合约已上线，零手续费最高20倍杠杆。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Variational完成90天内上线100个TradFi市场的目标，AMAT永续合约零费率上线。为交易者提供传统半导体标的的链上交易机会，展示DeFi平台向传统资产扩展的进展。"
+    },
+    {
+      "post_id": "31",
+      "author": "variational_io",
+      "display_name": "variational_io",
+      "url": "https://x.com/variational_io/status/2089350977388523871",
+      "content": "Applied Materials $AMAT perps are now live with zero fees and up to 20x leverage.\nWe are now 100% complete with our Phase 1 listing plan of 100 Tradfi Markets in 90 days.\nNew Tradfi Perps will be listed alongside our Phase 2 Swaps listings.",
+      "content_full": "Applied Materials $AMAT perps are now live with zero fees and up to 20x leverage.\nWe are now 100% complete with our Phase 1 listing plan of 100 Tradfi Markets in 90 days.\nNew Tradfi Perps will be listed alongside our Phase 2 Swaps listings.",
+      "published_at": "2026-08-17T13:57:45Z",
+      "importance": "高",
+      "summary": "同上AMAT永续合约上线公告，强调Phase 1目标达成及Phase 2 Swaps预告。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Applied Materials $AMAT永续合约正式上线，零交易费最高20倍杠杆。半导体设备龙头标的进入DeFi交易，为投资者提供新型对冲和投机工具，同时验证TradFi上链趋势。"
+    },
+    {
+      "post_id": "32",
+      "author": "variational_io",
+      "display_name": "variational_io",
+      "url": "https://x.com/variational_io/status/2089350989795168476",
+      "content": "Listing ≠ endorsement. Always do your own research and trade with caution.\nomni.variational.io/perpetua…",
+      "content_full": "Listing ≠ endorsement. Always do your own research and trade with caution.\nomni.variational.io/perpetua…",
+      "published_at": "2026-08-17T13:57:48Z",
+      "importance": "低",
+      "summary": "交易风险提示免责声明，无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "33",
+      "author": "supezen",
+      "display_name": "supezen",
+      "url": "https://x.com/supezen/status/2089498574342218152",
+      "content": "细数 Claude 做失败或没做起的产品，模型和功能：\nClaude in Chrome\nClaude Cowork\nAgent Teams\nDispatch\nOpus 4.8\nMemory\nDynamic Workflows\n还有哪些？",
+      "content_full": "细数 Claude 做失败或没做起的产品，模型和功能：\nClaude in Chrome\nClaude Cowork\nAgent Teams\nDispatch\nOpus 4.8\nMemory\nDynamic Workflows\n还有哪些？",
+      "published_at": "2026-08-17T23:44:15Z",
+      "importance": "中",
+      "summary": "盘点Claude历史上失败或未成功的AI产品/功能列表（Chrome集成、Cowork、Agent Teams等），供参考。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "34",
+      "author": "supezen",
+      "display_name": "supezen",
+      "url": "https://x.com/supezen/status/2089489770099646745",
+      "content": "Github 昨晚又挂了好久\n睡前想更新一下网站，搞半小时都没更成功\n看来 Github 实在扛不下巨大的 vibe coding 流量，Cursor 来分担一下也好\nbtw todos.dev 也支持git托管\nLink\nTodos — The task-driven workspace for humans and agents.\nHand routine, fixed-process work to a team of agents. Teach the team your process once; a round starts with a sentence or reruns on schedule, and the team plans, builds, and reviews it to done, on...\ntodos.dev\nCursor (@cursor_ai)\nOrigin, our code hosting platform, is now live.\nIt's fast, easy to use, and deeply integrated with Cu",
+      "content_full": "Github 昨晚又挂了好久\n睡前想更新一下网站，搞半小时都没更成功\n看来 Github 实在扛不下巨大的 vibe coding 流量，Cursor 来分担一下也好\nbtw todos.dev 也支持git托管\nLink\nTodos — The task-driven workspace for humans and agents.\nHand routine, fixed-process work to a team of agents. Teach the team your process once; a round starts with a sentence or reruns on schedule, and the team plans, builds, and reviews it to done, on...\ntodos.dev\nCursor (@cursor_ai)\nOrigin, our code hosting platform, is now live.\nIt's fast, easy to use, and deeply integrated with Cursor.\nGet started by syncing your repos from GitHub.\nVideo\n— https://nitter.net/cursor_ai/status/2089399057659596847#m",
+      "published_at": "2026-08-17T23:09:16Z",
+      "importance": "中",
+      "summary": "Cursor推出代码托管平台Origin，支持GitHub同步，暗示GitHub承压后Cursor承接部分需求。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "35",
+      "author": "xiaotongir",
+      "display_name": "xiaotongir",
+      "url": "https://x.com/xiaotongir/status/2089338582003769423",
+      "content": "曾几何时，我对比特币也是有信仰的。\n昨天赚了400u，我把赚的400u都现价买入btc了。\n如果亏了400，也买入400u的btc。\n可惜了那时候，那时候拿着本金冲进来本来想着抄底大饼子的，结果去玩土狗去了。\n这次熊市一定要保住本金。l",
+      "content_full": "曾几何时，我对比特币也是有信仰的。\n昨天赚了400u，我把赚的400u都现价买入btc了。\n如果亏了400，也买入400u的btc。\n可惜了那时候，那时候拿着本金冲进来本来想着抄底大饼子的，结果去玩土狗去了。\n这次熊市一定要保住本金。l",
+      "published_at": "2026-08-17T13:08:30Z",
+      "importance": "低",
+      "summary": "个人比特币投资策略分享（亏钱后定投），纯个人经验无分析。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "36",
+      "author": "yourQuantGuy",
+      "display_name": "yourQuantGuy",
+      "url": "https://x.com/yourQuantGuy/status/2089436748732355052",
+      "content": "How many points does 16% of all BTC maker volume on @Lighter_xyz Robinhood get you?\n- standard account\n- organic market making on BTC (not self-trading)\n- $11.6M BTC maker volume in the last 24 hours\n- 16% of all BTC maker volume on Lighter\nEarned: 2 points 💀\nDon’t be like me.",
+      "content_full": "How many points does 16% of all BTC maker volume on @Lighter_xyz Robinhood get you?\n- standard account\n- organic market making on BTC (not self-trading)\n- $11.6M BTC maker volume in the last 24 hours\n- 16% of all BTC maker volume on Lighter\nEarned: 2 points 💀\nDon’t be like me.",
+      "published_at": "2026-08-17T19:38:35Z",
+      "importance": "低",
+      "summary": "吐槽Lighter_xyz做市积分机制不合理：16% BTC挂单量仅获2积分，缺乏参考价值。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "37",
+      "author": "sosovaluecrypto",
+      "display_name": "sosovaluecrypto",
+      "url": "https://x.com/SoSoValueCrypto/status/2089352436670767543",
+      "content": "Technology is shaping the world.\nThe next generation of value will be created at the intersection of intelligence, industry and capital.\nSoSoValue Technology Investment Intelligence Initiative is built to help the world understand where technology is heading, where value is created, and how investors can participate.\nSoSoValue Frontier Alpha Roundtable Series — Episode 1 kicks off.\nTopic: Unitree Races Toward IPO — Where Are the Investment Opportunities in Embodied Intelligence?\nOn the eve of it",
+      "content_full": "Technology is shaping the world.\nThe next generation of value will be created at the intersection of intelligence, industry and capital.\nSoSoValue Technology Investment Intelligence Initiative is built to help the world understand where technology is heading, where value is created, and how investors can participate.\nSoSoValue Frontier Alpha Roundtable Series — Episode 1 kicks off.\nTopic: Unitree Races Toward IPO — Where Are the Investment Opportunities in Embodied Intelligence?\nOn the eve of its listing, join multiple industry guests as we explore valuation logic, sector risks, and cross-border AI investment strategies.\n⏰ August 18 (Tuesday), 12:00 UTC (20:00 UTC+8)\nLink: nitter.net/i/spaces/1OGwbnwwrMPKB\nSet a reminder and join us to explore investment opportunities in embodied intelligence. See you there!\nLink\nTwitter Space\nClick to view Space\nhttps://nitter.net/i/spaces/1OGwbnwwrMPKB\nME News (@MetaEraCN)\n🚨 重磅 AMA 来袭\n🔥 宇树科技冲刺 IPO，具身智能的资本化序幕是否已经拉开？投资人应该如何参与？\n⏰ 时间：8/18 20:00 UTC+8\n🔗 链接：nitter.net/i/spaces/1OGwbnw…\n✨ 主办方 & 联办方：@MetaEraCN @SoSoValueCrypto @SoSoValue_CN\n🚀 在宇树科技上市前夜，我们将与多位行业嘉宾共同探讨：\n▪ Unitree 的估值逻辑与增长空间\n▪ 具身智能赛道的机会与风险\n▪ 跨境 AI 投资该如何布局\n🎙️ 主持人 & 特邀嘉宾\n@JessicaMetaEra ME Group & AgentOn CEO\n@maymaymay1984  全球顶级投行.十余年专注科技资产价值发现\n@LeviSoSoValue   全球顶级PE.十余年专注科技资产投资\n@Rocky_Bitcoin   长期加密投资者.具身智能赛道深度观察者\n@Jason23818126  AI美股实战派.科技资产风口捕手\n@SUOHA_AI   Degen trader.数字游民\n📅 设置闹钟，与我们一起探索具身智能的投资机会！\n具身智能 #宇树 #Unitree #EmbodiedIntelligence\n— https://nitter.net/MetaEraCN/status/2089347415807545435#m",
+      "published_at": "2026-08-17T14:03:33Z",
+      "importance": "中",
+      "summary": "SoSoValue举办Unitree IPO前线上圆桌研讨会，探讨具身智能投资机会，附时间链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "38",
+      "author": "TheoriqAI",
+      "display_name": "TheoriqAI",
+      "url": "https://x.com/TheoriqAI/status/2089397028161998978",
+      "content": "Our team is represented by @PeiChen01 and @jpickett713 at the Wyoming Blockchain Symposium @SALTConference this week\nA chance to get away from busy cities and connect on how we're producing risk-managed yield for tokenized assets\nLooking forward to great conversations",
+      "content_full": "Our team is represented by @PeiChen01 and @jpickett713 at the Wyoming Blockchain Symposium @SALTConference this week\nA chance to get away from busy cities and connect on how we're producing risk-managed yield for tokenized assets\nLooking forward to great conversations",
+      "published_at": "2026-08-17T17:00:45Z",
+      "importance": "低",
+      "summary": "TheoriqAI团队参加Wyoming Blockchain Symposium，纯活动参与打卡。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "39",
+      "author": "kiwiflysky",
+      "display_name": "kiwiflysky",
+      "url": "https://x.com/kiwiflysky/status/2089340417850658828",
+      "content": "刷到一个开源免费用于 herdr 的 iOS APP。用 herdr 的可以试试。\nGithub: github.com/ZingerLittleBee/H…\nTestFlight： testflight.apple.com/join/aX…\nKIWI (@kiwiflysky)\nherdr 的功能 orca 都有，而且更便捷，为什么感觉 herdr 比 orca 要火。\n— https://nitter.net/kiwiflysky/status/2088074457344782709#m",
+      "content_full": "刷到一个开源免费用于 herdr 的 iOS APP。用 herdr 的可以试试。\nGithub: github.com/ZingerLittleBee/H…\nTestFlight： testflight.apple.com/join/aX…\nKIWI (@kiwiflysky)\nherdr 的功能 orca 都有，而且更便捷，为什么感觉 herdr 比 orca 要火。\n— https://nitter.net/kiwiflysky/status/2088074457344782709#m",
+      "published_at": "2026-08-17T13:15:48Z",
+      "importance": "中",
+      "summary": "herdr替代iOS应用推荐：开源免费，附GitHub和TestFlight入口。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "40",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2089445161780789552",
+      "content": "睡觉睡觉\n0.2→4.7，也是20多倍了\n一个号打5张能赚20多U\n指纹启动，一组号就是200多U🤣\n币胜客 (@Feng_btc)\n开了，1.5U左右\n一个号5张，赚个7U没意思\n这热度1万张市值才1WU，我就先不卖了\n交易市场：opensea.io/collection/mineca…\n— https://nitter.net/Feng_btc/status/2089433979745423442#m",
+      "content_full": "睡觉睡觉\n0.2→4.7，也是20多倍了\n一个号打5张能赚20多U\n指纹启动，一组号就是200多U🤣\n币胜客 (@Feng_btc)\n开了，1.5U左右\n一个号5张，赚个7U没意思\n这热度1万张市值才1WU，我就先不卖了\n交易市场：opensea.io/collection/mineca…\n— https://nitter.net/Feng_btc/status/2089433979745423442#m",
+      "published_at": "2026-08-17T20:12:01Z",
+      "importance": "中",
+      "summary": "NFT打链经验分享：多账号批量Mint Minecat猫，单号成本0.2U获利约7U，附OpenSea链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "41",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2089433979745423442",
+      "content": "开了，1.5U左右\n一个号5张，赚个7U没意思\n这热度1万张市值才1WU，我就先不卖了\n交易市场：opensea.io/collection/mineca…\n币胜客 (@Feng_btc)\n外面在打冒烟，自己研究\nminecatnft.com/mint.html\n— https://nitter.net/Feng_btc/status/2089424862435799506#m",
+      "content_full": "开了，1.5U左右\n一个号5张，赚个7U没意思\n这热度1万张市值才1WU，我就先不卖了\n交易市场：opensea.io/collection/mineca…\n币胜客 (@Feng_btc)\n外面在打冒烟，自己研究\nminecatnft.com/mint.html\n— https://nitter.net/Feng_btc/status/2089424862435799506#m",
+      "published_at": "2026-08-17T19:27:35Z",
+      "importance": "中",
+      "summary": "Minecat NFT mint开售，单价1.5U，热度1万市值1WU，附mint入口链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "42",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2089436983622009065",
+      "content": "翻了个倍，2U一张，市值2W，明天能10U吗",
+      "content_full": "翻了个倍，2U一张，市值2W，明天能10U吗",
+      "published_at": "2026-08-17T19:39:31Z",
+      "importance": "低",
+      "summary": "NFT价格猜测贴（从2U到10U的期望），无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "43",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2089424862435799506",
+      "content": "外面在打冒烟，自己研究\nminecatnft.com/mint.html",
+      "content_full": "外面在打冒烟，自己研究\nminecatnft.com/mint.html",
+      "published_at": "2026-08-17T18:51:21Z",
+      "importance": "低",
+      "summary": "Minecat NFT推广链接，仅含mint页面。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "44",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2089364512008990818",
+      "content": "舒服了，感谢牛来送来的嘉年华\n兄弟你可以放心上涨了，没有压力位！\nFree mint → 高点250U一张\n发出来开盘的时候也才20U，也有10X\n一直卖一直拉飞，卖完了发现根本砸不动\n最后留了几张主打一个陪伴吧\n币胜客 (@Feng_btc)\n就1000张，0.2很贵吗？\n发出来已经5X\n牛来都几十M了\n— https://nitter.net/Feng_btc/status/2089276923876982986#m",
+      "content_full": "舒服了，感谢牛来送来的嘉年华\n兄弟你可以放心上涨了，没有压力位！\nFree mint → 高点250U一张\n发出来开盘的时候也才20U，也有10X\n一直卖一直拉飞，卖完了发现根本砸不动\n最后留了几张主打一个陪伴吧\n币胜客 (@Feng_btc)\n就1000张，0.2很贵吗？\n发出来已经5X\n牛来都几十M了\n— https://nitter.net/Feng_btc/status/2089276923876982986#m",
+      "published_at": "2026-08-17T14:51:32Z",
+      "importance": "中",
+      "summary": "NFT项目牛来从Free mint做到高点250U/张（10倍回报），分享操盘经验和心态管理。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "45",
+      "author": "txp854431375",
+      "display_name": "txp854431375",
+      "url": "https://x.com/txp854431375/status/2089490366890463473",
+      "content": "0x6b38ab769adb7b696f13b039ff6e92925c757777\n有没有想过，捐赠后，社区来进行命名一只熊猫？。。。相信CZ他会很支持社区来进行。。。甚至会直接购入 $熊猫 代币。。。",
+      "content_full": "0x6b38ab769adb7b696f13b039ff6e92925c757777\n有没有想过，捐赠后，社区来进行命名一只熊猫？。。。相信CZ他会很支持社区来进行。。。甚至会直接购入 $熊猫 代币。。。",
+      "published_at": "2026-08-17T23:11:38Z",
+      "importance": "低",
+      "summary": "熊猫NFT社区活动宣传，附合约地址，号召捐赠命名，实质内容不足。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "46",
+      "author": "txp854431375",
+      "display_name": "txp854431375",
+      "url": "https://x.com/txp854431375/status/2089458111421776253",
+      "content": "0x6b38ab769adb7b696f13b039ff6e92925c757777 国家的国宝，是否能让更多老外，知道熊猫。。。让我们一起做一点有意义的事。。。",
+      "content_full": "0x6b38ab769adb7b696f13b039ff6e92925c757777 国家的国宝，是否能让更多老外，知道熊猫。。。让我们一起做一点有意义的事。。。",
+      "published_at": "2026-08-17T21:03:28Z",
+      "importance": "低",
+      "summary": "同上熊猫NFT爱国营销帖，无实际信息增量。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "47",
+      "author": "txp854431375",
+      "display_name": "txp854431375",
+      "url": "https://x.com/MTA696/status/2089438526874210314",
+      "content": "0x6b38ab769adb7b696f13b039ff6e92925c757777说的是熊猫比比特币更有价值，而不是熊猫和比特币有任何关系，这群分流傻逼，我无奈了。0x96088b85b818b40df45261c0f7dad9993c577777\nBitfinex'ed 🔥🐧 Κασσάνδρα 🏺 (@Bitfinexed)\nSoon millionaires won’t be able to afford their own Pandas.\nThere’s 23.6M millionaires, but only 2700 Pandas.\nThere’s not enough Pandas for every millionaire.\nTherefore Pandas are worth millions of dollars.\n— https://nitter.net/Bitfinexed/status/2088747877489160653#m",
+      "content_full": "0x6b38ab769adb7b696f13b039ff6e92925c757777说的是熊猫比比特币更有价值，而不是熊猫和比特币有任何关系，这群分流傻逼，我无奈了。0x96088b85b818b40df45261c0f7dad9993c577777\nBitfinex'ed 🔥🐧 Κασσάνδρα 🏺 (@Bitfinexed)\nSoon millionaires won’t be able to afford their own Pandas.\nThere’s 23.6M millionaires, but only 2700 Pandas.\nThere’s not enough Pandas for every millionaire.\nTherefore Pandas are worth millions of dollars.\n— https://nitter.net/Bitfinexed/status/2088747877489160653#m",
+      "published_at": "2026-08-17T19:45:39Z",
+      "importance": "低",
+      "summary": "熊猫NFT社区内部争议讨论，纯社区噪音。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "48",
+      "author": "xifancry",
+      "display_name": "xifancry",
+      "url": "https://x.com/xifancry/status/2089516507382575133",
+      "content": "最近币圈行情不好，每天唯一的乐趣晚上十点看安屿斗地主破产摇摆的场面，特别搞笑🤣\nVideo",
+      "content_full": "最近币圈行情不好，每天唯一的乐趣晚上十点看安屿斗地主破产摇摆的场面，特别搞笑🤣\nVideo",
+      "published_at": "2026-08-18T00:55:31Z",
+      "importance": "低",
+      "summary": "币圈行情差时的娱乐消遣分享，纯情绪发泄。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "49",
+      "author": "0xKaKa03",
+      "display_name": "0xKaKa03",
+      "url": "https://x.com/0xKaKa03/status/2089427803947311612",
+      "content": "今年以来第一个月亏钱，连续的负偏差，跟着几个腰部体育 mm 一块爆亏， 一周回撤几万 u说压力不大是假的，只能更加专注了。 豆包豆包，一直亏钱怎么办😭",
+      "content_full": "今年以来第一个月亏钱，连续的负偏差，跟着几个腰部体育 mm 一块爆亏， 一周回撤几万 u说压力不大是假的，只能更加专注了。 豆包豆包，一直亏钱怎么办😭",
+      "published_at": "2026-08-17T19:03:02Z",
+      "importance": "低",
+      "summary": "个人交易亏损倾诉（一周回撤数万U），无分析价值。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "50",
+      "author": "0xKaKa03",
+      "display_name": "0xKaKa03",
+      "url": "https://x.com/0xKaKa03/status/2089388833662271549",
+      "content": "codex至少缩水了50%的用量，之前随便蹬一周额度很难用完，一样的任务现在1-2天正常用就没了，等订阅到期这个号也转为claude了。",
+      "content_full": "codex至少缩水了50%的用量，之前随便蹬一周额度很难用完，一样的任务现在1-2天正常用就没了，等订阅到期这个号也转为claude了。",
+      "published_at": "2026-08-17T16:28:11Z",
+      "importance": "低",
+      "summary": "Codex使用量减半的观察吐槽，无实质性信息。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    }
+  ],
+  "daily_brief": [
+    {
+      "topic": "英伟达AI工厂战略",
+      "who": "BroBean88, qinbafrank",
+      "sentiment": "看好长期逻辑，关注循环融资争议",
+      "what_they_said": "BroBean88: 黄仁勋自造LPS(Land,Power,Shell)概念，GPU产能瓶颈已转向土地/电力/机房等物理层；英伟达1050亿担保OpenAI俄亥俄数据中心，供应链采购订单实打实。qinbafrank: 英伟达从芯片商向AI工厂物理层服务商演进，循环融资闭环清晰但信用风险增加，OpenAI 20年租约锁定6000亿算力需求。",
+      "gist": "英伟达联合软银、OpenAI推进俄亥俄超大规模AI数据中心项目。英伟达提供1050亿美元残值担保，软银建设运营，OpenAI签20年租约并采购6000亿美元算力。黄仁勋提出LPS(土地/电力/机房)成为AI工厂新瓶颈。分析认为循环融资闭环逻辑清晰，底层需求真实，但芯片商用资产负债表担保超大规模项目属历史首例，市场关注信用风险敞口。"
+    },
+    {
+      "topic": "Unitree宇树IPO",
+      "who": "aleabitoreddit, sosovaluecrypto",
+      "sentiment": "关注估值与投资机会",
+      "what_they_said": "aleabitoreddit: Unitree拟8月19日IPO，隐含开盘估值约416亿美元，较9亿美元IPO估值涨363%，零售超购8000倍以上。sosovaluecrypto: SoSoValue举办Unitree上市前夜圆桌研讨会，探讨具身智能赛道估值逻辑、机会风险及跨境AI投资策略。",
+      "gist": "中国具身智能龙头宇树科技(Unitree)拟于8月19日挂牌上市，衍生品隐含开盘估值约416亿美元，较9亿美元IPO估值溢价363%，零售超购超8000倍。业内随即举办线上研讨会，聚焦具身智能赛道资本化进程、宇树估值逻辑及跨境AI投资布局策略。"
+    },
+    {
+      "topic": "BTC周期与技术面",
+      "who": "KillaXBT",
+      "sentiment": "中性偏多，建议耐心",
+      "what_they_said": "KillaXBT: 当前处于OI飙升阶段，做空者持续被挤压，建议避免做空或控制仓位；散户因缺乏波动性而急躁加杠杆是危险信号；技术面需收复65K区域，否则可能测试62.8K周开盘价及61.8K-61.3K支撑位。",
+      "gist": "BTC当前处于开仓兴趣(OI)快速攀升阶段，做空仓位持续被挤压。分析认为市场进入缺乏波动性的焦躁期，散户容易过度杠杆化。技术面关键看65K区域能否收复，失守则可能下探62.8K周开盘价及61.8K-61.3K支撑。建议保持耐心，避免高杠杆操作。"
+    }
+  ],
+  "author_profiles": [
+    {
+      "author": "aleabitoreddit",
+      "display_name": "aleabitoreddit",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "热点事件评论博主",
+      "warning": false
+    },
+    {
+      "author": "predictdotfun",
+      "display_name": "predictdotfun",
+      "tweet_count": 2,
+      "quality": "偏高",
+      "one_liner": "预测市场活动推广",
+      "warning": false
+    },
+    {
+      "author": "BroBean88",
+      "display_name": "BroBean88",
+      "tweet_count": 3,
+      "quality": "高",
+      "one_liner": "AI基础设施深度分析",
+      "warning": false
+    },
+    {
+      "author": "yujuhao",
+      "display_name": "yujuhao",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "空投教程分享博主",
+      "warning": false
+    },
+    {
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "tweet_count": 2,
+      "quality": "高",
+      "one_liner": "AI投资与市场分析",
+      "warning": false
+    },
+    {
+      "author": "lumaogou_web3",
+      "display_name": "lumaogou_web3",
+      "tweet_count": 3,
+      "quality": "偏高",
+      "one_liner": "Web3自动化工具分享",
+      "warning": false
+    },
+    {
+      "author": "ccjing_eth",
+      "display_name": "ccjing_eth",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "Codex配置教程博主",
+      "warning": false
+    },
+    {
+      "author": "AbstractChain",
+      "display_name": "AbstractChain",
+      "tweet_count": 4,
+      "quality": "中",
+      "one_liner": "生态更新公告博主",
+      "warning": false
+    },
+    {
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "tweet_count": 4,
+      "quality": "中",
+      "one_liner": "BTC技术分析博主",
+      "warning": false
+    },
+    {
+      "author": "aiqiang888",
+      "display_name": "aiqiang888",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "KOL商业价值调侃",
+      "warning": false
+    },
+    {
+      "author": "linwanwan823",
+      "display_name": "linwanwan823",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "周边许愿互动博主",
+      "warning": false
+    },
+    {
+      "author": "binance",
+      "display_name": "binance",
+      "tweet_count": 4,
+      "quality": "偏高",
+      "one_liner": "平台公告与教程",
+      "warning": false
+    },
+    {
+      "author": "liuyanxue2",
+      "display_name": "liuyanxue2",
+      "tweet_count": 2,
+      "quality": "低",
+      "one_liner": "音乐分享博主",
+      "warning": false
+    },
+    {
+      "author": "variational_io",
+      "display_name": "variational_io",
+      "tweet_count": 3,
+      "quality": "偏高",
+      "one_liner": "TradFi衍生品公告",
+      "warning": false
+    },
+    {
+      "author": "supezen",
+      "display_name": "supezen",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "AI产品动态追踪",
+      "warning": false
+    },
+    {
+      "author": "xiaotongir",
+      "display_name": "xiaotongir",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "个人投资经验分享",
+      "warning": false
+    },
+    {
+      "author": "yourQuantGuy",
+      "display_name": "yourQuantGuy",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "做市商机制吐槽",
+      "warning": false
+    },
+    {
+      "author": "sosovaluecrypto",
+      "display_name": "sosovaluecrypto",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "具身智能研讨会",
+      "warning": false
+    },
+    {
+      "author": "TheoriqAI",
+      "display_name": "TheoriqAI",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "区块链活动打卡",
+      "warning": false
+    },
+    {
+      "author": "kiwiflysky",
+      "display_name": "kiwiflysky",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "iOS替代应用推荐",
+      "warning": false
+    },
+    {
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "tweet_count": 5,
+      "quality": "中",
+      "one_liner": "NFT打链经验分享",
+      "warning": false
+    },
+    {
+      "author": "txp854431375",
+      "display_name": "txp854431375",
+      "tweet_count": 3,
+      "quality": "低",
+      "one_liner": "NFT社区活动宣传",
+      "warning": false
+    },
+    {
+      "author": "xifancry",
+      "display_name": "xifancry",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "币圈娱乐消遣",
+      "warning": false
+    },
+    {
+      "author": "0xKaKa03",
+      "display_name": "0xKaKa03",
+      "tweet_count": 2,
+      "quality": "低",
+      "one_liner": "交易复盘倾诉博主",
+      "warning": false
+    }
+  ],
+  "medium_merge": "在机器人赛道方面: aleabitoreddit报道Unitree拟IPO，隐含开盘估值约416亿美元，较IPO估值涨幅达363%；sosovaluecrypto同步举办Unitree IPO前线上圆桌研讨会，聚焦具身智能投资机会。在Abstract生态方面: AbstractChain宣布新任生态负责人，并预告上线Builder XP奖励系统——每周根据项目对链上的实际贡献给予XP奖励，历史贡献已回溯，开发者可通过Developer Portal查看，且与User XP互不影响。在市场与技术面方面: KillaXBT指出BTC当前处于OI飙升阶段，建议避免做空耐心等待波动回归，技术面上需收复65K区域否则可能测试62.8K周开盘价及61.8K-61.3K支撑位；binance发布8月17-21日市场日历，涵盖FOMC纪要及重要财报预告，同时Binance研究指出76% Gen Z交易者账户为净买入、20%从未卖出，揭示年轻投资者长期持有趋势。在AI与NFT动向方面: supezen盘点Claude历史上失败或未成功的产品（Chrome集成、Cowork、Agent Teams等），并报道Cursor推出代码托管平台Origin支持GitHub同步，暗示GitHub承压后Cursor承接部分需求；Feng_btc分享NFT实战经验，包括Minecat猫批量Mint（单号成本0.2U获利约7U）以及牛来项目从Free mint做到高点250U/张的10倍回报案例与心态管理心得。",
+  "errors": []
+}
