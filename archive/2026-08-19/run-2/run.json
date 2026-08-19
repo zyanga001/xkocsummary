@@ -1,0 +1,2083 @@
+{
+  "run_id": "v2-20260819-142121",
+  "status": "success",
+  "slot": "evening",
+  "slot_label": "晚报",
+  "created_at": "2026-08-19 22:27 · 第2次更新",
+  "window": "12h",
+  "planned_at": "2026-08-19 21:00",
+  "started_at": "2026-08-19 21:54",
+  "finished_at": "2026-08-19 22:27",
+  "window_start": "2026-08-19 09:00",
+  "window_end": "2026-08-19 21:00",
+  "delay_seconds": 3269,
+  "elapsed_seconds": 1962.3,
+  "total_tweets": 69,
+  "authors_count": 27,
+  "total_authors": 250,
+  "high_count": 14,
+  "medium_count": 31,
+  "low_count": 24,
+  "scan_ok": 27,
+  "scan_empty": 36,
+  "scan_fail": 187,
+  "scan_elapsed": 1962.2525026798248,
+  "scan_errors": [
+    {
+      "author": "VIP8888883",
+      "error": "https://nitter.net/VIP8888883/rss: HTTP 404 while fetching https://nitter.net/VI"
+    },
+    {
+      "author": "yujuhao",
+      "error": "https://nitter.privacydev.net/yujuhao/rss: Network error while fetching https://"
+    },
+    {
+      "author": "AnLaoliu",
+      "error": "https://nitter.poast.org/AnLaoliu/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "memekiller69420",
+      "error": "https://nitter.net/memekiller69420/rss: HTTP 404 while fetching https://nitter.n"
+    },
+    {
+      "author": "wsj061221",
+      "error": "https://nitter.poast.org/wsj061221/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "KJjjxc",
+      "error": "https://nitter.privacydev.net/KJjjxc/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "aiqiang888",
+      "error": "https://nitter.privacydev.net/aiqiang888/rss: Network error while fetching https"
+    },
+    {
+      "author": "Caidaobaba",
+      "error": "https://nitter.net/Caidaobaba/rss: HTTP 404 while fetching https://nitter.net/Ca"
+    },
+    {
+      "author": "degenlinxi",
+      "error": "https://nitter.privacydev.net/degenlinxi/rss: Network error while fetching https"
+    },
+    {
+      "author": "crypto_laodong",
+      "error": "https://nitter.privacydev.net/crypto_laodong/rss: Network error while fetching h"
+    },
+    {
+      "author": "Claw402ai",
+      "error": "https://nitter.poast.org/Claw402ai/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "Xinjue1",
+      "error": "https://xcancel.com/Xinjue1/rss: HTTP 400 while fetching https://xcancel.com/Xin"
+    },
+    {
+      "author": "Rtljjvo",
+      "error": "https://nitter.poast.org/Rtljjvo/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "re333na",
+      "error": "https://nitter.privacydev.net/re333na/rss: Network error while fetching https://"
+    },
+    {
+      "author": "xiaotongir",
+      "error": "https://xcancel.com/xiaotongir/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "xiaozhang2331",
+      "error": "https://nitter.poast.org/xiaozhang2331/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "TheoriqAI",
+      "error": "https://xcancel.com/TheoriqAI/rss: HTTP 400 while fetching https://xcancel.com/T"
+    },
+    {
+      "author": "RK_Bitcoin",
+      "error": "https://xcancel.com/RK_Bitcoin/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "txp854431375",
+      "error": "https://nitter.poast.org/txp854431375/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://xcancel.com/0xliuqingyu/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "fwy2026",
+      "error": "https://nitter.poast.org/fwy2026/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "cryptoresetlife",
+      "error": "https://nitter.net/cryptoresetlife/rss: HTTP 404 while fetching https://nitter.n"
+    },
+    {
+      "author": "33357xyz",
+      "error": "https://nitter.net/33357xyz/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "maohei16",
+      "error": "https://nitter.poast.org/maohei16/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "0xKaKa03",
+      "error": "https://nitter.poast.org/0xKaKa03/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "gch_enbsbxbs",
+      "error": "https://nitter.privacydev.net/gch_enbsbxbs/rss: Network error while fetching htt"
+    },
+    {
+      "author": "shenghanjun8",
+      "error": "https://xcancel.com/shenghanjun8/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "0x_mmc",
+      "error": "https://nitter.privacydev.net/0x_mmc/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "lofy22479013",
+      "error": "https://nitter.privacydev.net/lofy22479013/rss: Network error while fetching htt"
+    },
+    {
+      "author": "little_sci",
+      "error": "https://nitter.privacydev.net/little_sci/rss: Network error while fetching https"
+    },
+    {
+      "author": "chainbird_eth",
+      "error": "https://nitter.net/chainbird_eth/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "0xNaiXi",
+      "error": "https://xcancel.com/0xNaiXi/rss: HTTP 400 while fetching https://xcancel.com/0xN"
+    },
+    {
+      "author": "annitoBtc",
+      "error": "https://nitter.poast.org/annitoBtc/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "Big_Tea_Rice",
+      "error": "https://nitter.net/Big_Tea_Rice/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "0xbaoan",
+      "error": "https://nitter.poast.org/0xbaoan/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "0x13904b",
+      "error": "https://nitter.net/0x13904b/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "Shelbyserves",
+      "error": "https://nitter.poast.org/Shelbyserves/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "Miles082510",
+      "error": "https://nitter.net/Miles082510/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "0xcbhz",
+      "error": "https://nitter.privacydev.net/0xcbhz/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "uarizona",
+      "error": "https://nitter.poast.org/uarizona/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "GoudanWoo",
+      "error": "https://nitter.poast.org/GoudanWoo/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "qiye_btc",
+      "error": "https://nitter.poast.org/qiye_btc/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "AKAKAY04",
+      "error": "https://nitter.privacydev.net/AKAKAY04/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "SteinAmour",
+      "error": "https://nitter.privacydev.net/SteinAmour/rss: Network error while fetching https"
+    },
+    {
+      "author": "taoli_tools",
+      "error": "https://nitter.poast.org/taoli_tools/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "0xCryptoFries",
+      "error": "https://nitter.poast.org/0xCryptoFries/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "Murphychen888",
+      "error": "https://nitter.poast.org/Murphychen888/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "xiaomustock",
+      "error": "https://nitter.privacydev.net/xiaomustock/rss: Network error while fetching http"
+    },
+    {
+      "author": "yuyuvkx",
+      "error": "https://nitter.poast.org/yuyuvkx/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "0x_zibu",
+      "error": "https://nitter.net/0x_zibu/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "dan326714",
+      "error": "https://nitter.poast.org/dan326714/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "CodeNightOwl",
+      "error": "https://nitter.net/CodeNightOwl/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "0xquqi",
+      "error": "https://nitter.poast.org/0xquqi/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "hs_gogogo",
+      "error": "https://nitter.privacydev.net/hs_gogogo/rss: Network error while fetching https:"
+    },
+    {
+      "author": "fbot_app",
+      "error": "https://nitter.privacydev.net/fbot_app/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "lipoded",
+      "error": "https://xcancel.com/lipoded/rss: HTTP 400 while fetching https://xcancel.com/lip"
+    },
+    {
+      "author": "ETH3210",
+      "error": "https://xcancel.com/ETH3210/rss: HTTP 400 while fetching https://xcancel.com/ETH"
+    },
+    {
+      "author": "yixing_web3",
+      "error": "https://nitter.privacydev.net/yixing_web3/rss: Network error while fetching http"
+    },
+    {
+      "author": "wangy112375",
+      "error": "https://nitter.poast.org/wangy112375/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "ziyourenya",
+      "error": "https://nitter.poast.org/ziyourenya/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "Essen1645",
+      "error": "https://nitter.net/Essen1645/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "sellen1124",
+      "error": "https://nitter.privacydev.net/sellen1124/rss: Network error while fetching https"
+    },
+    {
+      "author": "xiadadhaida",
+      "error": "https://nitter.poast.org/xiadadhaida/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "FarmMaster_bot",
+      "error": "https://xcancel.com/FarmMaster_bot/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "TingHu888",
+      "error": "https://nitter.poast.org/TingHu888/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "Ray80230",
+      "error": "https://nitter.poast.org/Ray80230/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "airdropalchemis",
+      "error": "https://nitter.privacydev.net/airdropalchemis/rss: Network error while fetching "
+    },
+    {
+      "author": "Airdrop_Guard",
+      "error": "https://xcancel.com/Airdrop_Guard/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "33daoweb3",
+      "error": "https://nitter.net/33daoweb3/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "BQnanqiao",
+      "error": "https://xcancel.com/BQnanqiao/rss: HTTP 400 while fetching https://xcancel.com/B"
+    },
+    {
+      "author": "yupaopao0",
+      "error": "https://nitter.net/yupaopao0/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "solana_zh",
+      "error": "https://xcancel.com/solana_zh/rss: HTTP 400 while fetching https://xcancel.com/s"
+    },
+    {
+      "author": "Greta0086",
+      "error": "https://xcancel.com/Greta0086/rss: HTTP 400 while fetching https://xcancel.com/G"
+    },
+    {
+      "author": "Jasonwang1211",
+      "error": "https://nitter.poast.org/Jasonwang1211/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "0x_xifeng",
+      "error": "https://nitter.privacydev.net/0x_xifeng/rss: Network error while fetching https:"
+    },
+    {
+      "author": "GaoHeadmaster",
+      "error": "https://nitter.poast.org/GaoHeadmaster/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "y_cryptoanalyst",
+      "error": "https://nitter.net/y_cryptoanalyst/rss: Network error while fetching https://nit"
+    },
+    {
+      "author": "0xzheng888",
+      "error": "https://nitter.net/0xzheng888/rss: Network error while fetching https://nitter.n"
+    },
+    {
+      "author": "chaozuoye",
+      "error": "https://nitter.poast.org/chaozuoye/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "UMich",
+      "error": "https://nitter.poast.org/UMich/rss: HTTP 403 while fetching https://nitter.poast"
+    },
+    {
+      "author": "Assassin_Malvo",
+      "error": "https://xcancel.com/Assassin_Malvo/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "web3beinian",
+      "error": "https://nitter.poast.org/web3beinian/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "mundane799699",
+      "error": "https://nitter.poast.org/mundane799699/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "xxiaoxiongmao",
+      "error": "https://nitter.privacydev.net/xxiaoxiongmao/rss: Network error while fetching ht"
+    },
+    {
+      "author": "0xinfini",
+      "error": "https://nitter.privacydev.net/0xinfini/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "PIIG_me",
+      "error": "https://nitter.privacydev.net/PIIG_me/rss: Network error while fetching https://"
+    },
+    {
+      "author": "tmm_club",
+      "error": "https://nitter.privacydev.net/tmm_club/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Wave_Tool",
+      "error": "https://xcancel.com/Wave_Tool/rss: HTTP 400 while fetching https://xcancel.com/W"
+    },
+    {
+      "author": "silverfang88",
+      "error": "https://nitter.net/silverfang88/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "3PDAO",
+      "error": "https://xcancel.com/3PDAO/rss: HTTP 400 while fetching https://xcancel.com/3PDAO"
+    },
+    {
+      "author": "conso_tg",
+      "error": "https://nitter.privacydev.net/conso_tg/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "CuishuoB",
+      "error": "https://nitter.privacydev.net/CuishuoB/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "SunnyHumorDay",
+      "error": "https://xcancel.com/SunnyHumorDay/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "xss4755",
+      "error": "https://nitter.net/xss4755/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "SpiderPool_com",
+      "error": "https://nitter.privacydev.net/SpiderPool_com/rss: Network error while fetching h"
+    },
+    {
+      "author": "RivermenNFT",
+      "error": "https://nitter.net/RivermenNFT/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "CMhOeNnExY",
+      "error": "https://nitter.poast.org/CMhOeNnExY/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "0xcoolkhz",
+      "error": "https://xcancel.com/0xcoolkhz/rss: HTTP 400 while fetching https://xcancel.com/0"
+    },
+    {
+      "author": "xychso",
+      "error": "https://nitter.net/xychso/rss: Network error while fetching https://nitter.net/x"
+    },
+    {
+      "author": "cursor_ai",
+      "error": "https://nitter.poast.org/cursor_ai/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "i_icepy",
+      "error": "https://xcancel.com/i_icepy/rss: HTTP 400 while fetching https://xcancel.com/i_i"
+    },
+    {
+      "author": "guiyuan313",
+      "error": "https://nitter.poast.org/guiyuan313/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "Predator_fund",
+      "error": "https://nitter.net/Predator_fund/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "KernelVentures",
+      "error": "https://nitter.privacydev.net/KernelVentures/rss: Network error while fetching h"
+    },
+    {
+      "author": "0xMayyy",
+      "error": "https://nitter.poast.org/0xMayyy/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "ariel_sands_dan",
+      "error": "https://nitter.privacydev.net/ariel_sands_dan/rss: Network error while fetching "
+    },
+    {
+      "author": "nil_0x",
+      "error": "https://xcancel.com/nil_0x/rss: HTTP 400 while fetching https://xcancel.com/nil_"
+    },
+    {
+      "author": "BlockBeatsAsia",
+      "error": "https://xcancel.com/BlockBeatsAsia/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "EvaCmore",
+      "error": "https://nitter.privacydev.net/EvaCmore/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "iqxsol",
+      "error": "https://nitter.net/iqxsol/rss: Network error while fetching https://nitter.net/i"
+    },
+    {
+      "author": "zhaoliu911899",
+      "error": "https://nitter.net/zhaoliu911899/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "0x_Northland",
+      "error": "https://nitter.net/0x_Northland/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "0xbrush_bots",
+      "error": "https://nitter.net/0xbrush_bots/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "Fisher0815",
+      "error": "https://xcancel.com/Fisher0815/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://nitter.privacydev.net/LiHuanLH/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Cryptowushi",
+      "error": "https://nitter.poast.org/Cryptowushi/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "lumaoyangmao",
+      "error": "https://nitter.poast.org/lumaoyangmao/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "jiao_newlife",
+      "error": "https://nitter.net/jiao_newlife/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "cryptolfggo",
+      "error": "https://xcancel.com/cryptolfggo/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "kinotd_com",
+      "error": "https://xcancel.com/kinotd_com/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "WalrusProtocol",
+      "error": "https://xcancel.com/WalrusProtocol/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "nft_hu",
+      "error": "https://nitter.net/nft_hu/rss: Network error while fetching https://nitter.net/n"
+    },
+    {
+      "author": "kevin_airdrop",
+      "error": "https://nitter.privacydev.net/kevin_airdrop/rss: Network error while fetching ht"
+    },
+    {
+      "author": "bigbottle44",
+      "error": "https://xcancel.com/bigbottle44/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "bu_xiang888",
+      "error": "https://xcancel.com/bu_xiang888/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "zhao_p42510",
+      "error": "https://xcancel.com/zhao_p42510/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "WY_mask",
+      "error": "https://nitter.poast.org/WY_mask/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "btc_hamsters",
+      "error": "https://xcancel.com/btc_hamsters/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "tenlly_ly",
+      "error": "https://nitter.poast.org/tenlly_ly/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "BaleYoba",
+      "error": "https://nitter.poast.org/BaleYoba/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "evooves",
+      "error": "https://nitter.poast.org/evooves/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "hualun",
+      "error": "https://nitter.net/hualun/rss: Network error while fetching https://nitter.net/h"
+    },
+    {
+      "author": "Nazarick_eth",
+      "error": "https://nitter.privacydev.net/Nazarick_eth/rss: Network error while fetching htt"
+    },
+    {
+      "author": "lin_btc",
+      "error": "https://nitter.poast.org/lin_btc/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "liyuanqion55768",
+      "error": "https://xcancel.com/liyuanqion55768/rss: HTTP 400 while fetching https://xcancel"
+    },
+    {
+      "author": "lufushage",
+      "error": "https://nitter.privacydev.net/lufushage/rss: Network error while fetching https:"
+    },
+    {
+      "author": "toupaiwang",
+      "error": "https://xcancel.com/toupaiwang/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "Benjieming1Q84",
+      "error": "https://nitter.net/Benjieming1Q84/rss: Network error while fetching https://nitt"
+    },
+    {
+      "author": "0xleng1",
+      "error": "https://nitter.poast.org/0xleng1/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "SeomunW",
+      "error": "https://nitter.poast.org/SeomunW/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "Maybe2024slow",
+      "error": "https://xcancel.com/Maybe2024slow/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "zicai222222",
+      "error": "https://nitter.privacydev.net/zicai222222/rss: Network error while fetching http"
+    },
+    {
+      "author": "Bigdevilbtc",
+      "error": "https://nitter.poast.org/Bigdevilbtc/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "0xweiqigaoshou",
+      "error": "https://nitter.privacydev.net/0xweiqigaoshou/rss: Network error while fetching h"
+    },
+    {
+      "author": "Z_Lib_official",
+      "error": "https://xcancel.com/Z_Lib_official/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "jiamigou",
+      "error": "https://nitter.privacydev.net/jiamigou/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "kyeast",
+      "error": "https://xcancel.com/kyeast/rss: HTTP 400 while fetching https://xcancel.com/kyea"
+    },
+    {
+      "author": "xiaoyubtc",
+      "error": "https://nitter.privacydev.net/xiaoyubtc/rss: Network error while fetching https:"
+    },
+    {
+      "author": "jiji_eth",
+      "error": "https://nitter.net/jiji_eth/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "Oceansky_web3",
+      "error": "https://nitter.net/Oceansky_web3/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "XBITDEX_ZH",
+      "error": "https://xcancel.com/XBITDEX_ZH/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "cosy_white",
+      "error": "https://nitter.privacydev.net/cosy_white/rss: Network error while fetching https"
+    },
+    {
+      "author": "kuangshenbtc",
+      "error": "https://nitter.poast.org/kuangshenbtc/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "PhyrexNi",
+      "error": "https://xcancel.com/PhyrexNi/rss: HTTP 400 while fetching https://xcancel.com/Ph"
+    },
+    {
+      "author": "useXXYYio",
+      "error": "https://xcancel.com/useXXYYio/rss: HTTP 400 while fetching https://xcancel.com/u"
+    },
+    {
+      "author": "0xCryptoUni",
+      "error": "https://nitter.poast.org/0xCryptoUni/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "Rats_Friend",
+      "error": "https://nitter.poast.org/Rats_Friend/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "decision_BTC",
+      "error": "https://nitter.poast.org/decision_BTC/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "yunknkn2",
+      "error": "https://xcancel.com/yunknkn2/rss: HTTP 400 while fetching https://xcancel.com/yu"
+    },
+    {
+      "author": "Ice_Frog666666",
+      "error": "https://nitter.privacydev.net/Ice_Frog666666/rss: Network error while fetching h"
+    },
+    {
+      "author": "0xKevin00",
+      "error": "https://nitter.net/0xKevin00/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "crypto_biubiu",
+      "error": "https://nitter.poast.org/crypto_biubiu/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "wwfhbz",
+      "error": "https://xcancel.com/wwfhbz/rss: HTTP 400 while fetching https://xcancel.com/wwfh"
+    },
+    {
+      "author": "BitCloutCat",
+      "error": "https://xcancel.com/BitCloutCat/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "Naive_BNB",
+      "error": "https://nitter.net/Naive_BNB/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "bitfool1",
+      "error": "https://nitter.poast.org/bitfool1/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "cyberport_hk",
+      "error": "https://xcancel.com/cyberport_hk/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "Seaxing777",
+      "error": "https://nitter.privacydev.net/Seaxing777/rss: Network error while fetching https"
+    },
+    {
+      "author": "JYHNCZR_",
+      "error": "https://nitter.net/JYHNCZR_/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "EmberCN",
+      "error": "https://xcancel.com/EmberCN/rss: HTTP 400 while fetching https://xcancel.com/Emb"
+    },
+    {
+      "author": "web3vip",
+      "error": "https://nitter.privacydev.net/web3vip/rss: Network error while fetching https://"
+    },
+    {
+      "author": "Yale",
+      "error": "https://nitter.net/Yale/rss: Network error while fetching https://nitter.net/Yal"
+    },
+    {
+      "author": "Nicole58004351",
+      "error": "https://nitter.net/Nicole58004351/rss: Network error while fetching https://nitt"
+    },
+    {
+      "author": "nirvana_hui",
+      "error": "https://nitter.net/nirvana_hui/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "followin_io_zh",
+      "error": "https://nitter.poast.org/followin_io_zh/rss: HTTP 403 while fetching https://nit"
+    },
+    {
+      "author": "ether",
+      "error": "https://nitter.privacydev.net/ether/rss: Network error while fetching https://ni"
+    },
+    {
+      "author": "HyperliquidX",
+      "error": "https://xcancel.com/HyperliquidX/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "zerowu97",
+      "error": "https://nitter.net/zerowu97/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "ki_smoon12",
+      "error": "https://nitter.poast.org/ki_smoon12/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "DrcDAO",
+      "error": "https://xcancel.com/DrcDAO/rss: HTTP 400 while fetching https://xcancel.com/DrcD"
+    },
+    {
+      "author": "JackGui14",
+      "error": "https://nitter.net/JackGui14/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "xiaoyinsi2025",
+      "error": "https://nitter.poast.org/xiaoyinsi2025/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "cishanjia",
+      "error": "https://nitter.poast.org/cishanjia/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "wufantouzi",
+      "error": "https://nitter.net/wufantouzi/rss: Network error while fetching https://nitter.n"
+    },
+    {
+      "author": "guanliange",
+      "error": "https://nitter.net/guanliange/rss: Network error while fetching https://nitter.n"
+    },
+    {
+      "author": "hebi555",
+      "error": "https://xcancel.com/hebi555/rss: HTTP 400 while fetching https://xcancel.com/heb"
+    },
+    {
+      "author": "youyou5202",
+      "error": "https://xcancel.com/youyou5202/rss: HTTP 400 while fetching https://xcancel.com/"
+    }
+  ],
+  "items": [
+    {
+      "post_id": "0",
+      "author": "predictdotfun",
+      "display_name": "predictdotfun",
+      "url": "https://x.com/BinanceWallet/status/2090018990425080233",
+      "content": "🎮 The Dota 2 Trial Vouchers are here!\n🎁 Claim your share of the 10,000 USDT Trial Bonus Boost and make your first Dota 2 prediction during The International.\n🗓 Campaign: Aug 19, 10:00 PM UTC to Aug 23, 10:00 PM UTC\n• First 10,000 eligible users can claim 1 Trial Voucher (1 USDT)\n• Available to users with no previous Dota 2 Prediction Market trades\n• Valid on Dota 2 match markets only\n• Use your voucher before Aug 23, 10:00 PM UTC when the campaign ends",
+      "content_full": "🎮 The Dota 2 Trial Vouchers are here!\n🎁 Claim your share of the 10,000 USDT Trial Bonus Boost and make your first Dota 2 prediction during The International.\n🗓 Campaign: Aug 19, 10:00 PM UTC to Aug 23, 10:00 PM UTC\n• First 10,000 eligible users can claim 1 Trial Voucher (1 USDT)\n• Available to users with no previous Dota 2 Prediction Market trades\n• Valid on Dota 2 match markets only\n• Use your voucher before Aug 23, 10:00 PM UTC when the campaign ends",
+      "published_at": "2026-08-19T10:12:12Z",
+      "importance": "高",
+      "summary": "predict.fun推出Dota 2预测市场活动，前10,000名符合条件用户可领取1 USDT试用券，活动时间8月19日至23日。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "预测市场新用户福利：10,000 USDT奖励池，首单试投券零成本体验，适合探索加密体育预测赛道。"
+    },
+    {
+      "post_id": "1",
+      "author": "predictdotfun",
+      "display_name": "predictdotfun",
+      "url": "https://x.com/predictdotfun/status/2089931168326242350",
+      "content": "🔮 New market options added and PP boost!\npredict.fun/market/unitree-r…\nLink\nUnitree Robotics (宇树科技) IPO closing market cap above ___ ? | Predict\npredict.fun",
+      "content_full": "🔮 New market options added and PP boost!\npredict.fun/market/unitree-r…\nLink\nUnitree Robotics (宇树科技) IPO closing market cap above ___ ? | Predict\npredict.fun",
+      "published_at": "2026-08-19T04:23:14Z",
+      "importance": "中",
+      "summary": "predict.fun新增宇树科技IPO收盘市值预测市场。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "2",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2090058229539893711",
+      "content": "我谷又开始大撒币了，硬件永不为奴！！起飞！！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "我谷又开始大撒币了，硬件永不为奴！！起飞！！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T12:48:07Z",
+      "importance": "低",
+      "summary": "纯情绪喊单'Buy the dip'，无实质信息。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "3",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2090056783004082373",
+      "content": "美国财政部公布回购相关计划后，美债收益率曲线大幅趋平。(金十数据APP)\n怎么说来着，川普会搞定一切的。\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "美国财政部公布回购相关计划后，美债收益率曲线大幅趋平。(金十数据APP)\n怎么说来着，川普会搞定一切的。\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T12:42:23Z",
+      "importance": "中",
+      "summary": "美国财政部公布回购计划后美债收益率曲线大幅趋平，作者认为川普会搞定。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "4",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2090036765424042391",
+      "content": "这周五有沃什发言，美债这个屌样，不知道沃什会不会放鹰，债券市场其实已经不相信沃什了，觉得他搞不定通胀，或者觉得她 soft，放弃了控制2%的目标，所以不管你是不是加息，我他妈先加为敬了🫠\n其实沃什现在应该是全地球上压力最大的人类了，一边是川普的命令，一边是债券市场的压力，放鹰放鸽感觉都不行，只能继续打太极了，能混一天是一天😂\n这个美债说实话，锅还得川普来背，要从根本上解决美债问题，还得是川普撤军，美伊尽快和解，我现在完全看不到美国有什么能够让伊朗屈服的办法，川子，听哥一句话，给伊朗大哥认个错道个歉，这个事就过去了，回头我带你们上快乐大本营，让何炅带你们手拉手，一起唱栀子花开，好不好？\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "这周五有沃什发言，美债这个屌样，不知道沃什会不会放鹰，债券市场其实已经不相信沃什了，觉得他搞不定通胀，或者觉得她 soft，放弃了控制2%的目标，所以不管你是不是加息，我他妈先加为敬了🫠\n其实沃什现在应该是全地球上压力最大的人类了，一边是川普的命令，一边是债券市场的压力，放鹰放鸽感觉都不行，只能继续打太极了，能混一天是一天😂\n这个美债说实话，锅还得川普来背，要从根本上解决美债问题，还得是川普撤军，美伊尽快和解，我现在完全看不到美国有什么能够让伊朗屈服的办法，川子，听哥一句话，给伊朗大哥认个错道个歉，这个事就过去了，回头我带你们上快乐大本营，让何炅带你们手拉手，一起唱栀子花开，好不好？\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T11:22:50Z",
+      "importance": "低",
+      "summary": "长篇吐槽美债市场和沃什，情绪宣泄为主。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "5",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2090016872880296285",
+      "content": "很多人还理解不了这次回购的含金量，这次回购并注销，相当于变相推高了eps，对海力士估值的修复有非常大的作用。\n前段时间还有人说我存储已经涨这么多了为什么还推荐买存储，这部分人完全不能理解存储现在是严重被低估的状态。海力士今天回购的公告中有一句话：“公司认为，当前股价没有充分反映公司的业务竞争力、现金创造能力和中长期增长潜力。因此决定用约 40万亿韩元回购并全部注销，大约相当于总股本的 3.3%”，翻译一下就是，你们都是傻逼，老子不是周期股，你们不识货我他妈就不卖给你们了，老子反正有的是钱，老子一年就能赚一个公司市值出来，你们看不懂，我就把股份注销掉，让你们想买也买不到！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\n美股仙人 (@hanking66)\n牛来！\n别躲下跌，躲下跌就是躲上涨！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\n— https://nitter.net/hanking66/status/2089974167286489156#m",
+      "content_full": "很多人还理解不了这次回购的含金量，这次回购并注销，相当于变相推高了eps，对海力士估值的修复有非常大的作用。\n前段时间还有人说我存储已经涨这么多了为什么还推荐买存储，这部分人完全不能理解存储现在是严重被低估的状态。海力士今天回购的公告中有一句话：“公司认为，当前股价没有充分反映公司的业务竞争力、现金创造能力和中长期增长潜力。因此决定用约 40万亿韩元回购并全部注销，大约相当于总股本的 3.3%”，翻译一下就是，你们都是傻逼，老子不是周期股，你们不识货我他妈就不卖给你们了，老子反正有的是钱，老子一年就能赚一个公司市值出来，你们看不懂，我就把股份注销掉，让你们想买也买不到！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\n美股仙人 (@hanking66)\n牛来！\n别躲下跌，躲下跌就是躲上涨！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\n— https://nitter.net/hanking66/status/2089974167286489156#m",
+      "published_at": "2026-08-19T10:03:47Z",
+      "importance": "高",
+      "summary": "详细分析海力士40万亿韩元回购注销对估值修复的意义，反驳周期股论调。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "海力士40万亿韩元回购注销，管理层明确表态股价未反映真实价值，为存储周期底部信号提供强背书。"
+    },
+    {
+      "post_id": "6",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2090004870128701718",
+      "content": "是的，12月9日之前美光因为chip act限制无法回购。\nYuan Xu (@YuanXu142041)\n@grok 美光Micron目前还没有宣布任何额外的股份回购或分红等股东回报计划。是不是因为chip act的相关限制？\n— https://nitter.net/YuanXu142041/status/2089987151874428934#m",
+      "content_full": "是的，12月9日之前美光因为chip act限制无法回购。\nYuan Xu (@YuanXu142041)\n@grok 美光Micron目前还没有宣布任何额外的股份回购或分红等股东回报计划。是不是因为chip act的相关限制？\n— https://nitter.net/YuanXu142041/status/2089987151874428934#m",
+      "published_at": "2026-08-19T09:16:06Z",
+      "importance": "中",
+      "summary": "美光因CHIPS Act限制在2024年12月9日前无法宣布额外回购。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "7",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2090004349573616049",
+      "content": "今天不叫棒子！今天叫欧巴！！！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "今天不叫棒子！今天叫欧巴！！！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T09:14:01Z",
+      "importance": "低",
+      "summary": "情绪化吐槽海力士和韩国，无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "8",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2089978458474754318",
+      "content": "目前没有回购的，没开财报的，没有开投资者大会的，就剩美光了。。。打牌到现在，美光满手牌，一张没出。\n要么同花顺一条龙+大小王。要么满手垃圾要不起🤣\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "目前没有回购的，没开财报的，没有开投资者大会的，就剩美光了。。。打牌到现在，美光满手牌，一张没出。\n要么同花顺一条龙+大小王。要么满手垃圾要不起🤣\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T07:31:09Z",
+      "importance": "中",
+      "summary": "分析美光尚未宣布回购的原因，比喻其'满手牌一张没出'。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "9",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2089975011146940716",
+      "content": "上午：海力士傻逼，韩国棒子傻逼！\n下午：海力士是我爹，韩国棒子牛逼！\n🤣🤣🤣\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "上午：海力士傻逼，韩国棒子傻逼！\n下午：海力士是我爹，韩国棒子牛逼！\n🤣🤣🤣\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T07:17:27Z",
+      "importance": "低",
+      "summary": "情绪化调侃海力士股价波动前后态度变化。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "10",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2089974167286489156",
+      "content": "牛来！\n别躲下跌，躲下跌就是躲上涨！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "牛来！\n别躲下跌，躲下跌就是躲上涨！\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T07:14:05Z",
+      "importance": "低",
+      "summary": "重复'Buy the dip'口号，无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "11",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2089971204446724436",
+      "content": "木头姐说，因为存储太贵，所以工程师会切换路径，找到不依赖HBM的方法，并且拿cerebras和groq的SRAM方案举例。但是这里有一个巨大漏洞，cerebras和groq用的SRAM方案也不便宜...而且如果要满足现在的性能要求和产量，最后的价格可能比HBM还贵...SRAM根本不是HBM的替代方案。如果SRAM是，cbrs的股价现在早就被买爆了。。。。市场又不是瞎子。\n文章里还有分析师ben的观点，认为存储的涨价最终会把自己走向消亡。。。这纯断章取义，原文的意思其实要温和很多，并且他还说了，Agentic inference 未来可能使用更复杂的memory hierarchy，而且更多采用高容量、成本较低的memory。与此同时，训练仍然会使用大量HBM。 这句被文章删了。。。\n然后长协一句话不提，我还是那句话。不要把甲方当傻子，长协其实就说明了一切了。他们要是真看到替代方案，就不会签这些无法取消的长协。（这些长协无法取消）\n下跌的时候一定是有坏消息的，但是下跌只是下跌，你要学会分辨噪音，存储的故事我说了很多了，很多道理都很清楚。你要是真拿不住，就看看我以前的发的帖子，温故而知新",
+      "content_full": "木头姐说，因为存储太贵，所以工程师会切换路径，找到不依赖HBM的方法，并且拿cerebras和groq的SRAM方案举例。但是这里有一个巨大漏洞，cerebras和groq用的SRAM方案也不便宜...而且如果要满足现在的性能要求和产量，最后的价格可能比HBM还贵...SRAM根本不是HBM的替代方案。如果SRAM是，cbrs的股价现在早就被买爆了。。。。市场又不是瞎子。\n文章里还有分析师ben的观点，认为存储的涨价最终会把自己走向消亡。。。这纯断章取义，原文的意思其实要温和很多，并且他还说了，Agentic inference 未来可能使用更复杂的memory hierarchy，而且更多采用高容量、成本较低的memory。与此同时，训练仍然会使用大量HBM。 这句被文章删了。。。\n然后长协一句话不提，我还是那句话。不要把甲方当傻子，长协其实就说明了一切了。他们要是真看到替代方案，就不会签这些无法取消的长协。（这些长协无法取消）\n下跌的时候一定是有坏消息的，但是下跌只是下跌，你要学会分辨噪音，存储的故事我说了很多了，很多道理都很清楚。你要是真拿不住，就看看我以前的发的帖子，温故而知新，又会豁然开朗。\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T07:02:19Z",
+      "importance": "高",
+      "summary": "反驳木头姐关于SRAM替代HBM的观点，引用长协证据论证存储超级周期逻辑。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "逐条拆解HBM替代论漏洞，指出长协锁单才是需求持续的核心证据，纠偏市场误读，强化存储持有信心。"
+    },
+    {
+      "post_id": "12",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2089933646732181627",
+      "content": "昨天市场被这个推吓得半死，但敢发推说出来就说明 openai 自己心里有底气，真正的利空和心虚一定是藏着掖着不敢说出来的🫠\n另外我也非常赞同 openai 的做法，公开透明且谨慎。不要为了竞争不择手段，盲目扩张，ai 毁灭人类的故事真的不是危言耸听，更何况目前法律法规还不完善，一切都是靠企业自我约束，openai 有这样的意识其实真的蛮难得的。\n不过奥特曼，你这个增长 18%也太傻逼了，这个真的是纯利空了，好在隔壁 A 公司没垮，不然真他妈 Ai 泡沫论了。\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\nOpenAI (@OpenAI)\nAs models become more capable, the risks associated with developing and testing them internally also grow.\nWe temporarily paused reinforcement learning (RL) training on our latest models intended for deployment for",
+      "content_full": "昨天市场被这个推吓得半死，但敢发推说出来就说明 openai 自己心里有底气，真正的利空和心虚一定是藏着掖着不敢说出来的🫠\n另外我也非常赞同 openai 的做法，公开透明且谨慎。不要为了竞争不择手段，盲目扩张，ai 毁灭人类的故事真的不是危言耸听，更何况目前法律法规还不完善，一切都是靠企业自我约束，openai 有这样的意识其实真的蛮难得的。\n不过奥特曼，你这个增长 18%也太傻逼了，这个真的是纯利空了，好在隔壁 A 公司没垮，不然真他妈 Ai 泡沫论了。\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\nOpenAI (@OpenAI)\nAs models become more capable, the risks associated with developing and testing them internally also grow.\nWe temporarily paused reinforcement learning (RL) training on our latest models intended for deployment for two weeks while we hardened and red-teamed our research environments and expanded monitoring coverage.\nOur largest planned frontier RL run remains on hold while smaller-scale training and evaluations validate these safeguards and establish more evidence of alignment.\nopenai.com/index/pacing-mode…\nLink\nPacing model development in an era of cyber-critical capabilities\nOpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development.\nopenai.com\n— https://nitter.net/OpenAI/status/2089777845187031262#m",
+      "published_at": "2026-08-19T04:33:05Z",
+      "importance": "中",
+      "summary": "分析OpenAI暂停RL训练是透明谨慎的表现，但增速18%偏难看。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "13",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2089904982535647709",
+      "content": "关于朱雀 3 我多说几句，这次回收意义不亚于 deepseek 横空出世🥰\n1.发射朱雀 3 的公司叫蓝箭航天，是一家民营航天公司，并不是国家队，和之前的长征系列火箭完全不同\n2.这次回收方式采用的垂直着陆方式，和 spcx 一样\n3.这是朱雀 3 的第二次发射，就实现了完美回收\n4.这是除美国之外第二个国家做到了垂直着陆回收\n5.朱雀三并不小，比 rocket lab 的电子号大多了，和猎鹰 9 同级。\n6.xn--fiqs8s的星链计划有希望了\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\n美股仙人 (@hanking66)\n中国朱雀 3 火箭入轨和一级全面回收圆满成功，这是中国航天的历史性一刻😂，中美火箭差距进一步缩小\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\n— https://nitter.net/hanking66/status/2089899601432326359#m",
+      "content_full": "关于朱雀 3 我多说几句，这次回收意义不亚于 deepseek 横空出世🥰\n1.发射朱雀 3 的公司叫蓝箭航天，是一家民营航天公司，并不是国家队，和之前的长征系列火箭完全不同\n2.这次回收方式采用的垂直着陆方式，和 spcx 一样\n3.这是朱雀 3 的第二次发射，就实现了完美回收\n4.这是除美国之外第二个国家做到了垂直着陆回收\n5.朱雀三并不小，比 rocket lab 的电子号大多了，和猎鹰 9 同级。\n6.xn--fiqs8s的星链计划有希望了\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\n美股仙人 (@hanking66)\n中国朱雀 3 火箭入轨和一级全面回收圆满成功，这是中国航天的历史性一刻😂，中美火箭差距进一步缩小\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\n— https://nitter.net/hanking66/status/2089899601432326359#m",
+      "published_at": "2026-08-19T02:39:11Z",
+      "importance": "中",
+      "summary": "朱雀3火箭入轨和一级回收成功，是中国民营航天的历史性突破。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "14",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2089901177567838565",
+      "content": "anthropic 无论从增速还是营收全面碾压 openai 了😂，老二变大哥了。\nopenai 的增速只有 18%这说实话有点过于难看了，还好没上市，要是上市不知道得跌成什么样😂这个增速也给本就低迷的硬件板块雪上加霜了\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "anthropic 无论从增速还是营收全面碾压 openai 了😂，老二变大哥了。\nopenai 的增速只有 18%这说实话有点过于难看了，还好没上市，要是上市不知道得跌成什么样😂这个增速也给本就低迷的硬件板块雪上加霜了\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T02:24:03Z",
+      "importance": "中",
+      "summary": "Anthropic Q2营收115亿美元碾压OpenAI的67亿，增速差距加速拉开。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "15",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2089899601432326359",
+      "content": "中国朱雀 3 火箭入轨和一级全面回收圆满成功，这是中国航天的历史性一刻😂，中美火箭差距进一步缩小\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\nLandSpace (@LandSpace_Tech)\nMISSION SUCCESS | ZhuQue-3 Y2 Reusable Launch Vehicle Achieved Full Success in Orbital Insertion and First-Stage Recovery\nOn August 19, 2026, at 07:35 (UTC+8), the ZhuQue-3 (ZQ-3) Y2 reusable launch vehicle lifted off from the Dongfeng Commercial Space Innovation Pilot Zone. Approximately 137 seconds after lift-off, the first and second stages separated. The second stage continued it",
+      "content_full": "中国朱雀 3 火箭入轨和一级全面回收圆满成功，这是中国航天的历史性一刻😂，中美火箭差距进一步缩小\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。\nLandSpace (@LandSpace_Tech)\nMISSION SUCCESS | ZhuQue-3 Y2 Reusable Launch Vehicle Achieved Full Success in Orbital Insertion and First-Stage Recovery\nOn August 19, 2026, at 07:35 (UTC+8), the ZhuQue-3 (ZQ-3) Y2 reusable launch vehicle lifted off from the Dongfeng Commercial Space Innovation Pilot Zone. Approximately 137 seconds after lift-off, the first and second stages separated. The second stage continued its flight and successfully delivered the Honghu 03 satellite, independently developed by Hongqing Technology, into its designated orbit. At approximately 07:41, the first stage performed a successful soft touchdown at the LandSpace Landing Site#1 in Minqin County, Gansu Province, following the planned trajectory — marking the full success of the flight test mission.\nVideo\n— https://nitter.net/LandSpace_Tech/status/2089877715331809546#m",
+      "published_at": "2026-08-19T02:17:48Z",
+      "importance": "低",
+      "summary": "转发朱雀3成功发射的新闻，无新增分析。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "16",
+      "author": "aleabitoreddit",
+      "display_name": "aleabitoreddit",
+      "url": "https://x.com/aleabitoreddit/status/2089973586425766134",
+      "content": "We got $LITE, $MTSI, $AAOI all pointing to extreme demand imbalances with lasers/TIA/DSP/etc from earnings...\nAnd now Elazr GM at their investor conference stated:\nOptical supply is still far behind the market demand, the expected AI optical supply chain are likely to continue for years.\n- \"the entire supply chain is out of stock\"\n- \"the supply is still far behind the market demand\"\n- \"the shortage will continue to the next few years\"\n\"Whether it is PCB, carrier board, laser chip, or even relate",
+      "content_full": "We got $LITE, $MTSI, $AAOI all pointing to extreme demand imbalances with lasers/TIA/DSP/etc from earnings...\nAnd now Elazr GM at their investor conference stated:\nOptical supply is still far behind the market demand, the expected AI optical supply chain are likely to continue for years.\n- \"the entire supply chain is out of stock\"\n- \"the supply is still far behind the market demand\"\n- \"the shortage will continue to the next few years\"\n\"Whether it is PCB, carrier board, laser chip, or even related packaging  capacity, as long as the AI supply chain link, almost all are in short supply.\"\nWhen demand visibility extends for years with the supply chain bottlenecked:\nIt's getting difficult not to see photonics echoing the memory supercycle entering 2027.",
+      "published_at": "2026-08-19T07:11:47Z",
+      "importance": "高",
+      "summary": "引用Elazr GM称AI光互连供应链全面缺货将持续数年，类比存储超级周期。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Elazr GM确认光互连全链路缺货延续数年，供需缺口可视化，为 photonics 投资逻辑提供高管背书。"
+    },
+    {
+      "post_id": "17",
+      "author": "aleabitoreddit",
+      "display_name": "aleabitoreddit",
+      "url": "https://x.com/aleabitoreddit/status/2089908198694351064",
+      "content": "Unitree (688836) is now public.\nAnd is valued at ~$53.3B, after rising +492.18%\nWe finally have a major public company benchmark for humanoids.\nFor reference, Agility (backed by $NVDA, $AMZN) via $CCXI is expected to go public at $2.5B premoney valuation Q4.\n$TSLA is $1T+, but Optimus is wrapped inside a much larger company.\nBut I think Unitree showed that the demand for pure play humanoid players is much larger… than people expected in public markets.",
+      "content_full": "Unitree (688836) is now public.\nAnd is valued at ~$53.3B, after rising +492.18%\nWe finally have a major public company benchmark for humanoids.\nFor reference, Agility (backed by $NVDA, $AMZN) via $CCXI is expected to go public at $2.5B premoney valuation Q4.\n$TSLA is $1T+, but Optimus is wrapped inside a much larger company.\nBut I think Unitree showed that the demand for pure play humanoid players is much larger… than people expected in public markets.",
+      "published_at": "2026-08-19T02:51:57Z",
+      "importance": "中",
+      "summary": "宇树科技IPO估值533亿美元，为人形机器人赛道提供了重要上市公司对标。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "18",
+      "author": "BroBean88",
+      "display_name": "BroBean88",
+      "url": "https://x.com/BroBean88/status/2090006641311985754",
+      "content": "--Peter Thiel 回来了？重新建仓？\n--为什么不买 AI 芯片选择全押电力？\n清仓美股整整两个季度之后，PayPal联合创始人、硅谷教父重新建仓了。4.19亿美金，8个标的，全部新建仓。\n一股AI芯片不买。七成仓位押了电力？\nAmazon 1.18亿，最大持仓，占28%。剩下七成全是电力和能源。\n阿根廷页岩油气公司Vista Energy 7591万。\n美国最大独立发电商之一Vistra 5913万。\nAmerican Electric Power 4222万。\nDTE Energy 4029万。\nFirstEnergy 3990万。\nCMS Energy 3956万。核能开发公司X-Energy 367万。\n六家电力加一家核能，3.01亿美金，占组合72%。\n一个在硅谷做了三十年投资的人，回来押的不是芯片不是大模型，是电。这个信号怎么理解？\nBean哥之前聊英伟达供应链的时候说过，英伟达是这条链上唯一的发令枪。它说数据中心建在哪，电力基建就得跟过去。\nThiel押的就是这个\"跟过去\"。\n瓶颈是会沿着供应链往上游移动的。2023年缺GPU，2024年缺HBM，2025年缺光",
+      "content_full": "--Peter Thiel 回来了？重新建仓？\n--为什么不买 AI 芯片选择全押电力？\n清仓美股整整两个季度之后，PayPal联合创始人、硅谷教父重新建仓了。4.19亿美金，8个标的，全部新建仓。\n一股AI芯片不买。七成仓位押了电力？\nAmazon 1.18亿，最大持仓，占28%。剩下七成全是电力和能源。\n阿根廷页岩油气公司Vista Energy 7591万。\n美国最大独立发电商之一Vistra 5913万。\nAmerican Electric Power 4222万。\nDTE Energy 4029万。\nFirstEnergy 3990万。\nCMS Energy 3956万。核能开发公司X-Energy 367万。\n六家电力加一家核能，3.01亿美金，占组合72%。\n一个在硅谷做了三十年投资的人，回来押的不是芯片不是大模型，是电。这个信号怎么理解？\nBean哥之前聊英伟达供应链的时候说过，英伟达是这条链上唯一的发令枪。它说数据中心建在哪，电力基建就得跟过去。\nThiel押的就是这个\"跟过去\"。\n瓶颈是会沿着供应链往上游移动的。2023年缺GPU，2024年缺HBM，2025年缺光互连和封装。到了2026年，算力基建铺到这个规模了，下一个卡脖子的就是电。\n数据中心目前吃掉美国6%的总发电量。到2035年预计到20%。十年三倍多。不是一个小需求。\n再看他买的Vistra。不是随便买的。\nVistra有核电站。跟Meta签了20年的核电供应合同，2.6GW。跟Amazon的AWS也签了20年，1.2GW。20年锁价的现金流，客户是全球最大的几家科技公司。\n这就是我们一直说的那个逻辑。卖产品的公司不怕周期。Vistra卖的是电，合同锁了20年。不靠叙事撑估值，靠锁定的需求撑利润。\n然后回头看他最大仓位Amazon。表面上是科技股。但Amazon是全球最大的云基础设施运营商，AWS数据中心在全球扩建。它本身就是电力需求最大的来源之一。\n所以这个组合看着是28%科技加72%电力。实际上100%都在赌同一件事：AI基建的电力需求是真的，而且才刚开始。\n一个清仓了半年什么都不买的人，重新回来全押电力。订单往哪走，确定性就在哪。\n你手里有没有在电力这条线上的东西？",
+      "published_at": "2026-08-19T09:23:08Z",
+      "importance": "高",
+      "summary": "Peter Thiel清仓美股两季度后重新建仓4.19亿美金，72%仓位押电力能源，信号意义强。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "彼得·蒂尔清仓半年后回归，72%仓位全押电力，顶级资本押注AI基建瓶颈从芯片转向电力的底层逻辑。"
+    },
+    {
+      "post_id": "19",
+      "author": "BroBean88",
+      "display_name": "BroBean88",
+      "url": "https://x.com/BroBean88/status/2089992715522183190",
+      "content": "这条收藏一下。10月Anthropic上市，回来看。\n做Claude的Anthropic，Q2营收115亿美金。做ChatGPT的OpenAI，67亿。\n历史上第一次被反超。而且差了将近一倍。\n增速上。去年同期Anthropic季度营收7.87亿。今年115亿，一年翻了14倍。环比上季度47.3亿到115亿，涨了143%。\nOpenAI。57亿到67亿，环比18%。143% vs 18%。差距在加速拉开。\n算一笔账。\nAnthropic训练模型花的钱大概是OpenAI的四分之一。四分之一的投入，1.7倍的营收。\nOpenAI 2026全年预计亏140亿美金。它自己的预测要到2029年才可能现金流转正。Q1经营利润率负122%，每赚1块钱亏1.22块。\nAnthropic Q2第一次实现了正经营利润。AI大模型公司里头一个赚钱的。\n花得少，赚得多，还先盈利了。为什么？\nChatGPT月活刚破了10亿。听着很猛。但周活从2月到现在卡在9亿不动，新增停了。更关键的是9亿人在用，大部分不掏钱，付费转化一直上不去。\nOpenAI超过六成收入来自ChatGPT消费者订阅，20块一个月，靠量撑。它上",
+      "content_full": "这条收藏一下。10月Anthropic上市，回来看。\n做Claude的Anthropic，Q2营收115亿美金。做ChatGPT的OpenAI，67亿。\n历史上第一次被反超。而且差了将近一倍。\n增速上。去年同期Anthropic季度营收7.87亿。今年115亿，一年翻了14倍。环比上季度47.3亿到115亿，涨了143%。\nOpenAI。57亿到67亿，环比18%。143% vs 18%。差距在加速拉开。\n算一笔账。\nAnthropic训练模型花的钱大概是OpenAI的四分之一。四分之一的投入，1.7倍的营收。\nOpenAI 2026全年预计亏140亿美金。它自己的预测要到2029年才可能现金流转正。Q1经营利润率负122%，每赚1块钱亏1.22块。\nAnthropic Q2第一次实现了正经营利润。AI大模型公司里头一个赚钱的。\n花得少，赚得多，还先盈利了。为什么？\nChatGPT月活刚破了10亿。听着很猛。但周活从2月到现在卡在9亿不动，新增停了。更关键的是9亿人在用，大部分不掏钱，付费转化一直上不去。\nOpenAI超过六成收入来自ChatGPT消费者订阅，20块一个月，靠量撑。它上个月才开始试水广告变现，Sora才上线，还在找新增长点。\nAnthropic反过来。八成以上收入来自企业和API。30多万家企业客户。光一个给程序员写代码的Claude Code，去年5月上线，今年年化收入80亿美金。一个产品，抵OpenAI一个季度的总收入。\nOpenAI也意识到了。上周内部会上第一次宣布企业收入超过了消费者，往To B转。但Anthropic从第一天就走的这条路。OpenAI现在是在追。\n用户最多不等于赚钱最多。C端铺量和B端赚利润是两个游戏。\n这些数字放一起看，10月的IPO就不意外了。\n投资人在瞄2万亿美金的估值。年化收入650亿，5月那轮融资估值9650亿，5个月翻一倍。如果成了，超SpaceX，史上最大IPO。\n而且银行抢疯了。100多亿美金的pre-IPO信用额度，一线银行每家塞12.5亿，二线10亿。摩根士丹利、高盛、摩根大通领投。谁投进去谁就能分承销的位子。\n上一条聊宇树的时候Bean哥说过，Anthropic上市那天AI板块大概率也是宇树的剧本。能直接赌大模型龙头了，还赌什么产业链。\n宇树上市，A股机器人板块普跌10%。Anthropic的体量是宇树的几十倍。\n但区别还是那个区别。\nA股机器人公司大部分自己也没利润，靠叙事撑估值。龙头一上市叙事集中了，配角没故事讲了。\n美光海力士不一样。毛利率85%、72%，利润在增长，订单排到明年。就算被吸一波血，基本面摆着，跌下去有人接。\n卖产品的不怕龙头IPO吸血。卖故事的怕。\nAI的需求没有消失。份额在转移。从花钱最多的，往花钱最有效率的转移。\n这件事不只发生在OpenAI和Anthropic之间。你持仓的每一家AI公司，同样的分化迟早会来。",
+      "published_at": "2026-08-19T08:27:48Z",
+      "importance": "高",
+      "summary": "深度对比Anthropic与OpenAI的商业模式，Anthropic ARR增速14倍vs OpenAI的18%，To B路径已验证。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Anthropic Q2营收115亿首超OpenAI且已盈利，B端商业模式碾压C端订阅，提示大模型赛道分化加速。"
+    },
+    {
+      "post_id": "20",
+      "author": "BroBean88",
+      "display_name": "BroBean88",
+      "url": "https://x.com/BroBean88/status/2089963893577896107",
+      "content": "宇树背后，谁赢了？\n研发费用不如乐高的公司，送出了一个千亿身家的90后首富？\n昨天Bean哥问219倍PE你敢追吗。今天近千万账户抢着回答。中签率0.018%，科创板史上最低。\n王兴兴。持股30%，身家过千亿。上一个90后首富刘靖康202亿，超五倍。\n红杉。2019年Pre-A轮首投1500万，后面又追了几轮，累计投了一个亿出头。今天按开盘价285亿。\n雷军。五年前顺为投的。他原话，\"谢谢你啊，给了我们一个投资的机会。\"1610万股今天值177亿。\n感谢你给了他赚177亿的机会。\n算一笔账。\n宇树4449亿市值，去年前三季度研发9000万。每1块钱研发撑了将近5000块市值。英伟达3万亿美元市值，研发120亿美元，每1块研发撑250块。宇树的研发杠杆是英伟达的20倍。品品这个数字。\n再看今天的行情动作，对我们来说很有参考意义。\n整个A股机器人板块普跌将近10%。宇树一个吸进去，产业链一片抽干了。\n这不是意外。龙头IPO就是整个赛道的重定价事件。之前资金分散在十几家\"可能是赢家\"的公司里，今天宇树上了，市场说我直接买主角了，配角不要了。\n这个逻辑对我们美股的人有意义。\nAnthropic",
+      "content_full": "宇树背后，谁赢了？\n研发费用不如乐高的公司，送出了一个千亿身家的90后首富？\n昨天Bean哥问219倍PE你敢追吗。今天近千万账户抢着回答。中签率0.018%，科创板史上最低。\n王兴兴。持股30%，身家过千亿。上一个90后首富刘靖康202亿，超五倍。\n红杉。2019年Pre-A轮首投1500万，后面又追了几轮，累计投了一个亿出头。今天按开盘价285亿。\n雷军。五年前顺为投的。他原话，\"谢谢你啊，给了我们一个投资的机会。\"1610万股今天值177亿。\n感谢你给了他赚177亿的机会。\n算一笔账。\n宇树4449亿市值，去年前三季度研发9000万。每1块钱研发撑了将近5000块市值。英伟达3万亿美元市值，研发120亿美元，每1块研发撑250块。宇树的研发杠杆是英伟达的20倍。品品这个数字。\n再看今天的行情动作，对我们来说很有参考意义。\n整个A股机器人板块普跌将近10%。宇树一个吸进去，产业链一片抽干了。\n这不是意外。龙头IPO就是整个赛道的重定价事件。之前资金分散在十几家\"可能是赢家\"的公司里，今天宇树上了，市场说我直接买主角了，配角不要了。\n这个逻辑对我们美股的人有意义。\nAnthropic迟早上市。到那天AI板块大概率也是今天这个剧本。能直接赌大模型龙头了，还赌什么产业链？资金从供应链里抽出来往IPO涌。甚至不用等那天，提前跑的人一定有。\n但这里有个区别我想说一下。\n今天被抽血的那些A股机器人公司，大部分自己也没利润，也是靠机器人叙事撑着估值。叙事集中到宇树一个人身上，其他人就没故事讲了。\n美光海力士不一样。毛利率85%、72%，利润在增长，订单排到明年。就算Anthropic上市吸一波血，基本面在那摆着。跌下去是有人接的。\n这也是我一直说的。在AI赛道里，分清楚谁在卖故事、谁在卖产品，这件事越来越重要了。卖故事的公司怕龙头IPO吸血，卖产品的不怕。\n还有一个细节。宇树今天4449亿的市值，是7.44%的流通盘定出来的价格。剩下92%全锁着。\n等解禁往外一倒，谁来接？",
+      "published_at": "2026-08-19T06:33:16Z",
+      "importance": "高",
+      "summary": "分析宇树IPO对A股机器人板块的'吸血效应'，类比SpaceX上市，区分卖故事与卖产品的公司。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "宇树上市抽血机器人板块验证龙头IPO吸血规律，类比例推演Anthropic上市影响，区分卖故事vs卖产品公司。"
+    },
+    {
+      "post_id": "21",
+      "author": "domaprotocol",
+      "display_name": "domaprotocol",
+      "url": "https://x.com/domaprotocol/status/2089995844283990467",
+      "content": "Heads up 🛠️ Scheduled maintenance starts 10am UTC.\nWe're upgrading the platform for improved stability. Parts of doma.xyz may be unavailable during maintenance.\nThanks for the patience 🙏\nLink\nDoma | Tokenizing domains\nDoma Protocol revolutionizes the domain industry by transforming domains into programmable, blockchain-based assets.\ndoma.xyz",
+      "content_full": "Heads up 🛠️ Scheduled maintenance starts 10am UTC.\nWe're upgrading the platform for improved stability. Parts of doma.xyz may be unavailable during maintenance.\nThanks for the patience 🙏\nLink\nDoma | Tokenizing domains\nDoma Protocol revolutionizes the domain industry by transforming domains into programmable, blockchain-based assets.\ndoma.xyz",
+      "published_at": "2026-08-19T08:40:14Z",
+      "importance": "低",
+      "summary": "Doma Protocol平台维护公告。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "22",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2090053500697026881",
+      "content": "NBIS宣布拟私募发行总额 45 亿美元的可转换优先票据，分为两个系列：27.5亿美元到期日为2030年的可转换票据和17.5亿美元到期日为2034年的可转换票据。\n公司表示，拟将净收益用于数据中心建设和扩建、AI 云平台开发、包括 GPU 在内的关键组件采购，以及一般公司用途。\n在票据定价的同时，公司预计将与有限数量的公司2029年到期2.00%可转换高级票据（“2029年票据”）和2031年到期3.00%可转换高级票据（“2031年票据”，与2029年票据合称“现有票据”）持有人分别进行私下协商交易，就部分已发行的现有票据交换为公司A类普通股（“A类股份”）达成协议。参与此类交换的现有票据持有人可在公开市场出售所获得的A类股份，和/或就其针对现有票据可能持有的对冲头寸建立或平仓各类衍生交易。此类活动可能导致A类股份的市场价格下跌（或削弱其任何上涨幅度），\nNbis盘前大跌、其实昨天美债收益率走高新云厂商也都大幅走弱。还是月初这里最后部分聊到的，“NeoCloud重估阶段弹性更大但是因为他们的债务问题一遇到市场逆风抗跌性也很差、更适合做波段”\nqinbafrank (@qinbafr",
+      "content_full": "NBIS宣布拟私募发行总额 45 亿美元的可转换优先票据，分为两个系列：27.5亿美元到期日为2030年的可转换票据和17.5亿美元到期日为2034年的可转换票据。\n公司表示，拟将净收益用于数据中心建设和扩建、AI 云平台开发、包括 GPU 在内的关键组件采购，以及一般公司用途。\n在票据定价的同时，公司预计将与有限数量的公司2029年到期2.00%可转换高级票据（“2029年票据”）和2031年到期3.00%可转换高级票据（“2031年票据”，与2029年票据合称“现有票据”）持有人分别进行私下协商交易，就部分已发行的现有票据交换为公司A类普通股（“A类股份”）达成协议。参与此类交换的现有票据持有人可在公开市场出售所获得的A类股份，和/或就其针对现有票据可能持有的对冲头寸建立或平仓各类衍生交易。此类活动可能导致A类股份的市场价格下跌（或削弱其任何上涨幅度），\nNbis盘前大跌、其实昨天美债收益率走高新云厂商也都大幅走弱。还是月初这里最后部分聊到的，“NeoCloud重估阶段弹性更大但是因为他们的债务问题一遇到市场逆风抗跌性也很差、更适合做波段”\nqinbafrank (@qinbafrank)\n超大CSP重估，Neocloud也会被带起来，不过也有几点去区分：\n1、个人看好的CSP价值重估，核心逻辑是在“分场景、多模型”企业AI采用工程化阶段、受益于开源模型的部署成本结构大幅度改变。个人看好的确定性最好的几家CSP七月初这里nitter.net/qinbafrank/status/2074…有来聊到；\nnitter.net/qinbafrank/status/2074…\n2、对于Neocloud来说，超大CSP价值重估，Neocloud自然也是被带起来的。下午发的大摩看ROIC框架里单纯算力出租的ROIC也很好。那么新云也受益\n3、CSP真正价值是要成为“AI操作系统层”，这涉及：路由、缓存、上下文压缩、权限、审计。涵盖闭源 API、开源模型推理、向量数据库、对象存储、数据仓库、网络、Kubernetes、MLOps、安全、监控、agent runtime、GPU/TPU/ASIC 租用、企业私有化部署。基本上是企业 AI 进入生产环境后的全部云消费。\n所以纯出租算力的Neocloud就没有能更进一步的AI操作系统中间层升级的新云厂商想象力大了。\n要去看哪些新云厂商kaishiq从“算力出租层”往“AI运营维护的中间层”升级；\n4、最后还要密切关注新云厂商的债务问题，毕竟相比超大csp他们的现金流能力更差更弱、价值重估阶段可能弹性大，但是一遇到市场逆风，新云厂商抗跌性也很差，Neocloud更适合做波段。\n— https://nitter.net/qinbafrank/status/2084246799037124627#m",
+      "published_at": "2026-08-19T12:29:20Z",
+      "importance": "中",
+      "summary": "NBIS拟私募发行45亿美元可转换票据用于数据中心建设，盘前大跌反映Neocloud债务风险。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "23",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2090027515075346886",
+      "content": "海力士宣布回购，存储股越来越像大科技。今天SK海力士宣布股东回报措施：1、总额40万亿韩元的股份回购，以决议前一日收盘价每股166.2万韩元计算，相当于2407万股，占已发行股份总数（共7亿3049万2365股）的约3.3%。公司计划自8月20日起，在约3个月内完成回购，并于回购结束后予以全部注销；\n2、SK海力士同步表示，将把股东回报规模从现有的“累计自由现金流50%范围内”调整为“50%以上”。在回报方式上，公司将并行实施股份回购注销与现金分红，并计划研究涵盖固定分红及特别分红等在内的分红扩大方案。之前的股东回报规模是自由现金流的50%以内\n这应该创下了韩国上市公司股份回购的历史规模了。\n1、存储股陆续回购\n1）海力士开始回购、三星电子估计也不远了，之前就有媒体报道三星也在酝酿股东回报句话。\n2）上周闪迪也宣布nitter.net/qinbafrank/status/2087…未来几个财年，资本开支剩余的现金100%返还给股东。\n3）美光可能在年底宣布回购\n目前受《芯片与科学法案》CHIPS Act相关协议限制，短期内无法像海力士那样宣布大规模回购。\n美光在24年12月9日与美国商",
+      "content_full": "海力士宣布回购，存储股越来越像大科技。今天SK海力士宣布股东回报措施：1、总额40万亿韩元的股份回购，以决议前一日收盘价每股166.2万韩元计算，相当于2407万股，占已发行股份总数（共7亿3049万2365股）的约3.3%。公司计划自8月20日起，在约3个月内完成回购，并于回购结束后予以全部注销；\n2、SK海力士同步表示，将把股东回报规模从现有的“累计自由现金流50%范围内”调整为“50%以上”。在回报方式上，公司将并行实施股份回购注销与现金分红，并计划研究涵盖固定分红及特别分红等在内的分红扩大方案。之前的股东回报规模是自由现金流的50%以内\n这应该创下了韩国上市公司股份回购的历史规模了。\n1、存储股陆续回购\n1）海力士开始回购、三星电子估计也不远了，之前就有媒体报道三星也在酝酿股东回报句话。\n2）上周闪迪也宣布nitter.net/qinbafrank/status/2087…未来几个财年，资本开支剩余的现金100%返还给股东。\n3）美光可能在年底宣布回购\n目前受《芯片与科学法案》CHIPS Act相关协议限制，短期内无法像海力士那样宣布大规模回购。\n美光在24年12月9日与美国商务部签署了CHIPS Act直接资助协议（最高约61亿美元，后续有所扩展至约64亿美元），用于爱达荷、纽约等地的晶圆厂建设。根据协议条款CHIPS资金本身禁止用于股票回购或分红（这是法案明文规定）。美光的协议允许有限的“许可回购”（Permitted Stock Buybacks）：在协议签署的满2周年后，可在满足自由现金流、净债务比率、投资级评级、研发支出等条件下，可以进行更大规模的回购。\n美光CFO Mark Murphy在6月的财报电话会议上明确表示：公司计划从12月9日起显著增加资本回报（主要形式是股票回购），长期目标是将100%的超额现金返还给股东。\n2、存储股为何纷纷开始股东回报？\n1）AI 浪潮改变了现金流质量：\n随着 HBM（高带宽内存）和企业级存储需求的暴增，存储行业毛利和现金流大幅上升，赋予了存储巨头进行大手笔股东回报的资金底气。\n2）对冲周期波动，管理市场预期\n存储板块Beta属性极强，股价波动剧烈。企业通过承诺将固定比例的自由现金流（如自由现金流的 50%）用于回购注销，意在向资本市场传递信号：周期底部有估值支撑，以此降低股价波动率。\n3、意义与影响\n核心就是上周聊到的“存储未来就像大科技，甚至可能跟英伟达近两年走势很像了。存储（尤其是以HBM为代表的高端内存）有从“极端周期商品”向“AI基础设施成长股”过渡的影子。”\n它不会完全变成纯成长股，但周期属性被结构性削弱，波动路径、估值逻辑和资本行为会越来越接近英伟达这类大科技——有剧烈回调，但整体受需求支撑，底部抬高，资本回报更积极，在这种情况、市场才可能给出更高一些的“正常化利润”倍数\nqinbafrank (@qinbafrank)\n对于前几天热议的“多光空存”，前天这里nitter.net/qinbafrank/status/2086…最后部分聊到的不知多少人听进去了：现在这个时点空存性价比不高了。空间还有，只是最暴力丝滑的阶段过去了。未来就像大科技，甚至可能跟英伟达近两年走势很像了。\n— https://nitter.net/qinbafrank/status/2087395743946674296#m",
+      "published_at": "2026-08-19T10:46:05Z",
+      "importance": "高",
+      "summary": "海力士宣布40万亿韩元回购注销创韩国历史纪录，存储股纷纷转向股东回报，美光12月后也可能跟进。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "海力士40万亿韩元回购创韩国纪录，存储巨头集体转向股东回报，周期属性弱化、成长股化趋势确立。"
+    },
+    {
+      "post_id": "24",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2089975650824462838",
+      "content": "OpenAI二季度的营收其实不重要，关键要看GPT5.6发布之后的三季度营收。今天华尔街日报援引知情人士报道OpenAI二季度收入为67亿美元，较一季度的57亿美元增长18%，与此同时运营亏损进一步扩大，然后大家继续慌。但想多说一句，OpenAI在上半年的弱势整个市场都能看到的，OpenAI的翻身仗发生在6月底到7月初（二季度末三季度初）：GPT-5.6于在年6月26日开始有限预览，在7月9日正式才公开发布。GPT5.6口碑和市场反响明显相比之前大幅度提升。\n然后7月30日OpenAI宣布：Luna版降价 80%（输入从 $1 降至 $0.20，输出从 $6 降至 $1.20），Terra 降价 20%（输入从 $2.50 降至 $2，输出从 $15 降至 $12），而 Sol 保持 $5 输入 / $30 输出不变。主动挑起了价格战。\n所以OpenAI二季度的弱势有目共睹、营收自然也好不到哪里去。真正需要关注的是GPT5.6发布之后的三季度的营收、之前这里nitter.net/qinbafrank/status/2082…聊到7月份openai的营收其实在快速追赶的。\n毕竟7月中旬两",
+      "content_full": "OpenAI二季度的营收其实不重要，关键要看GPT5.6发布之后的三季度营收。今天华尔街日报援引知情人士报道OpenAI二季度收入为67亿美元，较一季度的57亿美元增长18%，与此同时运营亏损进一步扩大，然后大家继续慌。但想多说一句，OpenAI在上半年的弱势整个市场都能看到的，OpenAI的翻身仗发生在6月底到7月初（二季度末三季度初）：GPT-5.6于在年6月26日开始有限预览，在7月9日正式才公开发布。GPT5.6口碑和市场反响明显相比之前大幅度提升。\n然后7月30日OpenAI宣布：Luna版降价 80%（输入从 $1 降至 $0.20，输出从 $6 降至 $1.20），Terra 降价 20%（输入从 $2.50 降至 $2，输出从 $15 降至 $12），而 Sol 保持 $5 输入 / $30 输出不变。主动挑起了价格战。\n所以OpenAI二季度的弱势有目共睹、营收自然也好不到哪里去。真正需要关注的是GPT5.6发布之后的三季度的营收、之前这里nitter.net/qinbafrank/status/2082…聊到7月份openai的营收其实在快速追赶的。\n毕竟7月中旬两周Codex+GPTwork的用户就增长了超过400万，之前官方这里nitter.net/thsottiaux/status/2079…也有宣布过。\nqinbafrank (@qinbafrank)\nAuthropic年底ARR还能突破1000亿美金么？这两天爆出来Authropic的ARR低于第三方的预期，很多人有点慌。详细聊聊：\n1、先看实际季度营收\n最新完成季度（Q2 2026）初步收入超过 115 亿美元（同比 2025 年同期约 7.87 亿美元，增长约 14 倍）；Q1 约 47.3 亿美元。该季度已实现调整后经营利润为正。\n实际营收季度环比144%，三四季度环比增速降到二季度环比增速的一半，26年authropic实际营收基本上突破500亿美金，甚至摸到600亿美金。\n2、再看ARR\nAnthropic最新 ARR约650亿美元（截至7月底）。今年之前历次ARR\n2025 年底：约 90 亿美元\n2026 年 2 月：约 140 亿美元\n3 月：约 190 亿美元\n4 月：约 300 亿美元\n5 月：470 亿美元\n7 月底：650 亿美元\n用近期趋势推算基准未来五个月：\n5月到7月这 2 个月总增约 +38%，平均月环比（复合）约 +17.6%，绝对月增量约 +90 亿美元。（上半年2–5 月月环比曾高达 35%–58%，近期已明显降速）z\n从 7 月底到 12 月底还有约 5 个月。\n几种简单趋势推算\n1）继续维持近期约 17.6% 月环比（不进一步减速），到12月底，ARR能到1460亿美金；\n2）温和减速到月环比 12%–15%（更符合基数变大后的常态）\n年底12月ARR落在1150～1310亿美金之间；\n3）更保守（月环比降到 10%）\n年底ARR触及约 1050 亿美元\n综合这些外推，中性情景约 1100–1300 亿美元。\n整体来看，即使近期环比已降速，年底ARR突破 1000 亿美元几乎是市场默认情景。\n所以见底Aurhropic的业务体量将在ARR在1100亿美金、实际营收在5、600亿美金的规模。相比25年底、arr也就70多亿美金。\n3、更重要的是我们用什么来衡量AI的商业化。\n这其实很关键、7月初的推文聊到之前AI商业化大家只盯着Authropic和OpenAI的arr、但CSP云厂商的业绩可能是衡量AI商业化最全面的指标。\n核心就是企业Ai采用进入“分场景、多模型”的阶段、很多企业会把一部分业务场景切换到开源模型上、这一部分的价值沉淀在云厂商上、而非前沿大模型。\n闭源前沿模型继续走高端溢价路线：\n开源模型+自研模型+CSP 托管将成为中低端和高频场景的主力。企业 AI 进入生产环境后的全部云消费最后大部分路在的CSP身上。能看出来很多人还是没有转过弯来，只盯着前沿闭源大模型、略有忽略csp的云业务e\n整体token成本下降、企业和个人使用是越来越多，也有利益应用层的发展。\n本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易 」\n— https://nitter.net/qinbafrank/status/2089924512569761962#m",
+      "published_at": "2026-08-19T07:19:59Z",
+      "importance": "中",
+      "summary": "OpenAI Q2营收67亿美元增长18%非关键，真正看GPT-5.6发布后的Q3表现及价格战效果。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "25",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2089964444952805864",
+      "content": "宇树上市机器人产业链都大跌，这几乎跟6月中SpaceX上市时吸血整个太空经济板块很类似了，能看出来龙头上市对产业链的吸血效应还是很强的。\nqinbafrank (@qinbafrank)\nSpaceX上市开盘大涨，太空经济板块却普跌。从25年11月开始关注太空经济并在X上持续写了几十篇推文，是时候复盘下哪些是看对了哪些看错了？个人角度不是故事结束了，而是市场在快速分化。详细做个梳理与复盘\n1、昨晚太空经济板块分化的原因是什么？\n1）资金轮动+代理溢价消退\n之前太空经济板块整体涨，很大程度是“SpaceX映射”，或者SpaceX上市预期驱动，机构/散户想买太空概念，只能买这些代理资产。现在正主直接上市+重仓可及，部分资金（尤其是参与IPO认购后释放的超额资金）直接切到SPCX。路演阶段就已经开始吸血，上市当天进一步兑现。不是板块利空，而是直接选择权出现了。\n2）平台 vs 影子资产的重新定价\nSpaceX是垂直整合平台：Starlink现金流（营收主力）、发射护城河（可复用+Starship）、国防合同、规模效应。估值给的是未来整个生态的溢价。\n太空经济板块其他股票都有自己的优势，但是资",
+      "content_full": "宇树上市机器人产业链都大跌，这几乎跟6月中SpaceX上市时吸血整个太空经济板块很类似了，能看出来龙头上市对产业链的吸血效应还是很强的。\nqinbafrank (@qinbafrank)\nSpaceX上市开盘大涨，太空经济板块却普跌。从25年11月开始关注太空经济并在X上持续写了几十篇推文，是时候复盘下哪些是看对了哪些看错了？个人角度不是故事结束了，而是市场在快速分化。详细做个梳理与复盘\n1、昨晚太空经济板块分化的原因是什么？\n1）资金轮动+代理溢价消退\n之前太空经济板块整体涨，很大程度是“SpaceX映射”，或者SpaceX上市预期驱动，机构/散户想买太空概念，只能买这些代理资产。现在正主直接上市+重仓可及，部分资金（尤其是参与IPO认购后释放的超额资金）直接切到SPCX。路演阶段就已经开始吸血，上市当天进一步兑现。不是板块利空，而是直接选择权出现了。\n2）平台 vs 影子资产的重新定价\nSpaceX是垂直整合平台：Starlink现金流（营收主力）、发射护城河（可复用+Starship）、国防合同、规模效应。估值给的是未来整个生态的溢价。\n太空经济板块其他股票都有自己的优势，但是资产质量相比SpaceX差距还是很大。\nRKLB有发射+航天器，也是国防航天承包商，但规模/护城河差一截；\nASTS是直连手机细分但执行风险高；LUNR纯月球高beta；\nRedwire/Planet是供应链/数据层。\n市场从“叙事共振”切换到“基本面+执行力”筛选，代理资产溢价被抽。\n2、复盘过往对太空经济板块的分析及推演\n哪些是看对的\n1）SpaceX上市预期能带动整个太空经济板块。最早去年12月有聊过：nitter.net/qinbafrank/status/2000…\n今年4月初市场反转的也再次聊过：nitter.net/qinbafrank/status/2041… 除了SpaceX上市预期，太空经济板块整体业务模式也跑通；\n事后看确实太空经济板块整体上扬\n2）RKLB做为太空经济的龙二，自身催化剂强（军方订单、Electron高成功率、NASA局长人选利好），叠加SpaceX预期，能独立走强。\n去年12月nitter.net/qinbafrank/status/2002…\n今年1月nitter.net/qinbafrank/status/2012… 聊到RKLB已经跻身最大国防太空承包商；\n今年4月中这里nitter.net/qinbafrank/status/2045…也详细梳理过RKLb的并购策略；\n5月初这里nitter.net/qinbafrank/status/2052…也分析过RKLB强劲的一季度财报；\n3）关于SpaceX在路演期间以及上市后解锁前的表现\n这条推文引用的6月1号推文，详细分析了SpaceX的IPO对市场的吸血是在路演期间而非大家认为上市的时候。同时认为Spacex在解锁安排和业务表现能支撑在解禁前有一波表现。\n下一步验证的就是解禁期前spacex能冲多高？以及第一次解禁后是不是股价就要承压，SpaceX股价走势从安全期进入谨慎期。\n哪些看错了或者有偏差：\n核心就低估了“正主上市后对代理资产的挤出效应”。我之前说过看好SpaceX上市后有一波、也能带动太空经济走一波——这波对SPCX自身是对的，对板块整体是错的。短期分化比共振更明显。\n之前在这里nitter.net/qinbafrank/status/2057…分析RKLB增发股票属于短期利空，但中长期利好。认为可以等spacex上市交易后走了一波行情（也会带动板块整体走高），这个时候可能是太空经济的卖点，大概率会在哪个时候择机减些仓位。当时增发当天确实大跌，很快之后几个交易日5月底快速上行到150的高点，然后就是面临SpaceX在6月初开始路演的抽血效应。\n这个看错或者偏差的本质是对板块“抱团映射”属性的持续时间判断偏乐观。过去一年多SpaceX预期确实是最大beta驱动，但一旦正主落地，市场立刻开始区分平台与影子。\n3，未来怎么看？\n这并不是说太空经济故事结束了，这是市场开始区分平台资产和影子资产。\nSpaceX有星链现金流，有火箭发射入口，有国防合同，还有AI算力和太空基础设施故事。它是平台。\n太空经济板块其他股票还要继续证明自己的订单、收入、现金流和融资能力。\n这意味着我们别再纯赌“太空经济板块”，要去看个股基本面+独立催化剂驱动。\n再以RKLB为例来聊聊。\nRKLB目前位置：\n1）优势：\n已进入纳斯达克100（6月22日生效），被动资金持续流入；\nElectron稳定+ backlog强劲；\nNeutron中型火箭进度是最大变量（如果成功，定位会从“小火箭公司”升级）。\n2）风险：\n估值仍不便宜，执行风险（Neutron延误会杀估值）；\nSpaceX继续降本会压缩部分发射溢价。\n3）后续看点（个人给优先级排个序）：\n-Neutron首次飞行/进度更新（最重要催化剂）；\n-后续军方/商业订单落地；\n-财报中毛利率、现金流改善情况；\n-整体市场流动性与AI/宏观环境（板块beta仍存在，但alpha靠自己）。\n整体来说\nSpaceX成功是长期利好整个生态（更便宜的发射、更多卫星上天，需求扩张）。\n但它上市也意味着市场对太空经济板块已经从“概念市”进入“执行市”。\nSpaceX之外，有真实订单、清晰路径、执行力强的会继续分化跑赢；\n纯代理逻辑或者叙事驱动的股票容易进一步承压。\n我自己RKLB仓位大部分还在，也只是在上周感觉到大盘整体风险的时候nitter.net/qinbafrank/status/2062…整体减了一些仓位。后面继续跟踪个股自身里程碑和催化剂，而不仅是只等板块共振。\n看对了，继续努力。看错了，接受批评。\n经常出错，唯有复盘和持续精进是爬坑的有效方式\n本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易 」\n— https://nitter.net/qinbafrank/status/2065644169373364391#m",
+      "published_at": "2026-08-19T06:35:27Z",
+      "importance": "高",
+      "summary": "深度复盘宇树上市吸血效应，类比SpaceX上市时太空经济板块分化逻辑。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "复盘SpaceX上市对太空板块吸血效应，正主落地后资金从影子资产回流平台资产，对AI产业链有镜像参考。"
+    },
+    {
+      "post_id": "26",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2089924512569761962",
+      "content": "Authropic年底ARR还能突破1000亿美金么？这两天爆出来Authropic的ARR低于第三方的预期，很多人有点慌。详细聊聊：\n1、先看实际季度营收\n最新完成季度（Q2 2026）初步收入超过 115 亿美元（同比 2025 年同期约 7.87 亿美元，增长约 14 倍）；Q1 约 47.3 亿美元。该季度已实现调整后经营利润为正。\n实际营收季度环比144%，三四季度环比增速降到二季度环比增速的一半，26年authropic实际营收基本上突破500亿美金，甚至摸到600亿美金。\n2、再看ARR\nAnthropic最新 ARR约650亿美元（截至7月底）。今年之前历次ARR\n2025 年底：约 90 亿美元\n2026 年 2 月：约 140 亿美元\n3 月：约 190 亿美元\n4 月：约 300 亿美元\n5 月：470 亿美元\n7 月底：650 亿美元\n用近期趋势推算基准未来五个月：\n5月到7月这 2 个月总增约 +38%，平均月环比（复合）约 +17.6%，绝对月增量约 +90 亿美元。（上半年2–5 月月环比曾高达 35%–58%，近期已明显降速）z\n从 7 月底到 12 月",
+      "content_full": "Authropic年底ARR还能突破1000亿美金么？这两天爆出来Authropic的ARR低于第三方的预期，很多人有点慌。详细聊聊：\n1、先看实际季度营收\n最新完成季度（Q2 2026）初步收入超过 115 亿美元（同比 2025 年同期约 7.87 亿美元，增长约 14 倍）；Q1 约 47.3 亿美元。该季度已实现调整后经营利润为正。\n实际营收季度环比144%，三四季度环比增速降到二季度环比增速的一半，26年authropic实际营收基本上突破500亿美金，甚至摸到600亿美金。\n2、再看ARR\nAnthropic最新 ARR约650亿美元（截至7月底）。今年之前历次ARR\n2025 年底：约 90 亿美元\n2026 年 2 月：约 140 亿美元\n3 月：约 190 亿美元\n4 月：约 300 亿美元\n5 月：470 亿美元\n7 月底：650 亿美元\n用近期趋势推算基准未来五个月：\n5月到7月这 2 个月总增约 +38%，平均月环比（复合）约 +17.6%，绝对月增量约 +90 亿美元。（上半年2–5 月月环比曾高达 35%–58%，近期已明显降速）z\n从 7 月底到 12 月底还有约 5 个月。\n几种简单趋势推算\n1）继续维持近期约 17.6% 月环比（不进一步减速），到12月底，ARR能到1460亿美金；\n2）温和减速到月环比 12%–15%（更符合基数变大后的常态）\n年底12月ARR落在1150～1310亿美金之间；\n3）更保守（月环比降到 10%）\n年底ARR触及约 1050 亿美元\n综合这些外推，中性情景约 1100–1300 亿美元。\n整体来看，即使近期环比已降速，年底ARR突破 1000 亿美元几乎是市场默认情景。\n所以见底Aurhropic的业务体量将在ARR在1100亿美金、实际营收在5、600亿美金的规模。相比25年底、arr也就70多亿美金。\n3、更重要的是我们用什么来衡量AI的商业化。\n这其实很关键、7月初的推文聊到之前AI商业化大家只盯着Authropic和OpenAI的arr、但CSP云厂商的业绩可能是衡量AI商业化最全面的指标。\n核心就是企业Ai采用进入“分场景、多模型”的阶段、很多企业会把一部分业务场景切换到开源模型上、这一部分的价值沉淀在云厂商上、而非前沿大模型。\n闭源前沿模型继续走高端溢价路线：\n开源模型+自研模型+CSP 托管将成为中低端和高频场景的主力。企业 AI 进入生产环境后的全部云消费最后大部分路在的CSP身上。能看出来很多人还是没有转过弯来，只盯着前沿闭源大模型、略有忽略csp的云业务e\n整体token成本下降、企业和个人使用是越来越多，也有利益应用层的发展。\n本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易 」\nqinbafrank (@qinbafrank)\n之前看AI商业化只盯着Authropic/OpenAIdeARR，未来超大CSP的业绩表现将会衡量AI商业化更重要的指标。为什么这么说？说说我的理解：\n1、闭源大模型ARR这些数字极其重要，因为它们直接反映用户愿意为模型能力付费。但情况在发生变化：\n1）前两天这里nitter.net/qinbafrank/status/2073…聊到，Coinbase通过工程手段把成本支出给压下来——路由到开源模型、缓存命中率从5%提到60%、上下文精简等方式，token消耗量继续飙升、但是整体支出确实下降的。简单说coinbase把一部分高频、低价值的工作场景切换到了开源模型。\n2）今天看到nitter.net/qinbafrank/status/2074…微软除了部署开源模型，已经上线了自研模型MAI。微软自研模型的典型应用场景也是高频、低复杂度、高体积的任务，用自研模型能大幅降低每token成本，同时保持用户体验。复杂推理仍可fallback到OpenAI/Anthropic。\n2、这已经是一个明显的信号：\n方向完全不是“少用”而是“更便宜地用更多”，这就意味着AI在企业级市场的采用越来越变成分场景应用模型阶段：\n1）高价值场景使用继续使用闭源前沿大模型的高价值Token；\n2）高频、低复杂度、高体积的任务场景下，企业越来越偏向高性比价比Token。\n未来越来越多的企业会采用这个模式。对企业来说，未来AI adoption 的关键不再只是“买 Claude、买 ChatGPT、买 Copilot”，而是要搭一个“AI运营维护层”。\n这就导致企业AI成本最后应该是工程问题：路由、缓存、上下文压缩、权限、审计。对于coinbase本身就是科技企业，有能力配置自己内部的AI操作系统。但是大部分企业其实没有这个能力的，最后还是要去依赖CSP给企业搭建的AI使用场景。\n3、这就意味着CSP正在成为企业多模型架构中的关键“中间层”，既帮客户降本，又自己赚取更高比例的利润。\nCSP的优势在于：它不只看某一个闭源模型的收入，而是看企业 AI 进入生产环境后的全部云消费。这包括闭源 API、开源模型推理、向量数据库、对象存储、数据仓库、网络、Kubernetes、MLOps、安全、监控、agent runtime、GPU/TPU/ASIC 租用、企业私有化部署。\n如果企业采用 AI 进入成本工程化阶段，高频、中低价值场景会转向更便宜的 token、更便宜的模型、更贴近数据的云端部署。 这会压缩部分闭源模型的单位经济，但不一定压缩 CSP；相反，它可能扩大推理总量，把商业价值沉淀在云端。\n这本质上是把“模型层”商品化后，CSP 把价值更多地转移到基础设施 + 平台服务层（托管、优化、路由、治理、安全）。换句话说：\n大模型 ARR 是“模型层收入”；\nCSP业绩才是“AI 工程化收入”。\n4、这意味着什么？\n1）大模型ARR是“AI 需求纯度最高”的指标，但CSP是“AI 商业化落地最综合”的指标。\n2）未来企业采用AI进程不可避免多模型架构，前沿闭源大模型只是企业整个业务场景往AI迁移中一个关键占据高价值场景的模型选择，但不会吃到企业所有的业务场景。非高价值、高复杂度业务场景的价值就从前沿闭源大模型外溢到开源模型和CSP的自研模型上。\n从这个角度，提供前沿闭源模型、开源模型、自研模型的CSP才是最大的价值沉淀。\n这其实让我们摆脱了AI商业化只看闭源前沿大模型ARR的窘境，需要把超大CSP厂商业绩表现提到同等重要甚至更高的权重上来。\n5、对几家超大CSP同样意义重大\n1）AI推理是超大CSP云业务的主要成本项之一，部署开源模型直接改善毛利率，自研模型进一步优化成本结构；\n2）新的战略优势\n之前市场认为CSP特别是几家超大CSP是一个二道贩子，贩卖算力和token，同时还要承担巨额的资本开支但并没捕获最大的价值。\n现在“高效中型模型 + 规模部署”在生产环境下也证明了自己觉的价值，而非一味追求参数军备竞赛。\n那么过去的认知也要反转了：\n超大CSP已经是企业AI进程多模型架构下的“AI操作系统层”。\n3）成本营收结构的变化\nCSP 转售闭源模型时：CSP 拿到的分成比例有限（通常 20-50% 不等，具体看合同），还要承担模型方的定价压力。\n自托管开源模型转售：开源模型基本零授权成本，CSP 只需承担自己的算力、电费和运维成本。CSP 几乎拿走全部 markup（扣除算力成本后）。因为定价可以参考开源社区实际成本 + 合理溢价，空间更大。\n自研模型更不用说，几乎营收全在CSP。\n4）超大CSP的价值重估。\n超大CSP有算力、能部署开源模型，也能自研模型，不再是只靠前沿闭源大模型，毛利会更高，海量B端客户通道依然有巨大优势，\n这些都会让超大CSP形成新的战略优势。\n综上，未来：\n模型公司决定“AI 能做什么”；\nCSP 决定“AI 能以多大规模、多低成本、多高可靠性进入企业生产系统”。\n还是之前聊到的未来趋势很明确：\n闭源前沿模型继续走高端溢价路线：\n开源模型+自研模型+CSP 托管将成为中低端和高频场景的主力。\n能把开源模型和自研模型serving 做到极致低成本 + 高可靠的 CSP，将在 AI 时代获得显著的利润率优势。\n$MSFT $AMZN $goog $00700 $baba\n— https://nitter.net/qinbafrank/status/2074754779755295164#m",
+      "published_at": "2026-08-19T03:56:47Z",
+      "importance": "中",
+      "summary": "推演Anthropic年底ARR能否突破1000亿美元，中性情景约1100-1300亿。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "27",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090049430338584698",
+      "content": "I have a small spot $SOL allocation.\nI’m not particularly bullish on it long term, but I think there’s a good chance we see something like this play out once $BTC starts trending higher again.\nPersonally, I’m targeting a 75–100% move here, nothing too crazy. Patience.\nKilla (@KillaXBT)\nSlowly… then all at once.\nWe might not see $SOL print new ATHs, but once $BTC bottoms, a 100–150% move from here is absolutely in play.\n— https://nitter.net/KillaXBT/status/2087959870595272714#m",
+      "content_full": "I have a small spot $SOL allocation.\nI’m not particularly bullish on it long term, but I think there’s a good chance we see something like this play out once $BTC starts trending higher again.\nPersonally, I’m targeting a 75–100% move here, nothing too crazy. Patience.\nKilla (@KillaXBT)\nSlowly… then all at once.\nWe might not see $SOL print new ATHs, but once $BTC bottoms, a 100–150% move from here is absolutely in play.\n— https://nitter.net/KillaXBT/status/2087959870595272714#m",
+      "published_at": "2026-08-19T12:13:10Z",
+      "importance": "中",
+      "summary": "持有SOL小仓位，预期BTC触底后SOL有75-100%上涨空间。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "28",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090025442098987264",
+      "content": "They can’t regulate Bitcoin, so they’re trying to buy it all.\nThey orchestrate the dips, shake the weak hands out, scoop up their coins, and steadily accumulate more of the supply.\nThe less $BTC left in the hands of ordinary people, the more concentrated and trackable the ownership becomes.\nAnd the beauty of it? The scarcer the supply gets, the higher the price has to go. ✌️",
+      "content_full": "They can’t regulate Bitcoin, so they’re trying to buy it all.\nThey orchestrate the dips, shake the weak hands out, scoop up their coins, and steadily accumulate more of the supply.\nThe less $BTC left in the hands of ordinary people, the more concentrated and trackable the ownership becomes.\nAnd the beauty of it? The scarcer the supply gets, the higher the price has to go. ✌️",
+      "published_at": "2026-08-19T10:37:50Z",
+      "importance": "低",
+      "summary": "BTC宏观阴谋论观点，无实质分析。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "29",
+      "author": "0xXIAOc",
+      "display_name": "0xXIAOc",
+      "url": "https://x.com/0xXIAOc/status/2089912590239428896",
+      "content": "📢Alpha 日报\n1⃣8月19日 暂无空投预告\n8月25日（TMX）\n答应我，忍住你的痛苦，一声不吭，穿过这片沼泽。\n2️⃣昨日限价单总交易量：1,371,429,512\n（较前一日+0.03% ）\n3️⃣交易赛进度\nDOS 交易赛  今天21点结束\n昨日榜单233062→ 今日273299\n(增加了40237)\nQUID 交易赛 今天21点结束\n昨日榜单42639→ 今日48179\n(增加了5540)\nPOWER 交易赛\n昨日榜单1141→ 今日46000\n(增加了44859)\n4️⃣今日推荐（30 天内上线代币，积分 ×4）\n交易赛推荐：暂无\n纯交易量推荐：  交易所使用限价单刷GRVT（剩10天）",
+      "content_full": "📢Alpha 日报\n1⃣8月19日 暂无空投预告\n8月25日（TMX）\n答应我，忍住你的痛苦，一声不吭，穿过这片沼泽。\n2️⃣昨日限价单总交易量：1,371,429,512\n（较前一日+0.03% ）\n3️⃣交易赛进度\nDOS 交易赛  今天21点结束\n昨日榜单233062→ 今日273299\n(增加了40237)\nQUID 交易赛 今天21点结束\n昨日榜单42639→ 今日48179\n(增加了5540)\nPOWER 交易赛\n昨日榜单1141→ 今日46000\n(增加了44859)\n4️⃣今日推荐（30 天内上线代币，积分 ×4）\n交易赛推荐：暂无\n纯交易量推荐：  交易所使用限价单刷GRVT（剩10天）",
+      "published_at": "2026-08-19T03:09:24Z",
+      "importance": "中",
+      "summary": "Alpha日报：8月25日TMX有空投预告，多个交易赛今日21点结束。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "30",
+      "author": "sunshineboywang",
+      "display_name": "sunshineboywang",
+      "url": "https://x.com/iamoldorange666/status/2090018286771802371",
+      "content": "老橘子丨Oldorange 🧡 (@iamoldorange666)\nArticle\nKeccak-256 IP Core：我在 TapeOut 协议上做了什么\n前言：本文所有数据均可在 BSC 上自行复验，合约地址、电路编号全部给出。我是文中处理器的创建者，利益相关请自行判断。本文不构成任何投资建议。\nTapeOut 上现在最多的讨论是晶体管价格、挖矿系数、谁能挖矿。\n— https://nitter.net/iamoldorange666/status/2089654976738099529#m",
+      "content_full": "老橘子丨Oldorange 🧡 (@iamoldorange666)\nArticle\nKeccak-256 IP Core：我在 TapeOut 协议上做了什么\n前言：本文所有数据均可在 BSC 上自行复验，合约地址、电路编号全部给出。我是文中处理器的创建者，利益相关请自行判断。本文不构成任何投资建议。\nTapeOut 上现在最多的讨论是晶体管价格、挖矿系数、谁能挖矿。\n— https://nitter.net/iamoldorange666/status/2089654976738099529#m",
+      "published_at": "2026-08-19T10:09:24Z",
+      "importance": "低",
+      "summary": "转发技术文章链接，无摘要内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "31",
+      "author": "ccjing_eth",
+      "display_name": "ccjing_eth",
+      "url": "https://x.com/ccjing_eth/status/2089922475891261772",
+      "content": "宇树科技中一签赚47w\n舒服了\nccjing | (✱,✱) 🐬 (@ccjing_eth)\n大A的宇树能打的赶紧打 保底10w以上单号收益\n门槛也很简单，和长鑫科技一样\n1.存50w CNY进大A\n2.买价值7w CNY的股票（推荐买点基金或者指数这类波动小的）\n3.可以打新6000股（12手，一手500股）\n4.单股申购价格150.8，中签每手需缴纳7.54w元\n按照现在Hyperliquid的盘前定价大概500元/股的估价\n预计中签单手收益：175933元\n— https://nitter.net/ccjing_eth/status/2085560790032249274#m",
+      "content_full": "宇树科技中一签赚47w\n舒服了\nccjing | (✱,✱) 🐬 (@ccjing_eth)\n大A的宇树能打的赶紧打 保底10w以上单号收益\n门槛也很简单，和长鑫科技一样\n1.存50w CNY进大A\n2.买价值7w CNY的股票（推荐买点基金或者指数这类波动小的）\n3.可以打新6000股（12手，一手500股）\n4.单股申购价格150.8，中签每手需缴纳7.54w元\n按照现在Hyperliquid的盘前定价大概500元/股的估价\n预计中签单手收益：175933元\n— https://nitter.net/ccjing_eth/status/2085560790032249274#m",
+      "published_at": "2026-08-19T03:48:41Z",
+      "importance": "高",
+      "summary": "宇树科技打新攻略：中签一签预计收益约47万人民币，附详细申购门槛和资金安排。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "宇树中签单笔收益47万案例，公开打新门槛与资金分配策略，为A股新股套利提供可复制的操作框架。"
+    },
+    {
+      "post_id": "32",
+      "author": "hellosuoha",
+      "display_name": "hellosuoha",
+      "url": "https://x.com/hellosuoha/status/2089883300848697820",
+      "content": "8.19梭哈晨报：\n这个美股涨多了回调回调很正常吧，不会又有兄弟逃顶开空了吧，那可真的是股神了，每一次小波段都吃的麻麻的！\n1. $BTC 加密挺起了脊梁，看起来表现比隔壁回调的美股好点，难道真的那啥要来了吗？\n2. $ETH 跟着大饼一起，反弹更加猛点；\n3. $SOL 发现pumpfun在做solana基金会做的事情，以前这都是toly做的啊；\n4.CFTC 主席 Mike Selig：反加密势力多年来扼杀创新，CFTC 正开启金融新前沿；\n5.预测市场公司未获邀，白宫明日将与特朗普举办科技领袖活动；\n桌都上不了了？\n6.Ripple 的 CLO 表示 9月15日 将是 CLARITY Act 市场结构法案的“风向标”；\n7.韩国交易所启动KOSPI侧车机制；\n韩国人今天加班了啊；\n8.GSR法律与战略官：SEC加密新规作用或被市场高估，无法突破现行证券法限制；\n9. @Pumpfun  开发公司Baton Corporation正扩充营销团队，招聘X运营及视频编辑；\n发现了，自产自销了，自己招纳KOL，自己发币，自己喊单，自己收割，难怪 $PUMP 底部200%了；\n10.Sem",
+      "content_full": "8.19梭哈晨报：\n这个美股涨多了回调回调很正常吧，不会又有兄弟逃顶开空了吧，那可真的是股神了，每一次小波段都吃的麻麻的！\n1. $BTC 加密挺起了脊梁，看起来表现比隔壁回调的美股好点，难道真的那啥要来了吗？\n2. $ETH 跟着大饼一起，反弹更加猛点；\n3. $SOL 发现pumpfun在做solana基金会做的事情，以前这都是toly做的啊；\n4.CFTC 主席 Mike Selig：反加密势力多年来扼杀创新，CFTC 正开启金融新前沿；\n5.预测市场公司未获邀，白宫明日将与特朗普举办科技领袖活动；\n桌都上不了了？\n6.Ripple 的 CLO 表示 9月15日 将是 CLARITY Act 市场结构法案的“风向标”；\n7.韩国交易所启动KOSPI侧车机制；\n韩国人今天加班了啊；\n8.GSR法律与战略官：SEC加密新规作用或被市场高估，无法突破现行证券法限制；\n9. @Pumpfun  开发公司Baton Corporation正扩充营销团队，招聘X运营及视频编辑；\n发现了，自产自销了，自己招纳KOL，自己发币，自己喊单，自己收割，难怪 $PUMP 底部200%了；\n10.SemiAnalysis：Anthropic Q2 超 40% ARR 来自间接渠道；\nAnthropic拟引入超级投票权，保护创始团队控制权；\n11.怀俄明州官方稳定币FRNT从LayerZero迁移至Chainlink，以避免安全问题；\n12.美国会计准则组织提议将稳定币视为“现金等价物”；\n13.Pavel Durov：Telegram已申请 .gram域名，用户未来或可通过提示词创建个人网站；\n从Telegram说接管Ton后，多少人被套在山顶了；\n14.Brian Armstrong：SEC推进代币分类，呼吁尽快通过CLARITY法案；\n15.SEC委员会通过《Regulation Crypto Assets》提案，委员在公开会议外分别投票；\n16.Lynq 首席执行官表示，仅靠加密货币监管无法解决机构结算缺口问题；\n---------------\n今天宇树科技上市，兄弟们又要发财了，一签几十万来着😭，为什么我就中不了呢？\n持有股神的仓位，涨多了回调可以理解，但是当我抄底进去了，请迅速反弹，谢谢了。\nBitcoin #Ethereum #Solana #Crypto #Nasdaq\nVideo",
+      "published_at": "2026-08-19T01:13:01Z",
+      "importance": "中",
+      "summary": "8月19日梭哈晨报：涵盖BTC反弹、OpenAI降价、宇树上市、CLARITY法案等15条市场动态。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "33",
+      "author": "variational_io",
+      "display_name": "variational_io",
+      "url": "https://x.com/variational_io/status/2090029084009259052",
+      "content": "Cisco Systems $CSCO perps are now live with zero fees and up to 20x leverage.",
+      "content_full": "Cisco Systems $CSCO perps are now live with zero fees and up to 20x leverage.",
+      "published_at": "2026-08-19T10:52:19Z",
+      "importance": "中",
+      "summary": "Binance上线Cisco Systems永续合约，零手续费最高20倍杠杆。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "34",
+      "author": "variational_io",
+      "display_name": "variational_io",
+      "url": "https://x.com/variational_io/status/2090029099460989327",
+      "content": "Listing ≠ endorsement. Always do your own research and trade with caution.\nomni.variational.io/perpetua…",
+      "content_full": "Listing ≠ endorsement. Always do your own research and trade with caution.\nomni.variational.io/perpetua…",
+      "published_at": "2026-08-19T10:52:22Z",
+      "importance": "低",
+      "summary": "免责声明推广链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "35",
+      "author": "shabi2026",
+      "display_name": "shabi2026",
+      "url": "https://x.com/shabi2026/status/2089901072446005410",
+      "content": "为什么不做空宇树呢？？？\n这家公司从头到尾都是炒作，不知道为什么不去卷机械臂和数控机床…德日靠这个东西年年赚的盆满钵满\n人形机器人没有任何意义。\n倒个咖啡 洗个碗的 用数控的机械臂都算大炮打蚊子了。\n或者说，\n除了搞黄色以外的机器人都没必要做成人的外形。",
+      "content_full": "为什么不做空宇树呢？？？\n这家公司从头到尾都是炒作，不知道为什么不去卷机械臂和数控机床…德日靠这个东西年年赚的盆满钵满\n人形机器人没有任何意义。\n倒个咖啡 洗个碗的 用数控的机械臂都算大炮打蚊子了。\n或者说，\n除了搞黄色以外的机器人都没必要做成人的外形。",
+      "published_at": "2026-08-19T02:23:38Z",
+      "importance": "中",
+      "summary": "质疑做空宇树的逻辑，认为人形机器人叙事仍有意义。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "36",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090014112613101788",
+      "content": "币圈波动率收敛等行情无聊，不想让U贬值可以多撸一下这种活期理财，保证流动性的前提下可以随时取出参与行情，还可以在没行情的时候对冲u贬值的利息，目前可能是熊市中后端的最优解了。希望多推出一些U本位的理财活动，最好一个接一个拉满😂不然U放在手里都是亏汇率的，这就是熊市吗？太难了😭\nMercy (@Mercy_okx)\n手里有闲置 USDT 的朋友，这期闪赚可以安排起来了🫡\n这是今年第一期支持 USDT 质押池的闪赚 Lite：参与闪赚的同时，USDT 简单赚币收益也能继续享有，一把「铲子」挖两份收益！\n而且闪赚可以预申购！今天就能提前提交，不用明天下午 3 点专门定闹钟蹲守，更轻松卡位头矿阶段⏰\n快打开APP看看自己的预申购额度～\n— https://nitter.net/Mercy_okx/status/2089985945403793579#m",
+      "content_full": "币圈波动率收敛等行情无聊，不想让U贬值可以多撸一下这种活期理财，保证流动性的前提下可以随时取出参与行情，还可以在没行情的时候对冲u贬值的利息，目前可能是熊市中后端的最优解了。希望多推出一些U本位的理财活动，最好一个接一个拉满😂不然U放在手里都是亏汇率的，这就是熊市吗？太难了😭\nMercy (@Mercy_okx)\n手里有闲置 USDT 的朋友，这期闪赚可以安排起来了🫡\n这是今年第一期支持 USDT 质押池的闪赚 Lite：参与闪赚的同时，USDT 简单赚币收益也能继续享有，一把「铲子」挖两份收益！\n而且闪赚可以预申购！今天就能提前提交，不用明天下午 3 点专门定闹钟蹲守，更轻松卡位头矿阶段⏰\n快打开APP看看自己的预申购额度～\n— https://nitter.net/Mercy_okx/status/2089985945403793579#m",
+      "published_at": "2026-08-19T09:52:49Z",
+      "importance": "中",
+      "summary": "推荐OKX闪赚USDT质押活动，熊市对冲美元贬值的可行方案。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "37",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090012795148566876",
+      "content": "原生家庭这俩月低幅度波动率收敛应该给大家震麻了，别急，目前看上下的趋势线，最晚9月10号能走出来了！🥶",
+      "content_full": "原生家庭这俩月低幅度波动率收敛应该给大家震麻了，别急，目前看上下的趋势线，最晚9月10号能走出来了！🥶",
+      "published_at": "2026-08-19T09:47:35Z",
+      "importance": "低",
+      "summary": "预测原生家庭波动率收敛，9月10号前走出行情。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "38",
+      "author": "hunterweb303",
+      "display_name": "hunterweb303",
+      "url": "https://x.com/hunterweb303/status/2089906245797060810",
+      "content": "计划每天联系5-10位大佬\n学习交流交朋友～\n许愿结识一个好大佬\n带我傍上富婆\n走上人生巅峰\n看到哆啦的一条尴尬又不失礼貌的私信打扰\n请不要介意～",
+      "content_full": "计划每天联系5-10位大佬\n学习交流交朋友～\n许愿结识一个好大佬\n带我傍上富婆\n走上人生巅峰\n看到哆啦的一条尴尬又不失礼貌的私信打扰\n请不要介意～",
+      "published_at": "2026-08-19T02:44:12Z",
+      "importance": "低",
+      "summary": "社交许愿推文，无实质信息。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "39",
+      "author": "linwanwan823",
+      "display_name": "linwanwan823",
+      "url": "https://x.com/linwanwan823/status/2089936795643633992",
+      "content": "不要再问我七夕想要什么。\n别人甜甜蜜蜜，\n而我，\n只想在Trust Wallet等你。",
+      "content_full": "不要再问我七夕想要什么。\n别人甜甜蜜蜜，\n而我，\n只想在Trust Wallet等你。",
+      "published_at": "2026-08-19T04:45:35Z",
+      "importance": "低",
+      "summary": "七夕营销文案，无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "40",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2090031152044134730",
+      "content": "Pull up a chair. Episode 1 of Inside Binance is now live ▶️\nFrom driving key projects at Binance to expanding into TradFi, get a behind-the-scenes look at what it takes to build a financial super app.\nWatch now ↓\nbinance.com/en/square/audio?…\nLink\nJoin Live Crypto Conversations with Top Creators on Square Audio Live\nTune in to real-time crypto discussions with leading creators on Square. Get exclusive insights about the crypto industry, trading advice, and stay ahead with the latest crypto news.",
+      "content_full": "Pull up a chair. Episode 1 of Inside Binance is now live ▶️\nFrom driving key projects at Binance to expanding into TradFi, get a behind-the-scenes look at what it takes to build a financial super app.\nWatch now ↓\nbinance.com/en/square/audio?…\nLink\nJoin Live Crypto Conversations with Top Creators on Square Audio Live\nTune in to real-time crypto discussions with leading creators on Square. Get exclusive insights about the crypto industry, trading advice, and stay ahead with the latest crypto news. Don’t miss the...\nbinance.com\nBinance (@binance)\nInside Binance premieres today, with host Kevin Susanto + a special guest.\nAn unfiltered series where we bring the community’s biggest questions about Binance, directly to the people doing the work behind the scenes.\nTune in today, 11:00 UTC · 📍 Binance Square\nVideo\n— https://nitter.net/binance/status/2089974796994204141#m",
+      "published_at": "2026-08-19T11:00:32Z",
+      "importance": "中",
+      "summary": "Binance 'Inside Binance'播客节目上线，探讨金融超级App建设幕后。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "41",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2090016201485271095",
+      "content": "The RE Spot Trading Tournament is now on.\nShare up to 1,000,000 RE token vouchers.\nJoin → binance.com/activity/trading…",
+      "content_full": "The RE Spot Trading Tournament is now on.\nShare up to 1,000,000 RE token vouchers.\nJoin → binance.com/activity/trading…",
+      "published_at": "2026-08-19T10:01:07Z",
+      "importance": "中",
+      "summary": "Binance RE现货交易赛开启，奖励100万RE代币券。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "42",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089985725832048981",
+      "content": "Binance Blockchain Week is back. 💛\nThis time with an Asia Edition in Bangkok, Thailand.\nTwo days bringing together the builders, leaders, and communities shaping what’s next.\n🎟️ Early Bird tickets now available for US$19\n→\nbinanceblockchainweek.com\n📅 Nov 28–29, 2026\nSee y’all there. 🫡\nVideo",
+      "content_full": "Binance Blockchain Week is back. 💛\nThis time with an Asia Edition in Bangkok, Thailand.\nTwo days bringing together the builders, leaders, and communities shaping what’s next.\n🎟️ Early Bird tickets now available for US$19\n→\nbinanceblockchainweek.com\n📅 Nov 28–29, 2026\nSee y’all there. 🫡\nVideo",
+      "published_at": "2026-08-19T08:00:01Z",
+      "importance": "中",
+      "summary": "Binance Blockchain Week亚洲版11月28-29日曼谷举办，早鸟票19美元。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "43",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089974796994204141",
+      "content": "Inside Binance premieres today, with host Kevin Susanto + a special guest.\nAn unfiltered series where we bring the community’s biggest questions about Binance, directly to the people doing the work behind the scenes.\nTune in today, 11:00 UTC · 📍 Binance Square\nVideo",
+      "content_full": "Inside Binance premieres today, with host Kevin Susanto + a special guest.\nAn unfiltered series where we bring the community’s biggest questions about Binance, directly to the people doing the work behind the scenes.\nTune in today, 11:00 UTC · 📍 Binance Square\nVideo",
+      "published_at": "2026-08-19T07:16:36Z",
+      "importance": "中",
+      "summary": "Inside Binance节目开播提醒。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "44",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089985277922099623",
+      "content": "Set your reminder ↓\nbinance.com/en/square/audio?…\nLink\nJoin Live Crypto Conversations with Top Creators on Square Audio Live\nTune in to real-time crypto discussions with leading creators on Square. Get exclusive insights about the crypto industry, trading advice, and stay ahead with the latest crypto news. Don’t miss the...\nbinance.com",
+      "content_full": "Set your reminder ↓\nbinance.com/en/square/audio?…\nLink\nJoin Live Crypto Conversations with Top Creators on Square Audio Live\nTune in to real-time crypto discussions with leading creators on Square. Get exclusive insights about the crypto industry, trading advice, and stay ahead with the latest crypto news. Don’t miss the...\nbinance.com",
+      "published_at": "2026-08-19T07:58:14Z",
+      "importance": "低",
+      "summary": "节目提醒链接，无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "45",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089955523403841715",
+      "content": "If every second counts…\nIf you'd rather automate than manage every trade…\nIf real-time data is non-negotiable…\nThe new Stocks & bStocks API is built for you.",
+      "content_full": "If every second counts…\nIf you'd rather automate than manage every trade…\nIf real-time data is non-negotiable…\nThe new Stocks & bStocks API is built for you.",
+      "published_at": "2026-08-19T06:00:00Z",
+      "importance": "中",
+      "summary": "Binance上线Stocks & bStocks API，面向自动化交易用户。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "46",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089920903929086152",
+      "content": "New TradFi perp is listed!\nTrade the following contract on Binance Futures:\n🔸 Unitree Robotics (UNITREE)\nAvailable 24/7, up to 20x leverage.\nKnow more 👉binance.com/en/support/annou…",
+      "content_full": "New TradFi perp is listed!\nTrade the following contract on Binance Futures:\n🔸 Unitree Robotics (UNITREE)\nAvailable 24/7, up to 20x leverage.\nKnow more 👉binance.com/en/support/annou…",
+      "published_at": "2026-08-19T03:42:27Z",
+      "importance": "中",
+      "summary": "Binance Futures上线宇树科技永续合约，最高20倍杠杆。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "47",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2089910402024890807",
+      "content": "click to start the day.",
+      "content_full": "click to start the day.",
+      "published_at": "2026-08-19T03:00:43Z",
+      "importance": "低",
+      "summary": "无实质内容的早安推文。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "48",
+      "author": "song66546656",
+      "display_name": "song66546656",
+      "url": "https://x.com/dontbesilent/status/2090021701631586466",
+      "content": "别沉默.pdf",
+      "content_full": "别沉默.pdf",
+      "published_at": "2026-08-19T10:22:59Z",
+      "importance": "低",
+      "summary": "PDF文件链接，无摘要。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "49",
+      "author": "song66546656",
+      "display_name": "song66546656",
+      "url": "https://x.com/song66546656/status/2090021827640963500",
+      "content": "严肃阅读栋哥宝典",
+      "content_full": "严肃阅读栋哥宝典",
+      "published_at": "2026-08-19T10:23:29Z",
+      "importance": "低",
+      "summary": "'栋哥宝典'无具体内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "50",
+      "author": "BlockFocus11",
+      "display_name": "BlockFocus11",
+      "url": "https://x.com/BlockFocus11/status/2090014237171294504",
+      "content": "Unibase Memory 新增 DeepSeek 支持。\n这意味着此前沉淀在 ChatGPT、Claude、Gemini、Grok、Kimi 等平台中的信息，现在也可以被搜索并按需调用到 DeepSeek 对话中。\n不需要复制整段聊天记录，只需选择与当前任务相关的决策、约束和上下文，直接注入输入框，提交前仍可继续调整。\n从单一 AI 工具的聊天记录，到跨平台可检索的工作记忆，Unibase Memory 正在把 AI 使用过程中的上下文真正沉淀下来。\nUnibase\nUnibase (@Unibase_AI)\nArticle\nUnibase Memory Extension Updates: DeepSeek Support Is Now Live\nA million tokens in one conversation. Nothing in the next.\nDeepSeek now runs on a one million token window by default. One chat can hold an entire project: the spec, the",
+      "content_full": "Unibase Memory 新增 DeepSeek 支持。\n这意味着此前沉淀在 ChatGPT、Claude、Gemini、Grok、Kimi 等平台中的信息，现在也可以被搜索并按需调用到 DeepSeek 对话中。\n不需要复制整段聊天记录，只需选择与当前任务相关的决策、约束和上下文，直接注入输入框，提交前仍可继续调整。\n从单一 AI 工具的聊天记录，到跨平台可检索的工作记忆，Unibase Memory 正在把 AI 使用过程中的上下文真正沉淀下来。\nUnibase\nUnibase (@Unibase_AI)\nArticle\nUnibase Memory Extension Updates: DeepSeek Support Is Now Live\nA million tokens in one conversation. Nothing in the next.\nDeepSeek now runs on a one million token window by default. One chat can hold an entire project: the spec, the constraints, three days of\n— https://nitter.net/Unibase_AI/status/2089701653536755869#m",
+      "published_at": "2026-08-19T09:53:19Z",
+      "importance": "高",
+      "summary": "Unibase Memory新增DeepSeek支持，实现跨AI平台聊天记录检索和工作记忆沉淀。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Unibase Memory打通DeepSeek跨平台上下文检索，解决AI工作流碎片化痛点，提升多模型协作效率。"
+    },
+    {
+      "post_id": "51",
+      "author": "yourQuantGuy",
+      "display_name": "yourQuantGuy",
+      "url": "https://x.com/yourQuantGuy/status/2090027790640824556",
+      "content": "前几天 Boros 推出了 P2P 功能，简单的说，就是全自动版的OTC市场。\n以前下大单，需要走OTC，靠Boros团队手动匹配，现在又了P2P，就可以直接挂单或吃单了，在完成大额交易的同时，不会对订单簿和市场造成影响。\n目前看来确实有很多订单可以吃，但和订单簿补的价格比起来，并不是有绝对优势。\n但不管怎么说，这是增加流动性的又一个新的途径，可以持续观察一下。\n另外，通过crossEx配合boros进行费率套利的收益依然可观，目前4个月后到期的ETH市场，按照25倍杠杆计算，有固定20%年化的净收益。\n我自己不会全仓开这么高的杠杆，之所以这么计算，是因为这是按照crossEx最高资金利用率来算，比如我自己有在做其他一些套利，那么用剩余资金开25倍对冲杠杆的风险其实是远小于“25倍”看上去的风险的。\nBoros (@boros_fi)\nOur new P2P Marketplace is live!\nYou can now negotiate sized swaps directly with a counterparty instead of trading through the ",
+      "content_full": "前几天 Boros 推出了 P2P 功能，简单的说，就是全自动版的OTC市场。\n以前下大单，需要走OTC，靠Boros团队手动匹配，现在又了P2P，就可以直接挂单或吃单了，在完成大额交易的同时，不会对订单簿和市场造成影响。\n目前看来确实有很多订单可以吃，但和订单簿补的价格比起来，并不是有绝对优势。\n但不管怎么说，这是增加流动性的又一个新的途径，可以持续观察一下。\n另外，通过crossEx配合boros进行费率套利的收益依然可观，目前4个月后到期的ETH市场，按照25倍杠杆计算，有固定20%年化的净收益。\n我自己不会全仓开这么高的杠杆，之所以这么计算，是因为这是按照crossEx最高资金利用率来算，比如我自己有在做其他一些套利，那么用剩余资金开25倍对冲杠杆的风险其实是远小于“25倍”看上去的风险的。\nBoros (@boros_fi)\nOur new P2P Marketplace is live!\nYou can now negotiate sized swaps directly with a counterparty instead of trading through the order book.\nThis means you can now trade on Boros with any size, on your terms, with no price impact, on any market.\n— https://nitter.net/boros_fi/status/2087796718054133818#m",
+      "published_at": "2026-08-19T10:47:10Z",
+      "importance": "高",
+      "summary": "Boros上线P2P市场功能，同时分享crossEx+boros费率套利策略，25倍杠杆ETH市场约20%年化。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Boros P2P功能上线提供大额交易无滑点方案，叠加费率套利年化20%路径，机构级流动性工具平民化。"
+    },
+    {
+      "post_id": "52",
+      "author": "0xYuxi",
+      "display_name": "0xYuxi",
+      "url": "https://x.com/0xYuxi/status/2089910989445832837",
+      "content": "已白给，有人中奖么？\n0xyuxi | 0x雨曦 (@0xYuxi)\n玩LOL的，自己有个大于30级的账号，就可以扫右边二维码登陆进去，参与抽奖，截止时间明早10点。\n如果最近没登陆过的话应该会需要登录一下端游就可以抽了，能抽中的话可以找我收，属于免费彩票\n— https://nitter.net/0xYuxi/status/2089296742911287431#m",
+      "content_full": "已白给，有人中奖么？\n0xyuxi | 0x雨曦 (@0xYuxi)\n玩LOL的，自己有个大于30级的账号，就可以扫右边二维码登陆进去，参与抽奖，截止时间明早10点。\n如果最近没登陆过的话应该会需要登录一下端游就可以抽了，能抽中的话可以找我收，属于免费彩票\n— https://nitter.net/0xYuxi/status/2089296742911287431#m",
+      "published_at": "2026-08-19T03:03:03Z",
+      "importance": "低",
+      "summary": "LOL账号抽奖活动，无实质信息。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "53",
+      "author": "buckyandlucky",
+      "display_name": "buckyandlucky",
+      "url": "https://x.com/buckyandlucky/status/2089955867408093554",
+      "content": "美伊战争中，美国会不会入侵伊朗，这无论如何也谈不上是free money，相反是一个非常高风险的市场。市场对是否入侵的概率定价应该是比较准确的，臭名昭著的car居然说这是利润。\n只要特朗普顺便发一条推特说打算拿下霍尔木兹沿岸，就会遇到亏损。 #polymarket",
+      "content_full": "美伊战争中，美国会不会入侵伊朗，这无论如何也谈不上是free money，相反是一个非常高风险的市场。市场对是否入侵的概率定价应该是比较准确的，臭名昭著的car居然说这是利润。\n只要特朗普顺便发一条推特说打算拿下霍尔木兹沿岸，就会遇到亏损。 #polymarket",
+      "published_at": "2026-08-19T06:01:22Z",
+      "importance": "中",
+      "summary": "分析美伊战争预测市场风险，认为特朗普推特即可导致价格剧烈波动。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "54",
+      "author": "sosovaluecrypto",
+      "display_name": "sosovaluecrypto",
+      "url": "https://x.com/SoSoValueCrypto/status/2089970678237991321",
+      "content": "Article\nAnthropic and OpenAI’s Narrative War Hits the Chip Market’s Rawest Nerve\nAs of August 19, 2026, Anthropic has secured the early lead in the race to become the first publicly traded frontier-model company. It confidentially filed for an IPO in June and is expected to list",
+      "content_full": "Article\nAnthropic and OpenAI’s Narrative War Hits the Chip Market’s Rawest Nerve\nAs of August 19, 2026, Anthropic has secured the early lead in the race to become the first publicly traded frontier-model company. It confidentially filed for an IPO in June and is expected to list",
+      "published_at": "2026-08-19T07:00:14Z",
+      "importance": "中",
+      "summary": "Anthropic有望成为首家上市的前沿模型公司，芯片市场叙事竞争激烈。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "55",
+      "author": "sosovaluecrypto",
+      "display_name": "sosovaluecrypto",
+      "url": "https://x.com/SoSoValueCrypto/status/2089954115996835888",
+      "content": "🎙 Unitree in the IPO Spotlight — Is the Era of Embodied AI Around the Corner?\nUnitree opened at ~$153 vs its ~$21 IPO price — +629% on day one, about $62B market cap. Has the capitalization of embodied AI officially begun, and how should investors take part?\n⏰ Time: Wed, Aug 19 · 14:30 UTC (22:30 UTC+8)\n🔗 Link: nitter.net/i/spaces/1YGNrbRwezbGw\n🤝 Hosted by: @wublockchain12 & @SoSoValueCrypto\nWith guests from across the industry:\n▪ Is the valuation justified — are our guests long or short?\n▪ Is m",
+      "content_full": "🎙 Unitree in the IPO Spotlight — Is the Era of Embodied AI Around the Corner?\nUnitree opened at ~$153 vs its ~$21 IPO price — +629% on day one, about $62B market cap. Has the capitalization of embodied AI officially begun, and how should investors take part?\n⏰ Time: Wed, Aug 19 · 14:30 UTC (22:30 UTC+8)\n🔗 Link: nitter.net/i/spaces/1YGNrbRwezbGw\n🤝 Hosted by: @wublockchain12 & @SoSoValueCrypto\nWith guests from across the industry:\n▪ Is the valuation justified — are our guests long or short?\n▪ Is mass adoption near, and how big is the market?\n▪ Where are the real moats for the leaders?\n▪ China vs. US in embodied AI\n▪ Who benefits most as the sector scales?\n▪ What is the best instrument for accessing assets like this?\n🎙 Host: @Jessie\n👥 Guests:\n• Adam @qwesxad — Industry Strategic Investor\n• Echo @Echolaxx — Industry Advisor\n• JZ @AsiaHardTech\n• WuBlockchain editor @WuBlockchain\n✨ Plus a surprise guest\nSet your alarm — see you there.\nLink\nTwitter Space\nClick to view Space\nhttps://nitter.net/i/spaces/1YGNrbRwezbGw",
+      "published_at": "2026-08-19T05:54:25Z",
+      "importance": "中",
+      "summary": "宇树科技IPO专题直播预告，讨论人形机器人商业化前景。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "56",
+      "author": "sosovaluecrypto",
+      "display_name": "sosovaluecrypto",
+      "url": "https://x.com/SoSoValueCrypto/status/2089954118857294109",
+      "content": "<img src=\"https://nitter.net/pic/media%2FHQECLqZaUAE0B_K.jpg\" style=\"max-width:250px;\" />",
+      "content_full": "<img src=\"https://nitter.net/pic/media%2FHQECLqZaUAE0B_K.jpg\" style=\"max-width:250px;\" />",
+      "published_at": "2026-08-19T05:54:26Z",
+      "importance": "低",
+      "summary": "仅图片无文字内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "57",
+      "author": "sosovaluecrypto",
+      "display_name": "sosovaluecrypto",
+      "url": "https://x.com/SoSoValueCrypto/status/2089951117631180841",
+      "content": "SoSoValue Flash: Brent Holds at $91 via Blockade, OpenAI Cuts GPT-5.6 Rates, Soaring Yields Drag Equities\n💥 Core Catalyst:\nGeopolitically, Brent crude holds firm at $91/bbl as Trump denies any ongoing Iran negotiations, leaving the US naval blockade in full effect. In AI & Tech, OpenAI rolled out a 50% discount on GPT-5.6 Sol via OpenRouter and Vercel AI Gateway through Sep 18, with SemiAnalysis noting a token volume doubling that signals an edge over Anthropic; meanwhile, WSJ reported OpenAI's ",
+      "content_full": "SoSoValue Flash: Brent Holds at $91 via Blockade, OpenAI Cuts GPT-5.6 Rates, Soaring Yields Drag Equities\n💥 Core Catalyst:\nGeopolitically, Brent crude holds firm at $91/bbl as Trump denies any ongoing Iran negotiations, leaving the US naval blockade in full effect. In AI & Tech, OpenAI rolled out a 50% discount on GPT-5.6 Sol via OpenRouter and Vercel AI Gateway through Sep 18, with SemiAnalysis noting a token volume doubling that signals an edge over Anthropic; meanwhile, WSJ reported OpenAI's Q2 revenue grew 18% QoQ to $6.7B (up from $5.7B), but operating loss widened significantly to $12.3B (vs. $9.3B prior).\n🔍 Key Logic Shifts:\n1️⃣ High Oil & Spikes in Long-End Yields Cap Equities: Persistent geopolitical friction keeps energy bid, driving 10-year and 30-year Treasury yields to new highs. Increasing stock sensitivity to elevated long-end rates maintains heavy macro pressure.\n2️⃣ OpenAI's Price War Highlights \"Volume vs. Loss\" Dilemma: Aggressive discounts accelerate downstream token consumption, yet widening operating losses reinforce market \"AI PTSD\" regarding cash burn vs. ROI visibility.\n3️⃣ PR Noise Surrounding IPO Sparring Sparks Volatility: The valuation rivalry between Anthropic and OpenAI introduces signal noise into data evaluation. Key focus stays on Kevin Warsh's late-August Jackson Hole address and capital flow speed.\n📊 SoDEX Key Assets Watchlist:\nCore: $USTECH-100 · $CL · $XAUT · $BTC\nMAG7: $NVDA · $AMZN · $GOOGL · $META · $MSFT · $TSLA · $AAPL\nAI Hardware: $SNDK · $MU · $AMD · $INTC · $TSM",
+      "published_at": "2026-08-19T05:42:30Z",
+      "importance": "中",
+      "summary": "市场快讯：布伦特原油持稳91美元、OpenAI GPT-5.6降价50%、30年期美债收益率创新高。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "58",
+      "author": "sosovaluecrypto",
+      "display_name": "sosovaluecrypto",
+      "url": "https://x.com/SoSoValueCrypto/status/2089944627747119272",
+      "content": "Article\n30-Year Treasury Yield Breaks 5.3%: Long-End Rates Are Redefining the Valuation Ceiling for U.S. Sto\nOn Aug. 18, the yield on the 30-year U.S. Treasury climbed to around 5.33% intraday, its highest level since 2007, before retreating to about 5.28%. The 10-year yield closed near 4.706%, slightly",
+      "content_full": "Article\n30-Year Treasury Yield Breaks 5.3%: Long-End Rates Are Redefining the Valuation Ceiling for U.S. Sto\nOn Aug. 18, the yield on the 30-year U.S. Treasury climbed to around 5.33% intraday, its highest level since 2007, before retreating to about 5.28%. The 10-year yield closed near 4.706%, slightly",
+      "published_at": "2026-08-19T05:16:43Z",
+      "importance": "高",
+      "summary": "30年期美债收益率突破5.3%创2007年以来新高，正在重塑美国股票估值天花板。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "30年期美债收益率突破5.3%创17年新高，长期利率重定价直接压缩美股估值上限，宏观风险信号。"
+    },
+    {
+      "post_id": "59",
+      "author": "supezen",
+      "display_name": "supezen",
+      "url": "https://x.com/supezen/status/2090007338895982655",
+      "content": "我发现定义一个 Agent 产品非常难，\n拿 todos.dev 来说，\n有人用它做游戏开发，\n有人用它做量化分析，\n有人用它做算法研究，\n有人用它做调研报告，\n有人用它运维服务器，\n等等等等。。。\n你说这是一个什么产品？",
+      "content_full": "我发现定义一个 Agent 产品非常难，\n拿 todos.dev 来说，\n有人用它做游戏开发，\n有人用它做量化分析，\n有人用它做算法研究，\n有人用它做调研报告，\n有人用它运维服务器，\n等等等等。。。\n你说这是一个什么产品？",
+      "published_at": "2026-08-19T09:25:54Z",
+      "importance": "中",
+      "summary": "讨论Agent产品定义困难，todos.dev被用于游戏开发、量化分析、运维等多种场景。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "0",
+      "author": "supezen",
+      "display_name": "supezen",
+      "url": "https://x.com/supezen/status/2089983550775021585",
+      "content": "如果你想给用户一个出色的 AI 消息流的浏览体验\n那么花多少时间在排版上都不过份\n这个表格样式我前前后后调了 10 多版\n目前仍不满意，大家喜欢哪个风格？",
+      "content_full": "如果你想给用户一个出色的 AI 消息流的浏览体验\n那么花多少时间在排版上都不过份\n这个表格样式我前前后后调了 10 多版\n目前仍不满意，大家喜欢哪个风格？",
+      "published_at": "2026-08-19T07:51:23Z",
+      "importance": "低",
+      "summary": "询问读者偏好表格样式的互动帖，无实质信息。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "1",
+      "author": "supezen",
+      "display_name": "supezen",
+      "url": "https://x.com/supezen/status/2089975267574034709",
+      "content": "AI 的大规模应用主要依赖 token 的价格，不是任何应用，本来 deepseek 价格没涨还有一点苗头，现在涨了火苗被熄灭了。",
+      "content_full": "AI 的大规模应用主要依赖 token 的价格，不是任何应用，本来 deepseek 价格没涨还有一点苗头，现在涨了火苗被熄灭了。",
+      "published_at": "2026-08-19T07:18:28Z",
+      "importance": "中",
+      "summary": "观点认为AI大规模应用依赖token价格，DeepSeek涨价可能抑制了相关趋势。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "2",
+      "author": "jiaqian941213",
+      "display_name": "jiaqian941213",
+      "url": "https://x.com/jiaqian941213/status/2089901699494482029",
+      "content": "做空宇树\n做空闪迪\n做空智谱\n不加杠杆",
+      "content_full": "做空宇树\n做空闪迪\n做空智谱\n不加杠杆",
+      "published_at": "2026-08-19T02:26:08Z",
+      "importance": "低",
+      "summary": "表达做空意愿但未提供任何分析或依据，属于情绪化表态。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "3",
+      "author": "jiaqian941213",
+      "display_name": "jiaqian941213",
+      "url": "https://x.com/jiaqian941213/status/2089889291787018648",
+      "content": "宇树科技开盘价是1058.88\n总股本4.04亿，流通股本却只有3009万\n对应的总市值4283亿人民币，流通市值318.6亿\n市盈率1500+  ，流通盘7%，\n截止发推股价下跌至899\n1500倍pe，活久见。",
+      "content_full": "宇树科技开盘价是1058.88\n总股本4.04亿，流通股本却只有3009万\n对应的总市值4283亿人民币，流通市值318.6亿\n市盈率1500+  ，流通盘7%，\n截止发推股价下跌至899\n1500倍pe，活久见。",
+      "published_at": "2026-08-19T01:36:50Z",
+      "importance": "中",
+      "summary": "列举宇树科技上市数据：流通盘仅7%、PE超1500倍，指出现价已下跌。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "4",
+      "author": "BitHappy",
+      "display_name": "BitHappy",
+      "url": "https://x.com/BitHappy/status/2089908531755692464",
+      "content": "思维模型解析：奥卡姆剃刀定律\n用投资视角提炼《思考的框架》中的奥卡姆剃刀定律。\n这次以「简单优先」作为核心关键词来整理奥卡姆剃刀定律，因为它和风险识别、叙事辨别与博弈分析结合得比较紧密。\n核心定义：\n在多个能够同样解释某个现象的假设或叙事中，优先选择假设更少、结构更简单的那个。\n如无必要，勿增实体。\n核心机制：\n简单优先的运作机制是「假设越少，脆弱性越低」。\n复杂解释往往需要叠加更多未被验证的前提，任何一个前提出错，整个解释就可能崩塌。\n简单解释依赖的前提更少，因此在信息有限的情况下通常更稳健。\n当两个解释解释力相近时，选择更简单的那个，能降低被错误叙事误导的概率。\n常见表现形式（以简单优先视角）：\n1/ 叙事对比：当出现宏大复杂的故事与更直接的解释时，优先检验简单解释是否成立。\n2/ 假设清点：列出一个观点依赖的关键假设数量，假设越多，越需要谨慎。\n3/ 过度包装识别：项目或机会被描述得异常复杂时，警惕其是否在用复杂度掩盖简单问题。\n4/ 多解释并存：同时存在多种说法时，先看哪个需要的额外假设最少。\n5/ 回归基本面：价格波动或项目表现，优先用流动性、激励、供需等简单因素解释，再考虑",
+      "content_full": "思维模型解析：奥卡姆剃刀定律\n用投资视角提炼《思考的框架》中的奥卡姆剃刀定律。\n这次以「简单优先」作为核心关键词来整理奥卡姆剃刀定律，因为它和风险识别、叙事辨别与博弈分析结合得比较紧密。\n核心定义：\n在多个能够同样解释某个现象的假设或叙事中，优先选择假设更少、结构更简单的那个。\n如无必要，勿增实体。\n核心机制：\n简单优先的运作机制是「假设越少，脆弱性越低」。\n复杂解释往往需要叠加更多未被验证的前提，任何一个前提出错，整个解释就可能崩塌。\n简单解释依赖的前提更少，因此在信息有限的情况下通常更稳健。\n当两个解释解释力相近时，选择更简单的那个，能降低被错误叙事误导的概率。\n常见表现形式（以简单优先视角）：\n1/ 叙事对比：当出现宏大复杂的故事与更直接的解释时，优先检验简单解释是否成立。\n2/ 假设清点：列出一个观点依赖的关键假设数量，假设越多，越需要谨慎。\n3/ 过度包装识别：项目或机会被描述得异常复杂时，警惕其是否在用复杂度掩盖简单问题。\n4/ 多解释并存：同时存在多种说法时，先看哪个需要的额外假设最少。\n5/ 回归基本面：价格波动或项目表现，优先用流动性、激励、供需等简单因素解释，再考虑更复杂的故事。\n心理触发点：\n1/ 复杂性偏好：人们有时觉得复杂解释更「深刻」「专业」。\n2/ 叙事吸引力：精彩、完整的故事比简单平淡的解释更有感染力。\n3/ 确认需求：复杂叙事更容易被用来支持自己已有的观点。\n4/ 认知炫技：用复杂框架展示自己「想得更深」，而忽略简单有效的可能。\n实际应用边界/注意事项：\n1/ 简单不等于正确：奥卡姆剃刀是优先原则，而非绝对真理。当简单解释无法充分说明现象时，需要接受必要的复杂度。\n2/ 比较前提是解释力相当：只有在解释效果相近时，才优先选更简单的。\n3/ 风险识别关键点：当一个机会的叙事特别宏大、环节特别多时，最需要强制使用简单优先来检验。\n4/ 博弈中的利用：通过构建复杂故事提高理解门槛，降低普通人质疑的意愿，是常见手段。\n5/ 防御关键点：面对复杂解释时强制问自己：「有没有假设更少、更直接的解释？如果有，为什么我要选择更复杂的那个？」\n————————\n本文是我在构建「思维模型解析」能力方向上的内容输出。\n分析框架来源于我正在搭建的「基于能力圈的 IP 成长闭环体系」。\n以上仅为信息分享，不构成任何投资建议。\n持续进化中的 BitHappy\nBitHappy (@BitHappy)\n关于阅读：从知识点到知识体系\n我启动阅读计划的初衷是：通过阅读构建属于自己的知识体系！\n但真正开始之后才发现，虽然提前做了书单，阅读依旧是瞎看：什么出名看什么，什么热门看什么。\n最初的书单分为四类：自我重构、投资理财、人物传记、中国。\n方向本身没有问题，但在一个月读完五本之后，我意识到一个关键问题：这些书之间没有形成连接。\n它们提供的是知识点，而不是知识体系。\n这也是为什么我认为《穷查理宝典》非常重要的原因之一，具体原因在引用推文和文末。\n这段阅读的这段时间里，我和不少朋友讨论 \"如何有效阅读\" 和 \"为什么阅读\"。\n关于有效阅读，有三种 AI 辅助方式：\n1/ 快速阅读：让 AI 在 3 分钟内解释一本书的主旨、核心观点、局限与一句话总结；\n2/ 知识图谱：用 Obsidian + AI 把知识从点变成面，建立连接；\n3/ 思维蒸馏：让 AI 提炼聪明人的模型与思维方式。\n其中后两种我已经在用，但它们只是辅助，而不是主力。\n原因也很简单：AI 能给结构，但不能给深度。\n更关键的是，我的记忆力本来就不算好。\n如果采用速成鸡的方式，最终我得到的只是孤立的观点，无法形成真正的连接。\n发生的情况会和刷短视频里的 \"大道理\" 一样，三天就忘。\n所以，我采用的是古法阅读，这大概也是认可查理·芒格思维的关键因素（自己费劲读的，也更加认可自己的总结）。\n关于古法阅读，有三个不可替代的优势：\n1/ 重要观点会反复出现，加深记忆；\n2/ 作者会给出论点与论证，而不是只给结论；\n3/ 阅读过程中会自然产生思考与个人总结（不走神的花）。\n这些都是 AI 无法替代的深度加工过程。\n这里得再提一下《穷查理宝典》的重要性！\n因为查理·芒格在书中的重复论证，让我系统性地理解：\n1/ 如何打造自己的思维方式；\n2/ 如何构建跨学科的知识体系；\n3/ 为什么知识必须通过 \"学以致用\" 才能真正记住；\n4/ 为什么能力圈可以扩张，但必须谨慎，不要假装自己懂不懂的领域；\n5/ 芒格强调的不是 \"多读书\"，而是 \"多建立模型\"；\n6/ 模型之间的连接，才是知识体系的真正基础。\n我现在所理解的有效阅读是：筛选出能通过实践去验证的知识，并构建出结构。\n最后，再次向大家推荐《穷查理宝典》！\n如果大家使用微信读书，可以搜到我建立的学习查理芒格三阶段书单，并且在评论区可找到配套的实践方案。\n搜索关键字：学习查理芒格\n— https://nitter.net/BitHappy/status/2078029709309350268#m",
+      "published_at": "2026-08-19T02:53:17Z",
+      "importance": "中",
+      "summary": "系统解析奥卡姆剃刀定律在投资中的应用，含核心机制和实际使用边界。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "5",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2090015274741444880",
+      "content": "赶紧让你的黄金动起来吧！不要傻乎乎躺平了\n黄金一直都是全球公认的避险资产，这几年投资的人也越来越多，但是在实体中，它在大多数人手里只是“存着”持有着，只能安静的放在金库或钱包里\n所以我选择把我的实体仓位转移到 @nadoHQ  上交易！\n1⃣XAUT 是 Tether 的代币化黄金代币，并且由瑞士金库中存放的黄金 1:1实物支持，所以这玩意不是什么虚拟的东西，而是跟你实体黄金一模一样\n2⃣代币化的好处就是，能完全颠覆了传统的购买黄金后只能躺平这个弊端，现在想要投资黄金，可以直接在 Nado 上购买或者存入 XAUT\n当你有需要资金流动时同时也可以作为加密货币、股票、商品、外汇以及借贷等交易的保证金\n再也不用像传统的那种，当你跌了想要投资别的东西时，你需要卖出割肉才能抽出资金投资别的，后面你又发现涨回来了，自己已经买不回去那个价位，变相割肉\n在Nado上交易，不仅可以快速买入，并且可以让你的资金利用率最大化：app.nado.xyz?join=kowgeht\nNado (@nadoHQ)\nArticle\nThe Gold Standard, Collateralized\nIntroduc",
+      "content_full": "赶紧让你的黄金动起来吧！不要傻乎乎躺平了\n黄金一直都是全球公认的避险资产，这几年投资的人也越来越多，但是在实体中，它在大多数人手里只是“存着”持有着，只能安静的放在金库或钱包里\n所以我选择把我的实体仓位转移到 @nadoHQ  上交易！\n1⃣XAUT 是 Tether 的代币化黄金代币，并且由瑞士金库中存放的黄金 1:1实物支持，所以这玩意不是什么虚拟的东西，而是跟你实体黄金一模一样\n2⃣代币化的好处就是，能完全颠覆了传统的购买黄金后只能躺平这个弊端，现在想要投资黄金，可以直接在 Nado 上购买或者存入 XAUT\n当你有需要资金流动时同时也可以作为加密货币、股票、商品、外汇以及借贷等交易的保证金\n再也不用像传统的那种，当你跌了想要投资别的东西时，你需要卖出割肉才能抽出资金投资别的，后面你又发现涨回来了，自己已经买不回去那个价位，变相割肉\n在Nado上交易，不仅可以快速买入，并且可以让你的资金利用率最大化：app.nado.xyz?join=kowgeht\nNado (@nadoHQ)\nArticle\nThe Gold Standard, Collateralized\nIntroducing XAUT0 as Margin for Perpetual Futures Trading.\nFor the first time on any perp DEX, physical gold, tokenized and fully backed, can be deposited as margin to trade crypto, commodity, FX and\n— https://nitter.net/nadoHQ/status/2089370957542539486#m",
+      "published_at": "2026-08-19T09:57:26Z",
+      "importance": "低",
+      "summary": "推广Nado平台XAUT代币化黄金的软文，带有营销链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "6",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2089990276299575468",
+      "content": "这几年真是越来越多的人在研究跨境业务\n但是大家经常都会遇到一个问题，那就是跨境支付的痛点，广告扣费失败、多账户管理头疼等等，所以我在做这方面研究的时候正好看到VMCardio\nVMCardio 是一个全球企业级的虚拟信用卡发卡平台，不仅能实时生成Visa/Mastercard虚拟卡，还可以支持USDT充值、批量开卡、团队预算管控\n主要用途在哪？\n1⃣跨境电商、广告投放支付：稳定支持 Meta、Facebook/Instagram、TikTok、Google Ads 等等平台扣费，可以大大降低账号风控风险\n2⃣订阅与SaaS或者AI工具：ChatGPT、Midjourney、Notion、云服务（如AWS）等海外订阅畅通，非常适合AI玩家\nVMcard 目前的两个美国 Mastercard 卡段：537872 / 555658，针对 ChatGPT 等 AI 订阅场景，结算成本相比其他渠道低约 0.6%\n长期续费或者工作室长期积累下来还是能省下来不少的\n3⃣另外对于大客户，VMCard 的优势还在结算汇率和费率空间，部分卡段支持 0 卡费开卡，量大的客户可以拿到更优的结算方案\n所以这个平",
+      "content_full": "这几年真是越来越多的人在研究跨境业务\n但是大家经常都会遇到一个问题，那就是跨境支付的痛点，广告扣费失败、多账户管理头疼等等，所以我在做这方面研究的时候正好看到VMCardio\nVMCardio 是一个全球企业级的虚拟信用卡发卡平台，不仅能实时生成Visa/Mastercard虚拟卡，还可以支持USDT充值、批量开卡、团队预算管控\n主要用途在哪？\n1⃣跨境电商、广告投放支付：稳定支持 Meta、Facebook/Instagram、TikTok、Google Ads 等等平台扣费，可以大大降低账号风控风险\n2⃣订阅与SaaS或者AI工具：ChatGPT、Midjourney、Notion、云服务（如AWS）等海外订阅畅通，非常适合AI玩家\nVMcard 目前的两个美国 Mastercard 卡段：537872 / 555658，针对 ChatGPT 等 AI 订阅场景，结算成本相比其他渠道低约 0.6%\n长期续费或者工作室长期积累下来还是能省下来不少的\n3⃣另外对于大客户，VMCard 的优势还在结算汇率和费率空间，部分卡段支持 0 卡费开卡，量大的客户可以拿到更优的结算方案\n所以这个平台其实 不太适合偶尔只开一两张卡的散户，更适合 AI账号商、API服务商、广告代理、电商团队，以及有批量用卡需求的商家\n有企业级跨境业务或者有大批量用卡场景需求的，都可以自行了解下： vmcardio.com",
+      "published_at": "2026-08-19T08:18:06Z",
+      "importance": "低",
+      "summary": "推广VMCardio虚拟信用卡平台的软文，以解决跨境支付痛点为切入点进行营销。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "7",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2089997783365513389",
+      "content": "官网链接或者邀请链接都可以进：vmcardio.com/zh/register?cod…",
+      "content_full": "官网链接或者邀请链接都可以进：vmcardio.com/zh/register?cod…",
+      "published_at": "2026-08-19T08:47:56Z",
+      "importance": "低",
+      "summary": "仅含VMCardio注册链接，无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "8",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2089932992156438603",
+      "content": "上线不是终点，真正的建设才刚开始  @KiiChainio\n前段时间我参加了 @KiiChainio 的公募打新，虽然没有预想中的那么高倍数利润，但是也算是短平快的理财局了，参与完预售就马上开始上线币安alpha\n在币圈这几年，大家好像都习惯性认为，当一个代币交卷TGE上线就是终点了，而恰恰相反，TGE和主网的上线只是Kiichain 把“已经在跑的业务”正式放到链上并对外开放，真正的规模化增长才刚刚开始\n看了下他们刚发布接下来的路线图，非常有看头\n1⃣Kii链上外汇扩张\n在9月即将陆续增加更多的货币通道，更多的协议轨道。现在已经支持哥伦比亚比索、巴西雷亚尔和墨西哥比索，接下来将支持美元、阿根廷比索、日元和欧元/英镑\n2⃣Yield Vaults 收益金库\n10月起会推出两类非托管金库：\n流动性金库：对接Aave、Morpho等成熟协议\nFX与政府债RWA金库：短久期美债 + 本地主权债\n3⃣链上金融服务\n11月优先落地美国虚拟账户\nTGE后估计现在很多人只盯着币安alpha上的价格短期涨跌，但是我预售的都没卖，我觉得KiiChain的价值锚点是真实跨境资金流，这个在接下来真实的业务需",
+      "content_full": "上线不是终点，真正的建设才刚开始  @KiiChainio\n前段时间我参加了 @KiiChainio 的公募打新，虽然没有预想中的那么高倍数利润，但是也算是短平快的理财局了，参与完预售就马上开始上线币安alpha\n在币圈这几年，大家好像都习惯性认为，当一个代币交卷TGE上线就是终点了，而恰恰相反，TGE和主网的上线只是Kiichain 把“已经在跑的业务”正式放到链上并对外开放，真正的规模化增长才刚刚开始\n看了下他们刚发布接下来的路线图，非常有看头\n1⃣Kii链上外汇扩张\n在9月即将陆续增加更多的货币通道，更多的协议轨道。现在已经支持哥伦比亚比索、巴西雷亚尔和墨西哥比索，接下来将支持美元、阿根廷比索、日元和欧元/英镑\n2⃣Yield Vaults 收益金库\n10月起会推出两类非托管金库：\n流动性金库：对接Aave、Morpho等成熟协议\nFX与政府债RWA金库：短久期美债 + 本地主权债\n3⃣链上金融服务\n11月优先落地美国虚拟账户\nTGE后估计现在很多人只盯着币安alpha上的价格短期涨跌，但是我预售的都没卖，我觉得KiiChain的价值锚点是真实跨境资金流，这个在接下来真实的业务需求中很容易被体现出来，所以我选择留着 看一手长线走势\nKiiChain (@KiiChainio)\nArticle\nThe evolution and future of KiiChain\nKiiChain exists to solve a specific, unglamorous problem: moving value between emerging-market currencies and the global dollar economy is slow, expensive, and closed off to most of the businesses and\n— https://nitter.net/KiiChainio/status/2089335933317292523#m",
+      "published_at": "2026-08-19T04:30:29Z",
+      "importance": "高",
+      "summary": "详述KiiChain路线图：9月新增外汇通道、10月推出收益金库、11月落地美国虚拟账户，并给出长线持有逻辑。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "KiiChain TGE后明确 roadmap：9月扩币种、10月推收益金库、11月落地美元账户，跨境金融叙事从概念走向执行。"
+    }
+  ],
+  "daily_brief": [
+    {
+      "topic": "宇树科技IPO",
+      "who": "BroBean88, qinbafrank, ccjing_eth, jiaqian941213, shabi2026, sosovaluecrypto",
+      "sentiment": "",
+      "what_they_said": "BroBean88: 分析宇树IPO对A股机器人板块的'吸血效应'，类比SpaceX上市，指出龙头上市是赛道重定价事件，区分卖故事与卖产品的公司。qinbafrank: 复盘宇树上市吸血效应，类比6月SpaceX上市时空太空经济板块分化逻辑，认为资金从产业链涌向IPO。ccjing_eth: 发布宇树打新攻略，预计中签一签收益约47万人民币。jiaqian941213: 列举宇树上市数据，流通盘仅7%、PE超1500倍，指出现价已下跌。shabi2026: 质疑做空宇树的逻辑，认为人形机器人叙事仍有意义。sosovaluecrypto: 举办宇树科技IPO专题直播，讨论人形机器人商业化前景。",
+      "gist": "宇树科技科创板IPO首日暴涨约629%，市值达约4449亿人民币，中签率仅0.018%为科创板历史最低。但其上市对A股机器人产业链产生显著'吸血效应'，板块普跌近10%。博主们将此与6月SpaceX上市类比，指出龙头IPO会集中资金叙事，配角公司承压。但也有博主提醒区分'卖故事'与'卖产品'的公司，存储芯片等基本面扎实的标的下跌后有支撑。"
+    },
+    {
+      "topic": "存储芯片超级周期",
+      "who": "hanking66, qinbafrank, aleabitoreddit",
+      "sentiment": "",
+      "what_they_said": "hanking66: 详细分析海力士40万亿韩元回购注销对估值修复的意义，反驳'周期股'论调；反驳木头姐关于SRAM可替代HBM的观点，认为长协证据说明存储超级周期逻辑未变；指出美光因CHIPS Act限制年底前无法回购。qinbafrank: 报道海力士回购创韩国上市公司历史纪录，指出三星、闪迪也在推进股东回报，美光预计年底跟进；分析存储股从'极端周期商品'向'AI基础设施成长股'过渡的趋势。aleabitoreddit: 引用Elazr GM称AI光互连供应链全面缺货将持续数年，类比存储超级周期或将重演。",
+      "gist": "SK海力士宣布40万亿韩元（约310亿美元）股份回购并注销，创下韩国上市公司历史纪录，存储芯片板块迎来集体股东回报潮。hanking66和qinbafrank认为这标志着存储股估值逻辑从周期股向大科技成长股转变，AI需求结构性削弱了周期波动。同时，光互连供应链也面临类似瓶颈，市场预期AI光学产业链将重现存储超级周期。美光受CHIPS Act限制需等到12月后才可能跟进回购。"
+    },
+    {
+      "topic": "Anthropic vs OpenAI",
+      "who": "BroBean88, hanking66, qinbafrank, sosovaluecrypto",
+      "sentiment": "",
+      "what_they_said": "BroBean88: 深度对比Anthropic与OpenAI商业模式，Anthropic Q2营收115亿美元碾压OpenAI的67亿，增速143% vs 18%，Anthropic率先实现盈利，To B路径已验证，预计10月IPO估值或达2万亿美元。hanking66: 分析OpenAI暂停RL训练是透明谨慎表现，但增速18%偏难看；认为Anthropic已从增速和营收全面超越OpenAI。qinbafrank: 认为OpenAI Q2营收非关键，真正看GPT-5.6发布后的Q3表现及价格战效果；推演Anthropic年底ARR或达1100-1300亿美元。sosovaluecrypto: 报道Anthropic有望成为首家上市的前沿模型公司，AI叙事竞争延伸至芯片市场。",
+      "gist": "Anthropic Q2营收115亿美元，同比增14倍，环比增143%，首次实现经营利润为正，全面超越OpenAI同期的67亿美元和18%增速。BroBean88指出Anthropic八成收入来自企业客户，Claude Code单一产品年化收入已达80亿美元。OpenAI则面临增长放缓、亏损扩大（Q1经营利润率-122%）、主动发起价格战等困境。市场预计Anthropic将于10月IPO，估值或达2万亿美元，成史上最大IPO之一。"
+    },
+    {
+      "topic": "Peter Thiel重新建仓",
+      "who": "BroBean88",
+      "sentiment": "",
+      "what_they_said": "BroBean88: 详析Peter Thiel清仓美股两季度后重新建仓4.19亿美金，72%仓位押电力能源（Amazon占28%，Vistra、DTE Energy等电力股），不买AI芯片。认为Thiel押注的是AI基建电力需求瓶颈，数据中心电力消耗将从目前6%总发电量增至2035年20%，Vistra有核电长期合同锁定现金流。",
+      "gist": "PayPal联合创始人Peter Thiel在清仓美股两个季度后重新建仓，4.19亿美金仓位中七成押注电力和能源股，完全没有AI芯片标的。BroBean88分析认为，这反映AI产业链瓶颈正从GPU→HBM→光互连→电力逐层上移，Thiel买的是'跟过去'的电力基建逻辑——数据中心电力需求十年内预计翻三倍。Vistra等标的与Meta、Amazon签有20年核电长协，现金流确定性高。"
+    },
+    {
+      "topic": "美债与宏观",
+      "who": "hanking66, sosovaluecrypto",
+      "sentiment": "",
+      "what_they_said": "hanking66: 关注周五沃什发言，认为债券市场已不相信沃什能搞定通胀，美债锅得川普来背，建议美伊和解。sosovaluecrypto: 报道30年期美债收益率突破5.3%创2007年以来新高，高油价与长端收益率飙升压制股市估值。",
+      "gist": "30年期美债收益率日内突破5.33%，创2007年以来新高，正在重塑美股估值天花板。hanking66关注周五沃什发言，认为债券市场已不信任联储控制通胀的能力，美债问题根源在川普的地缘政策。sosovaluecrypto指出地缘摩擦推高布伦特原油至91美元，长端利率攀升持续对权益类资产施压。"
+    }
+  ],
+  "author_profiles": [
+    {
+      "author": "predictdotfun",
+      "display_name": "predictdotfun",
+      "tweet_count": 2,
+      "quality": "高",
+      "one_liner": "预测市场活动与IPO动态",
+      "warning": false
+    },
+    {
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "tweet_count": 13,
+      "quality": "高",
+      "one_liner": "半导体存储周期深度分析",
+      "warning": false
+    },
+    {
+      "author": "aleabitoreddit",
+      "display_name": "aleabitoreddit",
+      "tweet_count": 2,
+      "quality": "高",
+      "one_liner": "AI光互连与人形机器人赛道",
+      "warning": false
+    },
+    {
+      "author": "BroBean88",
+      "display_name": "BroBean88",
+      "tweet_count": 3,
+      "quality": "高",
+      "one_liner": "Thiel动向与AI商业模式对比",
+      "warning": false
+    },
+    {
+      "author": "domaprotocol",
+      "display_name": "domaprotocol",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "平台维护公告",
+      "warning": false
+    },
+    {
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "tweet_count": 6,
+      "quality": "高",
+      "one_liner": "海力士回购与宇树上市复盘",
+      "warning": false
+    },
+    {
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "BTC与SOL走势预测",
+      "warning": false
+    },
+    {
+      "author": "0xXIAOc",
+      "display_name": "0xXIAOc",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "Web3交易赛日刊",
+      "warning": false
+    },
+    {
+      "author": "sunshineboywang",
+      "display_name": "sunshineboywang",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "技术文章转发",
+      "warning": false
+    },
+    {
+      "author": "ccjing_eth",
+      "display_name": "ccjing_eth",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "宇树科技打新攻略",
+      "warning": false
+    },
+    {
+      "author": "hellosuoha",
+      "display_name": "hellosuoha",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "每日市场动态晨报",
+      "warning": false
+    },
+    {
+      "author": "variational_io",
+      "display_name": "variational_io",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "币安上新与合约动态",
+      "warning": false
+    },
+    {
+      "author": "shabi2026",
+      "display_name": "shabi2026",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "宇树做空逻辑质疑",
+      "warning": false
+    },
+    {
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "闪赚活动与原生家庭预测",
+      "warning": false
+    },
+    {
+      "author": "hunterweb303",
+      "display_name": "hunterweb303",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "社交许愿推文",
+      "warning": false
+    },
+    {
+      "author": "linwanwan823",
+      "display_name": "linwanwan823",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "七夕营销文案",
+      "warning": false
+    },
+    {
+      "author": "binance",
+      "display_name": "binance",
+      "tweet_count": 8,
+      "quality": "高",
+      "one_liner": "交易所产品与活动资讯",
+      "warning": false
+    },
+    {
+      "author": "song66546656",
+      "display_name": "song66546656",
+      "tweet_count": 2,
+      "quality": "低",
+      "one_liner": "文档与干货分享",
+      "warning": false
+    },
+    {
+      "author": "BlockFocus11",
+      "display_name": "BlockFocus11",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "Unibase AI记忆产品更新",
+      "warning": false
+    },
+    {
+      "author": "yourQuantGuy",
+      "display_name": "yourQuantGuy",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "P2P市场与量化套利策略",
+      "warning": false
+    },
+    {
+      "author": "0xYuxi",
+      "display_name": "0xYuxi",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "游戏账号抽奖活动",
+      "warning": false
+    },
+    {
+      "author": "buckyandlucky",
+      "display_name": "buckyandlucky",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "美伊战争预测市场风险",
+      "warning": false
+    },
+    {
+      "author": "sosovaluecrypto",
+      "display_name": "sosovaluecrypto",
+      "tweet_count": 5,
+      "quality": "高",
+      "one_liner": "前沿科技公司上市追踪",
+      "warning": false
+    },
+    {
+      "author": "supezen",
+      "display_name": "supezen",
+      "tweet_count": 3,
+      "quality": "中",
+      "one_liner": "AI Agent产品定义讨论",
+      "warning": false
+    },
+    {
+      "author": "jiaqian941213",
+      "display_name": "jiaqian941213",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "宇树做空数据分析",
+      "warning": false
+    },
+    {
+      "author": "BitHappy",
+      "display_name": "BitHappy",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "奥卡姆剃刀投资应用解析",
+      "warning": false
+    },
+    {
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "tweet_count": 4,
+      "quality": "高",
+      "one_liner": "加密产品推广与KiiChain分析",
+      "warning": false
+    }
+  ],
+  "medium_merge": "在AI与科技公司进展方面: hanking66指出OpenAI暂停RL训练体现透明谨慎但增速18%偏难看，qinbafrank认为真正关键看GPT-5.6发布后的Q3表现及价格战效果；Anthropic Q2营收115亿美元碾压OpenAI的67亿美元，增速差距加速拉开，qinbafrank推演其年底ARR有望突破1000亿美元，sosovaluecrypto认为Anthropic有望成为首家上市的前沿模型公司。在宇树科技IPO方面: aleabitoreddit指出其估值533亿美元为人形机器人赛道提供重要对标，jiaqian941213列举上市数据——流通盘仅7%、PE超1500倍且现价已下跌，predictdotfun上线了宇树科技IPO收盘市值预测市场，shabi2026质疑做空宇树的逻辑，sosovaluecrypto预告了相关专题直播，binance同步上线宇树科技永续合约（最高20倍杠杆）。在宏观与市场方面: hanking66分析美国财政部回购计划后美债收益率曲线大幅趋平，认为川普能搞定；hanking66指出美光因CHIPS Act限制在2024年12月9日前无法宣布额外回购，比喻其'满手牌一张没出'；qinbafrank报道NBIS拟私募发行45亿美元可转换票据用于数据中心建设，盘前大跌反映Neocloud债务风险；KillaXBT持有SOL小仓位，预期BTC触底后SOL有75-100%上涨空间。",
+  "errors": []
+}
