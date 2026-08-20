@@ -1,0 +1,2426 @@
+{
+  "run_id": "v2-20260820-024141",
+  "status": "success",
+  "slot": "morning",
+  "slot_label": "早报",
+  "created_at": "2026-08-20 10:48 · 第1次更新",
+  "window": "12h",
+  "planned_at": "2026-08-20 09:00",
+  "started_at": "2026-08-20 10:21",
+  "finished_at": "2026-08-20 10:48",
+  "window_start": "2026-08-19 21:00",
+  "window_end": "2026-08-20 09:00",
+  "delay_seconds": 4891,
+  "elapsed_seconds": 1644.1,
+  "total_tweets": 104,
+  "authors_count": 36,
+  "total_authors": 250,
+  "high_count": 20,
+  "medium_count": 38,
+  "low_count": 46,
+  "scan_ok": 36,
+  "scan_empty": 92,
+  "scan_fail": 122,
+  "scan_elapsed": 1644.0543098449707,
+  "scan_errors": [
+    {
+      "author": "domaprotocol",
+      "error": "https://nitter.poast.org/domaprotocol/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "VIP8888883",
+      "error": "https://nitter.poast.org/VIP8888883/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "memekiller69420",
+      "error": "https://xcancel.com/memekiller69420/rss: Network error while fetching https://xc"
+    },
+    {
+      "author": "AbstractChain",
+      "error": "https://xcancel.com/AbstractChain/rss: Network error while fetching https://xcan"
+    },
+    {
+      "author": "The_PeopleDAO",
+      "error": "https://nitter.poast.org/The_PeopleDAO/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "sunshineboywang",
+      "error": "https://nitter.poast.org/sunshineboywang/rss: HTTP 403 while fetching https://ni"
+    },
+    {
+      "author": "lluviaD0512",
+      "error": "https://nitter.net/lluviaD0512/rss: HTTP 404 while fetching https://nitter.net/l"
+    },
+    {
+      "author": "marginx_io",
+      "error": "https://nitter.privacydev.net/marginx_io/rss: Network error while fetching https"
+    },
+    {
+      "author": "variational_io",
+      "error": "https://nitter.net/variational_io/rss: HTTP 404 while fetching https://nitter.ne"
+    },
+    {
+      "author": "Xinjue1",
+      "error": "https://nitter.privacydev.net/Xinjue1/rss: Network error while fetching https://"
+    },
+    {
+      "author": "re333na",
+      "error": "https://nitter.privacydev.net/re333na/rss: Network error while fetching https://"
+    },
+    {
+      "author": "xiaotongir",
+      "error": "https://xcancel.com/xiaotongir/rss: Network error while fetching https://xcancel"
+    },
+    {
+      "author": "sosovaluecrypto",
+      "error": "https://xcancel.com/sosovaluecrypto/rss: Network error while fetching https://xc"
+    },
+    {
+      "author": "jiaqian941213",
+      "error": "https://nitter.poast.org/jiaqian941213/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "0xLuge",
+      "error": "https://nitter.privacydev.net/0xLuge/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "xiaozhang2331",
+      "error": "https://nitter.poast.org/xiaozhang2331/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "RK_Bitcoin",
+      "error": "https://xcancel.com/RK_Bitcoin/rss: Network error while fetching https://xcancel"
+    },
+    {
+      "author": "txp854431375",
+      "error": "https://nitter.poast.org/txp854431375/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://nitter.net/0xliuqingyu/rss: HTTP 404 while fetching https://nitter.net/0"
+    },
+    {
+      "author": "xifancry",
+      "error": "https://nitter.poast.org/xifancry/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "maohei16",
+      "error": "https://nitter.poast.org/maohei16/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "fwy2026",
+      "error": "https://nitter.poast.org/fwy2026/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "0x_mmc",
+      "error": "https://nitter.net/0x_mmc/rss: HTTP 404 while fetching https://nitter.net/0x_mmc"
+    },
+    {
+      "author": "lofy22479013",
+      "error": "https://nitter.privacydev.net/lofy22479013/rss: Network error while fetching htt"
+    },
+    {
+      "author": "annitoBtc",
+      "error": "https://nitter.net/annitoBtc/rss: HTTP 404 while fetching https://nitter.net/ann"
+    },
+    {
+      "author": "uarizona",
+      "error": "https://nitter.net/uarizona/rss: HTTP 404 while fetching https://nitter.net/uari"
+    },
+    {
+      "author": "dan326714",
+      "error": "https://xcancel.com/dan326714/rss: Network error while fetching https://xcancel."
+    },
+    {
+      "author": "0xquqi",
+      "error": "https://nitter.privacydev.net/0xquqi/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "hs_gogogo",
+      "error": "https://xcancel.com/hs_gogogo/rss: Network error while fetching https://xcancel."
+    },
+    {
+      "author": "lipoded",
+      "error": "https://nitter.poast.org/lipoded/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "wangy112375",
+      "error": "https://nitter.poast.org/wangy112375/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "xiadadhaida",
+      "error": "https://nitter.privacydev.net/xiadadhaida/rss: Network error while fetching http"
+    },
+    {
+      "author": "BQnanqiao",
+      "error": "https://xcancel.com/BQnanqiao/rss: Network error while fetching https://xcancel."
+    },
+    {
+      "author": "solana_zh",
+      "error": "https://nitter.net/solana_zh/rss: HTTP 404 while fetching https://nitter.net/sol"
+    },
+    {
+      "author": "UMich",
+      "error": "https://nitter.poast.org/UMich/rss: HTTP 403 while fetching https://nitter.poast"
+    },
+    {
+      "author": "web3beinian",
+      "error": "https://nitter.poast.org/web3beinian/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "xxiaoxiongmao",
+      "error": "https://nitter.poast.org/xxiaoxiongmao/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "0xinfini",
+      "error": "https://nitter.privacydev.net/0xinfini/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Wave_Tool",
+      "error": "https://xcancel.com/Wave_Tool/rss: Network error while fetching https://xcancel."
+    },
+    {
+      "author": "CuishuoB",
+      "error": "https://xcancel.com/CuishuoB/rss: Network error while fetching https://xcancel.c"
+    },
+    {
+      "author": "xss4755",
+      "error": "https://nitter.privacydev.net/xss4755/rss: Network error while fetching https://"
+    },
+    {
+      "author": "0xcoolkhz",
+      "error": "https://xcancel.com/0xcoolkhz/rss: Network error while fetching https://xcancel."
+    },
+    {
+      "author": "i_icepy",
+      "error": "https://nitter.poast.org/i_icepy/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "0xMayyy",
+      "error": "https://nitter.privacydev.net/0xMayyy/rss: Network error while fetching https://"
+    },
+    {
+      "author": "ariel_sands_dan",
+      "error": "https://nitter.poast.org/ariel_sands_dan/rss: HTTP 403 while fetching https://ni"
+    },
+    {
+      "author": "EvaCmore",
+      "error": "https://xcancel.com/EvaCmore/rss: Network error while fetching https://xcancel.c"
+    },
+    {
+      "author": "BlockBeatsAsia",
+      "error": "https://nitter.privacydev.net/BlockBeatsAsia/rss: Network error while fetching h"
+    },
+    {
+      "author": "zhaoliu911899",
+      "error": "https://nitter.privacydev.net/zhaoliu911899/rss: Network error while fetching ht"
+    },
+    {
+      "author": "0x_Northland",
+      "error": "https://nitter.privacydev.net/0x_Northland/rss: Network error while fetching htt"
+    },
+    {
+      "author": "Fisher0815",
+      "error": "https://xcancel.com/Fisher0815/rss: Network error while fetching https://xcancel"
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://nitter.poast.org/LiHuanLH/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "lumaoyangmao",
+      "error": "https://nitter.privacydev.net/lumaoyangmao/rss: Network error while fetching htt"
+    },
+    {
+      "author": "jiao_newlife",
+      "error": "https://nitter.privacydev.net/jiao_newlife/rss: Network error while fetching htt"
+    },
+    {
+      "author": "cryptolfggo",
+      "error": "https://xcancel.com/cryptolfggo/rss: Network error while fetching https://xcance"
+    },
+    {
+      "author": "WalrusProtocol",
+      "error": "https://nitter.privacydev.net/WalrusProtocol/rss: Network error while fetching h"
+    },
+    {
+      "author": "kinotd_com",
+      "error": "https://nitter.net/kinotd_com/rss: Network error while fetching https://nitter.n"
+    },
+    {
+      "author": "nft_hu",
+      "error": "https://xcancel.com/nft_hu/rss: Network error while fetching https://xcancel.com"
+    },
+    {
+      "author": "kevin_airdrop",
+      "error": "https://nitter.poast.org/kevin_airdrop/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "bigbottle44",
+      "error": "https://xcancel.com/bigbottle44/rss: Network error while fetching https://xcance"
+    },
+    {
+      "author": "bu_xiang888",
+      "error": "https://nitter.poast.org/bu_xiang888/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "zhao_p42510",
+      "error": "https://nitter.net/zhao_p42510/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "WY_mask",
+      "error": "https://nitter.poast.org/WY_mask/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "btc_hamsters",
+      "error": "https://nitter.privacydev.net/btc_hamsters/rss: Network error while fetching htt"
+    },
+    {
+      "author": "tenlly_ly",
+      "error": "https://nitter.net/tenlly_ly/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "BaleYoba",
+      "error": "https://nitter.net/BaleYoba/rss: Network error while fetching https://nitter.net"
+    },
+    {
+      "author": "evooves",
+      "error": "https://nitter.privacydev.net/evooves/rss: Network error while fetching https://"
+    },
+    {
+      "author": "hualun",
+      "error": "https://xcancel.com/hualun/rss: Network error while fetching https://xcancel.com"
+    },
+    {
+      "author": "Nazarick_eth",
+      "error": "https://xcancel.com/Nazarick_eth/rss: Network error while fetching https://xcanc"
+    },
+    {
+      "author": "lin_btc",
+      "error": "https://nitter.privacydev.net/lin_btc/rss: Network error while fetching https://"
+    },
+    {
+      "author": "liyuanqion55768",
+      "error": "https://nitter.privacydev.net/liyuanqion55768/rss: Network error while fetching "
+    },
+    {
+      "author": "toupaiwang",
+      "error": "https://nitter.poast.org/toupaiwang/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "lufushage",
+      "error": "https://xcancel.com/lufushage/rss: Network error while fetching https://xcancel."
+    },
+    {
+      "author": "Benjieming1Q84",
+      "error": "https://nitter.net/Benjieming1Q84/rss: Network error while fetching https://nitt"
+    },
+    {
+      "author": "0xleng1",
+      "error": "https://nitter.net/0xleng1/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "SeomunW",
+      "error": "https://xcancel.com/SeomunW/rss: Network error while fetching https://xcancel.co"
+    },
+    {
+      "author": "Maybe2024slow",
+      "error": "https://xcancel.com/Maybe2024slow/rss: Network error while fetching https://xcan"
+    },
+    {
+      "author": "zicai222222",
+      "error": "https://xcancel.com/zicai222222/rss: Network error while fetching https://xcance"
+    },
+    {
+      "author": "Bigdevilbtc",
+      "error": "https://nitter.poast.org/Bigdevilbtc/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "Z_Lib_official",
+      "error": "https://xcancel.com/Z_Lib_official/rss: Network error while fetching https://xca"
+    },
+    {
+      "author": "0xweiqigaoshou",
+      "error": "https://nitter.net/0xweiqigaoshou/rss: Network error while fetching https://nitt"
+    },
+    {
+      "author": "jiamigou",
+      "error": "https://nitter.poast.org/jiamigou/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "kyeast",
+      "error": "https://xcancel.com/kyeast/rss: Network error while fetching https://xcancel.com"
+    },
+    {
+      "author": "xiaoyubtc",
+      "error": "https://nitter.net/xiaoyubtc/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "jiji_eth",
+      "error": "https://nitter.privacydev.net/jiji_eth/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Oceansky_web3",
+      "error": "https://nitter.net/Oceansky_web3/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "XBITDEX_ZH",
+      "error": "https://nitter.poast.org/XBITDEX_ZH/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "cosy_white",
+      "error": "https://nitter.privacydev.net/cosy_white/rss: Network error while fetching https"
+    },
+    {
+      "author": "kuangshenbtc",
+      "error": "https://nitter.privacydev.net/kuangshenbtc/rss: Network error while fetching htt"
+    },
+    {
+      "author": "PhyrexNi",
+      "error": "https://nitter.poast.org/PhyrexNi/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "useXXYYio",
+      "error": "https://xcancel.com/useXXYYio/rss: Network error while fetching https://xcancel."
+    },
+    {
+      "author": "0xCryptoUni",
+      "error": "https://xcancel.com/0xCryptoUni/rss: Network error while fetching https://xcance"
+    },
+    {
+      "author": "Rats_Friend",
+      "error": "https://xcancel.com/Rats_Friend/rss: Network error while fetching https://xcance"
+    },
+    {
+      "author": "decision_BTC",
+      "error": "https://nitter.net/decision_BTC/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "yunknkn2",
+      "error": "https://nitter.privacydev.net/yunknkn2/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Ice_Frog666666",
+      "error": "https://nitter.poast.org/Ice_Frog666666/rss: HTTP 403 while fetching https://nit"
+    },
+    {
+      "author": "0xKevin00",
+      "error": "https://nitter.poast.org/0xKevin00/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "crypto_biubiu",
+      "error": "https://nitter.net/crypto_biubiu/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "wwfhbz",
+      "error": "https://nitter.poast.org/wwfhbz/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "BitCloutCat",
+      "error": "https://nitter.privacydev.net/BitCloutCat/rss: Network error while fetching http"
+    },
+    {
+      "author": "Naive_BNB",
+      "error": "https://nitter.poast.org/Naive_BNB/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "bitfool1",
+      "error": "https://nitter.privacydev.net/bitfool1/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "cyberport_hk",
+      "error": "https://nitter.net/cyberport_hk/rss: Network error while fetching https://nitter"
+    },
+    {
+      "author": "Seaxing777",
+      "error": "https://nitter.poast.org/Seaxing777/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "EmberCN",
+      "error": "https://nitter.net/EmberCN/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "JYHNCZR_",
+      "error": "https://nitter.privacydev.net/JYHNCZR_/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "web3vip",
+      "error": "https://nitter.net/web3vip/rss: Network error while fetching https://nitter.net/"
+    },
+    {
+      "author": "Yale",
+      "error": "https://nitter.net/Yale/rss: Network error while fetching https://nitter.net/Yal"
+    },
+    {
+      "author": "Nicole58004351",
+      "error": "https://nitter.privacydev.net/Nicole58004351/rss: Network error while fetching h"
+    },
+    {
+      "author": "nirvana_hui",
+      "error": "https://nitter.net/nirvana_hui/rss: Network error while fetching https://nitter."
+    },
+    {
+      "author": "followin_io_zh",
+      "error": "https://nitter.privacydev.net/followin_io_zh/rss: Network error while fetching h"
+    },
+    {
+      "author": "ether",
+      "error": "https://nitter.net/ether/rss: Network error while fetching https://nitter.net/et"
+    },
+    {
+      "author": "HyperliquidX",
+      "error": "https://xcancel.com/HyperliquidX/rss: Network error while fetching https://xcanc"
+    },
+    {
+      "author": "zerowu97",
+      "error": "https://xcancel.com/zerowu97/rss: Network error while fetching https://xcancel.c"
+    },
+    {
+      "author": "ki_smoon12",
+      "error": "https://nitter.poast.org/ki_smoon12/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "DrcDAO",
+      "error": "https://xcancel.com/DrcDAO/rss: Network error while fetching https://xcancel.com"
+    },
+    {
+      "author": "JackGui14",
+      "error": "https://nitter.privacydev.net/JackGui14/rss: Network error while fetching https:"
+    },
+    {
+      "author": "xiaoyinsi2025",
+      "error": "https://nitter.net/xiaoyinsi2025/rss: Network error while fetching https://nitte"
+    },
+    {
+      "author": "cishanjia",
+      "error": "https://nitter.net/cishanjia/rss: Network error while fetching https://nitter.ne"
+    },
+    {
+      "author": "wufantouzi",
+      "error": "https://xcancel.com/wufantouzi/rss: Network error while fetching https://xcancel"
+    },
+    {
+      "author": "guanliange",
+      "error": "https://nitter.poast.org/guanliange/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "hebi555",
+      "error": "https://nitter.privacydev.net/hebi555/rss: Network error while fetching https://"
+    },
+    {
+      "author": "youyou5202",
+      "error": "https://xcancel.com/youyou5202/rss: Network error while fetching https://xcancel"
+    }
+  ],
+  "items": [
+    {
+      "post_id": "0",
+      "author": "predictdotfun",
+      "display_name": "predictdotfun",
+      "url": "https://x.com/predictdotfun/status/2090068849576313254",
+      "content": "Playoff Markets: open 🔓\nTime to lock in and carve out your share of the $75,000 & 4,000,000 PP rewards.\nActivity Points have been 5x’d across the board. So it’s never been easier to supercharge your rankings.\nSee you for Iron Wing ⚔️ Team Spirit at 10:00 AM (UTC+8) tomorrow.\n🏆predict.fun/dota2-activity\nVideo",
+      "content_full": "Playoff Markets: open 🔓\nTime to lock in and carve out your share of the $75,000 & 4,000,000 PP rewards.\nActivity Points have been 5x’d across the board. So it’s never been easier to supercharge your rankings.\nSee you for Iron Wing ⚔️ Team Spirit at 10:00 AM (UTC+8) tomorrow.\n🏆predict.fun/dota2-activity\nVideo",
+      "published_at": "2026-08-19T13:30:19Z",
+      "importance": "高",
+      "summary": "Dota2季后赛活动开启，提供5x活动积分奖励及具体参与链接",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "分享豆包语音输入优化 AI 提示词的实用技巧，展示自然语言交互效率，对 AI 工具使用者有直接启发。"
+    },
+    {
+      "post_id": "1",
+      "author": "yujuhao",
+      "display_name": "yujuhao",
+      "url": "https://x.com/yujuhao/status/2090148161520357829",
+      "content": "合约亏了3000\n充10000直接回本\n这波不亏",
+      "content_full": "合约亏了3000\n充10000直接回本\n这波不亏",
+      "published_at": "2026-08-19T18:45:29Z",
+      "importance": "低",
+      "summary": "个人合约亏损吐槽，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "2",
+      "author": "yujuhao",
+      "display_name": "yujuhao",
+      "url": "https://x.com/yujuhao/status/2090114180867363015",
+      "content": "中性网格合约的兄弟们\n还好吗？\n就这行情，爆了吗？",
+      "content_full": "中性网格合约的兄弟们\n还好吗？\n就这行情，爆了吗？",
+      "published_at": "2026-08-19T16:30:27Z",
+      "importance": "低",
+      "summary": "询问网格合约情况，无分析内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "3",
+      "author": "yujuhao",
+      "display_name": "yujuhao",
+      "url": "https://x.com/yujuhao/status/2090068771222274372",
+      "content": "速速申请一下吧\nBitMEX 联合创始人 Arthur Hayes 的项目\n@flop_labs 是一个新的加密项目，为 AI 代理构建经济层\n- 无预售\n- 无风投\n- 100% 公平启动\n现在可以申请 GPU 提供商、验证者和 KOL/创作者\nArthur Hayes的推文说：预计第四季度会有大规模空投\n✅申请：flop.finance/zh/\n创世区块将于 27 年第一季度",
+      "content_full": "速速申请一下吧\nBitMEX 联合创始人 Arthur Hayes 的项目\n@flop_labs 是一个新的加密项目，为 AI 代理构建经济层\n- 无预售\n- 无风投\n- 100% 公平启动\n现在可以申请 GPU 提供商、验证者和 KOL/创作者\nArthur Hayes的推文说：预计第四季度会有大规模空投\n✅申请：flop.finance/zh/\n创世区块将于 27 年第一季度",
+      "published_at": "2026-08-19T13:30:01Z",
+      "importance": "高",
+      "summary": "BitMEX创始人Arthur Hayes新项目flop_labs，提供GPU提供商/验证者申请入口及时间线",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "BitMEX 联合创始人 Arthur Hayes 背书的新项目，公平启动无风投，潜在空投价值高，关注早期加密机会的用户值得布局。"
+    },
+    {
+      "post_id": "4",
+      "author": "yujuhao",
+      "display_name": "yujuhao",
+      "url": "https://x.com/yujuhao/status/2090067703084306496",
+      "content": "可以开始嘴撸了\n@axisrobotics 上了Kaito嘴撸了\n奖励0.25% 的 $AXIS 代币，TGE 时完全分发\nEpoch 1 现已启动，将持续至 9 月 18 日\n-前 1–100 名 → 分享 0.10%\n-前 101–500 名 → 分享 0.10%\n-Kaito Stakers → 分享 0.05%\n同时还必须加入并完成 Axis 任务\n✅加入：s.kaito.ai/wgyyLCq\nAxis Robotics 是一个面向物理人工智能的分布式扩展基础设施，融资1200万美元，Hack VC领投。",
+      "content_full": "可以开始嘴撸了\n@axisrobotics 上了Kaito嘴撸了\n奖励0.25% 的 $AXIS 代币，TGE 时完全分发\nEpoch 1 现已启动，将持续至 9 月 18 日\n-前 1–100 名 → 分享 0.10%\n-前 101–500 名 → 分享 0.10%\n-Kaito Stakers → 分享 0.05%\n同时还必须加入并完成 Axis 任务\n✅加入：s.kaito.ai/wgyyLCq\nAxis Robotics 是一个面向物理人工智能的分布式扩展基础设施，融资1200万美元，Hack VC领投。",
+      "published_at": "2026-08-19T13:25:46Z",
+      "importance": "高",
+      "summary": "Axis Robotics空投任务详解，含排行榜奖励分配、任务入口及项目背景",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Axis Robotics 获 1200 万美元融资，Kaito 嘴撸活动奖励 $AXIS 代币，适合参与链上任务赚取空投回报的用户。"
+    },
+    {
+      "post_id": "5",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2090091265413296570",
+      "content": "硬件又集体血崩，存储被海力士大哥续了一命，不然今天又是挨揍的一天🫠\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "硬件又集体血崩，存储被海力士大哥续了一命，不然今天又是挨揍的一天🫠\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T14:59:24Z",
+      "importance": "低",
+      "summary": "硬件行情随感，无实质分析",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "6",
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "url": "https://x.com/hanking66/status/2090076163649782075",
+      "content": "群里大佬 17 号买入 mrna，今天吃到了一个 100%，震惊我妈一百年。（不是我）\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "content_full": "群里大佬 17 号买入 mrna，今天吃到了一个 100%，震惊我妈一百年。（不是我）\nBuy the dip，长期持有，永远缺存储，Discord在个人资料。",
+      "published_at": "2026-08-19T13:59:23Z",
+      "importance": "低",
+      "summary": "转述群里大佬MRNA交易获利，无分析",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "7",
+      "author": "AnLaoliu",
+      "display_name": "AnLaoliu",
+      "url": "https://x.com/AnLaoliu/status/2090076796679229812",
+      "content": "就因为看不下去贪污腐败，说了几句就封号，你特么不是标榜言论自由吗？你特么不是自诩理性中立吗？",
+      "content_full": "就因为看不下去贪污腐败，说了几句就封号，你特么不是标榜言论自由吗？你特么不是自诩理性中立吗？",
+      "published_at": "2026-08-19T14:01:54Z",
+      "importance": "低",
+      "summary": "吐槽平台封号，纯情绪",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "8",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2090227771134095538",
+      "content": "美国加密监管的重大转向：从“执法式监管”转向“规则式监管”的结构性变化。昨天加密走强还有一个大的推动：SEC提案提议豁免部分数字资产发行免于提交证券注册声明，豁免额度分别为最高500万美元和最高7500万美元。该提案对发行方提出了相关要求，包括提交财务报表并满足持续信息披露义务，同时设立安全港条款，将相关资产排除在证券法中”投资合约”的定义之外。\n1、这个提案的意义在于：\n美国数字资产监管真正开始从“先用执法判断谁违法”，转向“先给出项目可以遵循的发行、披露、流通和退出规则”：以前是“事后执法”，以后“事前合规路径”，规则路径更友好也更清晰了\n2、真正革命性的部分：把“代币”和“投资合同”拆开\n提案定义的“covered investment contract”必须同时满足：\n某项合同、交易或计划构成投资合同；\n有一个加密资产附着于该投资合同；\n该加密资产本身不是证券；\n没有股票、债券或其他资产同时附着于该投资合同。\n这延续了SEC和CFTC今年3月提出的核心观点：“很多加密资产本身并不是证券，但发行方关于开发网络、提高代币价值、发展生态系统等承诺，可能使购买行为构成投资合同；随着这些",
+      "content_full": "美国加密监管的重大转向：从“执法式监管”转向“规则式监管”的结构性变化。昨天加密走强还有一个大的推动：SEC提案提议豁免部分数字资产发行免于提交证券注册声明，豁免额度分别为最高500万美元和最高7500万美元。该提案对发行方提出了相关要求，包括提交财务报表并满足持续信息披露义务，同时设立安全港条款，将相关资产排除在证券法中”投资合约”的定义之外。\n1、这个提案的意义在于：\n美国数字资产监管真正开始从“先用执法判断谁违法”，转向“先给出项目可以遵循的发行、披露、流通和退出规则”：以前是“事后执法”，以后“事前合规路径”，规则路径更友好也更清晰了\n2、真正革命性的部分：把“代币”和“投资合同”拆开\n提案定义的“covered investment contract”必须同时满足：\n某项合同、交易或计划构成投资合同；\n有一个加密资产附着于该投资合同；\n该加密资产本身不是证券；\n没有股票、债券或其他资产同时附着于该投资合同。\n这延续了SEC和CFTC今年3月提出的核心观点：“很多加密资产本身并不是证券，但发行方关于开发网络、提高代币价值、发展生态系统等承诺，可能使购买行为构成投资合同；随着这些承诺完成，投资合同可以终止。\n由此形成一个新的生命周期：\n第一阶段：发行融资：\n第二阶段：网络建设（building阶段）\n第三阶段：投资合同终止\n当发行方已经完成，或者永久停止其承诺的全部“关键管理努力”，并且不再作出新的类似承诺时，可以提交Form TR，说明投资合同已经终止。\n第四阶段：代币脱离证券法\n满足安全港后，SEC将认为此前附着于代币的投资合同已经消失，证券注册和持续报告义务从满足安全港之时起终止。\n这相当于SEC承认了一个关键事实：\n“证券属性可以是交易和承诺关系的属性，不一定是代币永久不变的属性”\n这实际上是美国版的代币监管生命周期模型。它比过去模糊的“充分去中心化”标准更容易操作，因为核心不再只是判断网络是否抽象地足够去中心化，而是核对发行方有没有完成自己当初作出的关键承诺。\n这是提案比融资额度本身更重要的地方。\n3、美国可能出现真正的“合规公开代币融资市场”\n新规则若落地，会提供一条更直接的路线：“在美国公开营销—向散户和机构销售—披露tokenomics及开发承诺—允许较自由流通—项目成熟后退出投资合同。\n这将降低项目在美国发币的法律和时间成本，也可能减少“美国团队、开曼基金会、瑞士协会、海外TGE”这类高度复杂的离岸架构。SEC明确把减少项目离岸经营、扩大美国投资者机会列为提案目标。\n4、SEC的政策目标从“阻止未注册发币”转向“允许合规发币”\n500万美元和7500万美元豁免意味着，SEC已经不再把所有公开代币融资都视为应当被压制的活动，而是开始设计专门的融资通道。\n简单说\n美国监管机构真正开始“为加密资产建立进入美国资本市场的专门通道”。SEC第一次正式接受三个原则：\n1）代币本身与发行它的投资合同可以分开；\n2）投资合同可以随着项目生命周期而终止；\n3）证券监管不仅要防范风险，也要主动为加密网络资本形成设计规则。\n确实可以说是美国加密监管的重大转向，也是美国合规ICO、链上资本形成和数字资产证券生命周期制度的起点。\nqinbafrank (@qinbafrank)\n7月上旬说大饼能到7万以上，这次应该是终于要看到了。白宫全是加密/数字货币相关高管和行业协会的“科技领袖会议”催化，底层驱动还是今晚贝森特出手救市nitter.net/qinbafrank/status/2090…短期压制因素接触。\n— https://nitter.net/qinbafrank/status/2090101924293165467#m",
+      "published_at": "2026-08-20T00:01:49Z",
+      "importance": "高",
+      "summary": "SEC提案深度分析：代币与证券法解耦的生命周期模型，合规路径清晰化",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "ArcNova 创世徽章免费 Mint，限量 1 万个，适合 BNB Chain 生态参与者低成本获取早期 NFT 资产。"
+    },
+    {
+      "post_id": "9",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2090101924293165467",
+      "content": "7月上旬说大饼能到7万以上，这次应该是终于要看到了。白宫全是加密/数字货币相关高管和行业协会的“科技领袖会议”催化，底层驱动还是今晚贝森特出手救市nitter.net/qinbafrank/status/2090…短期压制因素接触。\nqinbafrank (@qinbafrank)\n虽然名义上叫“科技领袖会议”，实际受邀和预期出席者几乎全部是加密货币/数字资产相关高管、行业协会，以及传统金融中与加密高度相关的机构。希望能推动关于清晰法案、创新豁免等方面的进展\n— https://nitter.net/qinbafrank/status/2090090050570916041#m",
+      "content_full": "7月上旬说大饼能到7万以上，这次应该是终于要看到了。白宫全是加密/数字货币相关高管和行业协会的“科技领袖会议”催化，底层驱动还是今晚贝森特出手救市nitter.net/qinbafrank/status/2090…短期压制因素接触。\nqinbafrank (@qinbafrank)\n虽然名义上叫“科技领袖会议”，实际受邀和预期出席者几乎全部是加密货币/数字资产相关高管、行业协会，以及传统金融中与加密高度相关的机构。希望能推动关于清晰法案、创新豁免等方面的进展\n— https://nitter.net/qinbafrank/status/2090090050570916041#m",
+      "published_at": "2026-08-19T15:41:45Z",
+      "importance": "中",
+      "summary": "白宫科技领袖会议催化加密走强，贝森特救市动作压制短期压制因素",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "10",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2090090050570916041",
+      "content": "虽然名义上叫“科技领袖会议”，实际受邀和预期出席者几乎全部是加密货币/数字资产相关高管、行业协会，以及传统金融中与加密高度相关的机构。希望能推动关于清晰法案、创新豁免等方面的进展\nEleanor Terrett (@EleanorTerrett)\n🚨NEW: The meeting of tech leaders is set to kick off at the White House today at 2:30PM ET where President Trump is expected to make remarks alongside @SECPaulSAtkins and @ChairmanSelig.\nOther crypto/TradFi executives expected to attend:\n📌@brian_armstrong, Coinbase\n📌@bgarlinghouse, Ripple\n📌@arjunsethi, Payward/Kraken\n📌@cameron & @tyler, Gemini\n📌@SergeyNazarov, Chainlink\n📌 @",
+      "content_full": "虽然名义上叫“科技领袖会议”，实际受邀和预期出席者几乎全部是加密货币/数字资产相关高管、行业协会，以及传统金融中与加密高度相关的机构。希望能推动关于清晰法案、创新豁免等方面的进展\nEleanor Terrett (@EleanorTerrett)\n🚨NEW: The meeting of tech leaders is set to kick off at the White House today at 2:30PM ET where President Trump is expected to make remarks alongside @SECPaulSAtkins and @ChairmanSelig.\nOther crypto/TradFi executives expected to attend:\n📌@brian_armstrong, Coinbase\n📌@bgarlinghouse, Ripple\n📌@arjunsethi, Payward/Kraken\n📌@cameron & @tyler, Gemini\n📌@SergeyNazarov, Chainlink\n📌 @cdixon, a16z\n📌 @alanapalmedo, Paradigm\n📌 @OneMorePeter, Blockchain.com\n📌 @mikebelshe, BitGo\n📌 @CodyCarboneDC, Digital Chamber\n📌 @SummerMersinger, Blockchain Association\n📌 @_jikim, Crypto Council for Innovation\n📌 Jeff Sprecher, ICE (NYSE)\n📌 @adenatfriedman, NASDAQ\nWhite House Crypto Council Executive Director @patrickjwitt will also be there.\n— https://nitter.net/EleanorTerrett/status/2090084579537551728#m",
+      "published_at": "2026-08-19T14:54:34Z",
+      "importance": "中",
+      "summary": "白宫加密会议参会名单，含Coinbase/Ripple/a16z等核心人物",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "11",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2090072033388617853",
+      "content": "贝森特出手，财政部救市。这是今晚市场影响最大的，盘前美国财政部宣布将把针对长期名义付息债券的流动性支持回购操作单次最高规模至少提高一倍，升至每笔操作至少40亿美元，新规定将于9月9日起正式生效。简单说之前每次20亿美金的回购效果不佳，那就加大药量。消息一出，US10y、US20y、US30y应声下挫\n单笔从20亿提到至少40亿，叠加季度内多次操作，短期可显著增加长端回购量（此前季度流动性支持回购总量约在数十亿美元量级）。加大回购旧券规模，特别是二十年三十年期长债，直接清理市场上流动性较差的长期券，也能看出来贝森特对于长端利率走高其实很敏感。\n对股市与风险资产来说，长端收益率回落缓解金融条件收紧，利好成长股、科技股及高估值资产。若长端稳定，有助于降低企业融资成本。\n收益率下行+流动性信号偏鸽，短期压制因素解除。\n这让我想起来、23年10月nitter.net/qinbafrank/status/1716…上一次US30y大幅度高于5%、US10Y逼近5%那个时候还是鲍威尔、耶伦还拉上了比尔阿卡曼一起出手才给压下来。\n去年5月中nitter.net/qinbafrank/status/19",
+      "content_full": "贝森特出手，财政部救市。这是今晚市场影响最大的，盘前美国财政部宣布将把针对长期名义付息债券的流动性支持回购操作单次最高规模至少提高一倍，升至每笔操作至少40亿美元，新规定将于9月9日起正式生效。简单说之前每次20亿美金的回购效果不佳，那就加大药量。消息一出，US10y、US20y、US30y应声下挫\n单笔从20亿提到至少40亿，叠加季度内多次操作，短期可显著增加长端回购量（此前季度流动性支持回购总量约在数十亿美元量级）。加大回购旧券规模，特别是二十年三十年期长债，直接清理市场上流动性较差的长期券，也能看出来贝森特对于长端利率走高其实很敏感。\n对股市与风险资产来说，长端收益率回落缓解金融条件收紧，利好成长股、科技股及高估值资产。若长端稳定，有助于降低企业融资成本。\n收益率下行+流动性信号偏鸽，短期压制因素解除。\n这让我想起来、23年10月nitter.net/qinbafrank/status/1716…上一次US30y大幅度高于5%、US10Y逼近5%那个时候还是鲍威尔、耶伦还拉上了比尔阿卡曼一起出手才给压下来。\n去年5月中nitter.net/qinbafrank/status/1925…贝森特也有出手稳住债市\n今天已经是内森特本月内第二次出手打压长端收益率，第一次是两周前帮助日本央行稳住日元汇率、核心也是不想让日央行抛美债就日元。\n能看出内森特对长端收益率走高其实非常在意。\n本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易 」\nqinbafrank (@qinbafrank)\n迎来收益率高中枢时代，实际利率比名义利率更重要。昨晚比较8月份行情与四五月行情差异，说完到今天油价和US10y都往上突破了近期的区间上限。油价的上涨博弈长期化的体现，今天这里nitter.net/qinbafrank/status/2089…有聊过。现在聊聊US10Y。\n须强调下，个人一直重点看十年美债收益率的走势，而非二十年和三十年，因为十年美债收益率才是真正的无风险利率（五年太短、二十三十年太长、十年正好）。聊聊几个点：\n1、为什么我们会迎来收益率高中枢时代？\n十年美债收益率上涨到4.74%原因则更复杂，一方面自然是油价上涨自然通胀预期抬头、但是前段时间加息预期大幅降低US10Y也没下去。之前也聊过当下长债收益率走高，已经不仅仅是通胀预期在驱动，更重要的变量是债券供给规模越来越大：\n一方面美国财政赤字上行、发行供给增大，市场开始提前计入未来赤字、期限风险、买家价格敏感度以及长期再融资压力；\n另一方面因为AI基建浪潮的驱动，大科技公司今年发债规模也越来越大，这其实是和美国国债争夺养老金、保险资金、主权基金等投资者的久期风险预算，使新债必须提供更高收益率或更宽信用利差；\n这些都导致了长端收益率居高不下、也就是收益率中枢走高。\n2、当然不是说债券供给爆发”收益率只能涨、不能跌。”\n1）如果未来发生经济明显减速、通胀下降或美联储大幅降息，3.43%的平均短端利率预期仍然可以显著下降，从而抵消期限溢价。\n2）市场在评估AI资本开支的ROIC。过去大科技依靠经营现金流融资，现在越来越依赖债券、租赁、项目融资和其他资本结构。只要AI收入和现金流兑现，发债既推高利率，也推高未来盈利，两个力量可以相互抵消：经营质量越好、自然债券收益率也会越低。\n但未来如果出现收入兑现慢于资本开支和利息成本，便会形成：债券供给推高折现率＋自由现金流下降＋ROIC被下调的三重压缩。\n所以大科技债务融资既可能抬高市场的盈利容量，也可能在未来反过来降低市场对高利率的容忍度。\n3、4.7%的十年美债收益率为何没对市场产业巨大压力？个人角度看\n1）盈利增长速度高于股价上涨速度，估值在被盈利消化。这就是为什么同样是4.7%的10年美债收益率，现在对指数的冲击可以小于去年。\n2）市场内部已经完成部分估值压缩和行业切换\n高利率并没有“不造成伤害”，而是伤害先发生在了高估值板块、小盘成长股、REITs和公用事业；高负债、需要持续再融资的公司；现金流远期化的长久期资产。\n简单说市场分化了、资金集中在盈利更强的半导体、部分大科技、金融、能源和工业板块，\n3）信用市场暂时没有发出系统性压力信号\n截至8月中旬，美国投资级公司债OAS仍只有80个基点，高收益债OAS为267个基点，整体仍处于相当紧的水平。只要信用利差不明显扩大，企业的全口径融资成本虽然高，但还没有转化成信用事故和系统性去杠杆。\n所以目前市场能够承受4.7%，靠的是：盈利上修、信用利差稳定和部分估值提前压缩。\n当然也有今天美银报告nitter.net/qinbafrank/status/2089…里说到的：市场也相信政府会用更高的名义GDP增长来消化债务问题。这也是一个因素、个人角度、基本面的盈利增长还是第一位的。\n4、红线变黄线，压力区上移动，市场的容忍区间推演\n去年在这里nitter.net/qinbafrank/status/1925…提到一个观察，4.6%是十年美债收益率的阈值、超过这个阈值市场压力越大、财政部越紧张。但现在这个阈值也在改变。给一个个人观察的框架\n1）4.60%—4.75%：高利率但尚可消化\n这是过去的红线，现在更接近黄线。只要盈利继续上修、信用利差稳定，收益率缓慢向上市场整体可以承受。\n2）4.75%—4.90%明显的估值摩擦区\n这个区间市场更容易出现：指数横盘、盈利消化估值；成长股向价值股和周期股轮动；市场宽度变差；财报后对盈利质量和自由现金流要求明显提高。\n这一阶段并不要求指数大跌，但内部压力会越来越大。分化也越严重\n3）4.90%—5.05%：新的真正压力区\n在这个区间市场波动自然加大，如果是两三周快速上涨30—40个基点，而且实际利率、期限溢价和信用利差一起上升，市场不需要等到5%以上才会调整。\n4）5.05%以上并持续数周：红色警报区域\n用简化的倒数估值法看：盈利收益率从5.0%升至5.3%，市盈率从20倍降至18.9倍，估值压缩约5.7%；升至5.5%，市盈率降至18.2倍，估值压缩约9.1%\n当然这只是一个大概的推演、框架比具体数字更值得参考。\n5、真正核心的是实际利率，而非名义10年收益率\n对成长股而言，实际利率比名义收益率更重要，例如：\n10年名义收益率5.0%，通胀预期2.7%，实际利率2.3%；\n10年名义收益率4.9%，通胀预期2.2%，实际利率2.7%。\n第二种情况反而可能对高估值成长股更不利。\n所谓好利率上涨，是经济增长、生产率和盈利预期同步上修；\n坏利率上涨，则是经济数据已经走弱，但财政赤字、债券供给和期限溢价仍在推高长端。\n市场对10年收益率的短期容忍区间正在上移，4.7%可能不再是硬红线，4.9%—5.0%正在成为新的压力边界。\n高收益率中枢带来则是高波动率\n本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易 」\n— https://nitter.net/qinbafrank/status/2089715193890976004#m",
+      "published_at": "2026-08-19T13:42:59Z",
+      "importance": "高",
+      "summary": "财政部扩大长债回购至40亿美元深度分析，利率下行利好风险资产",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Axis 成为 Kaito 首个代币激励活动，提供短链追踪与多轮奖励机制，适合习惯嘴撸策略的用户快速参与。"
+    },
+    {
+      "post_id": "12",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2090064998060245249",
+      "content": "一份潜在总值1200亿美金的定制产品开发及股权认购合作协议，MRVL宣布跟谷歌在7月29日达成芯片产品开发协议，涵盖AI、存储和网络芯片领域，并同时向谷歌发行一份最多可购买5897万股股票的认股权证，行权价格设定为每股206.58美元。在协议签署后的第一年内，每季度将有136.0867万份认股权证股份归属。详细分析下这份合作协议\n1、合作范围\n覆盖与Google TPU 生态系统紧密相关的综合定制硅芯片项目，具体包括：AI 推理加速器、存储控制器、网络接口控制器、内存接口控制器、近内存计算等细分板块。\n谷歌对相关产品的采购具有一定裁量权，权证归属与这些采购产生的收入直接挂钩。显示双方在 AI、存储和网络芯片领域的既有或潜在关系进一步深化。\n2、认股权证（Warrant）条款\n最多可购买 58,970,907 股 Marvell 普通股\n1）行权价格：每股 206.58 美元（固定，但受惯例反稀释调整影响）。\n2）行权期限：自发行日起至 2033 年 8 月 18 日（约 7 年），可全部或部分行权，但需先满足归属条件。\n3）时间归属：1,360,867 股在商业协议和权证执行后的第一年",
+      "content_full": "一份潜在总值1200亿美金的定制产品开发及股权认购合作协议，MRVL宣布跟谷歌在7月29日达成芯片产品开发协议，涵盖AI、存储和网络芯片领域，并同时向谷歌发行一份最多可购买5897万股股票的认股权证，行权价格设定为每股206.58美元。在协议签署后的第一年内，每季度将有136.0867万份认股权证股份归属。详细分析下这份合作协议\n1、合作范围\n覆盖与Google TPU 生态系统紧密相关的综合定制硅芯片项目，具体包括：AI 推理加速器、存储控制器、网络接口控制器、内存接口控制器、近内存计算等细分板块。\n谷歌对相关产品的采购具有一定裁量权，权证归属与这些采购产生的收入直接挂钩。显示双方在 AI、存储和网络芯片领域的既有或潜在关系进一步深化。\n2、认股权证（Warrant）条款\n最多可购买 58,970,907 股 Marvell 普通股\n1）行权价格：每股 206.58 美元（固定，但受惯例反稀释调整影响）。\n2）行权期限：自发行日起至 2033 年 8 月 18 日（约 7 年），可全部或部分行权，但需先满足归属条件。\n3）时间归属：1,360,867 股在商业协议和权证执行后的第一年内按季度等额归属（约每季度 340,216–340,217 股）。这部分相对“确定”，主要体现对合作启动的初步承诺。\n4）业绩归属：\n剩余约 57,610,040 股，从公司2027 财年第三季度起至 2033 财年末，按 Google 及其关联方对协议定制化产品的裁量性采购产生的收入，分成 240 个等额份额归属。\n每产生 5 亿美元定制化产品收入，归属 1 个份额（约 24 万股左右）。\n这意味着若全部归属，对应的累计定制化产品收入上限约为 1,200 亿美元（240 × 5 亿美元）。\n这是一个极高的里程碑，反映双方对长期大规模合作的乐观预期，但并非保证收入，完全取决于 Google 的实际采购。\n3、对对 Marvell的意义与影响\n1）重大客户锁定与收入可见性。Google 作为全球最大 AI/云服务商之一，将其纳入 TPU 生态的定制芯片供应（尤其推理、存储、网络和近内存计算），有助于 Marvell 在 AI ASIC/定制硅领域进一步多元化客户（此前已有与 AWS 等的类似权证合作）。\n从产品供应采购合作进一步升级到股权合作。\n2）潜在巨大收入\n若认股权证的全部完成归属，意味着MRVl实现了1,200 亿美元定制产品营收，将是公司历史级增长驱动力（当前公司年收入规模远低于此）。\n权证结构将 Google 的利益与 Marvell 的执行和收入增长绑定，降低客户流失风险。\n3）当然认股权证完全兑现行权，意味着未来谷歌将持有MRVL约6.5–6.7%的股权，成为大股东。当然全部归属并行权会产生显著稀释。\n2、对 Google的意义\n1）通过认股权证获得 Marvell 股权上行空间，同时锁定定制芯片供应能力，支持其 TPU 生态扩展和供应商多元化（降低对单一合作伙伴的依赖）。\n2）权证行权价设置合理，若 Marvell 因合作成功股价大幅上涨，Google 可低成本增持，未来谷歌所持有的MRVL股权增值收益都能覆盖大部分对MRVL采购支出。\n这算的一手好帐。\n若未达收入里程碑也无需全额归属。\n简单说\n这是一份高潜力、长期导向的 AI 定制芯片战略合作，权证规模大且与高达 1,200 亿美元潜在收入挂钩。也是典型的“战略合作 + 业绩挂钩权证”模式（MRVL此前与亚马逊也有类似合作机制）。时间归属部分提供启动激励，业绩归属部分确保 Google 实际采购才释放股权，双方风险共担、利益共享。\nqinbafrank (@qinbafrank)\n计算可以被池化，内存也可以被池化。这是MRVL的CEO六月初在台北电脑展上讲到。Marvell近期推出的Structera CXL 系列（包括 Structera X 内存扩展控制器和 Structera A 近内存加速器）就是针对这个问题的。\n1、Structera 的CDB是纯硬件级的，它以全内存带宽（例如支持 4 个通道的 DDR5-6400）运行线速级 (line-rate) 的压缩与解压。这对主机CPU和操作系统是完全透明的，服务器“以为”自己连接的是一块8TB的内存，而实际上物理内存只有4TB。\nCXL (Compute Express Link) 的初衷是为了解耦 CPU 和内存，建立内存池。但 CXL 内存池中最大的成本依然是昂贵的 DRAM 颗粒。Marvell 通过压缩技术，在不改变服务器、不修改应用程序、不增加额外 DIMM 内存条的情况下，直接将可用内存容量翻倍。\n2、这对Mrvl的意义还是很大的\n1）Marvell 已经是数据传输（光通信 DSP、网络交换机、PCIe Retimer）的绝对领导者，Structera CXL 使其业务版图从“数据搬运”成功跨入“数据存储与内存扩展”的最核心地带。\n2）内存占据了现代 AI 服务器成本的巨大比重。Marvell 的技术让云厂商在购买相同数量 DRAM 物理颗粒的情况下，获得翻倍的有效内存容量。这种直接替客户省下真金白银的底层硬件，赋予了 Marvell 极高的产品定价权和毛利率空间。\n3、对MRVL未来营收的提振\n1）看Strategic Market Research的报告，全球 CXL 组件（包括控制器、交换芯片、内存扩展器等）市场规模在 2024 年约为 19 亿美元，而在 AI 异构计算需求的推动下，预计到 2030 年将狂飙至 123 亿美元（年复合增长率高达 32% 以上）。到 2035 年，仅 CXL 控制器 IP 及相关组件的市场总额可能逼近 80 亿美元。\n2）作为具备独家“硬件压缩”杀手锏的头部玩家，Marvell 极有可能在未来的 CXL 控制器与交换机市场切走 20%~30% 的核心份额。这意味着在中长期（2027-2030年），Structera 系列及后续 CXL 产品线有望为 Marvell 带来每年 10 亿至 30 亿美元 的纯增量营收。这不仅仅是填补了市场空白，更是为其冲刺 200 亿美元级别年营收打造了最强劲的“第二增长曲线”。\n4、但要明确在当下的计算机架构下“内存墙”是很难完全被突破的\n1）Marvell CXL 硬件压缩、闪迪的 HBF 闪存、甚至英伟达和台积电搞的 HBM 和 CoWoS 封装，严格意义上来说，都只是在“缓解”甚至“妥协”，而不是真正的“突破”内存墙。\n2）冯·诺依曼架构的核心基石之一，就是计算（CPU/GPU）与存储（Memory）的物理分离”。在这个架构下，所有的数据必须通过一条叫作“总线（Bus）”的通道，从内存搬运到计算单元，算完之后再搬回内存。\n“内存墙”的本质，就是这条通道的限速。 无论把通道修得有多宽（HBM）、或者把外部仓库拉得有多近（HBF）、又或者把货物打包得有多紧（Marvell 压缩），只要“搬运”这个动作存在，墙就永远存在。 数据搬运带来的极高延迟和巨大能耗（在 AI 芯片中，搬运数据的能耗经常是计算本身能耗的百倍以上），是物理规律决定的。\n要彻底不撞墙，唯一的办法就是不要搬运数据。这就要求我们彻底重构计算机的底层运行逻辑。\n真要完全突破“内存墙”核心得先要突破计算机系统的“冯.诺伊曼”架构才行，这一点现在看还是有点遥远的。\n— https://nitter.net/qinbafrank/status/2071466854179328134#m",
+      "published_at": "2026-08-19T13:15:01Z",
+      "importance": "高",
+      "summary": "MRVL与谷歌1200亿美元芯片合作协议深度拆解，含认股权证归属机制",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "深度拆解 Marvell 与谷歌 1200 亿美元芯片合作协议，涵盖权证条款与 CXL 内存技术，对关注 AI 算力产业链投资者极具参考价值。"
+    },
+    {
+      "post_id": "13",
+      "author": "aleabitoreddit",
+      "display_name": "aleabitoreddit",
+      "url": "https://x.com/aleabitoreddit/status/2090103899302826302",
+      "content": "$MRVL gives $GOOGL options to buy $12.2B of the company.\n\"The Marvell-Google deal covers a broad range of technologies used ​with TPUs, including processors that run AI models, manage data storage ​and  move information ⁠across networks.\"\nWhich could translate into ~$120 billion ​in revenue through 2033.\nMarvell also has separate warrants with $AMZN after their Celestial acquisition (for purchases of photonic fabric).\nRemember the good times when Jensen said Marvell would be the next $1T+ compan",
+      "content_full": "$MRVL gives $GOOGL options to buy $12.2B of the company.\n\"The Marvell-Google deal covers a broad range of technologies used ​with TPUs, including processors that run AI models, manage data storage ​and  move information ⁠across networks.\"\nWhich could translate into ~$120 billion ​in revenue through 2033.\nMarvell also has separate warrants with $AMZN after their Celestial acquisition (for purchases of photonic fabric).\nRemember the good times when Jensen said Marvell would be the next $1T+ company?\nSeems Nvidia knew Marvell was \"networking\" its way into all the hyperscalers with warrants.",
+      "published_at": "2026-08-19T15:49:36Z",
+      "importance": "中",
+      "summary": "MRVL-谷歌合作交易要点总结，提及Jensen黄此前预测",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "14",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090227316597141672",
+      "content": "Well, we just had the biggest $BTC short liquidation event.\nWouldn't it be ironic if it marked the bottom just like the 10/10 long liquidations marked the top?\nWell... anyway, I would find it funny. Comfortable in my long & spot for now. Again. Entries were shared public.",
+      "content_full": "Well, we just had the biggest $BTC short liquidation event.\nWouldn't it be ironic if it marked the bottom just like the 10/10 long liquidations marked the top?\nWell... anyway, I would find it funny. Comfortable in my long & spot for now. Again. Entries were shared public.",
+      "published_at": "2026-08-20T00:00:01Z",
+      "importance": "中",
+      "summary": "BTC最大空头清算事件，作者持仓多头观望",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "15",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090216907139903856",
+      "content": "I did warn you.\nNever short a boring market... $BTC\nKilla (@KillaXBT)\nThey say you should never short a boring market.\nYou can scalp the entire range and follow the current trend, but all it takes is one candle to erase every little scalp short you’ve taken.\nJust remember that.\n— https://nitter.net/KillaXBT/status/2087321387174096978#m",
+      "content_full": "I did warn you.\nNever short a boring market... $BTC\nKilla (@KillaXBT)\nThey say you should never short a boring market.\nYou can scalp the entire range and follow the current trend, but all it takes is one candle to erase every little scalp short you’ve taken.\nJust remember that.\n— https://nitter.net/KillaXBT/status/2087321387174096978#m",
+      "published_at": "2026-08-19T23:18:39Z",
+      "importance": "中",
+      "summary": "交易纪律提醒：不要做空无聊市场，波动会清除所有小 scalp 空单",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "16",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090182397941653722",
+      "content": "$HYPE is up 40% since. ✅\nKilla Effect.\nSlow. Steady. Wins. The. Race.\nKilla (@KillaXBT)\nIf $HYPE gives 51.54, I will take a long.\nUntil then, waiting game for me.\n— https://nitter.net/KillaXBT/status/2082195297480986638#m",
+      "content_full": "$HYPE is up 40% since. ✅\nKilla Effect.\nSlow. Steady. Wins. The. Race.\nKilla (@KillaXBT)\nIf $HYPE gives 51.54, I will take a long.\nUntil then, waiting game for me.\n— https://nitter.net/KillaXBT/status/2082195297480986638#m",
+      "published_at": "2026-08-19T21:01:32Z",
+      "importance": "低",
+      "summary": "HYPE涨了40%的个人交易记录",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "17",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090177428350218262",
+      "content": "“Killa, why aren’t you posting any trades?”\nFirstly, take a look at the market.\nAnyone with the right mindset who wants to preserve their sanity avoids trading illiquid conditions where we’re essentially stuck in a barcode range.\nIf there’s no trade, there’s no trade.\nI’m a HTF trader. I execute when I see significant shifts in structure and trend. I prioritise consistency and quality over quantity.\nWhen you’re trading larger capital, one of the biggest mistakes you can make is trying to force t",
+      "content_full": "“Killa, why aren’t you posting any trades?”\nFirstly, take a look at the market.\nAnyone with the right mindset who wants to preserve their sanity avoids trading illiquid conditions where we’re essentially stuck in a barcode range.\nIf there’s no trade, there’s no trade.\nI’m a HTF trader. I execute when I see significant shifts in structure and trend. I prioritise consistency and quality over quantity.\nWhen you’re trading larger capital, one of the biggest mistakes you can make is trying to force trades just for the sake of being active. In reality, the smartest trader is often the most patient one.\nSo forgive me if it’s been a boring 1–2 months, but the simple reality is that there hasn’t been much worth trading or sharing, aside from my 2X swing long and spot positions.\nThe only time I’ll look for and publicly post trend-continuation trades is when they genuinely present themselves.\nAt the end of the day, quality matters more than quantity.\nWhat I’ve learned over time is that my best returns come from taking a few high-conviction trades each month and focusing on intra-trend swings, exactly how I approached the bear market, which I believe I played flawlessly, and the track record of those trades is all publicly documented on my feed.\nThere’s no need to trade every day. You just need to be there when the opportunity is.",
+      "published_at": "2026-08-19T20:41:47Z",
+      "importance": "中",
+      "summary": "解释近期不发帖原因：低流动性市场不宜强行交易，强调 HTF 交易者耐心价值",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "18",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090127188464894018",
+      "content": "This is the $BTC 2022 bottom formation compared with the current 2026 formation.\nIf we mirror the 2022 structure almost identically, it would suggest that even if BTC retraces from the 68–70K high, we could still hold above the previous lows without actually breaking them.\nIt does seem almost too easy, but at the end of the day, it’s just a pattern, and patterns can always break.\nBut it must feel awful targeting something nearly 25% away this late in the cycle...\nThe only way to validate this fr",
+      "content_full": "This is the $BTC 2022 bottom formation compared with the current 2026 formation.\nIf we mirror the 2022 structure almost identically, it would suggest that even if BTC retraces from the 68–70K high, we could still hold above the previous lows without actually breaking them.\nIt does seem almost too easy, but at the end of the day, it’s just a pattern, and patterns can always break.\nBut it must feel awful targeting something nearly 25% away this late in the cycle...\nThe only way to validate this fractal/pattern is for BTC to retrace back into the range and show clear exhaustion on the 4H/1D. If there’s no exhaustion and BTC fails to accept back into the range, then the pattern is invalidated.\nKalshi Crypto (@Kalshi_Crypto)\nBREAKING: Our traders forecast Bitcoin will crash to $52,000 this year\n— https://nitter.net/Kalshi_Crypto/status/2090087719842037846#m",
+      "published_at": "2026-08-19T17:22:09Z",
+      "importance": "中",
+      "summary": "BTC 2022与2026底部形态对比分析，若镜像则仍有上行空间",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "19",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090106794722914351",
+      "content": "How are them bears doing...🤣\nSlow and steady wins the race.\nNailed the $BTC top. Let’s see If I nail the bottom 🪄\nKilla (@KillaXBT)\nI am officially swing long on $BTC\nInvalidation 31950. Target 160,000.\nI will see you in 1-2 years from now.\nLet the games begin. 🎲\n— https://nitter.net/KillaXBT/status/2062592387231166575#m",
+      "content_full": "How are them bears doing...🤣\nSlow and steady wins the race.\nNailed the $BTC top. Let’s see If I nail the bottom 🪄\nKilla (@KillaXBT)\nI am officially swing long on $BTC\nInvalidation 31950. Target 160,000.\nI will see you in 1-2 years from now.\nLet the games begin. 🎲\n— https://nitter.net/KillaXBT/status/2062592387231166575#m",
+      "published_at": "2026-08-19T16:01:06Z",
+      "importance": "中",
+      "summary": "确认BTC波段多头，目标16万，止损31950",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "20",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090101989971513593",
+      "content": "$BTC\nStandard short squeeze into the HTF low volume zone.\nThe key now is for bulls to hold the 65–67K range to keep momentum going toward 72K+.\nIf we roll over and accept back below 65K, then things get ugly, the lows are likely next.\nKilla (@KillaXBT)\n$BTC\nThe main POI worth observing is the 65.7K region. This level is more important than people realise.\nWhen we broke down from 74K to 59K, we left a huge imbalance above us. In the process, a significant amount of untapped liquidity was created ",
+      "content_full": "$BTC\nStandard short squeeze into the HTF low volume zone.\nThe key now is for bulls to hold the 65–67K range to keep momentum going toward 72K+.\nIf we roll over and accept back below 65K, then things get ugly, the lows are likely next.\nKilla (@KillaXBT)\n$BTC\nThe main POI worth observing is the 65.7K region. This level is more important than people realise.\nWhen we broke down from 74K to 59K, we left a huge imbalance above us. In the process, a significant amount of untapped liquidity was created overhead, which I know will eventually be swept.\nWe also have heavy compression around both the local highs and lows. Since we're still in a range, either side can break first.\nBulls do not want to see 61–62K lost. If that happens, we could form a 3 drive bottom, potentially sweeping the low 50Ks before finally pushing higher.\nHowever, if we replicate the 2022 bottom formation, there's also a possibility that we don't sweep the lows.\nThat would make positioning extremely uncomfortable, as most people naturally want to enter after a liquidity sweep.\nUltimately, it's a matter of:\nAccept 65.7K > squeeze towards 70K\nor\nBreak the lows with force > push into the low 50Ks > finally bottom.\n— https://nitter.net/KillaXBT/status/2089780510197498006#m",
+      "published_at": "2026-08-19T15:42:01Z",
+      "importance": "中",
+      "summary": "BTC关键支撑65-67K区域分析，多空博弈方向待选择",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "21",
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "url": "https://x.com/KillaXBT/status/2090086291392070124",
+      "content": "Imagine watching $BTC push from the lows & having 0 exposure.\nYou’re watching price move higher, but you’re still completely fixated on lower. You don’t know if the bottom is in, so you sit there waiting patiently, hoping for a level that could come, but might never come.\nThat’s the problem with trying to time perfection in an imperfect market.\nCouldn’t be me.\nI’d rather be exposed early & sit in draw down. The cycles are shifting, and there are plenty of metrics that support that. Eventually, t",
+      "content_full": "Imagine watching $BTC push from the lows & having 0 exposure.\nYou’re watching price move higher, but you’re still completely fixated on lower. You don’t know if the bottom is in, so you sit there waiting patiently, hoping for a level that could come, but might never come.\nThat’s the problem with trying to time perfection in an imperfect market.\nCouldn’t be me.\nI’d rather be exposed early & sit in draw down. The cycles are shifting, and there are plenty of metrics that support that. Eventually, the traditional 4 year cycle will change, and I don’t want to be sidelined simply because I was too stubborn.\nI’ll happily buy at 70K, 65K, 60K, 55K, whatever. In the grand scheme of things, we are going to 150K+\nBecause ask yourself this...\nWhat if the price you’re waiting for never comes?\nWhat’s the plan then?\nStay sidelined? Keep waiting? Short the entire move up because you’re convinced your target has to hit?\nPersonally, I’d rather be exposed and adjust along the way than watch the move happen without me.",
+      "published_at": "2026-08-19T14:39:38Z",
+      "importance": "中",
+      "summary": "交易心态反思：宁可早入场承受波动，也不等待完美点位踏空牛市",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "22",
+      "author": "usakes_zhang",
+      "display_name": "usakes_zhang",
+      "url": "https://x.com/usakes_zhang/status/2090128051355144222",
+      "content": "说的应该是OAI\n硅谷王川 Chuan (@Svwang1)\n一个没有垄断性，单季度亏损一百二十亿美元还能腆着脸对投资者画大饼的企业，已经到了粗暴侮辱投资者智商，和电信诈骗没啥区别的地步了。\n当然，真诚相信这种话术并投钱的人，最终会收获和其认知匹配的下场。\n— https://nitter.net/Svwang1/status/2090090287549014130#m",
+      "content_full": "说的应该是OAI\n硅谷王川 Chuan (@Svwang1)\n一个没有垄断性，单季度亏损一百二十亿美元还能腆着脸对投资者画大饼的企业，已经到了粗暴侮辱投资者智商，和电信诈骗没啥区别的地步了。\n当然，真诚相信这种话术并投钱的人，最终会收获和其认知匹配的下场。\n— https://nitter.net/Svwang1/status/2090090287549014130#m",
+      "published_at": "2026-08-19T17:25:34Z",
+      "importance": "中",
+      "summary": "硅谷王川批评OpenAI季度亏120亿仍画饼，涉嫌欺骗投资者",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "23",
+      "author": "usakes_zhang",
+      "display_name": "usakes_zhang",
+      "url": "https://x.com/usakes_zhang/status/2090072634147127595",
+      "content": "当币圈矿工大老板们都在讨论转型去做AIDC的时候，___",
+      "content_full": "当币圈矿工大老板们都在讨论转型去做AIDC的时候，___",
+      "published_at": "2026-08-19T13:45:22Z",
+      "importance": "低",
+      "summary": "半句话：矿工转型AIDC话题，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "24",
+      "author": "aiqiang888",
+      "display_name": "aiqiang888",
+      "url": "https://x.com/aiqiang888/status/2090131284760883406",
+      "content": "大哥这身家还开合约的意义在哪😂\n钱对于他不就是一串数字嘛\n我他妈P图都不敢这么P\njasonleo (@Jason60704294)\n这一单的含金量？\n— https://nitter.net/Jason60704294/status/2090099628796748263#m",
+      "content_full": "大哥这身家还开合约的意义在哪😂\n钱对于他不就是一串数字嘛\n我他妈P图都不敢这么P\njasonleo (@Jason60704294)\n这一单的含金量？\n— https://nitter.net/Jason60704294/status/2090099628796748263#m",
+      "published_at": "2026-08-19T17:38:25Z",
+      "importance": "低",
+      "summary": "调侃大佬开合约，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "25",
+      "author": "aiqiang888",
+      "display_name": "aiqiang888",
+      "url": "https://x.com/aiqiang888/status/2090106645733163061",
+      "content": "还得是七夕节啊，BTC都邦邦硬！",
+      "content_full": "还得是七夕节啊，BTC都邦邦硬！",
+      "published_at": "2026-08-19T16:00:31Z",
+      "importance": "低",
+      "summary": "七夕BTC上涨调侃，无分析",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "26",
+      "author": "aiqiang888",
+      "display_name": "aiqiang888",
+      "url": "https://x.com/aiqiang888/status/2090098990104936832",
+      "content": "爆了 妈的 几千U没了，草 直接拉到69000",
+      "content_full": "爆了 妈的 几千U没了，草 直接拉到69000",
+      "published_at": "2026-08-19T15:30:06Z",
+      "importance": "低",
+      "summary": "个人爆仓抱怨，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "27",
+      "author": "aiqiang888",
+      "display_name": "aiqiang888",
+      "url": "https://x.com/aiqiang888/status/2090066924386623722",
+      "content": "更新了一版，加了些东西，修了些BUG\n最近的行情很难受，我还在扛\n有用我的话就更新下\n现在大家都有codex，喂给他，留下有用的然后自己修改跑就行，做个参考\ngithub.com/beibei030/classic…",
+      "content_full": "更新了一版，加了些东西，修了些BUG\n最近的行情很难受，我还在扛\n有用我的话就更新下\n现在大家都有codex，喂给他，留下有用的然后自己修改跑就行，做个参考\ngithub.com/beibei030/classic…",
+      "published_at": "2026-08-19T13:22:40Z",
+      "importance": "低",
+      "summary": "GitHub项目更新通知",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "28",
+      "author": "ccjing_eth",
+      "display_name": "ccjing_eth",
+      "url": "https://x.com/ccjing_eth/status/2090098803743601107",
+      "content": "牛来！",
+      "content_full": "牛来！",
+      "published_at": "2026-08-19T15:29:21Z",
+      "importance": "低",
+      "summary": "纯情绪表达：牛来了",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "29",
+      "author": "hellosuoha",
+      "display_name": "hellosuoha",
+      "url": "https://x.com/hellosuoha/status/2090236989287407635",
+      "content": "8.20梭哈晨报：\n这个牛来真的带来了牛吗，反正crypto狠狠的拉了一波，算是“扬眉吐气”了啊。\n1. $BTC 直接被点火，清算了一大批空头，上插70500，目前报价69500附近；\n2. $ETH 果然最近一段时间最强的没有之一，直接1900-2300了，空军就是燃料；\n3. $SOL 聊胜于无，虽然没人在意，但是跟随行情上还是有不少人追多；\n4. Circle 旗下 Arc 主网将于 9 月 16 日上线；\n准备好冲狗了吗？\n5.美联储会议纪要显示美联储多位官员倾向加息，称如通胀居高不下需采取行动；\n不影响crypto大涨；\n6.中东局势跟踪：伊朗称将公布霍尔木兹新通道，美方称已迫使65艘商船改道；\n特朗普宣布对伊朗采取“史上最严厉经济行动”；\n7.渣打银行分析师：美国财政部扩大长债回购，BTC 年底或冲 10 万美元；\n这个哥们说的话，就没看对过啊；\n8.Linera：目标成为“下一个Hyperliquid”，将推出LNRA代币销售；\n在做梦呢？\n9.ARK Invest 昨日大举买入博通、Cloudflare，减持 AMD、Roblox；\n10.Hudson River T",
+      "content_full": "8.20梭哈晨报：\n这个牛来真的带来了牛吗，反正crypto狠狠的拉了一波，算是“扬眉吐气”了啊。\n1. $BTC 直接被点火，清算了一大批空头，上插70500，目前报价69500附近；\n2. $ETH 果然最近一段时间最强的没有之一，直接1900-2300了，空军就是燃料；\n3. $SOL 聊胜于无，虽然没人在意，但是跟随行情上还是有不少人追多；\n4. Circle 旗下 Arc 主网将于 9 月 16 日上线；\n准备好冲狗了吗？\n5.美联储会议纪要显示美联储多位官员倾向加息，称如通胀居高不下需采取行动；\n不影响crypto大涨；\n6.中东局势跟踪：伊朗称将公布霍尔木兹新通道，美方称已迫使65艘商船改道；\n特朗普宣布对伊朗采取“史上最严厉经济行动”；\n7.渣打银行分析师：美国财政部扩大长债回购，BTC 年底或冲 10 万美元；\n这个哥们说的话，就没看对过啊；\n8.Linera：目标成为“下一个Hyperliquid”，将推出LNRA代币销售；\n在做梦呢？\n9.ARK Invest 昨日大举买入博通、Cloudflare，减持 AMD、Roblox；\n10.Hudson River Trading Q2交易收入创纪录达114亿美元；\n原来全球的量化公司都是这么赚钱的吗；\n11.Bitwise CIO：比特币接近底部，对今年后市感到乐观；\n怎么拉盘后接近底部了；\n12.SEC提出豁免方案，允许代币募资避免证券地位；\n按道理这是利好山寨的；\n13.特朗普：美国已彻底结束对加密行业的“战争”，正引领行业发展；\n特朗普：敦促国会通过“公平版本”《Clarity Act》；\n14.Coinbase CEO：期待 9 月 15 日 CLARITY 法案获得通过，随后开启新牛市；\n15.特朗普再批美联储高利率政策，称美国应承担更低融资成本；\n16.Galaxy 研究主管在 X 平台发文表示，非常关注 Hyperliquid 如何以完全合规合法的方式进入美国；\n特朗普：SEC主席正推动将Hyperliquid引入美国；\n难怪直接 $HYPE 一根巨大的阳线；\n-------------\n不愧是拉盘了，好多好消息来着，全是好消息，反观当时下跌的时候，都是坏消息啊。\nBitcoin #Ethereum #Solana #Crypto #Nasdaq\nVideo",
+      "published_at": "2026-08-20T00:38:27Z",
+      "importance": "中",
+      "summary": "8.20晨报：BTC清算、SEC提案、特朗普加密政策、机构观点等多维度汇总",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "30",
+      "author": "linwanwan823",
+      "display_name": "linwanwan823",
+      "url": "https://x.com/linwanwan823/status/2090122888452129071",
+      "content": "刚打开钱包，\nBTC突然窜出一根大阳线。\n牛来就是这种感觉？\n⠀⢠⣿⣧⣼⣿⣤⣤⣤⠀⠀⠀⢶⣶⣶⣾⣷⣶⣶⡶⠀\n⠰⠿⠋⠉⢹⣿⠉⠉⠉⠀⠀⠀⣀⣻⣇⣸⣇⣰⣟⣁⡀\n⠸⠿⠿⠿⢿⣿⠿⠿⠿⠇⠀⠈⠛⢛⣿⣿⣿⣿⡛⠛⠁\n⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠠⣶⠿⠋⢸⡇⠙⠿⣶⠄？\n⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀",
+      "content_full": "刚打开钱包，\nBTC突然窜出一根大阳线。\n牛来就是这种感觉？\n⠀⢠⣿⣧⣼⣿⣤⣤⣤⠀⠀⠀⢶⣶⣶⣾⣷⣶⣶⡶⠀\n⠰⠿⠋⠉⢹⣿⠉⠉⠉⠀⠀⠀⣀⣻⣇⣸⣇⣰⣟⣁⡀\n⠸⠿⠿⠿⢿⣿⠿⠿⠿⠇⠀⠈⠛⢛⣿⣿⣿⣿⡛⠛⠁\n⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠠⣶⠿⠋⢸⡇⠙⠿⣶⠄？\n⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀",
+      "published_at": "2026-08-19T17:05:03Z",
+      "importance": "低",
+      "summary": "个人看盘感受分享",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "31",
+      "author": "linwanwan823",
+      "display_name": "linwanwan823",
+      "url": "https://x.com/linwanwan823/status/2090097619561488754",
+      "content": "【Trust Wallet 网络支持更新】\nTrust Wallet 目前支持 100 多个区块链网络。\n为了给大家持续提供可靠、优质的产品体验，\n我们会定期对网络支持情况进行审查。\n根据最新审查结果，\n以下不活跃网络将于 2026年9月15日 起终止支持。\n📌 9月15日后会发生什么：\n相关网络将从 Trust Wallet 网络列表中移除\n除非手动添加为自定义网络，\n否则将无法通过 Trust Wallet 查看、发送、兑换或操作这些网络上的资产\n📌 你的资产依然安全：\n资产所有权不受影响，仍归你所有。\n9月15日后，\n你可以通过手动添加相关网络及其 RPC 信息，继续访问这些资产。\n📌 你需要采取行动吗？\n若你在受影响网络上持有资产 → 建议提前了解如何手动添加网络，以便持续访问\n若你没有持有相关资产 → 无需任何操作\n具体停止支持的网络清单，请查看官方公告原文\n有任何问题，欢迎@我，我会第一时间给到反馈\n安全第一+用户第一 💙\nTrust Wallet (@TrustWallet)\nWe’re making a few updates to the networks and f",
+      "content_full": "【Trust Wallet 网络支持更新】\nTrust Wallet 目前支持 100 多个区块链网络。\n为了给大家持续提供可靠、优质的产品体验，\n我们会定期对网络支持情况进行审查。\n根据最新审查结果，\n以下不活跃网络将于 2026年9月15日 起终止支持。\n📌 9月15日后会发生什么：\n相关网络将从 Trust Wallet 网络列表中移除\n除非手动添加为自定义网络，\n否则将无法通过 Trust Wallet 查看、发送、兑换或操作这些网络上的资产\n📌 你的资产依然安全：\n资产所有权不受影响，仍归你所有。\n9月15日后，\n你可以通过手动添加相关网络及其 RPC 信息，继续访问这些资产。\n📌 你需要采取行动吗？\n若你在受影响网络上持有资产 → 建议提前了解如何手动添加网络，以便持续访问\n若你没有持有相关资产 → 无需任何操作\n具体停止支持的网络清单，请查看官方公告原文\n有任何问题，欢迎@我，我会第一时间给到反馈\n安全第一+用户第一 💙\nTrust Wallet (@TrustWallet)\nWe’re making a few updates to the networks and features supported in Trust Wallet.\nStarting September 15, 2026, Trust Wallet will sunset support for 25 networks as part of our ongoing efforts to improve product efficiency.🧵\nFull details: short.trustwallet.com/networ…\nYour assets remain yours. Here's what to know 👇\n— https://nitter.net/TrustWallet/status/2089740647875932188#m",
+      "published_at": "2026-08-19T15:24:39Z",
+      "importance": "高",
+      "summary": "Trust Wallet 9月15日起停止支持25个网络，需手动添加RPC访问资产",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Trust Wallet 停止支持 25 个网络，持有相关资产用户需提前迁移，直接影响钱包用户资产访问安全。"
+    },
+    {
+      "post_id": "32",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2090166494910910797",
+      "content": "Your prompts just made Binance AI better. 🫡\nNew prompts, inspired by your suggestions, are now live.\nBuildWithYou",
+      "content_full": "Your prompts just made Binance AI better. 🫡\nNew prompts, inspired by your suggestions, are now live.\nBuildWithYou",
+      "published_at": "2026-08-19T19:58:20Z",
+      "importance": "低",
+      "summary": "Binance AI功能更新营销",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "33",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2090106526690406448",
+      "content": "Lite Loan or Flexible Loan?\nLite Loan is designed for users who want a simpler borrowing experience, without the need to manage LTV during the initial loan term.\nFlexible Loan is built for those who want more flexibility and a wider choice of collateral and assets that can be borrowed.\nCompare the features and find the option that's right for you 👇",
+      "content_full": "Lite Loan or Flexible Loan?\nLite Loan is designed for users who want a simpler borrowing experience, without the need to manage LTV during the initial loan term.\nFlexible Loan is built for those who want more flexibility and a wider choice of collateral and assets that can be borrowed.\nCompare the features and find the option that's right for you 👇",
+      "published_at": "2026-08-19T16:00:02Z",
+      "importance": "中",
+      "summary": "Binance Lite Loan vs Flexible Loan 产品功能对比说明",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "34",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2090091599380226448",
+      "content": "Want a better view of the market?\nThe Binance Stocks upgrade brings together customizable K-line charts, volume, overnight data, position tracking, and company fundamentals.\nEverything you need to do your own research. 👇\nVideo",
+      "content_full": "Want a better view of the market?\nThe Binance Stocks upgrade brings together customizable K-line charts, volume, overnight data, position tracking, and company fundamentals.\nEverything you need to do your own research. 👇\nVideo",
+      "published_at": "2026-08-19T15:00:43Z",
+      "importance": "高",
+      "summary": "Binance Stocks升级：自定义K线、隔夜数据、持仓追踪、公司基本面一站式查看",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Binance 推出股票功能升级，整合 K 线、成交量与基本面数据，为多资产交易者提供一站式研究工具。"
+    },
+    {
+      "post_id": "35",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2090091600596639963",
+      "content": "To know more ↓\nbinance.com/en/blog/ecosyste…\nLink\nNew on Binance Stocks – Smarter Charts, Financials, and Stock Transfers | Binance Blog\nTrade stocks on Binance with better charts, deeper financial data, and the ability to transfer your U.S. stock and ETF holdings from other brokers.\nbinance.com",
+      "content_full": "To know more ↓\nbinance.com/en/blog/ecosyste…\nLink\nNew on Binance Stocks – Smarter Charts, Financials, and Stock Transfers | Binance Blog\nTrade stocks on Binance with better charts, deeper financial data, and the ability to transfer your U.S. stock and ETF holdings from other brokers.\nbinance.com",
+      "published_at": "2026-08-19T15:00:44Z",
+      "importance": "中",
+      "summary": "Binance Stocks功能介绍及美股ETF转入支持",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "36",
+      "author": "binance",
+      "display_name": "binance",
+      "url": "https://x.com/binance/status/2090069502390391037",
+      "content": "Initializing a new mode. Less than 24 hours to go.",
+      "content_full": "Initializing a new mode. Less than 24 hours to go.",
+      "published_at": "2026-08-19T13:32:55Z",
+      "importance": "低",
+      "summary": "营销悬念帖，无实质信息",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "37",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090230893348880714",
+      "content": "麻吉STRATEGY\n对一次可以玩几十次",
+      "content_full": "麻吉STRATEGY\n对一次可以玩几十次",
+      "published_at": "2026-08-20T00:14:14Z",
+      "importance": "低",
+      "summary": "个人策略测试失败调侃",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "38",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090222372980969594",
+      "content": "你问他什么成功了，他说割韭菜成功了",
+      "content_full": "你问他什么成功了，他说割韭菜成功了",
+      "published_at": "2026-08-19T23:40:22Z",
+      "importance": "低",
+      "summary": "讽刺性观点，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "39",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090208419399741741",
+      "content": "网络上卖淫嫖娼的暗语你知道多少？\n92 95 98都是什么服务？新茶普洱茶室都是什么意思？豪车外卖大圈都是什么行情？本文章只为揭露黑灰产业链的真相，避免大家误入歧途。在很多的黑灰产平台或者互联网上，有无数涉黄消息在疯狂招摇，一张张妩媚的脸庞和性感的身材照下，白纸黑字的写着无数暗语，那这些嫖娼的暗语到底是什么意思呢？作为普通人，如何去规避这些嫖娼暗语，以继续我们阳光健康的生活呢？毕竟，你我都知道，嫖娼是要负法律责任的，一般都是拘留10~15天，还有处以5000元以下的罚款。所以今天就给大家分享这些嫖娼暗语，方便但凡看到这些东西，我们好躲着走，最常见的数字暗语如92 95 98，92的意思是用手，九五是用嘴，九八就是全套了。当然了，后面跟着的，三百五百三千五千的，这是价格。还有用茶指代的暗语，像什么新茶，明前龙井新茶上市，就是来新的女孩儿了。普洱陈茶指的是成熟的女人，也就是熟女，品茶喝茶约茶指的就是嫖娼行为，茶艺师就是卖淫女，茶座和茶室指的是卖淫场所。另外用商品指代的嫖娼暗语，豪车跑车，这是指的身材样貌都特别好的失足妇女。转运珠是指的怀孕的卖淫女，学区房这个要注意，这个是严重的刑事犯罪，因",
+      "content_full": "网络上卖淫嫖娼的暗语你知道多少？\n92 95 98都是什么服务？新茶普洱茶室都是什么意思？豪车外卖大圈都是什么行情？本文章只为揭露黑灰产业链的真相，避免大家误入歧途。在很多的黑灰产平台或者互联网上，有无数涉黄消息在疯狂招摇，一张张妩媚的脸庞和性感的身材照下，白纸黑字的写着无数暗语，那这些嫖娼的暗语到底是什么意思呢？作为普通人，如何去规避这些嫖娼暗语，以继续我们阳光健康的生活呢？毕竟，你我都知道，嫖娼是要负法律责任的，一般都是拘留10~15天，还有处以5000元以下的罚款。所以今天就给大家分享这些嫖娼暗语，方便但凡看到这些东西，我们好躲着走，最常见的数字暗语如92 95 98，92的意思是用手，九五是用嘴，九八就是全套了。当然了，后面跟着的，三百五百三千五千的，这是价格。还有用茶指代的暗语，像什么新茶，明前龙井新茶上市，就是来新的女孩儿了。普洱陈茶指的是成熟的女人，也就是熟女，品茶喝茶约茶指的就是嫖娼行为，茶艺师就是卖淫女，茶座和茶室指的是卖淫场所。另外用商品指代的嫖娼暗语，豪车跑车，这是指的身材样貌都特别好的失足妇女。转运珠是指的怀孕的卖淫女，学区房这个要注意，这个是严重的刑事犯罪，因为这是未成年，上课补习辅导也是隐患的招嫖的意思。至于大圈是指的被控制的女孩子，中圈指的是有固定地点，小圈则是指那些零散兼职或者自由接单的女孩儿，而且一般身材模样很好，价格也高，一般以大学生的名义接单上门到家。外卖快递是指的上门服务，同城本地附近是指的同城招嫖空降一般是指外地女子来本。本地或者本地去往外地卖淫，当然其实还有更多的卖淫嫖娼的暗语，这些都是随着平台的严控而实时变化的。在这里，我要郑重声明，以上内容仅用于防范科普，没有任何不良引导和教唆行为。核心目的是提高大家的风险识别能力，自我保护意识。只是希望大家在互联网平台上遇到这些一定要拒绝，毕竟这是不健康的违法行为，而且网络卖淫嫖娼充斥了大量的诈骗和套路，大家也没有必要给自己找这个不自在。",
+      "published_at": "2026-08-19T22:44:56Z",
+      "importance": "低",
+      "summary": "涉黄暗语科普内容，非有效信息",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "40",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090193023217041521",
+      "content": "你在K线上买卖，赚到的差价从哪里来？\n如果没想通，就永远不知道对手是谁，也不知道自己优势在哪，每一笔交易决策，最终都得回答：我这笔利润的来源是什么？\n赚“接盘侠”的钱\n最基本的盈利来源。你10块钱买，11块卖，卖出的时候有人以11块钱买了你的筹码，这1块钱，是他为未来可能承担的风险支付的溢价，你们在同一时刻看法相反，他看涨，你看空，他拿走筹码，你拿走钱。\n这是零和博弈，你赚的就是别人未来可能亏的，短线交易、日内交易、动量交易，大多来自这个层次，它直接、普遍，但也最不稳定，因为愿意以更高价接盘的人不会永远存在。\n但这个利润不需要企业盈利，不需要经济增长，只需要不断找到更贵的下家。一旦下家断档，价格就跌回基本面。\n赚“经济增长”的钱\n企业创造利润，利润推高股价。你买入并持有，公司盈利增长，估值不变或上升，持仓价值随之增加。这笔钱来自企业创造的真实价值，你买的是一个经济体的增长份额，持有的是未来现金流的现值。\n这是正和博弈，不是相互掏口袋，而是企业整体在创造新价值，长期持有指数ETF或优质公司，赚的主要是这笔钱，它不需要你比别人聪明，也不用你更快，只要在市场里待得久，让复利工作。\n这个层面的",
+      "content_full": "你在K线上买卖，赚到的差价从哪里来？\n如果没想通，就永远不知道对手是谁，也不知道自己优势在哪，每一笔交易决策，最终都得回答：我这笔利润的来源是什么？\n赚“接盘侠”的钱\n最基本的盈利来源。你10块钱买，11块卖，卖出的时候有人以11块钱买了你的筹码，这1块钱，是他为未来可能承担的风险支付的溢价，你们在同一时刻看法相反，他看涨，你看空，他拿走筹码，你拿走钱。\n这是零和博弈，你赚的就是别人未来可能亏的，短线交易、日内交易、动量交易，大多来自这个层次，它直接、普遍，但也最不稳定，因为愿意以更高价接盘的人不会永远存在。\n但这个利润不需要企业盈利，不需要经济增长，只需要不断找到更贵的下家。一旦下家断档，价格就跌回基本面。\n赚“经济增长”的钱\n企业创造利润，利润推高股价。你买入并持有，公司盈利增长，估值不变或上升，持仓价值随之增加。这笔钱来自企业创造的真实价值，你买的是一个经济体的增长份额，持有的是未来现金流的现值。\n这是正和博弈，不是相互掏口袋，而是企业整体在创造新价值，长期持有指数ETF或优质公司，赚的主要是这笔钱，它不需要你比别人聪明，也不用你更快，只要在市场里待得久，让复利工作。\n这个层面的盈利确定性最高，因为经济增长在长期是有方向的。但它需要时间，需要耐心，需要对短期波动的容忍度。\n赚“流动性”的钱\n市场需要流动性，你想快速卖出，有人以略低于市价接盘，你想快速买入，有人以略高于市价卖给你，那个差价，就是流动性的报酬，做市商，高频交易策略，套利策略往往赚的是这笔。\n它的来源是交易需求本身，总有人为速度支付溢价，流动性提供者承担方向风险和时间风险，成交前的短暂瞬间，价格可能反向波动。\n这笔钱与基本面、经济增长无关，只与市场参与者对流动性的渴求有关。容量有限，但对速度极其敏感。\n赚“风险溢价”的钱\n有些风险多数人不愿承担，低波动率股票长期跑赢高波动率，价值股跑赢成长股，高信用债跑赢国债，这些超额收益不是免费的，你得承受别人不愿承受的波动和不确定性。\n当你买入被市场嫌弃的股票，你在承担他人回避的波动风险。当市场重新定价这只股票时，你得到的是当初承担额外风险的补偿。这笔钱来自你对风险的态度：你得愿意接受别人避之不及的波动。\n价值投资，低波策略，高股息策略，赚的主要是这笔钱，它不需要你比别人聪明，只要你比别人更能忍受波动，对资产的终局价值有基本的判断。\n赚“认知差”的钱\n你对某只股票的判断与市场共识不同，而最终你是对的，你看到了别人没看到的，或者更早看到，当市场逐渐发现这个价值，股价上涨，你获利。\n这笔钱来自你的判断与市场定价之间的差值，你利用了市场暂时的定价错误。这需要独立思考，深度研究，对特定领域超出常人的理解，当你的判断被市场消化，差价消失，获利机会也随之消失。\n赚这个钱是门槛最高的，你需要可验证的超前判断，而大多数人的“超前判断”，往往只是偏见。真正的认知差基于深度跟踪，且必须可证伪，你知道什么情况下自己会错。\n再说策略于收益来源\n趋势跟踪，主要是赚“接盘侠”的钱，趋势延续时新资金的涌入，但也部分赚“认知差”的钱，你比市场更早识别到趋势方向。趋势跟踪的利润本质上是市场在趋势方向上的移动给交易者带来的价差收益，在趋势延续的过程中，后续进入的资金为前期进入的资金提供了退出通道，所以趋势跟踪需要在趋势转向之前离场，而不需要判断趋势是否结束。\n套利策略一般赚“流动性”和“风险溢价”的钱，比如利用不同市场之间的价差，不同合约之间的价差，赚取定价不一致带来的利润，同时也承担了一定的价格收敛风险。\n价值投资赚“经济增长”和“风险溢价”的钱，长期持有优质公司的股权，分享企业创造的价值，在市场低估时买入高波动资产，承担风险以换取更高的预期回报。\n量化多因子策略会比较复杂，但通常我们认为它是在赚“风险溢价”和“认知差”的钱。系统性地暴露在某个因子上，承担该因子对应的风险以获取长期的溢价回报，同时在因子定价偏差未被市场完全消化时，获得部分认知溢价。\n所以做趋势跟踪，你需要速度，纪律，止损能力和承受高频反馈的心理状态。价值投资你需要有耐心，长期视角和抵御回撤的能力。做套利策略则需要技术，低延迟和严格的风险控制。\n多数亏损，源于试图去赚不属于自己的那种钱。没耐心的人做长期投资，没速度的人做短线，没研究深度的人挖价值，这是用劣势参与竞争。\n先想清楚自己适合赚哪种钱，然后接受这种它的条件，赚经济增长的钱，就别在意短期波动，赚流动性的钱，就别幻想大趋势，既要又要，是要吃苦头的。\n盈利的本质，不是表面的“低买高卖”，是你在一笔交易中为市场提供了什么——流动性、风险承受能力、判断力，然后市场付给你相应报酬。\n始终是在交换，不是索取，报酬的多少，取决于你提供的东西，有多少人愿意买单。\n祝顺利。\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n人永远赚不到认知之外的钱，却一定会亏掉认知之外的钱\n投资市场里有一句话被说烂了：\n人永远赚不到认知之外的钱。\n但我觉得，这句话只说对了一半。\n更完整的版本应该是：\n人很难持续赚到认知之外的钱，却非常容易亏掉认知之外的钱。\n因为赚钱的时候，你可能只是运气好。\n但亏钱的时候，市场从来不会问你有没有准备好。\n你不知道的东西，永远比你知道的多。\n你研究了一家公司，觉得自己理解了它的商业模式；你研究了一个行业，觉得自己看懂了周期；你研究了宏观经济，觉得自己理解了利率、流动性和政策。\n可市场真正运行的时候，还有无数你没有看到的变量。\n一个突发事件、一条政策、一笔资金流、一场战争、一次黑天鹅，甚至一个你根本不知道存在的参与者，都可能改变最终结果。\n这就是投资最危险的地方：\n你的认知是有限的，但市场的变量是无限的。\n所以，真正成熟的投资者，研究的从来不只是“我知道什么”，还要不断提醒自己：\n我不知道什么？\n这其实是一种二阶认知。\n知道自己知道什么，是知识。\n知道自己不知道什么，是边界。\n而知道自己的边界，并且在边界之外主动控制风险，才是投资真正的智慧。\n很多人亏钱，不是因为没有认知，而是因为把自己的认知当成了真理。\n一旦形成观点，就开始寻找支持自己的证据。\n上涨了，证明自己判断正确。\n下跌了，认为市场错了。\n继续下跌，开始补仓。\n再下跌，开始相信“价值终究会回归”。\n最后才发现，自己从投资者变成了信仰者。\n这就是最危险的地方。\n认知一旦固化，就会从工具变成枷锁。\n所以投资真正需要的，不是建立一套永远正确的认知，而是建立一套能够不断修正认知的系统。\n我更相信贝叶斯式的投资思维。\n每一次新的信息出现，都应该改变你对未来的概率判断。\n你的观点不是信仰，而是一个暂时的概率分布。\n市场上涨，你更新一次。\n市场下跌，你更新一次。\n基本面变化，你更新一次。\n资金结构变化，你更新一次。\n当新的证据不断出现时，你应该不断调整自己的仓位、方向和预期。\n错了就修正，修正了再验证，验证之后继续更新。\n这才是真正的动态决策。\n而为了让自己在认知错误的时候不至于被市场淘汰，就必须依靠纪律。\n仓位管理，是给认知设置的保险丝。\n止损，是承认自己可能犯错的成本。\n交易纪律，是防止情绪接管决策的防火墙。\n反手，则是一种更高级的认知修正。\n很多人把止损理解成“认输”。\n其实恰恰相反。\n止损的本质是：\n我承认现在的市场事实已经与我的原有判断不一致，所以我愿意支付成本，重新获得选择权。\n甚至在条件发生根本变化之后，反手做空。\n这意味着你不仅承认自己错了，还愿意根据新的信息重新下注。\n这才是真正的交易思维。\n市场里最可怕的人，不是永远看对的人。\n而是看错之后，能够迅速调整的人。\n因为这个世界没有人能够拥有完整的信息。\n所有人都在不完全信息下做决策。\n真正的区别在于：\n有人把一次判断当成终局。\n有人把一次判断当成当前版本。\n前者需要证明自己永远正确。\n后者只需要保证自己能够不断进化。\n所以，投资最重要的能力，可能从来不是预测未来。\n而是在未来与预期不一致的时候，依然有能力活下来，并且快速修正。\n你可以没有最先进的认知。\n但你必须有边界。\n你可以判断错误。\n但不能让一次错误毁掉你的本金。\n你可以错过机会。\n但不能因为害怕错过机会，把自己暴露在无法承受的风险里。\n认知决定你的上限，纪律决定你的下限。\n而真正长期活在市场里的人，最终依靠的不是“我比别人知道得更多”。\n恰恰是因为他始终知道：\n自己永远不知道的东西，比自己知道的东西多。\n所以他给判断留概率，给仓位留余地，给止损留出口，给反手留空间。\n不断用新的信息修正旧的认知。\n今天的自己推翻昨天的自己。\n如果事实证明错了，就重新下注。\n如果市场证明你错了，就尊重市场。\n这可能才是投资最底层的生存哲学：\n永远不要试图成为一个永远正确的人。\n要成为一个即使经常犯错，也永远不会被一次错误淘汰的人。\n— https://nitter.net/hazenlee/status/2082704419100193271#m",
+      "published_at": "2026-08-19T21:43:45Z",
+      "importance": "高",
+      "summary": "交易利润来源四维度拆解：接盘侠、经济增长、流动性、风险溢价",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "系统梳理交易盈利的五大来源，帮助交易者明确自身优势与策略匹配，避免用劣势参与竞争。"
+    },
+    {
+      "post_id": "41",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090190721236254823",
+      "content": "这个逼的内心OS\n总统先生，我们赢得太多了。我们受不了了。\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n这哥们是不是老鼠仓了\n他这个表情\n已经憋不住了😡👊🏻\n— https://nitter.net/hazenlee/status/2090173951372849615#m",
+      "content_full": "这个逼的内心OS\n总统先生，我们赢得太多了。我们受不了了。\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n这哥们是不是老鼠仓了\n他这个表情\n已经憋不住了😡👊🏻\n— https://nitter.net/hazenlee/status/2090173951372849615#m",
+      "published_at": "2026-08-19T21:34:36Z",
+      "importance": "低",
+      "summary": "调侃某人表情，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "42",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090189955331211422",
+      "content": "gamma squeeeeeeeeze的e是eth的e",
+      "content_full": "gamma squeeeeeeeeze的e是eth的e",
+      "published_at": "2026-08-19T21:31:33Z",
+      "importance": "低",
+      "summary": "gamma squeeze的e是ETH梗，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "43",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090180786561728661",
+      "content": "EEE卫兵出列！\n以太坊才是真正的存储！\n世界清算器！\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n以太吸血海力士？我确定了我不是在做梦。我想起来了我是E卫兵！\n— https://nitter.net/hazenlee/status/2076462753641042059#m",
+      "content_full": "EEE卫兵出列！\n以太坊才是真正的存储！\n世界清算器！\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n以太吸血海力士？我确定了我不是在做梦。我想起来了我是E卫兵！\n— https://nitter.net/hazenlee/status/2076462753641042059#m",
+      "published_at": "2026-08-19T20:55:07Z",
+      "importance": "低",
+      "summary": "以太坊粉丝口号式发言",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "44",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090173951372849615",
+      "content": "这哥们是不是老鼠仓了\n他这个表情\n已经憋不住了😡👊🏻",
+      "content_full": "这哥们是不是老鼠仓了\n他这个表情\n已经憋不住了😡👊🏻",
+      "published_at": "2026-08-19T20:27:58Z",
+      "importance": "低",
+      "summary": "重复41号内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "45",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090167907359809954",
+      "content": "好了FOMC会议纪要继续老生常谈不如放屁\n金银和币彻底变成美元信用put\n美债规模call了\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n今天盘前这个新闻和美股开盘后比特币黄金涨，美股回调这个走势挺有意思：\n美股回调，黄金和 BTC 反而走强。\n表面看，是美债收益率回落、流动性改善；但市场可能交易的是更深一层逻辑：\n财政部想给美债和美股托底，市场却开始怀疑美元资产本身的信用质量。\n如果后面持续出现：\n30Y收益率↓\nDXY↓\n黄金↑\nBTC↑\n纳指↓或涨不动\n那就不是普通的 Risk-on，而可能是“美元信用折价”在抬头。\n以前是 Fed Put 托股票，\n现在可能逐渐变成 Dollar Put 托黄金和 BTC。\n还有就是一个潜在的反转点就是今晚国内凌晨2点即将公布的上个月FOMC会议纪要，能否对美元的信用达到提振。我们可以拭目以待观察一下。\n— https://nitter.net/hazenlee/status/2090085067108589725#m",
+      "content_full": "好了FOMC会议纪要继续老生常谈不如放屁\n金银和币彻底变成美元信用put\n美债规模call了\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n今天盘前这个新闻和美股开盘后比特币黄金涨，美股回调这个走势挺有意思：\n美股回调，黄金和 BTC 反而走强。\n表面看，是美债收益率回落、流动性改善；但市场可能交易的是更深一层逻辑：\n财政部想给美债和美股托底，市场却开始怀疑美元资产本身的信用质量。\n如果后面持续出现：\n30Y收益率↓\nDXY↓\n黄金↑\nBTC↑\n纳指↓或涨不动\n那就不是普通的 Risk-on，而可能是“美元信用折价”在抬头。\n以前是 Fed Put 托股票，\n现在可能逐渐变成 Dollar Put 托黄金和 BTC。\n还有就是一个潜在的反转点就是今晚国内凌晨2点即将公布的上个月FOMC会议纪要，能否对美元的信用达到提振。我们可以拭目以待观察一下。\n— https://nitter.net/hazenlee/status/2090085067108589725#m",
+      "published_at": "2026-08-19T20:03:57Z",
+      "importance": "高",
+      "summary": "美元信用折价交易逻辑分析：财政部救市背景下黄金/BTC与美股背离",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "洞察美元信用折价趋势，指出 BTC 与黄金或成新避险资产，为宏观配置提供前瞻性判断。"
+    },
+    {
+      "post_id": "46",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090164535265304813",
+      "content": "今天币圈爆仓比10.11还大，这也是市场最难也是最有魅力的地方就是看似正确的方向，但是经常会走出反向的走势，恶意掠夺猎杀流动性和止损，经常让人看对了也赚不到钱甚至还亏钱。这也是仓位管理和纪律操作以及战略定力和意志品质比看对看错更重要的原因。\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n人永远赚不到认知之外的钱，却一定会亏掉认知之外的钱\n投资市场里有一句话被说烂了：\n人永远赚不到认知之外的钱。\n但我觉得，这句话只说对了一半。\n更完整的版本应该是：\n人很难持续赚到认知之外的钱，却非常容易亏掉认知之外的钱。\n因为赚钱的时候，你可能只是运气好。\n但亏钱的时候，市场从来不会问你有没有准备好。\n你不知道的东西，永远比你知道的多。\n你研究了一家公司，觉得自己理解了它的商业模式；你研究了一个行业，觉得自己看懂了周期；你研究了宏观经济，觉得自己理解了利率、流动性和政策。\n可市场真正运行的时候，还有无数你没有看到的变量。\n一个突发事件、一条政策、一笔资金流、一场战争、一次黑天鹅，甚至一个你根本不知道存在的参与者，都可能改变最终结果。\n这就是投资最危险的地方：\n你的认知是有限的，但市场的变量是无限的。\n所以，",
+      "content_full": "今天币圈爆仓比10.11还大，这也是市场最难也是最有魅力的地方就是看似正确的方向，但是经常会走出反向的走势，恶意掠夺猎杀流动性和止损，经常让人看对了也赚不到钱甚至还亏钱。这也是仓位管理和纪律操作以及战略定力和意志品质比看对看错更重要的原因。\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n人永远赚不到认知之外的钱，却一定会亏掉认知之外的钱\n投资市场里有一句话被说烂了：\n人永远赚不到认知之外的钱。\n但我觉得，这句话只说对了一半。\n更完整的版本应该是：\n人很难持续赚到认知之外的钱，却非常容易亏掉认知之外的钱。\n因为赚钱的时候，你可能只是运气好。\n但亏钱的时候，市场从来不会问你有没有准备好。\n你不知道的东西，永远比你知道的多。\n你研究了一家公司，觉得自己理解了它的商业模式；你研究了一个行业，觉得自己看懂了周期；你研究了宏观经济，觉得自己理解了利率、流动性和政策。\n可市场真正运行的时候，还有无数你没有看到的变量。\n一个突发事件、一条政策、一笔资金流、一场战争、一次黑天鹅，甚至一个你根本不知道存在的参与者，都可能改变最终结果。\n这就是投资最危险的地方：\n你的认知是有限的，但市场的变量是无限的。\n所以，真正成熟的投资者，研究的从来不只是“我知道什么”，还要不断提醒自己：\n我不知道什么？\n这其实是一种二阶认知。\n知道自己知道什么，是知识。\n知道自己不知道什么，是边界。\n而知道自己的边界，并且在边界之外主动控制风险，才是投资真正的智慧。\n很多人亏钱，不是因为没有认知，而是因为把自己的认知当成了真理。\n一旦形成观点，就开始寻找支持自己的证据。\n上涨了，证明自己判断正确。\n下跌了，认为市场错了。\n继续下跌，开始补仓。\n再下跌，开始相信“价值终究会回归”。\n最后才发现，自己从投资者变成了信仰者。\n这就是最危险的地方。\n认知一旦固化，就会从工具变成枷锁。\n所以投资真正需要的，不是建立一套永远正确的认知，而是建立一套能够不断修正认知的系统。\n我更相信贝叶斯式的投资思维。\n每一次新的信息出现，都应该改变你对未来的概率判断。\n你的观点不是信仰，而是一个暂时的概率分布。\n市场上涨，你更新一次。\n市场下跌，你更新一次。\n基本面变化，你更新一次。\n资金结构变化，你更新一次。\n当新的证据不断出现时，你应该不断调整自己的仓位、方向和预期。\n错了就修正，修正了再验证，验证之后继续更新。\n这才是真正的动态决策。\n而为了让自己在认知错误的时候不至于被市场淘汰，就必须依靠纪律。\n仓位管理，是给认知设置的保险丝。\n止损，是承认自己可能犯错的成本。\n交易纪律，是防止情绪接管决策的防火墙。\n反手，则是一种更高级的认知修正。\n很多人把止损理解成“认输”。\n其实恰恰相反。\n止损的本质是：\n我承认现在的市场事实已经与我的原有判断不一致，所以我愿意支付成本，重新获得选择权。\n甚至在条件发生根本变化之后，反手做空。\n这意味着你不仅承认自己错了，还愿意根据新的信息重新下注。\n这才是真正的交易思维。\n市场里最可怕的人，不是永远看对的人。\n而是看错之后，能够迅速调整的人。\n因为这个世界没有人能够拥有完整的信息。\n所有人都在不完全信息下做决策。\n真正的区别在于：\n有人把一次判断当成终局。\n有人把一次判断当成当前版本。\n前者需要证明自己永远正确。\n后者只需要保证自己能够不断进化。\n所以，投资最重要的能力，可能从来不是预测未来。\n而是在未来与预期不一致的时候，依然有能力活下来，并且快速修正。\n你可以没有最先进的认知。\n但你必须有边界。\n你可以判断错误。\n但不能让一次错误毁掉你的本金。\n你可以错过机会。\n但不能因为害怕错过机会，把自己暴露在无法承受的风险里。\n认知决定你的上限，纪律决定你的下限。\n而真正长期活在市场里的人，最终依靠的不是“我比别人知道得更多”。\n恰恰是因为他始终知道：\n自己永远不知道的东西，比自己知道的东西多。\n所以他给判断留概率，给仓位留余地，给止损留出口，给反手留空间。\n不断用新的信息修正旧的认知。\n今天的自己推翻昨天的自己。\n如果事实证明错了，就重新下注。\n如果市场证明你错了，就尊重市场。\n这可能才是投资最底层的生存哲学：\n永远不要试图成为一个永远正确的人。\n要成为一个即使经常犯错，也永远不会被一次错误淘汰的人。\n— https://nitter.net/hazenlee/status/2082704419100193271#m",
+      "published_at": "2026-08-19T19:50:33Z",
+      "importance": "中",
+      "summary": "投资哲学反思：人很难持续赚到认知之外的钱，但很容易亏掉",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "47",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090159709810757705",
+      "content": "我操了 我理解错了\n他说放弃加密货币应该是说不下场自己搞像trump和wlfi这样的币了\n没说不喊单不开API😭\n我错了 王\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n川普认为币圈已经没价值了，准备放弃币圈业务\n这是好事啊，脏东西们开始远离币圈了\n— https://nitter.net/hazenlee/status/2087082226676908237#m",
+      "content_full": "我操了 我理解错了\n他说放弃加密货币应该是说不下场自己搞像trump和wlfi这样的币了\n没说不喊单不开API😭\n我错了 王\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n川普认为币圈已经没价值了，准备放弃币圈业务\n这是好事啊，脏东西们开始远离币圈了\n— https://nitter.net/hazenlee/status/2087082226676908237#m",
+      "published_at": "2026-08-19T19:31:22Z",
+      "importance": "低",
+      "summary": "自我纠错：理解错Trump放弃加密货币的含义",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "48",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090158944216117326",
+      "content": "不行了，得算一下现在买入Trump API还来不来得及了。",
+      "content_full": "不行了，得算一下现在买入Trump API还来不来得及了。",
+      "published_at": "2026-08-19T19:28:20Z",
+      "importance": "中",
+      "summary": "计算买入Trump API的时机，含交易思路",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "49",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090156375821455441",
+      "content": "前两天行情震荡，晚高峰堵车的时候突然发现，堵车和金融市场的趋势、震荡，其实是一回事。\n车流顺畅的时候，大家都朝一个方向走。\n这像趋势行情。\n买方和卖方的预期出现明显分歧，资金开始持续向一个方向流动，价格不断重新定价，于是形成趋势。\n而当道路上的车越来越多，接近道路承载极限，就开始堵车。\n走一点，停一下。\n前车踩一脚刹车，后面的车可能连续踩刹车；有人想加速，有人想减速，最终整个系统进入高密度博弈。\n这就像市场震荡。\n涨一点，获利盘卖出；\n跌一点，抄底盘买入；\n再涨一点，又有人止盈。\n价格不断来回拉扯。\n所以，震荡并不代表市场没有力量。\n恰恰相反。\n震荡往往意味着多空力量高度集中，市场正在积累订单、杠杆、止损和预期差。\n就像堵车一样。\n真正值得关注的，从来不是“现在堵不堵”，而是：\n堵车之后，车流会往哪个方向重新启动？\n如果某个方向的力量最终突破道路容量，原本的拥堵就会突然变成顺畅的单向流动。\n市场也是如此。\n震荡 → 突破 → 趋势。\n所以我越来越觉得：\n趋势是车流，震荡是堵车。\n震荡是多空争夺道路的通行权。\n突破，是某一方终于获得了通行权。\n而有时候，震荡策略开始失效，反而可能意味着市",
+      "content_full": "前两天行情震荡，晚高峰堵车的时候突然发现，堵车和金融市场的趋势、震荡，其实是一回事。\n车流顺畅的时候，大家都朝一个方向走。\n这像趋势行情。\n买方和卖方的预期出现明显分歧，资金开始持续向一个方向流动，价格不断重新定价，于是形成趋势。\n而当道路上的车越来越多，接近道路承载极限，就开始堵车。\n走一点，停一下。\n前车踩一脚刹车，后面的车可能连续踩刹车；有人想加速，有人想减速，最终整个系统进入高密度博弈。\n这就像市场震荡。\n涨一点，获利盘卖出；\n跌一点，抄底盘买入；\n再涨一点，又有人止盈。\n价格不断来回拉扯。\n所以，震荡并不代表市场没有力量。\n恰恰相反。\n震荡往往意味着多空力量高度集中，市场正在积累订单、杠杆、止损和预期差。\n就像堵车一样。\n真正值得关注的，从来不是“现在堵不堵”，而是：\n堵车之后，车流会往哪个方向重新启动？\n如果某个方向的力量最终突破道路容量，原本的拥堵就会突然变成顺畅的单向流动。\n市场也是如此。\n震荡 → 突破 → 趋势。\n所以我越来越觉得：\n趋势是车流，震荡是堵车。\n震荡是多空争夺道路的通行权。\n突破，是某一方终于获得了通行权。\n而有时候，震荡策略开始失效，反而可能意味着市场正在从“堵车状态”切换到“单向流动状态”。\n真正的趋势，往往不是从平静中诞生。\n而是从拥堵中突破。",
+      "published_at": "2026-08-19T19:18:07Z",
+      "importance": "高",
+      "summary": "高质量类比：堵车=市场震荡，车流=趋势，突破=某一方获得通行权",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "用堵车比喻市场震荡与趋势突破，直观阐释多空博弈本质，帮助交易者理解震荡后的方向选择逻辑。"
+    },
+    {
+      "post_id": "50",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090101242886586510",
+      "content": "玩存储的霉逼别来沾边币圈，谢谢。\n把之前的话反着说一遍哈哈",
+      "content_full": "玩存储的霉逼别来沾边币圈，谢谢。\n把之前的话反着说一遍哈哈",
+      "published_at": "2026-08-19T15:39:03Z",
+      "importance": "低",
+      "summary": "讽刺性言论，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "51",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090091855782551870",
+      "content": "没想到啊，今天情人节当教师节过了，三角终于突破了！可喜可贺。上次存储局部顶回调也是币圈硬了一波。这次可以说十分相似了。。。\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n原生家庭这俩月低幅度波动率收敛应该给大家震麻了，别急，目前看上下的趋势线，最晚9月10号能走出来了！🥶\n— https://nitter.net/hazenlee/status/2090012795148566876#m",
+      "content_full": "没想到啊，今天情人节当教师节过了，三角终于突破了！可喜可贺。上次存储局部顶回调也是币圈硬了一波。这次可以说十分相似了。。。\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n原生家庭这俩月低幅度波动率收敛应该给大家震麻了，别急，目前看上下的趋势线，最晚9月10号能走出来了！🥶\n— https://nitter.net/hazenlee/status/2090012795148566876#m",
+      "published_at": "2026-08-19T15:01:45Z",
+      "importance": "中",
+      "summary": "三角突破技术信号，对比此前存储顶回调走势",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "52",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090085067108589725",
+      "content": "今天盘前这个新闻和美股开盘后比特币黄金涨，美股回调这个走势挺有意思：\n美股回调，黄金和 BTC 反而走强。\n表面看，是美债收益率回落、流动性改善；但市场可能交易的是更深一层逻辑：\n财政部想给美债和美股托底，市场却开始怀疑美元资产本身的信用质量。\n如果后面持续出现：\n30Y收益率↓\nDXY↓\n黄金↑\nBTC↑\n纳指↓或涨不动\n那就不是普通的 Risk-on，而可能是“美元信用折价”在抬头。\n以前是 Fed Put 托股票，\n现在可能逐渐变成 Dollar Put 托黄金和 BTC。\n还有就是一个潜在的反转点就是今晚国内凌晨2点即将公布的上个月FOMC会议纪要，能否对美元的信用达到提振。我们可以拭目以待观察一下。",
+      "content_full": "今天盘前这个新闻和美股开盘后比特币黄金涨，美股回调这个走势挺有意思：\n美股回调，黄金和 BTC 反而走强。\n表面看，是美债收益率回落、流动性改善；但市场可能交易的是更深一层逻辑：\n财政部想给美债和美股托底，市场却开始怀疑美元资产本身的信用质量。\n如果后面持续出现：\n30Y收益率↓\nDXY↓\n黄金↑\nBTC↑\n纳指↓或涨不动\n那就不是普通的 Risk-on，而可能是“美元信用折价”在抬头。\n以前是 Fed Put 托股票，\n现在可能逐渐变成 Dollar Put 托黄金和 BTC。\n还有就是一个潜在的反转点就是今晚国内凌晨2点即将公布的上个月FOMC会议纪要，能否对美元的信用达到提振。我们可以拭目以待观察一下。",
+      "published_at": "2026-08-19T14:34:46Z",
+      "importance": "中",
+      "summary": "重复45号：美元信用折价交易逻辑分析",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "53",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090079450625142893",
+      "content": "太邪恶了",
+      "content_full": "太邪恶了",
+      "published_at": "2026-08-19T14:12:27Z",
+      "importance": "低",
+      "summary": "无实质内容的感叹",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "54",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090078284289859937",
+      "content": "上两次次出现此背离信号，\n纳指从最高点分别回撤13%和11%。\n这次会不一样吗？\n本篇技术分析由@BITofficial_CN 冠名\n美股券商的丝滑体验，币圈交易美股用BIT.\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n道指和纳指之间的经典LOCAL TOP背离信号再次出现，\n这次会不一样吗？\n— https://nitter.net/hazenlee/status/2072697213592224141#m",
+      "content_full": "上两次次出现此背离信号，\n纳指从最高点分别回撤13%和11%。\n这次会不一样吗？\n本篇技术分析由@BITofficial_CN 冠名\n美股券商的丝滑体验，币圈交易美股用BIT.\n𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀 (@hazenlee)\n道指和纳指之间的经典LOCAL TOP背离信号再次出现，\n这次会不一样吗？\n— https://nitter.net/hazenlee/status/2072697213592224141#m",
+      "published_at": "2026-08-19T14:07:49Z",
+      "importance": "中",
+      "summary": "道指纳指LOCAL TOP背离信号出现，历史上对应纳指回撤13%/11%",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "55",
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "url": "https://x.com/hazenlee/status/2090072043752706127",
+      "content": "又骗炮了\n盘前姚明 盘中郭敬明\n余人sama (@yuren477)\nAI产业链目前呈现了明显的跷跷板效应，资金容量约束，而不是整个AI链条同步上涨。\n存储稍稍反弹，AI云算力中心这些就崩了。\n— https://nitter.net/yuren477/status/2090071769826959438#m",
+      "content_full": "又骗炮了\n盘前姚明 盘中郭敬明\n余人sama (@yuren477)\nAI产业链目前呈现了明显的跷跷板效应，资金容量约束，而不是整个AI链条同步上涨。\n存储稍稍反弹，AI云算力中心这些就崩了。\n— https://nitter.net/yuren477/status/2090071769826959438#m",
+      "published_at": "2026-08-19T13:43:01Z",
+      "importance": "中",
+      "summary": "AI产业链跷跷板效应：存储反弹时算力崩，资金容量有限",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "56",
+      "author": "yourQuantGuy",
+      "display_name": "yourQuantGuy",
+      "url": "https://x.com/yourQuantGuy/status/2090218889124671529",
+      "content": "Lighter 的 LLP 一晚上赚了 0.5% 🔥🔥\n前两天还在考虑要不要取出来换成 RLUSD 的理财，差点就大腿拍断",
+      "content_full": "Lighter 的 LLP 一晚上赚了 0.5% 🔥🔥\n前两天还在考虑要不要取出来换成 RLUSD 的理财，差点就大腿拍断",
+      "published_at": "2026-08-19T23:26:32Z",
+      "importance": "中",
+      "summary": "Lighter LLP单日收益0.5%，高收益案例分享",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "57",
+      "author": "Xiaohuaxin21",
+      "display_name": "Xiaohuaxin21",
+      "url": "https://x.com/Xiaohuaxin21/status/2090117652182430182",
+      "content": "古早项目@GTE_XYZ复活了   整个白单吧\nwaitlist.gte.xyz/r/M0MEJ",
+      "content_full": "古早项目@GTE_XYZ复活了   整个白单吧\nwaitlist.gte.xyz/r/M0MEJ",
+      "published_at": "2026-08-19T16:44:15Z",
+      "importance": "高",
+      "summary": "GTE_XYZ复活，提供白单申请入口链接",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "老牌项目 GTE 复活开放空投，白单成本低，适合追求早期项目参与机会的链上玩家。"
+    },
+    {
+      "post_id": "58",
+      "author": "cyrilxuq",
+      "display_name": "cyrilxuq",
+      "url": "https://x.com/cyrilxuq/status/2090070747796713474",
+      "content": "100了，有时候会想，不做小隐寺拿稳一些票会怎么样😅\n徐冲浪 (@cyrilxuq)\n过去从没有看过医药行业的我，在努力看懂Moderna的商业模式和护城河。mRNA会是人类救星么？时间会告诉我们答案。\nPS:医药行业真的是个神奇的行业。\n— https://nitter.net/cyrilxuq/status/1511876142885572609#m",
+      "content_full": "100了，有时候会想，不做小隐寺拿稳一些票会怎么样😅\n徐冲浪 (@cyrilxuq)\n过去从没有看过医药行业的我，在努力看懂Moderna的商业模式和护城河。mRNA会是人类救星么？时间会告诉我们答案。\nPS:医药行业真的是个神奇的行业。\n— https://nitter.net/cyrilxuq/status/1511876142885572609#m",
+      "published_at": "2026-08-19T13:37:52Z",
+      "importance": "中",
+      "summary": "MRNA持仓浮盈100%，反思错过医药股机会",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "59",
+      "author": "hongzho93205203",
+      "display_name": "hongzho93205203",
+      "url": "https://x.com/hongzho93205203/status/2090072990612693058",
+      "content": "哈哈哈，坚持一年@PrismaXai积分终于突破30万，全网排行22名！\n继续看好机器人赛道，继续每天坚持撸，那个Axis Robotics的任务不容易抢到了，大家都来@PrismaXai撸吧嘿嘿，Prismax的机械臂都是货真价实的真货！\n任务传送门：app.prismax.ai/live-control",
+      "content_full": "哈哈哈，坚持一年@PrismaXai积分终于突破30万，全网排行22名！\n继续看好机器人赛道，继续每天坚持撸，那个Axis Robotics的任务不容易抢到了，大家都来@PrismaXai撸吧嘿嘿，Prismax的机械臂都是货真价实的真货！\n任务传送门：app.prismax.ai/live-control",
+      "published_at": "2026-08-19T13:46:47Z",
+      "importance": "中",
+      "summary": "PrismaXai积分任务推广，含任务入口及机器人赛道看好观点",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "0",
+      "author": "hunterweb303",
+      "display_name": "hunterweb303",
+      "url": "https://x.com/hunterweb303/status/2090090955722612768",
+      "content": "强烈建议大家使用豆包的语音输入去辅助vibe\n以前我也是嗤之以鼻\n觉得需要把prompt、需求\n思索、归纳下再发出去\n举个例子\n让codex去抄一个前端\n他抄的不行\n以前的我：\n当前页面与目标站点在视觉还原度上存在明显差距。请重新对照目标页面，逐项检查整体布局、容器宽度与间距、Hero 区域、字体层级、背景与文本配色、边框圆角、阴影以及各模块的垂直节奏，重点排查 CSS 实现与目标页面之间的偏差，尽可能做到像素级还原。\n用了豆包语音后：\n你特么，你特么自己看看，你这个顶部，就是hero配色完全错了啊，你行不行，然后我的要求你听不懂啊，对标啊，1比1，我说你知不知道什么是1比1，下面的颜色也没配对；\n就是我发现，自然语言输入之后，我的重点就非常的明显，不像结构化的内容，好像都点到了，但是重点也没了；我要改到自然语言流派了",
+      "content_full": "强烈建议大家使用豆包的语音输入去辅助vibe\n以前我也是嗤之以鼻\n觉得需要把prompt、需求\n思索、归纳下再发出去\n举个例子\n让codex去抄一个前端\n他抄的不行\n以前的我：\n当前页面与目标站点在视觉还原度上存在明显差距。请重新对照目标页面，逐项检查整体布局、容器宽度与间距、Hero 区域、字体层级、背景与文本配色、边框圆角、阴影以及各模块的垂直节奏，重点排查 CSS 实现与目标页面之间的偏差，尽可能做到像素级还原。\n用了豆包语音后：\n你特么，你特么自己看看，你这个顶部，就是hero配色完全错了啊，你行不行，然后我的要求你听不懂啊，对标啊，1比1，我说你知不知道什么是1比1，下面的颜色也没配对；\n就是我发现，自然语言输入之后，我的重点就非常的明显，不像结构化的内容，好像都点到了，但是重点也没了；我要改到自然语言流派了",
+      "published_at": "2026-08-19T14:58:10Z",
+      "importance": "高",
+      "summary": "分享用豆包语音输入替代结构化prompt提升vibe coding效率的经验，有具体对比案例",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "分享豆包语音输入优化 AI 提示词的实用技巧，展示自然语言交互效率，对 AI 工具使用者有直接启发。"
+    },
+    {
+      "post_id": "1",
+      "author": "supezen",
+      "display_name": "supezen",
+      "url": "https://x.com/supezen/status/2090224422036881473",
+      "content": "vibe coding 没点积累真的很容易被 fable 忽悠\n太喜欢过度设计了，💩山越堆越高",
+      "content_full": "vibe coding 没点积累真的很容易被 fable 忽悠\n太喜欢过度设计了，💩山越堆越高",
+      "published_at": "2026-08-19T23:48:31Z",
+      "importance": "低",
+      "summary": "吐槽vibe coding过度设计容易踩坑",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "2",
+      "author": "supezen",
+      "display_name": "supezen",
+      "url": "https://x.com/supezen/status/2090072238414582238",
+      "content": "我常常因为 coding agent 修复一个 bug 的代码不够简洁而全部回滚，我知道不够简洁，逻辑不清晰的代码会带来更多 bug。",
+      "content_full": "我常常因为 coding agent 修复一个 bug 的代码不够简洁而全部回滚，我知道不够简洁，逻辑不清晰的代码会带来更多 bug。",
+      "published_at": "2026-08-19T13:43:47Z",
+      "importance": "中",
+      "summary": "分享coding agent代码质量管控经验，回滚不简洁代码避免后续bug",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "3",
+      "author": "TheoriqAI",
+      "display_name": "TheoriqAI",
+      "url": "https://x.com/TheoriqAI/status/2090134986230038641",
+      "content": "Making funds productive onchain with @WisdomTreePrime is an opportunity to show the potential of digital assets.\nHonored to be a design partner for WisdomTree Connect, sharing our team's proven expertise.\nWisdomTree Prime® (@WisdomTreePrime)\nStep one was creating composable funds onchain. Now we're building what puts that composability to work.\nHere's what we're doing with @TheoriqAi in the WisdomTree Connect Sandbox:\n— https://nitter.net/WisdomTreePrime/status/2090098967799562340#m",
+      "content_full": "Making funds productive onchain with @WisdomTreePrime is an opportunity to show the potential of digital assets.\nHonored to be a design partner for WisdomTree Connect, sharing our team's proven expertise.\nWisdomTree Prime® (@WisdomTreePrime)\nStep one was creating composable funds onchain. Now we're building what puts that composability to work.\nHere's what we're doing with @TheoriqAi in the WisdomTree Connect Sandbox:\n— https://nitter.net/WisdomTreePrime/status/2090098967799562340#m",
+      "published_at": "2026-08-19T17:53:08Z",
+      "importance": "低",
+      "summary": "TheoriqAI项目宣传推文",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "4",
+      "author": "TheoriqAI",
+      "display_name": "TheoriqAI",
+      "url": "https://x.com/WisdomTreePrime/status/2090098967799562340",
+      "content": "Step one was creating composable funds onchain. Now we're building what puts that composability to work.\nHere's what we're doing with @TheoriqAi in the WisdomTree Connect Sandbox:\nTheoriq (@TheoriqAI)\nArticle\nTheoriq joins WisdomTree Connect sandbox as design partner for LP onboarding & platform development\nAs a design partner in the WisdomTree Connect sandbox, Theoriq is building the layer that tees up regulated tokenized assets for risk-managed onchain yield.\nTheoriq is a design partner to Wis",
+      "content_full": "Step one was creating composable funds onchain. Now we're building what puts that composability to work.\nHere's what we're doing with @TheoriqAi in the WisdomTree Connect Sandbox:\nTheoriq (@TheoriqAI)\nArticle\nTheoriq joins WisdomTree Connect sandbox as design partner for LP onboarding & platform development\nAs a design partner in the WisdomTree Connect sandbox, Theoriq is building the layer that tees up regulated tokenized assets for risk-managed onchain yield.\nTheoriq is a design partner to WisdomTree\n— https://nitter.net/TheoriqAI/status/2089729720237855183#m",
+      "published_at": "2026-08-19T15:30:00Z",
+      "importance": "低",
+      "summary": "TheoriqAI加入WisdomTree Connect sandbox的合作公告",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "5",
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "url": "https://x.com/Feng_btc/status/2090077357101212012",
+      "content": "按个头，币安钱包上的predict预测市场又有新活动了，大家记得参与！上一期每人瓜分了1000积分，按场外0.07算都70U大毛\n这一期活动主要是Dota 2 赛事，本轮总决赛轮奖池：75,000 USDT + 4,000,000 PP 积分\n要求：单次锁定至少 20 份额，并于比赛开始前完成锁定就可以参与成功，每猜中一个事件就可以获得活动积分，排名越高瓜分越多\n注意一下：这里锁定20份额和200份额其实获得的积分是一样的，大家可以各个事件都参与20份额这样，最有性价比\n我是Dota骨灰级老玩家了，明天TEAM VISION vs BoomBoys 这一场信我左边拉满TEAM VISION ！\n其实他们上次小组赛已经交过一次手了，当时VISION\n2-0直接横扫对方，队伍整体状态都非常火热，Satanic这小子真是顺风能稳住扩大优势，逆风能找到翻盘点Carry，有点像李哥faker的感觉了\n所以我相信这场也不会有什么反转爆冷的机会！配合一手币安钱包 @BinanceWallet  上的活动参与，猜中又拿U又拿PP积分一鱼双吃\n大家可以直接在币安钱包横幅栏就能看到活动入口",
+      "content_full": "按个头，币安钱包上的predict预测市场又有新活动了，大家记得参与！上一期每人瓜分了1000积分，按场外0.07算都70U大毛\n这一期活动主要是Dota 2 赛事，本轮总决赛轮奖池：75,000 USDT + 4,000,000 PP 积分\n要求：单次锁定至少 20 份额，并于比赛开始前完成锁定就可以参与成功，每猜中一个事件就可以获得活动积分，排名越高瓜分越多\n注意一下：这里锁定20份额和200份额其实获得的积分是一样的，大家可以各个事件都参与20份额这样，最有性价比\n我是Dota骨灰级老玩家了，明天TEAM VISION vs BoomBoys 这一场信我左边拉满TEAM VISION ！\n其实他们上次小组赛已经交过一次手了，当时VISION\n2-0直接横扫对方，队伍整体状态都非常火热，Satanic这小子真是顺风能稳住扩大优势，逆风能找到翻盘点Carry，有点像李哥faker的感觉了\n所以我相信这场也不会有什么反转爆冷的机会！配合一手币安钱包 @BinanceWallet  上的活动参与，猜中又拿U又拿PP积分一鱼双吃\n大家可以直接在币安钱包横幅栏就能看到活动入口",
+      "published_at": "2026-08-19T14:04:08Z",
+      "importance": "高",
+      "summary": "币安钱包预测市场Dota 2活动攻略，含入口、锁定技巧和性价比建议",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "详细介绍币安预测市场 DOTA2 活动规则与参与技巧，帮助电竞爱好者通过专业知识获取积分与 USDT 双重重奖。"
+    },
+    {
+      "post_id": "6",
+      "author": "Big_Tea_Rice",
+      "display_name": "Big_Tea_Rice",
+      "url": "https://x.com/Big_Tea_Rice/status/2090107506882498924",
+      "content": "牛来    把我撞飞了\n我的整个网格UI盘面红过来姨妈",
+      "content_full": "牛来    把我撞飞了\n我的整个网格UI盘面红过来姨妈",
+      "published_at": "2026-08-19T16:03:56Z",
+      "importance": "低",
+      "summary": "网格交易亏损的情绪化表达",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "7",
+      "author": "Big_Tea_Rice",
+      "display_name": "Big_Tea_Rice",
+      "url": "https://x.com/Big_Tea_Rice/status/2090091567965208809",
+      "content": "这是我在七夕被猛干的地方\nSuperLeo (@Big_Tea_Rice)\n各位在开着网格的大佬们\n不知道这边拉升你们怎么样\n反正我目前就是血条疯狂在减......\n目前的心跳频率感觉已经比被捉奸还快🥺\n— https://nitter.net/Big_Tea_Rice/status/2090070429868466342#m",
+      "content_full": "这是我在七夕被猛干的地方\nSuperLeo (@Big_Tea_Rice)\n各位在开着网格的大佬们\n不知道这边拉升你们怎么样\n反正我目前就是血条疯狂在减......\n目前的心跳频率感觉已经比被捉奸还快🥺\n— https://nitter.net/Big_Tea_Rice/status/2090070429868466342#m",
+      "published_at": "2026-08-19T15:00:36Z",
+      "importance": "低",
+      "summary": "网格交易亏损的个人情绪吐槽",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "8",
+      "author": "Big_Tea_Rice",
+      "display_name": "Big_Tea_Rice",
+      "url": "https://x.com/Big_Tea_Rice/status/2090085273413865836",
+      "content": "有做ArcNoca @ArcNova_ACI 的Mint个创世徽章\n总量：10,000 个 NFT\n需要：BNB的Gas\n入口：arcnova.tv/en/tasks?inviter=…\nLink\nArcNova - One line. Fantastic video comes alive.\nArcNova is an innovative content platform focused on AI short drama creation and viewing. Explore a vast library of AI dramas and use intelligent AI tools to create your own works.\narcnova.tv\nArcNova (@ArcNova_ACI)\nThe next chapter starts now!\nClaim your ArcNova Genesis Badge and become part of one of the biggest moments in ArcNova's journey.\nThe fut",
+      "content_full": "有做ArcNoca @ArcNova_ACI 的Mint个创世徽章\n总量：10,000 个 NFT\n需要：BNB的Gas\n入口：arcnova.tv/en/tasks?inviter=…\nLink\nArcNova - One line. Fantastic video comes alive.\nArcNova is an innovative content platform focused on AI short drama creation and viewing. Explore a vast library of AI dramas and use intelligent AI tools to create your own works.\narcnova.tv\nArcNova (@ArcNova_ACI)\nThe next chapter starts now!\nClaim your ArcNova Genesis Badge and become part of one of the biggest moments in ArcNova's journey.\nThe future remembers who was here first.\n10,000 NFTs ⎸ Free mint ⎸BNB Chain\narcnova.tv/en/genesis-quest\n— https://nitter.net/ArcNova_ACI/status/2090060646872383897#m",
+      "published_at": "2026-08-19T14:35:35Z",
+      "importance": "高",
+      "summary": "ArcNova创世徽章Mint活动，含入口链接和铸造条件",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "ArcNova 创世徽章免费 Mint，限量 1 万个，适合 BNB Chain 生态参与者低成本获取早期 NFT 资产。"
+    },
+    {
+      "post_id": "9",
+      "author": "Big_Tea_Rice",
+      "display_name": "Big_Tea_Rice",
+      "url": "https://x.com/Big_Tea_Rice/status/2090081759321067978",
+      "content": "Nucleus S3 正式开始\n前 5000 名可以获得 $AURA 奖励\n入口：nucleus.codes/invited?code=J…\n但比奖励更让我感兴趣的是 Nucleus 在做的这件事：\n把链上行为、社交足迹和真实贡献沉淀成 Reputation\n再通过 Network Rankings 去衡量一个人在不同领域的实际影响力\n最终连接到更多 Opportunities\n我觉得这个方向很有意思\n因为 Web3 从来不缺地址和账号\n真正稀缺的是你做过什么以及你的贡献能不能被验证\n如果 Reputation 真能成为未来获取机会的一种基础设施\nNucleus 可能会比单纯的积分榜更有想象空间\nNucleus @NucleusCodes  S3 开始冲啊！",
+      "content_full": "Nucleus S3 正式开始\n前 5000 名可以获得 $AURA 奖励\n入口：nucleus.codes/invited?code=J…\n但比奖励更让我感兴趣的是 Nucleus 在做的这件事：\n把链上行为、社交足迹和真实贡献沉淀成 Reputation\n再通过 Network Rankings 去衡量一个人在不同领域的实际影响力\n最终连接到更多 Opportunities\n我觉得这个方向很有意思\n因为 Web3 从来不缺地址和账号\n真正稀缺的是你做过什么以及你的贡献能不能被验证\n如果 Reputation 真能成为未来获取机会的一种基础设施\nNucleus 可能会比单纯的积分榜更有想象空间\nNucleus @NucleusCodes  S3 开始冲啊！",
+      "published_at": "2026-08-19T14:21:37Z",
+      "importance": "高",
+      "summary": "Nucleus S3活动入口+对Reputation赛道的项目深度分析",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Nucleus S3 将链上行为转化为声誉资产，前 5000 名获 $AURA 奖励，代表 Web3 身份基础设施的创新方向。"
+    },
+    {
+      "post_id": "10",
+      "author": "Big_Tea_Rice",
+      "display_name": "Big_Tea_Rice",
+      "url": "https://x.com/Big_Tea_Rice/status/2090070429868466342",
+      "content": "各位在开着网格的大佬们\n不知道这边拉升你们怎么样\n反正我目前就是血条疯狂在减......\n目前的心跳频率感觉已经比被捉奸还快🥺",
+      "content_full": "各位在开着网格的大佬们\n不知道这边拉升你们怎么样\n反正我目前就是血条疯狂在减......\n目前的心跳频率感觉已经比被捉奸还快🥺",
+      "published_at": "2026-08-19T13:36:36Z",
+      "importance": "低",
+      "summary": "网格交易亏损的情绪化表达（重复7）",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "11",
+      "author": "Big_Tea_Rice",
+      "display_name": "Big_Tea_Rice",
+      "url": "https://x.com/Big_Tea_Rice/status/2090065978948485280",
+      "content": "Axis 成为 Kaito 上首个基于代币的活动\n入口：s.kaito.ai/zR1JKpu\n参与方式：\n1：申请 Kaito 活动\n2：获取个人短链\n3：在 X 发布 Axis 内容\n4：提交到 Kaito Studio\n5：邀请用户完成 Axis 任务\n最终排名由 Kaito @KaitoAI 和 Axis @axisrobotics  决定\n兄弟们！冲就完事了！#Kaito\nKaito AI 🌊 (@KaitoAI)\nToday we are welcoming @axisrobotics as the first token-based campaign on Kaito Katalyst.\nThis is also the first campaign to run a referral multiplier.\n— https://nitter.net/KaitoAI/status/2090051152394309974#m",
+      "content_full": "Axis 成为 Kaito 上首个基于代币的活动\n入口：s.kaito.ai/zR1JKpu\n参与方式：\n1：申请 Kaito 活动\n2：获取个人短链\n3：在 X 发布 Axis 内容\n4：提交到 Kaito Studio\n5：邀请用户完成 Axis 任务\n最终排名由 Kaito @KaitoAI 和 Axis @axisrobotics  决定\n兄弟们！冲就完事了！#Kaito\nKaito AI 🌊 (@KaitoAI)\nToday we are welcoming @axisrobotics as the first token-based campaign on Kaito Katalyst.\nThis is also the first campaign to run a referral multiplier.\n— https://nitter.net/KaitoAI/status/2090051152394309974#m",
+      "published_at": "2026-08-19T13:18:55Z",
+      "importance": "高",
+      "summary": "Axis在Kaito的首个代币活动详细参与步骤和奖励机制",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Axis 成为 Kaito 首个代币激励活动，提供短链追踪与多轮奖励机制，适合习惯嘴撸策略的用户快速参与。"
+    },
+    {
+      "post_id": "12",
+      "author": "yupaopao0",
+      "display_name": "yupaopao0",
+      "url": "https://x.com/yupaopao0/status/2090100372815958184",
+      "content": "巨大的泵\n牛回了",
+      "content_full": "巨大的泵\n牛回了",
+      "published_at": "2026-08-19T15:35:35Z",
+      "importance": "低",
+      "summary": "单纯情绪表达牛市回归",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "13",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090111494898032820",
+      "content": "我说个笑话\n我公司投了宇树\n而我做空了宇树\n对工作的厌恶让我丧失了判断力🤡",
+      "content_full": "我说个笑话\n我公司投了宇树\n而我做空了宇树\n对工作的厌恶让我丧失了判断力🤡",
+      "published_at": "2026-08-19T16:19:47Z",
+      "importance": "中",
+      "summary": "个人调侃：公司投了宇树自己却做空宇树",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "14",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090108953053319278",
+      "content": "呵 居心叵测的庄家就是趁着大家今晚玩福的时候狠狠拉一把，明天一堆人追进去后过俩天就砸盘。\n剧情差不多就是这样了",
+      "content_full": "呵 居心叵测的庄家就是趁着大家今晚玩福的时候狠狠拉一把，明天一堆人追进去后过俩天就砸盘。\n剧情差不多就是这样了",
+      "published_at": "2026-08-19T16:09:41Z",
+      "importance": "中",
+      "summary": "对庄家拉盘后砸盘节奏的市场判断",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "15",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090109834880516372",
+      "content": "你看看现在还有新韭菜入场没？\n你看看？！\n@Bitcoin",
+      "content_full": "你看看现在还有新韭菜入场没？\n你看看？！\n@Bitcoin",
+      "published_at": "2026-08-19T16:13:11Z",
+      "importance": "低",
+      "summary": "提问式情绪表达，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "16",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090107351630278805",
+      "content": "谁？\nVideo",
+      "content_full": "谁？\nVideo",
+      "published_at": "2026-08-19T16:03:19Z",
+      "importance": "低",
+      "summary": "仅发视频无文字说明",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "17",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090106927200235818",
+      "content": "Line你用过吧？\n在日本、泰国这些地方，基本就是当地的微信，LINE FRIENDS那套角色和贴纸，很多人从小看到大\nMinicoin @mini_cto 最近拿到了minini这套LINE Friends的正式IP授权，配套代币是 $MINI ，前阵子刚在Creditcoin的PenguinSwap完成了首个Launchpad，2.5亿枚全部售罄，算是正式启动了。\n叔顺手玩了一下他们已经上线的ROOM\n开局第一天，捡木头、下陷阱、生火\nThe room is cold.\nThe fire is flickering.\nThe room is freezing.\n火堆升级以后，系统会直接弹出NFT Reward，让你Claim升级后的NFT\n玩到这里我懂了，它先拿minini这种成熟IP做一套能摸得到的能玩的东西，用户也真的参与进来了，ROOM上线前两周就有近16000名玩家\n然后再把这套玩法往创作者身上延伸\n以后普通人可以从一套贴纸开始，有人用、有人传播，慢慢把它养成自己的角色和IP，再接到Minicoin的工具、市场和链上网络里。\n这个路径我觉得挺有意思\n以前我们在LINE里花钱",
+      "content_full": "Line你用过吧？\n在日本、泰国这些地方，基本就是当地的微信，LINE FRIENDS那套角色和贴纸，很多人从小看到大\nMinicoin @mini_cto 最近拿到了minini这套LINE Friends的正式IP授权，配套代币是 $MINI ，前阵子刚在Creditcoin的PenguinSwap完成了首个Launchpad，2.5亿枚全部售罄，算是正式启动了。\n叔顺手玩了一下他们已经上线的ROOM\n开局第一天，捡木头、下陷阱、生火\nThe room is cold.\nThe fire is flickering.\nThe room is freezing.\n火堆升级以后，系统会直接弹出NFT Reward，让你Claim升级后的NFT\n玩到这里我懂了，它先拿minini这种成熟IP做一套能摸得到的能玩的东西，用户也真的参与进来了，ROOM上线前两周就有近16000名玩家\n然后再把这套玩法往创作者身上延伸\n以后普通人可以从一套贴纸开始，有人用、有人传播，慢慢把它养成自己的角色和IP，再接到Minicoin的工具、市场和链上网络里。\n这个路径我觉得挺有意思\n以前我们在LINE里花钱买别人画的表情包\n以后可能有人在链上，把自己画的表情包养成一门生意",
+      "published_at": "2026-08-19T16:01:38Z",
+      "importance": "高",
+      "summary": "Minicoin项目深度解析：LINE Friends IP授权路径、ROOM玩法数据及未来创作者经济愿景",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Minicoin 获 LINE Friends 正式 IP 授权，结合链上游戏与创作者经济，探索 Web3 IP 商业化新路径。"
+    },
+    {
+      "post_id": "18",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090102028995645499",
+      "content": "七夕都给我戴好了，别又操出来一群傻逼",
+      "content_full": "七夕都给我戴好了，别又操出来一群傻逼",
+      "published_at": "2026-08-19T15:42:10Z",
+      "importance": "低",
+      "summary": "情绪化表达",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "19",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090101341322662072",
+      "content": "守得Solana住见月明\nsolana:So11111111111111111111111111111111111111112  终于重新突破$80\n我的rkuSOL也反亏为盈了\n继续保持，最好重回$280好吧\n我愿意用一个月不打飞机作为代价来交换。",
+      "content_full": "守得Solana住见月明\nsolana:So11111111111111111111111111111111111111112  终于重新突破$80\n我的rkuSOL也反亏为盈了\n继续保持，最好重回$280好吧\n我愿意用一个月不打飞机作为代价来交换。",
+      "published_at": "2026-08-19T15:39:26Z",
+      "importance": "低",
+      "summary": "SOL价格回升的个人调侃",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "20",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090088728681455964",
+      "content": "8年一句话没有说过\n聊了一个多小时，把彼此这些年的人生进度聊了一遍\n我发现我如果要认真的介绍自己，没办法跳过前任来完整的展现自己的人生。\n今晚真emo了\n操。\n炼金叔叔 (@AirdropAlchemis)\n叔彻底破防了\n鼓起勇气跟分手8年的前任打了一通电话\n— https://nitter.net/AirdropAlchemis/status/2090065373278425482#m",
+      "content_full": "8年一句话没有说过\n聊了一个多小时，把彼此这些年的人生进度聊了一遍\n我发现我如果要认真的介绍自己，没办法跳过前任来完整的展现自己的人生。\n今晚真emo了\n操。\n炼金叔叔 (@AirdropAlchemis)\n叔彻底破防了\n鼓起勇气跟分手8年的前任打了一通电话\n— https://nitter.net/AirdropAlchemis/status/2090065373278425482#m",
+      "published_at": "2026-08-19T14:49:19Z",
+      "importance": "低",
+      "summary": "个人情感生活分享",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "21",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090090719667212460",
+      "content": "我不行了我要去打飞机了",
+      "content_full": "我不行了我要去打飞机了",
+      "published_at": "2026-08-19T14:57:14Z",
+      "importance": "低",
+      "summary": "纯情绪表达",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "22",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090085596681400345",
+      "content": "现在时间22:36\n叔依旧守护x华语区纯洁\n今晚不打飞机",
+      "content_full": "现在时间22:36\n叔依旧守护x华语区纯洁\n今晚不打飞机",
+      "published_at": "2026-08-19T14:36:52Z",
+      "importance": "低",
+      "summary": "个人状态记录",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "23",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090083919895175468",
+      "content": "现在时间22:30\n我为x友纯洁站岗",
+      "content_full": "现在时间22:30\n我为x友纯洁站岗",
+      "published_at": "2026-08-19T14:30:13Z",
+      "importance": "低",
+      "summary": "个人状态记录",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "24",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090065373278425482",
+      "content": "叔彻底破防了\n鼓起勇气跟分手8年的前任打了一通电话",
+      "content_full": "叔彻底破防了\n鼓起勇气跟分手8年的前任打了一通电话",
+      "published_at": "2026-08-19T13:16:31Z",
+      "importance": "低",
+      "summary": "个人情感分享",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "25",
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "url": "https://x.com/AirdropAlchemis/status/2090066244968014011",
+      "content": "我现在啥事都不想干了。",
+      "content_full": "我现在啥事都不想干了。",
+      "published_at": "2026-08-19T13:19:59Z",
+      "importance": "低",
+      "summary": "情绪化表达",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "26",
+      "author": "GaoHeadmaster",
+      "display_name": "GaoHeadmaster",
+      "url": "https://x.com/GaoHeadmaster/status/2090093456635175386",
+      "content": "今晚上涨有点猛,  $BTC  $ETH  这几天能稳住，山寨会来一波",
+      "content_full": "今晚上涨有点猛,  $BTC  $ETH  这几天能稳住，山寨会来一波",
+      "published_at": "2026-08-19T15:08:06Z",
+      "importance": "中",
+      "summary": "BTC/ETH稳住后山寨币可能补涨的市场判断",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "27",
+      "author": "0x_xifeng",
+      "display_name": "0x_xifeng",
+      "url": "https://x.com/0x_xifeng/status/2090079041957359923",
+      "content": "s.kaito.ai/1gKeV3Z\n嘴撸回来了，但又不一样，给了个链接，用来追踪多少人通过这个链接成为推广项目的用户\n每个epoch最多提交10篇帖子，最终从10篇中选出来6篇，目前显示只有1个epoch，后续可能会增加epoch数量，可能是总计2个，也可能是3个、4个\n目前第一个项目是 @axisrobotics\n奖励分布：\n前 1-100 名：占总供应量的 0.1%\n前101-500名：占总供应量的0.1%\nKaito 持仓：占总供应量的 0.05%\n奖励很丰富，和之前嘴撸一样，感兴趣的来玩一玩吧\n惜风_spark 🦅 (@0x_xifeng)\n有人玩吗，可以走我链接吗\ns.kaito.ai/HR6MDT\n— https://nitter.net/0x_xifeng/status/2089879373063365029#m",
+      "content_full": "s.kaito.ai/1gKeV3Z\n嘴撸回来了，但又不一样，给了个链接，用来追踪多少人通过这个链接成为推广项目的用户\n每个epoch最多提交10篇帖子，最终从10篇中选出来6篇，目前显示只有1个epoch，后续可能会增加epoch数量，可能是总计2个，也可能是3个、4个\n目前第一个项目是 @axisrobotics\n奖励分布：\n前 1-100 名：占总供应量的 0.1%\n前101-500名：占总供应量的0.1%\nKaito 持仓：占总供应量的 0.05%\n奖励很丰富，和之前嘴撸一样，感兴趣的来玩一玩吧\n惜风_spark 🦅 (@0x_xifeng)\n有人玩吗，可以走我链接吗\ns.kaito.ai/HR6MDT\n— https://nitter.net/0x_xifeng/status/2089879373063365029#m",
+      "published_at": "2026-08-19T14:10:50Z",
+      "importance": "高",
+      "summary": "Kaito新活动详细教程：步骤、epoch机制、奖励分布和入口",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "Kaito 嘴撸活动回归，提供专属追踪链接，奖励覆盖前 500 名与持仓用户，适合内容创作者赚取代币激励。"
+    },
+    {
+      "post_id": "28",
+      "author": "Jasonwang1211",
+      "display_name": "Jasonwang1211",
+      "url": "https://x.com/Jasonwang1211/status/2090078992330269017",
+      "content": "比特币从 12.6 万（去年 10 月历史高点）腰斩到 6.4 万，跌了 317 天。\n周一现货比特币 ETF（机构买币的通道）突然净流入 2.97 亿，5 月 5 日以来最大单日回流。\n这钱怎么来的？5 月那波 ETF 连跑 13 天、流出 44 亿，把价格按在 6 万出头摩擦了快一年。本周空头被挤爆 2.48 亿（多空爆仓 3:1），抄底资金才敢回来。\n但别急着高潮。\n6.35 万下面压着 6.09 亿杠杆多单（借钱看涨的），6.55 万上面挂着 4.96 亿空单（借钱看跌的）。11 亿筹码卡在 2000 刀区间，谁先破位谁被连环清算。波动率还创了历史新低，Fundstrat 说未来 60 天可能波动 30%。\n翻译：横着走的概率最低。\n我现在的姿势：满仓的，6.35 万破了别硬扛；空仓的，别看 2.97 亿流入就冲，这钱连前面 44 亿流出的零头都不够填。\n你是 A 满仓等解套 / B 空仓看戏？\nBTC #crypto",
+      "content_full": "比特币从 12.6 万（去年 10 月历史高点）腰斩到 6.4 万，跌了 317 天。\n周一现货比特币 ETF（机构买币的通道）突然净流入 2.97 亿，5 月 5 日以来最大单日回流。\n这钱怎么来的？5 月那波 ETF 连跑 13 天、流出 44 亿，把价格按在 6 万出头摩擦了快一年。本周空头被挤爆 2.48 亿（多空爆仓 3:1），抄底资金才敢回来。\n但别急着高潮。\n6.35 万下面压着 6.09 亿杠杆多单（借钱看涨的），6.55 万上面挂着 4.96 亿空单（借钱看跌的）。11 亿筹码卡在 2000 刀区间，谁先破位谁被连环清算。波动率还创了历史新低，Fundstrat 说未来 60 天可能波动 30%。\n翻译：横着走的概率最低。\n我现在的姿势：满仓的，6.35 万破了别硬扛；空仓的，别看 2.97 亿流入就冲，这钱连前面 44 亿流出的零头都不够填。\n你是 A 满仓等解套 / B 空仓看戏？\nBTC #crypto",
+      "published_at": "2026-08-19T14:10:38Z",
+      "importance": "高",
+      "summary": "BTC深度分析：ETF资金流向、杠杆筹码分布、波动率预测及操作策略",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "深度解析比特币 ETF 资金流向与杠杆分布，揭示 6 千美元区间多空博弈格局，为短线交易提供关键参考位。"
+    },
+    {
+      "post_id": "29",
+      "author": "Jasonwang1211",
+      "display_name": "Jasonwang1211",
+      "url": "https://x.com/Jasonwang1211/status/2090064850558816672",
+      "content": "狗仔刘大锤，6月11日亲口说「没拍到任何实锤」，8月19日七夕又改口「迪丽热巴陈飞宇要见家长了」。\n前后俩月，自己打自己脸。\n从头到尾，一张私下同框照都拿不出。红绳手链是电商基础款，得物账号爆出就注销，行程重叠全是路人没拍到。这瓜，纯靠一张嘴编连续剧。\n最骚的是时间点。迪丽热巴主演《功夫女足》票房刚破23亿，他偏选七夕这天爆「见家长」。前脚被网信部门因低俗炒作通报处置，后脚就蹭顶流热度，这算盘打得我在屏幕外都听见响。\n我看过太多这种「匿名知情人+零证据」的瓜。造谣的成本是零，洗不掉的脏水能跟人一辈子。\n你信这波爆料吗？\nA 信，瓜保真\nB 不信，流量围猎",
+      "content_full": "狗仔刘大锤，6月11日亲口说「没拍到任何实锤」，8月19日七夕又改口「迪丽热巴陈飞宇要见家长了」。\n前后俩月，自己打自己脸。\n从头到尾，一张私下同框照都拿不出。红绳手链是电商基础款，得物账号爆出就注销，行程重叠全是路人没拍到。这瓜，纯靠一张嘴编连续剧。\n最骚的是时间点。迪丽热巴主演《功夫女足》票房刚破23亿，他偏选七夕这天爆「见家长」。前脚被网信部门因低俗炒作通报处置，后脚就蹭顶流热度，这算盘打得我在屏幕外都听见响。\n我看过太多这种「匿名知情人+零证据」的瓜。造谣的成本是零，洗不掉的脏水能跟人一辈子。\n你信这波爆料吗？\nA 信，瓜保真\nB 不信，流量围猎",
+      "published_at": "2026-08-19T13:14:26Z",
+      "importance": "中",
+      "summary": "娱乐八卦分析：刘大锤爆料迪丽热巴的真实性质疑",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "30",
+      "author": "y_cryptoanalyst",
+      "display_name": "y_cryptoanalyst",
+      "url": "https://x.com/y_cryptoanalyst/status/2090220439431958595",
+      "content": "上轮周期CZ 选择把蛋糕抢走，这轮周期CZ 选择把蛋糕做大。\nCZ 成熟了？\nCZ 🔶 BNB (@cz_binance)\nPolicy wise, what's good for one player is generally good for everyone in the industry.\n— https://nitter.net/cz_binance/status/2090178848226791821#m",
+      "content_full": "上轮周期CZ 选择把蛋糕抢走，这轮周期CZ 选择把蛋糕做大。\nCZ 成熟了？\nCZ 🔶 BNB (@cz_binance)\nPolicy wise, what's good for one player is generally good for everyone in the industry.\n— https://nitter.net/cz_binance/status/2090178848226791821#m",
+      "published_at": "2026-08-19T23:32:41Z",
+      "importance": "中",
+      "summary": "引用CZ观点讨论其策略转变",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "31",
+      "author": "y_cryptoanalyst",
+      "display_name": "y_cryptoanalyst",
+      "url": "https://x.com/y_cryptoanalyst/status/2090217258681598131",
+      "content": "川普只是做了一件锦上添花而非雪中送炭的事。\n将Hyperliquid 引入美国市场。\niykyk.\nyyy (@y_cryptoanalyst)\nHyperliquid 在这轮加密周期的历史地位不应低于Terra 在上轮加密周期的历史地位。\n— https://nitter.net/y_cryptoanalyst/status/2066535117062119603#m",
+      "content_full": "川普只是做了一件锦上添花而非雪中送炭的事。\n将Hyperliquid 引入美国市场。\niykyk.\nyyy (@y_cryptoanalyst)\nHyperliquid 在这轮加密周期的历史地位不应低于Terra 在上轮加密周期的历史地位。\n— https://nitter.net/y_cryptoanalyst/status/2066535117062119603#m",
+      "published_at": "2026-08-19T23:20:03Z",
+      "importance": "中",
+      "summary": "Trump将Hyperliquid引入美国市场的观点分析",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "32",
+      "author": "silverfang88",
+      "display_name": "silverfang88",
+      "url": "https://x.com/silverfang88/status/2090102844716118291",
+      "content": "真tm牛来了",
+      "content_full": "真tm牛来了",
+      "published_at": "2026-08-19T15:45:25Z",
+      "importance": "低",
+      "summary": "情绪化表达牛市回归",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "33",
+      "author": "silverfang88",
+      "display_name": "silverfang88",
+      "url": "https://x.com/silverfang88/status/2090072361345167400",
+      "content": "求职一直有个悖论\n这也是打工有毒的根本原因\n工业革命以来西方博弈的已经很完全了\n从资本家压榨工人工作十几个小时\n以至于今天已经演变成了\n被蓝领绑架的阶段\n比如人力匮乏金贵的发达地区\n各类水管/电工人的费用\n已经高达一个家庭的月收入\n所以西方社会的基建陈旧也不更新\n在如今AI的投入上\n西方也怕陷入又一个如果基建领先\n但被后来者居上的尴尬局面\n但是东方明显陷入了另一种困境\n就是平均工资都很低\n但因为人口稠密\n有钱的人口数量放在世界标尺也很多\n中日韩曾经都经历过配给制度\n港澳台也都是殖民地经济\n演变到如今就变成了\n一群年轻人生来就是被设计成牛马的\n很多人意识到了这一点开始挣扎\n挣扎成功的会意识到打工是一个骗局\n失败的大部分人继续躺平忍耐现况\n其一老板上级都是傻逼\n即使不是\n他们也在这个规则制度中装傻充愣\n其二很难积累经验和财富\n非管理工作都是重复性的无意义的内耗\n其次就是离开了平台和岗位赋予的权力\n人什么经验和人脉都带不走\n但是因为东方教育一直以来的规训\n导致了很多人和家庭都追寻安全感\n打工给了这种完美的虚假安全感\n让人活在一个努力花了时间了\n就能混过去的虚假之中\n毛走后的开放、房产、社保、",
+      "content_full": "求职一直有个悖论\n这也是打工有毒的根本原因\n工业革命以来西方博弈的已经很完全了\n从资本家压榨工人工作十几个小时\n以至于今天已经演变成了\n被蓝领绑架的阶段\n比如人力匮乏金贵的发达地区\n各类水管/电工人的费用\n已经高达一个家庭的月收入\n所以西方社会的基建陈旧也不更新\n在如今AI的投入上\n西方也怕陷入又一个如果基建领先\n但被后来者居上的尴尬局面\n但是东方明显陷入了另一种困境\n就是平均工资都很低\n但因为人口稠密\n有钱的人口数量放在世界标尺也很多\n中日韩曾经都经历过配给制度\n港澳台也都是殖民地经济\n演变到如今就变成了\n一群年轻人生来就是被设计成牛马的\n很多人意识到了这一点开始挣扎\n挣扎成功的会意识到打工是一个骗局\n失败的大部分人继续躺平忍耐现况\n其一老板上级都是傻逼\n即使不是\n他们也在这个规则制度中装傻充愣\n其二很难积累经验和财富\n非管理工作都是重复性的无意义的内耗\n其次就是离开了平台和岗位赋予的权力\n人什么经验和人脉都带不走\n但是因为东方教育一直以来的规训\n导致了很多人和家庭都追寻安全感\n打工给了这种完美的虚假安全感\n让人活在一个努力花了时间了\n就能混过去的虚假之中\n毛走后的开放、房产、社保、投资\n根本上就是迅速解绑发展经济的同时\n允许大家追寻财富\n换取不再探讨参与政治\n让社会越来越稳定\n不停的收缩上升通道停止阶级斗争\n无论是政治还是商业都是如此\n总不能所有的人都能觉醒并且挣扎出去\n一定需要大量的人一辈子被压榨成牛马\n不然你的生活不会如此便捷\n不能24小时都找到服务你的各种人\n所以不可能让大多数人\n都追寻体面不再干活吃福利\n那不就变成了西方资本国家了？\n所以现在的\n大厂就像是另一个985大学\n工厂则是另一个高中校园\n各种民营经济都在用算法奴役打工者\n而大家早都放弃了自己的政治发声权力\n老老实实的寻找着每一天的安全感\n所以跳出来的人们\n一定要和时代逆行！",
+      "published_at": "2026-08-19T13:44:17Z",
+      "importance": "中",
+      "summary": "长篇分析东西方打工制度差异及社会结构",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "34",
+      "author": "conso_tg",
+      "display_name": "conso_tg",
+      "url": "https://x.com/conso_tg/status/2090061219843678498",
+      "content": "🎁 Believer’s Gift is LIVE! -- Week 59\n100% rewards inside, 1 box holds the FULL Jackpot💰\nCurrent Jackpot: 731 USDT & growing!\n✅ 1000+ CPs\n✅ 10+ friends invited\n🎯 Open mBox → t.me/conso_mbox_bot\nNext drop: Aug 26\nConso #mBox #Web3 #BelieverGift",
+      "content_full": "🎁 Believer’s Gift is LIVE! -- Week 59\n100% rewards inside, 1 box holds the FULL Jackpot💰\nCurrent Jackpot: 731 USDT & growing!\n✅ 1000+ CPs\n✅ 10+ friends invited\n🎯 Open mBox → t.me/conso_mbox_bot\nNext drop: Aug 26\nConso #mBox #Web3 #BelieverGift",
+      "published_at": "2026-08-19T13:00:00Z",
+      "importance": "中",
+      "summary": "mBox Believer's Gift活动推广，有入口但偏营销",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "35",
+      "author": "CMhOeNnExY",
+      "display_name": "CMhOeNnExY",
+      "url": "https://x.com/CMhOeNnExY/status/2090079061578322267",
+      "content": "你们还记得插存储卡的手机吗？记得很久以前，似乎在苹果诞生之前，安卓手机还能有存储卡槽。\n以前我们想的是：\n“这张卡太贵了，买不起大的。”\n后来变成：\n“手机怎么才128G？”\n再后来：\n“等等，存储怎么又涨价了？”\n时代好像绕了一圈。",
+      "content_full": "你们还记得插存储卡的手机吗？记得很久以前，似乎在苹果诞生之前，安卓手机还能有存储卡槽。\n以前我们想的是：\n“这张卡太贵了，买不起大的。”\n后来变成：\n“手机怎么才128G？”\n再后来：\n“等等，存储怎么又涨价了？”\n时代好像绕了一圈。",
+      "published_at": "2026-08-19T14:10:54Z",
+      "importance": "低",
+      "summary": "回忆存储卡手机的时代感慨，无实质内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "36",
+      "author": "3PDAO",
+      "display_name": "3PDAO",
+      "url": "https://x.com/WatcherGuru/status/2090167176229720467",
+      "content": "🇺🇸 White House Crypto Summit recap:\n• President Trump says US considers buying \"sizable\" amounts of Bitcoin & other crypto.\n• Trump calls on Congress to pass Crypto Clarity Act.\n• Trump says US is ensuring it remains the \"undisputed leader\" in $BTC & crypto.\n• Hyperliquid $HYPE pumps 15% to $69 after Trump says CFTC is working to bring it to US.\n• SEC Chair Paul Atkins says \"we will ensure that the greatest advances of the technological frontier are realized right here in America.\"\n• Gemini co-f",
+      "content_full": "🇺🇸 White House Crypto Summit recap:\n• President Trump says US considers buying \"sizable\" amounts of Bitcoin & other crypto.\n• Trump calls on Congress to pass Crypto Clarity Act.\n• Trump says US is ensuring it remains the \"undisputed leader\" in $BTC & crypto.\n• Hyperliquid $HYPE pumps 15% to $69 after Trump says CFTC is working to bring it to US.\n• SEC Chair Paul Atkins says \"we will ensure that the greatest advances of the technological frontier are realized right here in America.\"\n• Gemini co-founders say \"America should lead in crypto and win in market.\"\n• Trump says he \"ended the war on crypto once and for all.\"",
+      "published_at": "2026-08-19T20:01:02Z",
+      "importance": "中",
+      "summary": "白宫加密货币峰会要点汇总：特朗普态度、Hyperliquid入美、SEC表态等",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "37",
+      "author": "3PDAO",
+      "display_name": "3PDAO",
+      "url": "https://x.com/blknoiz06/status/2090199083931545666",
+      "content": "what a day\nHyperliquid Policy Center (@HyperliquidPC)\nHyperliquid.\nVideo\n— https://nitter.net/HyperliquidPC/status/2090158897310867457#m",
+      "content_full": "what a day\nHyperliquid Policy Center (@HyperliquidPC)\nHyperliquid.\nVideo\n— https://nitter.net/HyperliquidPC/status/2090158897310867457#m",
+      "published_at": "2026-08-19T22:07:50Z",
+      "importance": "低",
+      "summary": "简短评论Hyperliquid相关内容",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "38",
+      "author": "3PDAO",
+      "display_name": "3PDAO",
+      "url": "https://x.com/0x_SixxxVC/status/2090241810249699404",
+      "content": "玛德，每天去冲那些垃圾新台子的项目，还不如去找点像 $Hoodrat $BRODIE $JUGGERNAUT 这些老牌meme埋伏，稳稳拿住，机会还要大点。\n这两天玩StonkBroker，upeg @uTokenPro 垃圾玩意儿搞出来的东西，被割麻了。\n六子｜Funny Six (@0x_SixxxVC)\n继昨天 StonkBroker 发射台上线拉完了之后，今天 upeg 团队的@uTokenPro 发射台也上线了。\n直到现在，Robinhood 链的项目依然在围绕发射台做文章，没想到吧。\n但和之前不同的是，目前 RH 链流动性已经枯竭，社区情绪也差。upeg 想把发射台做好，这次真的需要花更多功夫，先把 $SOCCS 拉起来吧。\n— https://nitter.net/0x_SixxxVC/status/2089873453646283215#m",
+      "content_full": "玛德，每天去冲那些垃圾新台子的项目，还不如去找点像 $Hoodrat $BRODIE $JUGGERNAUT 这些老牌meme埋伏，稳稳拿住，机会还要大点。\n这两天玩StonkBroker，upeg @uTokenPro 垃圾玩意儿搞出来的东西，被割麻了。\n六子｜Funny Six (@0x_SixxxVC)\n继昨天 StonkBroker 发射台上线拉完了之后，今天 upeg 团队的@uTokenPro 发射台也上线了。\n直到现在，Robinhood 链的项目依然在围绕发射台做文章，没想到吧。\n但和之前不同的是，目前 RH 链流动性已经枯竭，社区情绪也差。upeg 想把发射台做好，这次真的需要花更多功夫，先把 $SOCCS 拉起来吧。\n— https://nitter.net/0x_SixxxVC/status/2089873453646283215#m",
+      "published_at": "2026-08-20T00:57:37Z",
+      "importance": "中",
+      "summary": "建议埋伏老牌meme币而非新台子，附StonkBroker发射台吐槽",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "39",
+      "author": "guiyuan313",
+      "display_name": "guiyuan313",
+      "url": "https://x.com/guiyuan313/status/2090229784467120556",
+      "content": "牛回！速归！为啥我的bnb还这么软😭",
+      "content_full": "牛回！速归！为啥我的bnb还这么软😭",
+      "published_at": "2026-08-20T00:09:49Z",
+      "importance": "低",
+      "summary": "情绪化表达BNB走势疲软",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "40",
+      "author": "cursor_ai",
+      "display_name": "cursor_ai",
+      "url": "https://x.com/cursor_ai/status/2090136956101414982",
+      "content": "We're continuing to improve cloud agents in Cursor.\nThey pick up work from events, hold a goal until it's met, and stay on course through long sessions.\nVideo",
+      "content_full": "We're continuing to improve cloud agents in Cursor.\nThey pick up work from events, hold a goal until it's met, and stay on course through long sessions.\nVideo",
+      "published_at": "2026-08-19T18:00:57Z",
+      "importance": "中",
+      "summary": "Cursor云端agent功能更新公告",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "41",
+      "author": "cursor_ai",
+      "display_name": "cursor_ai",
+      "url": "https://x.com/cursor_ai/status/2090136964116721902",
+      "content": "Steering now waits for the next tool call instead of cutting the agent off mid-action.\nType a follow-up and hit send now, or press ⏎ twice.",
+      "content_full": "Steering now waits for the next tool call instead of cutting the agent off mid-action.\nType a follow-up and hit send now, or press ⏎ twice.",
+      "published_at": "2026-08-19T18:00:59Z",
+      "importance": "中",
+      "summary": "Cursor工具调用改进功能说明",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "42",
+      "author": "cursor_ai",
+      "display_name": "cursor_ai",
+      "url": "https://x.com/cursor_ai/status/2090136966121599117",
+      "content": "Use /goal to give the agent a long-lived objective to work towards until it's fully complete.\nRead the full changelog: cursor.com/changelog/08-19-2…\nVideo",
+      "content_full": "Use /goal to give the agent a long-lived objective to work towards until it's fully complete.\nRead the full changelog: cursor.com/changelog/08-19-2…\nVideo",
+      "published_at": "2026-08-19T18:01:00Z",
+      "importance": "中",
+      "summary": "Cursor /goal功能使用说明",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "43",
+      "author": "Predator_fund",
+      "display_name": "Predator_fund",
+      "url": "https://x.com/Predator_fund/status/2090082526748664027",
+      "content": "火币是黑U吗？\n几个交易所都封火币过来的USDT，弄的好像火币的USDT是假的、黑的似的，其实都是几个中心化机构的土政策；\n如果火币的USDT不能找泰达公司兑付美元（兑付流程繁琐），那才是真黑U",
+      "content_full": "火币是黑U吗？\n几个交易所都封火币过来的USDT，弄的好像火币的USDT是假的、黑的似的，其实都是几个中心化机构的土政策；\n如果火币的USDT不能找泰达公司兑付美元（兑付流程繁琐），那才是真黑U",
+      "published_at": "2026-08-19T14:24:40Z",
+      "importance": "中",
+      "summary": "讨论火币USDT是否黑U的问题，分析兑付流程",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    }
+  ],
+  "daily_brief": [
+    {
+      "topic": "SEC监管提案与合规路径",
+      "who": "qinbafrank, hellosuoha",
+      "sentiment": "积极关注",
+      "what_they_said": "qinbafrank: 深度分析SEC提案，认为这是美国加密监管从'执法式'转向'规则式'的重大转向。提出代币生命周期模型：发行融资→网络建设→投资合同终止→代币脱离证券法。认为这将建立真正的合规公开代币融资市场。hellosuoha: 提及SEC豁免方案允许代币募资避免证券地位，认为这是利好山寨的政策。",
+      "gist": "SEC提出豁免方案，将代币与证券法解耦，建立代币监管生命周期模型。发行方可通过安全港条款豁免证券注册，最高豁免额度500万和7500万美元。这一转向意味着美国开始为加密资产设计专门的资本形成通道，降低项目合规成本，减少对离岸架构的依赖。监管思路从'事后执法'变为'事前合规路径'，是加密市场制度化的重要里程碑。"
+    },
+    {
+      "topic": "BTC市场分析与交易策略",
+      "who": "KillaXBT, Jasonwang1211, hazenlee, airdropalchemis",
+      "sentiment": "偏多但谨慎",
+      "what_they_said": "KillaXBT: 认为是BTC史上最大空头清算事件，可能标志底部。对比2022与2026底部形态，若镜像则仍有上行空间。确认波段多头，目标16万，止损31950。提醒不要做空无聊市场。jasonwang1211: ETF净流入2.97亿创5月以来最大，但6.35万下方有6亿杠杆多单压力，6.55万上方有4.96亿空单，未来60天波动率或达30%。hazenlee: 今日爆仓规模超10.11，强调仓位管理和纪律比看对看错更重要。airdropalchemis: 调侃SOL重回80美元，rkuSOL反亏为盈。",
+      "gist": "BTC经历大规模空头清算后反弹至69500附近，ETF出现2.97亿美元净流入。多空双方筹码高度集中，6.35万与6.55万形成关键博弈区间。KillaXBT等交易者确认波段多头目标16万，但Jasonwang1211警告杠杆分布密集，波动率创历史新低后可能爆发30%波动。市场情绪偏多但需警惕短期反向洗盘风险。"
+    },
+    {
+      "topic": "白宫加密会议与特朗普政策",
+      "who": "qinbafrank, hellosuoha, 3PDAO, y_cryptoanalyst",
+      "sentiment": "积极期待",
+      "what_they_said": "qinbafrank: 白宫科技领袖会议实际是加密行业会议，参会者包括Coinbase/Ripple/a16z等高管，期望推动清晰法案和创新豁免。认为贝森特财政部救市压制了短期压制因素。hellosuoha: 特朗普宣布美国彻底结束对加密行业的'战争'，敦促国会通过公平版本Clarity法案。3PDAO: 汇总峰会要点，特朗普称美国考虑购买大量比特币，Hyperliquid因CFTC工作入美而大涨15%。y_cryptoanalyst: 认为特朗普将Hyperliquid引入美国是锦上添花，而非雪中送炭。",
+      "gist": "白宫召开科技领袖会议，实际参会者几乎全为加密行业高管和传统金融机构。特朗普表态美国结束对加密'战争'，考虑大量购买比特币，并推动Clarity法案通过。SEC主席Atkins承诺确保美国在技术前沿保持领导地位。Hyperliquid因CFTC拟将其引入美国而大涨15%。市场普遍认为政策环境显著改善，但部分观察者提醒不要过度解读单一事件的长期影响。"
+    },
+    {
+      "topic": "空投与撸毛活动",
+      "who": "yujuhao, Big_Tea_Rice, airdropalchemis, xifeng, Feng_btc",
+      "sentiment": "积极参与",
+      "what_they_said": "yujuhao: 推荐Arthur Hayes新项目flop_labs，无预售无风投100%公平启动，预计Q4大空投。详述Axis Robotics Kaito嘴撸活动，奖励0.25% AXIS代币。Big_Tea_Rice: 分享Nucleus S3活动，前5000名获$AURA奖励，对Reputation赛道表示看好。airdropalchemis: 深度分析Minicoin项目，LINE Friends IP授权路径清晰，ROOM玩法已获1.6万玩家。xifeng: 教程Kaito新活动，含epoch机制和奖励分布。Feng_btc: 推广Binance钱包Dota 2预测市场活动，奖池7.5万USDT。",
+      "gist": "多个加密项目同期开展空投和撸毛活动。Arthur Hayes-backed flop_labs主打AI代理经济层，无预售公平启动。Axis Robotics在Kaito平台启动代币活动，奖励0.25%代币供应。Nucleus进入S3赛季，探索链上Reputation赛道。Minicoin获得LINE Friends正式授权，ROOM玩法已积累近1.6万活跃玩家。Binance推出Dota 2预测市场活动。社区参与热情高涨，但需注意各活动的时间窗口和竞争强度。"
+    },
+    {
+      "topic": "AI/Coding工具使用心得",
+      "who": "hunterweb303, supezen, cursor_ai",
+      "sentiment": "实用分享",
+      "what_they_said": "hunterweb303: 强烈建议用豆包语音输入辅助vibe coding，自然语言比结构化prompt更能突出重点。举例让codex抄前端，结构化prompt效果不如口语化指令。supezen: 提醒vibe coding需积累，否则易被fable忽悠过度设计。分享回滚不简洁代码以避免后续bug的经验。cursor_ai: 发布云端agent功能更新，支持/goal长周期目标和steering优化。",
+      "gist": "开发者们分享AI辅助编程的实践经验。hunterweb303发现自然语言语音输入比结构化prompt更能让coding agent抓住重点，从'结构化流派'转向'自然语言流派'。supezen警示过度设计陷阱，强调代码简洁性和回滚机制的重要性。cursor_ai同步更新云端agent功能，引入/goal长周期目标和改进工具调用逻辑。社区整体认为AI coding工具正在快速迭代，但使用者仍需保持判断力和代码审查习惯。"
+    }
+  ],
+  "author_profiles": [
+    {
+      "author": "predictdotfun",
+      "display_name": "predictdotfun",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "Dota2季后赛活动攻略分享",
+      "warning": false
+    },
+    {
+      "author": "yujuhao",
+      "display_name": "yujuhao",
+      "tweet_count": 4,
+      "quality": "偏高",
+      "one_liner": "新项目与空投任务速递",
+      "warning": false
+    },
+    {
+      "author": "hanking66",
+      "display_name": "hanking66",
+      "tweet_count": 2,
+      "quality": "低",
+      "one_liner": "行情随感无实质分析",
+      "warning": false
+    },
+    {
+      "author": "AnLaoliu",
+      "display_name": "AnLaoliu",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "平台吐槽情绪输出",
+      "warning": false
+    },
+    {
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "tweet_count": 5,
+      "quality": "偏高",
+      "one_liner": "加密宏观政策深度分析",
+      "warning": false
+    },
+    {
+      "author": "aleabitoreddit",
+      "display_name": "aleabitoreddit",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "MRVL合作交易要点总结",
+      "warning": false
+    },
+    {
+      "author": "KillaXBT",
+      "display_name": "KillaXBT",
+      "tweet_count": 8,
+      "quality": "中",
+      "one_liner": "BTC交易纪律与波段分析",
+      "warning": false
+    },
+    {
+      "author": "usakes_zhang",
+      "display_name": "usakes_zhang",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "AI行业观点与矿工转型",
+      "warning": false
+    },
+    {
+      "author": "aiqiang888",
+      "display_name": "aiqiang888",
+      "tweet_count": 4,
+      "quality": "低",
+      "one_liner": "合约情绪吐槽无分析",
+      "warning": false
+    },
+    {
+      "author": "ccjing_eth",
+      "display_name": "ccjing_eth",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "牛市情绪口号",
+      "warning": false
+    },
+    {
+      "author": "hellosuoha",
+      "display_name": "hellosuoha",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "8.20加密晨报汇总",
+      "warning": false
+    },
+    {
+      "author": "linwanwan823",
+      "display_name": "linwanwan823",
+      "tweet_count": 2,
+      "quality": "偏高",
+      "one_liner": "Trust Wallet网络调整通知",
+      "warning": false
+    },
+    {
+      "author": "binance",
+      "display_name": "binance",
+      "tweet_count": 5,
+      "quality": "偏高",
+      "one_liner": "平台产品功能更新公告",
+      "warning": false
+    },
+    {
+      "author": "hazenlee",
+      "display_name": "hazenlee",
+      "tweet_count": 19,
+      "quality": "偏高",
+      "one_liner": "交易哲学与宏观逻辑深度思考",
+      "warning": false
+    },
+    {
+      "author": "yourQuantGuy",
+      "display_name": "yourQuantGuy",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "量化收益案例分享",
+      "warning": false
+    },
+    {
+      "author": "Xiaohuaxin21",
+      "display_name": "Xiaohuaxin21",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "GTE_XYZ白单申请入口",
+      "warning": false
+    },
+    {
+      "author": "cyrilxuq",
+      "display_name": "cyrilxuq",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "MRNA持仓浮盈反思",
+      "warning": false
+    },
+    {
+      "author": "hongzho93205203",
+      "display_name": "hongzho93205203",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "PrismaXai积分任务推广",
+      "warning": false
+    },
+    {
+      "author": "hunterweb303",
+      "display_name": "hunterweb303",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "vibe coding效率提升经验",
+      "warning": false
+    },
+    {
+      "author": "supezen",
+      "display_name": "supezen",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "coding agent代码管控经验",
+      "warning": false
+    },
+    {
+      "author": "TheoriqAI",
+      "display_name": "TheoriqAI",
+      "tweet_count": 2,
+      "quality": "低",
+      "one_liner": "项目宣传与公关稿",
+      "warning": false
+    },
+    {
+      "author": "Feng_btc",
+      "display_name": "Feng_btc",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "币安预测市场Dota2攻略",
+      "warning": false
+    },
+    {
+      "author": "Big_Tea_Rice",
+      "display_name": "Big_Tea_Rice",
+      "tweet_count": 6,
+      "quality": "偏高",
+      "one_liner": "空投活动教程与市场分析",
+      "warning": false
+    },
+    {
+      "author": "yupaopao0",
+      "display_name": "yupaopao0",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "牛市情绪宣泄",
+      "warning": false
+    },
+    {
+      "author": "airdropalchemis",
+      "display_name": "airdropalchemis",
+      "tweet_count": 12,
+      "quality": "偏高",
+      "one_liner": "空投项目解析与市况调侃",
+      "warning": false
+    },
+    {
+      "author": "GaoHeadmaster",
+      "display_name": "GaoHeadmaster",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "山寨币补涨市场预期",
+      "warning": false
+    },
+    {
+      "author": "0x_xifeng",
+      "display_name": "0x_xifeng",
+      "tweet_count": 1,
+      "quality": "高",
+      "one_liner": "Kaito新活动详细教程",
+      "warning": false
+    },
+    {
+      "author": "Jasonwang1211",
+      "display_name": "Jasonwang1211",
+      "tweet_count": 2,
+      "quality": "偏高",
+      "one_liner": "BTC深度分析操作策略",
+      "warning": false
+    },
+    {
+      "author": "y_cryptoanalyst",
+      "display_name": "y_cryptoanalyst",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "CZ与Trump加密观点引用",
+      "warning": false
+    },
+    {
+      "author": "silverfang88",
+      "display_name": "silverfang88",
+      "tweet_count": 2,
+      "quality": "中",
+      "one_liner": "牛市情绪与打工制度分析",
+      "warning": false
+    },
+    {
+      "author": "conso_tg",
+      "display_name": "conso_tg",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "mBox活动推广",
+      "warning": false
+    },
+    {
+      "author": "CMhOeNnExY",
+      "display_name": "CMhOeNnExY",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "怀旧感慨无实质内容",
+      "warning": false
+    },
+    {
+      "author": "3PDAO",
+      "display_name": "3PDAO",
+      "tweet_count": 3,
+      "quality": "中",
+      "one_liner": "白宫加密峰会要点汇总",
+      "warning": false
+    },
+    {
+      "author": "guiyuan313",
+      "display_name": "guiyuan313",
+      "tweet_count": 1,
+      "quality": "低",
+      "one_liner": "BNB走势情绪吐槽",
+      "warning": false
+    },
+    {
+      "author": "cursor_ai",
+      "display_name": "cursor_ai",
+      "tweet_count": 3,
+      "quality": "中",
+      "one_liner": "Cursor云端功能更新说明",
+      "warning": false
+    },
+    {
+      "author": "Predator_fund",
+      "display_name": "Predator_fund",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "火币USDT兑付流程分析",
+      "warning": false
+    }
+  ],
+  "medium_merge": "在白宫加密政策与市场宏观方面：qinbafrank指出白宫科技领袖会议催化加密走强，贝森特救市动作压制短期压制因素，会议参会名单涵盖Coinbase、Ripple、a16z等核心人物；hellosuoha汇总8月20日晨报涵盖BTC清算、SEC提案、特朗普加密政策等多维度信息；y_cryptoanalyst引用CZ观点讨论策略转变并分析Trump将Hyperliquid引入美国市场；3PDAO进一步汇总白宫加密货币峰会要点，包括特朗普态度、Hyperliquid入美、SEC表态等，同时建议埋伏老牌meme币而非新台子。在BTC技术分析与交易策略方面：KillaXBT认为BTC正在走2022年底部形态的镜像路径，若成立仍有上行空间，确认波段多头目标16万、止损31950，关键支撑在65-67K区域多空博弈待选择，同时反思交易心态——宁可早入场承受波动，也不等待完美点位踏空牛市，并强调低流动性市场中耐心等待的价值以及不抄底无聊市场的纪律。在AI产业与投资反思方面：usakes_zhang批评OpenAI季度亏损120亿仍画饼涉嫌欺骗投资者；aleabitoreddit总结MRVL与谷歌合作交易要点，提及Jensen Huang此前预测；cursor_ai公布云端agent功能更新、工具调用改进及/gol功能说明；supezen分享coding agent代码质量管控经验。hazenlee从多维度反思投资策略，提出人很难持续赚到认知之外的钱但很容易亏掉，指出道指纳指出现LOCAL TOP背离信号（历史上对应纳指回撤13%/11%），分析AI产业链存储与算力板块的跷跷板效应及资金容量有限问题，同时计算Trump API买入时机并关注美元信用折价交易逻辑。",
+  "errors": []
+}
