@@ -1,0 +1,1193 @@
+{
+  "run_id": "v2-20260821-025009",
+  "status": "success",
+  "slot": "morning",
+  "slot_label": "早报",
+  "created_at": "2026-08-21 10:53 · 第1次更新",
+  "window": "12h",
+  "planned_at": "2026-08-21 09:00",
+  "started_at": "2026-08-21 10:35",
+  "finished_at": "2026-08-21 10:53",
+  "window_start": "2026-08-20 21:00",
+  "window_end": "2026-08-21 09:00",
+  "delay_seconds": 5742,
+  "elapsed_seconds": 1042.3,
+  "total_tweets": 12,
+  "authors_count": 3,
+  "total_authors": 250,
+  "high_count": 1,
+  "medium_count": 6,
+  "low_count": 5,
+  "scan_ok": 3,
+  "scan_empty": 14,
+  "scan_fail": 233,
+  "scan_elapsed": 1042.341936826706,
+  "scan_errors": [
+    {
+      "author": "domaprotocol",
+      "error": "https://nitter.poast.org/domaprotocol/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "hanking66",
+      "error": "https://xcancel.com/hanking66/rss: HTTP 400 while fetching https://xcancel.com/h"
+    },
+    {
+      "author": "Ludamao_com",
+      "error": "https://nitter.poast.org/Ludamao_com/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "predictdotfun",
+      "error": "https://xcancel.com/predictdotfun/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "aleabitoreddit",
+      "error": "https://nitter.poast.org/aleabitoreddit/rss: HTTP 403 while fetching https://nit"
+    },
+    {
+      "author": "AnLaoliu",
+      "error": "https://nitter.privacydev.net/AnLaoliu/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "yujuhao",
+      "error": "https://nitter.poast.org/yujuhao/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "VIP8888883",
+      "error": "https://nitter.net/VIP8888883/rss: HTTP 429 while fetching https://nitter.net/VI"
+    },
+    {
+      "author": "memekiller69420",
+      "error": "https://nitter.poast.org/memekiller69420/rss: HTTP 403 while fetching https://ni"
+    },
+    {
+      "author": "BroBean88",
+      "error": "https://nitter.net/BroBean88/rss: HTTP 429 while fetching https://nitter.net/Bro"
+    },
+    {
+      "author": "lumaogou_web3",
+      "error": "https://nitter.net/lumaogou_web3/rss: HTTP 429 while fetching https://nitter.net"
+    },
+    {
+      "author": "WorkWorkOrg",
+      "error": "https://xcancel.com/WorkWorkOrg/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "usakes_zhang",
+      "error": "https://nitter.net/usakes_zhang/rss: HTTP 429 while fetching https://nitter.net/"
+    },
+    {
+      "author": "AbstractChain",
+      "error": "https://nitter.poast.org/AbstractChain/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "wsj061221",
+      "error": "https://nitter.poast.org/wsj061221/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "The_PeopleDAO",
+      "error": "https://nitter.net/The_PeopleDAO/rss: HTTP 429 while fetching https://nitter.net"
+    },
+    {
+      "author": "MrMicopedia",
+      "error": "https://nitter.privacydev.net/MrMicopedia/rss: Network error while fetching http"
+    },
+    {
+      "author": "KillaXBT",
+      "error": "https://nitter.privacydev.net/KillaXBT/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "sunshineboywang",
+      "error": "https://nitter.privacydev.net/sunshineboywang/rss: Network error while fetching "
+    },
+    {
+      "author": "ccjing_eth",
+      "error": "https://nitter.net/ccjing_eth/rss: HTTP 429 while fetching https://nitter.net/cc"
+    },
+    {
+      "author": "lluviaD0512",
+      "error": "https://xcancel.com/lluviaD0512/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "marginx_io",
+      "error": "https://nitter.privacydev.net/marginx_io/rss: Network error while fetching https"
+    },
+    {
+      "author": "KJjjxc",
+      "error": "https://xcancel.com/KJjjxc/rss: HTTP 400 while fetching https://xcancel.com/KJjj"
+    },
+    {
+      "author": "aiqiang888",
+      "error": "https://nitter.poast.org/aiqiang888/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "1999_eth",
+      "error": "https://nitter.privacydev.net/1999_eth/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Caidaobaba",
+      "error": "https://xcancel.com/Caidaobaba/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "liuyanxue2",
+      "error": "https://nitter.poast.org/liuyanxue2/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "degenlinxi",
+      "error": "https://nitter.net/degenlinxi/rss: HTTP 429 while fetching https://nitter.net/de"
+    },
+    {
+      "author": "0xWindCloud",
+      "error": "https://nitter.net/0xWindCloud/rss: HTTP 429 while fetching https://nitter.net/0"
+    },
+    {
+      "author": "JeffLia12309881",
+      "error": "https://nitter.privacydev.net/JeffLia12309881/rss: Network error while fetching "
+    },
+    {
+      "author": "crypto_laodong",
+      "error": "https://xcancel.com/crypto_laodong/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "linwanwan823",
+      "error": "https://nitter.poast.org/linwanwan823/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "hellosuoha",
+      "error": "https://xcancel.com/hellosuoha/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "variational_io",
+      "error": "https://nitter.privacydev.net/variational_io/rss: Network error while fetching h"
+    },
+    {
+      "author": "Claw402ai",
+      "error": "https://nitter.poast.org/Claw402ai/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "binance",
+      "error": "https://nitter.net/binance/rss: HTTP 429 while fetching https://nitter.net/binan"
+    },
+    {
+      "author": "0xProbable",
+      "error": "https://xcancel.com/0xProbable/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "Rtljjvo",
+      "error": "https://xcancel.com/Rtljjvo/rss: HTTP 400 while fetching https://xcancel.com/Rtl"
+    },
+    {
+      "author": "Xinjue1",
+      "error": "https://nitter.privacydev.net/Xinjue1/rss: Network error while fetching https://"
+    },
+    {
+      "author": "UFCStrike",
+      "error": "https://xcancel.com/UFCStrike/rss: HTTP 400 while fetching https://xcancel.com/U"
+    },
+    {
+      "author": "song66546656",
+      "error": "https://nitter.privacydev.net/song66546656/rss: Network error while fetching htt"
+    },
+    {
+      "author": "shabi2026",
+      "error": "https://nitter.poast.org/shabi2026/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "hazenlee",
+      "error": "https://nitter.privacydev.net/hazenlee/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "youknow028",
+      "error": "https://nitter.net/youknow028/rss: HTTP 429 while fetching https://nitter.net/yo"
+    },
+    {
+      "author": "hunterweb303",
+      "error": "https://xcancel.com/hunterweb303/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "guiligege",
+      "error": "https://nitter.poast.org/guiligege/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "Xiaohuaxin21",
+      "error": "https://nitter.net/Xiaohuaxin21/rss: HTTP 429 while fetching https://nitter.net/"
+    },
+    {
+      "author": "0xYuxi",
+      "error": "https://nitter.privacydev.net/0xYuxi/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "hongzho93205203",
+      "error": "https://nitter.net/hongzho93205203/rss: HTTP 429 while fetching https://nitter.n"
+    },
+    {
+      "author": "buckyandlucky",
+      "error": "https://xcancel.com/buckyandlucky/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "re333na",
+      "error": "https://nitter.privacydev.net/re333na/rss: Network error while fetching https://"
+    },
+    {
+      "author": "BlockFocus11",
+      "error": "https://xcancel.com/BlockFocus11/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "0x_Fenda",
+      "error": "https://nitter.net/0x_Fenda/rss: HTTP 429 while fetching https://nitter.net/0x_F"
+    },
+    {
+      "author": "supezen",
+      "error": "https://nitter.net/supezen/rss: HTTP 429 while fetching https://nitter.net/supez"
+    },
+    {
+      "author": "UpchainDAO",
+      "error": "https://nitter.net/UpchainDAO/rss: HTTP 429 while fetching https://nitter.net/Up"
+    },
+    {
+      "author": "xiaotongir",
+      "error": "https://nitter.poast.org/xiaotongir/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "zichuan_x",
+      "error": "https://nitter.poast.org/zichuan_x/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "luckyrrbb",
+      "error": "https://nitter.privacydev.net/luckyrrbb/rss: Network error while fetching https:"
+    },
+    {
+      "author": "xiaozhang2331",
+      "error": "https://xcancel.com/xiaozhang2331/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "sosovaluecrypto",
+      "error": "https://nitter.privacydev.net/sosovaluecrypto/rss: Network error while fetching "
+    },
+    {
+      "author": "artwall_app",
+      "error": "https://nitter.poast.org/artwall_app/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "BitHappy",
+      "error": "https://nitter.net/BitHappy/rss: HTTP 429 while fetching https://nitter.net/BitH"
+    },
+    {
+      "author": "jiaqian941213",
+      "error": "https://xcancel.com/jiaqian941213/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "0xLuge",
+      "error": "https://nitter.privacydev.net/0xLuge/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "0xcalmdown1",
+      "error": "https://xcancel.com/0xcalmdown1/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "TheoriqAI",
+      "error": "https://nitter.net/TheoriqAI/rss: HTTP 429 while fetching https://nitter.net/The"
+    },
+    {
+      "author": "RK_Bitcoin",
+      "error": "https://nitter.net/RK_Bitcoin/rss: HTTP 429 while fetching https://nitter.net/RK"
+    },
+    {
+      "author": "0xliuqingyu",
+      "error": "https://nitter.privacydev.net/0xliuqingyu/rss: Network error while fetching http"
+    },
+    {
+      "author": "txp854431375",
+      "error": "https://nitter.poast.org/txp854431375/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "xiao_yi24405",
+      "error": "https://nitter.poast.org/xiao_yi24405/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "Feng_btc",
+      "error": "https://nitter.net/Feng_btc/rss: HTTP 429 while fetching https://nitter.net/Feng"
+    },
+    {
+      "author": "xof2021",
+      "error": "https://xcancel.com/xof2021/rss: HTTP 400 while fetching https://xcancel.com/xof"
+    },
+    {
+      "author": "0xcchen01",
+      "error": "https://xcancel.com/0xcchen01/rss: HTTP 400 while fetching https://xcancel.com/0"
+    },
+    {
+      "author": "KKY8848",
+      "error": "https://nitter.poast.org/KKY8848/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "acc116453",
+      "error": "https://nitter.net/acc116453/rss: HTTP 429 while fetching https://nitter.net/acc"
+    },
+    {
+      "author": "xifancry",
+      "error": "https://nitter.net/xifancry/rss: HTTP 429 while fetching https://nitter.net/xifa"
+    },
+    {
+      "author": "maohei16",
+      "error": "https://xcancel.com/maohei16/rss: HTTP 400 while fetching https://xcancel.com/ma"
+    },
+    {
+      "author": "lucky_spring369",
+      "error": "https://nitter.poast.org/lucky_spring369/rss: HTTP 403 while fetching https://ni"
+    },
+    {
+      "author": "0xKaKa03",
+      "error": "https://nitter.net/0xKaKa03/rss: HTTP 429 while fetching https://nitter.net/0xKa"
+    },
+    {
+      "author": "shenghanjun8",
+      "error": "https://nitter.net/shenghanjun8/rss: HTTP 429 while fetching https://nitter.net/"
+    },
+    {
+      "author": "gch_enbsbxbs",
+      "error": "https://xcancel.com/gch_enbsbxbs/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "fwy2026",
+      "error": "https://nitter.poast.org/fwy2026/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "aling2000520",
+      "error": "https://nitter.privacydev.net/aling2000520/rss: Network error while fetching htt"
+    },
+    {
+      "author": "cryptoresetlife",
+      "error": "https://nitter.poast.org/cryptoresetlife/rss: HTTP 403 while fetching https://ni"
+    },
+    {
+      "author": "0x_mmc",
+      "error": "https://xcancel.com/0x_mmc/rss: HTTP 400 while fetching https://xcancel.com/0x_m"
+    },
+    {
+      "author": "33357xyz",
+      "error": "https://nitter.net/33357xyz/rss: HTTP 429 while fetching https://nitter.net/3335"
+    },
+    {
+      "author": "little_sci",
+      "error": "https://xcancel.com/little_sci/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "chainbird_eth",
+      "error": "https://nitter.privacydev.net/chainbird_eth/rss: Network error while fetching ht"
+    },
+    {
+      "author": "Big_Tea_Rice",
+      "error": "https://nitter.net/Big_Tea_Rice/rss: HTTP 429 while fetching https://nitter.net/"
+    },
+    {
+      "author": "0xbaoan",
+      "error": "https://nitter.poast.org/0xbaoan/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "0x13904b",
+      "error": "https://nitter.privacydev.net/0x13904b/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Shelbyserves",
+      "error": "https://nitter.privacydev.net/Shelbyserves/rss: Network error while fetching htt"
+    },
+    {
+      "author": "Miles082510",
+      "error": "https://nitter.poast.org/Miles082510/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "0xcbhz",
+      "error": "https://nitter.net/0xcbhz/rss: HTTP 429 while fetching https://nitter.net/0xcbhz"
+    },
+    {
+      "author": "uarizona",
+      "error": "https://xcancel.com/uarizona/rss: HTTP 400 while fetching https://xcancel.com/ua"
+    },
+    {
+      "author": "GoudanWoo",
+      "error": "https://nitter.poast.org/GoudanWoo/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "qiye_btc",
+      "error": "https://nitter.poast.org/qiye_btc/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "AKAKAY04",
+      "error": "https://xcancel.com/AKAKAY04/rss: HTTP 400 while fetching https://xcancel.com/AK"
+    },
+    {
+      "author": "SteinAmour",
+      "error": "https://nitter.poast.org/SteinAmour/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "taoli_tools",
+      "error": "https://xcancel.com/taoli_tools/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "0xCryptoFries",
+      "error": "https://nitter.net/0xCryptoFries/rss: HTTP 429 while fetching https://nitter.net"
+    },
+    {
+      "author": "Murphychen888",
+      "error": "https://nitter.net/Murphychen888/rss: HTTP 429 while fetching https://nitter.net"
+    },
+    {
+      "author": "0x_zibu",
+      "error": "https://nitter.poast.org/0x_zibu/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "yuyuvkx",
+      "error": "https://nitter.poast.org/yuyuvkx/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "dan326714",
+      "error": "https://nitter.net/dan326714/rss: HTTP 429 while fetching https://nitter.net/dan"
+    },
+    {
+      "author": "CodeNightOwl",
+      "error": "https://nitter.poast.org/CodeNightOwl/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "0xquqi",
+      "error": "https://nitter.poast.org/0xquqi/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "hs_gogogo",
+      "error": "https://nitter.net/hs_gogogo/rss: HTTP 429 while fetching https://nitter.net/hs_"
+    },
+    {
+      "author": "fbot_app",
+      "error": "https://xcancel.com/fbot_app/rss: HTTP 400 while fetching https://xcancel.com/fb"
+    },
+    {
+      "author": "lipoded",
+      "error": "https://xcancel.com/lipoded/rss: HTTP 400 while fetching https://xcancel.com/lip"
+    },
+    {
+      "author": "ETH3210",
+      "error": "https://nitter.privacydev.net/ETH3210/rss: Network error while fetching https://"
+    },
+    {
+      "author": "yixing_web3",
+      "error": "https://nitter.poast.org/yixing_web3/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "wangy112375",
+      "error": "https://xcancel.com/wangy112375/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "ziyourenya",
+      "error": "https://xcancel.com/ziyourenya/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "Essen1645",
+      "error": "https://nitter.net/Essen1645/rss: HTTP 429 while fetching https://nitter.net/Ess"
+    },
+    {
+      "author": "sellen1124",
+      "error": "https://nitter.net/sellen1124/rss: HTTP 429 while fetching https://nitter.net/se"
+    },
+    {
+      "author": "xiadadhaida",
+      "error": "https://nitter.privacydev.net/xiadadhaida/rss: Network error while fetching http"
+    },
+    {
+      "author": "FarmMaster_bot",
+      "error": "https://nitter.poast.org/FarmMaster_bot/rss: HTTP 403 while fetching https://nit"
+    },
+    {
+      "author": "TingHu888",
+      "error": "https://xcancel.com/TingHu888/rss: HTTP 400 while fetching https://xcancel.com/T"
+    },
+    {
+      "author": "Ray80230",
+      "error": "https://nitter.net/Ray80230/rss: HTTP 429 while fetching https://nitter.net/Ray8"
+    },
+    {
+      "author": "airdropalchemis",
+      "error": "https://nitter.privacydev.net/airdropalchemis/rss: Network error while fetching "
+    },
+    {
+      "author": "Airdrop_Guard",
+      "error": "https://nitter.poast.org/Airdrop_Guard/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "33daoweb3",
+      "error": "https://nitter.privacydev.net/33daoweb3/rss: Network error while fetching https:"
+    },
+    {
+      "author": "BQnanqiao",
+      "error": "https://nitter.privacydev.net/BQnanqiao/rss: Network error while fetching https:"
+    },
+    {
+      "author": "yupaopao0",
+      "error": "https://nitter.poast.org/yupaopao0/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "solana_zh",
+      "error": "https://nitter.privacydev.net/solana_zh/rss: Network error while fetching https:"
+    },
+    {
+      "author": "Greta0086",
+      "error": "https://nitter.net/Greta0086/rss: HTTP 429 while fetching https://nitter.net/Gre"
+    },
+    {
+      "author": "GaoHeadmaster",
+      "error": "https://nitter.net/GaoHeadmaster/rss: HTTP 429 while fetching https://nitter.net"
+    },
+    {
+      "author": "Jasonwang1211",
+      "error": "https://xcancel.com/Jasonwang1211/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "0x_xifeng",
+      "error": "https://xcancel.com/0x_xifeng/rss: HTTP 400 while fetching https://xcancel.com/0"
+    },
+    {
+      "author": "y_cryptoanalyst",
+      "error": "https://nitter.net/y_cryptoanalyst/rss: HTTP 429 while fetching https://nitter.n"
+    },
+    {
+      "author": "0xzheng888",
+      "error": "https://nitter.net/0xzheng888/rss: HTTP 429 while fetching https://nitter.net/0x"
+    },
+    {
+      "author": "chaozuoye",
+      "error": "https://nitter.net/chaozuoye/rss: HTTP 429 while fetching https://nitter.net/cha"
+    },
+    {
+      "author": "UMich",
+      "error": "https://nitter.privacydev.net/UMich/rss: Network error while fetching https://ni"
+    },
+    {
+      "author": "Assassin_Malvo",
+      "error": "https://xcancel.com/Assassin_Malvo/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "web3beinian",
+      "error": "https://nitter.poast.org/web3beinian/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "mundane799699",
+      "error": "https://nitter.privacydev.net/mundane799699/rss: Network error while fetching ht"
+    },
+    {
+      "author": "xxiaoxiongmao",
+      "error": "https://xcancel.com/xxiaoxiongmao/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "PIIG_me",
+      "error": "https://nitter.poast.org/PIIG_me/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "0xinfini",
+      "error": "https://nitter.privacydev.net/0xinfini/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "tmm_club",
+      "error": "https://nitter.poast.org/tmm_club/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "Wave_Tool",
+      "error": "https://nitter.privacydev.net/Wave_Tool/rss: Network error while fetching https:"
+    },
+    {
+      "author": "silverfang88",
+      "error": "https://xcancel.com/silverfang88/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "3PDAO",
+      "error": "https://xcancel.com/3PDAO/rss: HTTP 400 while fetching https://xcancel.com/3PDAO"
+    },
+    {
+      "author": "CuishuoB",
+      "error": "https://nitter.net/CuishuoB/rss: HTTP 429 while fetching https://nitter.net/Cuis"
+    },
+    {
+      "author": "SunnyHumorDay",
+      "error": "https://nitter.privacydev.net/SunnyHumorDay/rss: Network error while fetching ht"
+    },
+    {
+      "author": "xss4755",
+      "error": "https://nitter.privacydev.net/xss4755/rss: Network error while fetching https://"
+    },
+    {
+      "author": "SpiderPool_com",
+      "error": "https://nitter.privacydev.net/SpiderPool_com/rss: Network error while fetching h"
+    },
+    {
+      "author": "RivermenNFT",
+      "error": "https://nitter.poast.org/RivermenNFT/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "CMhOeNnExY",
+      "error": "https://xcancel.com/CMhOeNnExY/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "0xcoolkhz",
+      "error": "https://nitter.poast.org/0xcoolkhz/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "xychso",
+      "error": "https://nitter.poast.org/xychso/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "i_icepy",
+      "error": "https://nitter.privacydev.net/i_icepy/rss: Network error while fetching https://"
+    },
+    {
+      "author": "guiyuan313",
+      "error": "https://xcancel.com/guiyuan313/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "Predator_fund",
+      "error": "https://xcancel.com/Predator_fund/rss: HTTP 400 while fetching https://xcancel.c"
+    },
+    {
+      "author": "KernelVentures",
+      "error": "https://nitter.net/KernelVentures/rss: HTTP 429 while fetching https://nitter.ne"
+    },
+    {
+      "author": "0xMayyy",
+      "error": "https://nitter.net/0xMayyy/rss: HTTP 429 while fetching https://nitter.net/0xMay"
+    },
+    {
+      "author": "ariel_sands_dan",
+      "error": "https://nitter.net/ariel_sands_dan/rss: HTTP 429 while fetching https://nitter.n"
+    },
+    {
+      "author": "nil_0x",
+      "error": "https://nitter.net/nil_0x/rss: HTTP 429 while fetching https://nitter.net/nil_0x"
+    },
+    {
+      "author": "EvaCmore",
+      "error": "https://nitter.poast.org/EvaCmore/rss: HTTP 403 while fetching https://nitter.po"
+    },
+    {
+      "author": "iqxsol",
+      "error": "https://nitter.poast.org/iqxsol/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "0x_Northland",
+      "error": "https://nitter.net/0x_Northland/rss: HTTP 429 while fetching https://nitter.net/"
+    },
+    {
+      "author": "0xbrush_bots",
+      "error": "https://nitter.poast.org/0xbrush_bots/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "Fisher0815",
+      "error": "https://nitter.privacydev.net/Fisher0815/rss: Network error while fetching https"
+    },
+    {
+      "author": "LiHuanLH",
+      "error": "https://xcancel.com/LiHuanLH/rss: HTTP 400 while fetching https://xcancel.com/Li"
+    },
+    {
+      "author": "lumaoyangmao",
+      "error": "https://xcancel.com/lumaoyangmao/rss: HTTP 400 while fetching https://xcancel.co"
+    },
+    {
+      "author": "jiao_newlife",
+      "error": "https://nitter.poast.org/jiao_newlife/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "Cryptowushi",
+      "error": "https://nitter.privacydev.net/Cryptowushi/rss: Network error while fetching http"
+    },
+    {
+      "author": "cryptolfggo",
+      "error": "https://xcancel.com/cryptolfggo/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "kinotd_com",
+      "error": "https://nitter.privacydev.net/kinotd_com/rss: Network error while fetching https"
+    },
+    {
+      "author": "nft_hu",
+      "error": "https://xcancel.com/nft_hu/rss: HTTP 400 while fetching https://xcancel.com/nft_"
+    },
+    {
+      "author": "kevin_airdrop",
+      "error": "https://nitter.net/kevin_airdrop/rss: HTTP 429 while fetching https://nitter.net"
+    },
+    {
+      "author": "bigbottle44",
+      "error": "https://nitter.privacydev.net/bigbottle44/rss: Network error while fetching http"
+    },
+    {
+      "author": "WY_mask",
+      "error": "https://nitter.net/WY_mask/rss: HTTP 429 while fetching https://nitter.net/WY_ma"
+    },
+    {
+      "author": "bu_xiang888",
+      "error": "https://nitter.net/bu_xiang888/rss: HTTP 429 while fetching https://nitter.net/b"
+    },
+    {
+      "author": "zhao_p42510",
+      "error": "https://nitter.net/zhao_p42510/rss: HTTP 429 while fetching https://nitter.net/z"
+    },
+    {
+      "author": "btc_hamsters",
+      "error": "https://nitter.poast.org/btc_hamsters/rss: HTTP 403 while fetching https://nitte"
+    },
+    {
+      "author": "liyuanqion55768",
+      "error": "https://xcancel.com/liyuanqion55768/rss: HTTP 400 while fetching https://xcancel"
+    },
+    {
+      "author": "tenlly_ly",
+      "error": "https://xcancel.com/tenlly_ly/rss: HTTP 400 while fetching https://xcancel.com/t"
+    },
+    {
+      "author": "BaleYoba",
+      "error": "https://nitter.privacydev.net/BaleYoba/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "evooves",
+      "error": "https://nitter.privacydev.net/evooves/rss: Network error while fetching https://"
+    },
+    {
+      "author": "lin_btc",
+      "error": "https://nitter.net/lin_btc/rss: HTTP 429 while fetching https://nitter.net/lin_b"
+    },
+    {
+      "author": "toupaiwang",
+      "error": "https://nitter.poast.org/toupaiwang/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "lufushage",
+      "error": "https://xcancel.com/lufushage/rss: HTTP 400 while fetching https://xcancel.com/l"
+    },
+    {
+      "author": "Benjieming1Q84",
+      "error": "https://xcancel.com/Benjieming1Q84/rss: HTTP 400 while fetching https://xcancel."
+    },
+    {
+      "author": "0xleng1",
+      "error": "https://nitter.privacydev.net/0xleng1/rss: Network error while fetching https://"
+    },
+    {
+      "author": "SeomunW",
+      "error": "https://nitter.net/SeomunW/rss: HTTP 429 while fetching https://nitter.net/Seomu"
+    },
+    {
+      "author": "Maybe2024slow",
+      "error": "https://nitter.poast.org/Maybe2024slow/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "zicai222222",
+      "error": "https://xcancel.com/zicai222222/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "Bigdevilbtc",
+      "error": "https://nitter.net/Bigdevilbtc/rss: HTTP 429 while fetching https://nitter.net/B"
+    },
+    {
+      "author": "Z_Lib_official",
+      "error": "https://nitter.net/Z_Lib_official/rss: HTTP 429 while fetching https://nitter.ne"
+    },
+    {
+      "author": "0xweiqigaoshou",
+      "error": "https://nitter.privacydev.net/0xweiqigaoshou/rss: Network error while fetching h"
+    },
+    {
+      "author": "jiamigou",
+      "error": "https://xcancel.com/jiamigou/rss: HTTP 400 while fetching https://xcancel.com/ji"
+    },
+    {
+      "author": "kyeast",
+      "error": "https://nitter.poast.org/kyeast/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "jiji_eth",
+      "error": "https://nitter.privacydev.net/jiji_eth/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "xiaoyubtc",
+      "error": "https://nitter.privacydev.net/xiaoyubtc/rss: Network error while fetching https:"
+    },
+    {
+      "author": "Oceansky_web3",
+      "error": "https://nitter.privacydev.net/Oceansky_web3/rss: Network error while fetching ht"
+    },
+    {
+      "author": "XBITDEX_ZH",
+      "error": "https://xcancel.com/XBITDEX_ZH/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "decision_BTC",
+      "error": "https://nitter.net/decision_BTC/rss: HTTP 404 while fetching https://nitter.net/"
+    },
+    {
+      "author": "cosy_white",
+      "error": "https://xcancel.com/cosy_white/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "kuangshenbtc",
+      "error": "https://nitter.privacydev.net/kuangshenbtc/rss: Network error while fetching htt"
+    },
+    {
+      "author": "PhyrexNi",
+      "error": "https://xcancel.com/PhyrexNi/rss: HTTP 400 while fetching https://xcancel.com/Ph"
+    },
+    {
+      "author": "useXXYYio",
+      "error": "https://xcancel.com/useXXYYio/rss: HTTP 400 while fetching https://xcancel.com/u"
+    },
+    {
+      "author": "0xCryptoUni",
+      "error": "https://nitter.net/0xCryptoUni/rss: HTTP 429 while fetching https://nitter.net/0"
+    },
+    {
+      "author": "Rats_Friend",
+      "error": "https://xcancel.com/Rats_Friend/rss: HTTP 400 while fetching https://xcancel.com"
+    },
+    {
+      "author": "yunknkn2",
+      "error": "https://nitter.privacydev.net/yunknkn2/rss: Network error while fetching https:/"
+    },
+    {
+      "author": "Ice_Frog666666",
+      "error": "https://nitter.privacydev.net/Ice_Frog666666/rss: Network error while fetching h"
+    },
+    {
+      "author": "0xKevin00",
+      "error": "https://nitter.net/0xKevin00/rss: HTTP 429 while fetching https://nitter.net/0xK"
+    },
+    {
+      "author": "crypto_biubiu",
+      "error": "https://nitter.poast.org/crypto_biubiu/rss: HTTP 403 while fetching https://nitt"
+    },
+    {
+      "author": "wwfhbz",
+      "error": "https://nitter.privacydev.net/wwfhbz/rss: Network error while fetching https://n"
+    },
+    {
+      "author": "BitCloutCat",
+      "error": "https://nitter.poast.org/BitCloutCat/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "Naive_BNB",
+      "error": "https://nitter.poast.org/Naive_BNB/rss: HTTP 403 while fetching https://nitter.p"
+    },
+    {
+      "author": "bitfool1",
+      "error": "https://nitter.net/bitfool1/rss: HTTP 429 while fetching https://nitter.net/bitf"
+    },
+    {
+      "author": "cyberport_hk",
+      "error": "https://nitter.net/cyberport_hk/rss: HTTP 429 while fetching https://nitter.net/"
+    },
+    {
+      "author": "Seaxing777",
+      "error": "https://nitter.poast.org/Seaxing777/rss: HTTP 403 while fetching https://nitter."
+    },
+    {
+      "author": "EmberCN",
+      "error": "https://nitter.poast.org/EmberCN/rss: HTTP 403 while fetching https://nitter.poa"
+    },
+    {
+      "author": "JYHNCZR_",
+      "error": "https://xcancel.com/JYHNCZR_/rss: HTTP 400 while fetching https://xcancel.com/JY"
+    },
+    {
+      "author": "Yale",
+      "error": "https://nitter.net/Yale/rss: HTTP 429 while fetching https://nitter.net/Yale/rss"
+    },
+    {
+      "author": "Nicole58004351",
+      "error": "https://nitter.poast.org/Nicole58004351/rss: HTTP 403 while fetching https://nit"
+    },
+    {
+      "author": "nirvana_hui",
+      "error": "https://nitter.poast.org/nirvana_hui/rss: HTTP 403 while fetching https://nitter"
+    },
+    {
+      "author": "followin_io_zh",
+      "error": "https://nitter.net/followin_io_zh/rss: HTTP 429 while fetching https://nitter.ne"
+    },
+    {
+      "author": "ether",
+      "error": "https://nitter.poast.org/ether/rss: HTTP 403 while fetching https://nitter.poast"
+    },
+    {
+      "author": "HyperliquidX",
+      "error": "https://nitter.privacydev.net/HyperliquidX/rss: Network error while fetching htt"
+    },
+    {
+      "author": "zerowu97",
+      "error": "https://xcancel.com/zerowu97/rss: HTTP 400 while fetching https://xcancel.com/ze"
+    },
+    {
+      "author": "ki_smoon12",
+      "error": "https://nitter.privacydev.net/ki_smoon12/rss: Network error while fetching https"
+    },
+    {
+      "author": "DrcDAO",
+      "error": "https://nitter.poast.org/DrcDAO/rss: HTTP 403 while fetching https://nitter.poas"
+    },
+    {
+      "author": "JackGui14",
+      "error": "https://xcancel.com/JackGui14/rss: HTTP 400 while fetching https://xcancel.com/J"
+    },
+    {
+      "author": "xiaoyinsi2025",
+      "error": "https://nitter.net/xiaoyinsi2025/rss: HTTP 429 while fetching https://nitter.net"
+    },
+    {
+      "author": "cishanjia",
+      "error": "https://nitter.privacydev.net/cishanjia/rss: Network error while fetching https:"
+    },
+    {
+      "author": "wufantouzi",
+      "error": "https://xcancel.com/wufantouzi/rss: HTTP 400 while fetching https://xcancel.com/"
+    },
+    {
+      "author": "guanliange",
+      "error": "https://nitter.net/guanliange/rss: HTTP 429 while fetching https://nitter.net/gu"
+    },
+    {
+      "author": "hebi555",
+      "error": "https://nitter.net/hebi555/rss: HTTP 429 while fetching https://nitter.net/hebi5"
+    },
+    {
+      "author": "youyou5202",
+      "error": "https://nitter.poast.org/youyou5202/rss: HTTP 403 while fetching https://nitter."
+    }
+  ],
+  "items": [
+    {
+      "post_id": "0",
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "url": "https://x.com/qinbafrank/status/2090435324765970902",
+      "content": "收益率高中枢时代的结构性问题，贝森特的猛药持续了一天，US10Y又暗搓搓的反弹上来了。今天长债收益率上行油价上涨应该是占了很大因素，川普昨天宣布对伊朗采取“针对任何国家实施过的最严厉经济行动”，称这将是一场规模空前的“经济战和经济孤立”。川普认为经济制裁和封锁能逼迫伊朗让步、伊朗认为自己的在霍尔木兹海峡不对称优势能让受不了 ，这就是前两天这里nitter.net/qinbafrank/status/2089…聊到的美伊博弈有长期化趋势的迹象\n现在长债收益率走高的几个因素：油价、财政赤字发债、AI基建科技公司发债潮，在前天收益率高中枢时代的推文里有详细聊过。财政赤字发债、AI基建科技公司发债潮 都是结构性的，很难短期完全扭转。\n关于财政赤字国债超发，贝森特拿出来的解药是：\n1）调整期限结果、尽量少发长债多发短债；\n2）提高单次回购规模，压低长债收益率；\n3）支援日本央行，防止其抛美债救日元；\n但现在看效果并不是那么好。\n科技公司发债短期内也停不下来\n最后就要下油价上下功夫，这里关键是伊朗、美国谁能抗造，还是之前这里nitter.net/qinbafrank/status/2089…聊到的",
+      "content_full": "收益率高中枢时代的结构性问题，贝森特的猛药持续了一天，US10Y又暗搓搓的反弹上来了。今天长债收益率上行油价上涨应该是占了很大因素，川普昨天宣布对伊朗采取“针对任何国家实施过的最严厉经济行动”，称这将是一场规模空前的“经济战和经济孤立”。川普认为经济制裁和封锁能逼迫伊朗让步、伊朗认为自己的在霍尔木兹海峡不对称优势能让受不了 ，这就是前两天这里nitter.net/qinbafrank/status/2089…聊到的美伊博弈有长期化趋势的迹象\n现在长债收益率走高的几个因素：油价、财政赤字发债、AI基建科技公司发债潮，在前天收益率高中枢时代的推文里有详细聊过。财政赤字发债、AI基建科技公司发债潮 都是结构性的，很难短期完全扭转。\n关于财政赤字国债超发，贝森特拿出来的解药是：\n1）调整期限结果、尽量少发长债多发短债；\n2）提高单次回购规模，压低长债收益率；\n3）支援日本央行，防止其抛美债救日元；\n但现在看效果并不是那么好。\n科技公司发债短期内也停不下来\n最后就要下油价上下功夫，这里关键是伊朗、美国谁能抗造，还是之前这里nitter.net/qinbafrank/status/2089…聊到的，还是伊朗相对更抗造一些，神权体制下、普通民众话语权并没有那么大。这里的核心就是之前这里nitter.net/qinbafrank/status/2082…聊到的：川普会不会最终接受霍尔木兹海峡回不到战前状态了？\n如前天“长债收益率高中枢时代”的推文里聊到的：“市场对10年收益率的短期容忍区间正在上移，4.7%可能不再是硬红线，4.9%—5.0%正在成为新的压力边界。”\n但越过4.7，越往上市场进入了估值摩擦区，震荡加大，分化加剧，也会非常难受。\n本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易 」\nqinbafrank (@qinbafrank)\n迎来收益率高中枢时代，实际利率比名义利率更重要。昨晚比较8月份行情与四五月行情差异，说完到今天油价和US10y都往上突破了近期的区间上限。油价的上涨博弈长期化的体现，今天这里nitter.net/qinbafrank/status/2089…有聊过。现在聊聊US10Y。\n须强调下，个人一直重点看十年美债收益率的走势，而非二十年和三十年，因为十年美债收益率才是真正的无风险利率（五年太短、二十三十年太长、十年正好）。聊聊几个点：\n1、为什么我们会迎来收益率高中枢时代？\n十年美债收益率上涨到4.74%原因则更复杂，一方面自然是油价上涨自然通胀预期抬头、但是前段时间加息预期大幅降低US10Y也没下去。之前也聊过当下长债收益率走高，已经不仅仅是通胀预期在驱动，更重要的变量是债券供给规模越来越大：\n一方面美国财政赤字上行、发行供给增大，市场开始提前计入未来赤字、期限风险、买家价格敏感度以及长期再融资压力；\n另一方面因为AI基建浪潮的驱动，大科技公司今年发债规模也越来越大，这其实是和美国国债争夺养老金、保险资金、主权基金等投资者的久期风险预算，使新债必须提供更高收益率或更宽信用利差；\n这些都导致了长端收益率居高不下、也就是收益率中枢走高。\n2、当然不是说债券供给爆发”收益率只能涨、不能跌。”\n1）如果未来发生经济明显减速、通胀下降或美联储大幅降息，3.43%的平均短端利率预期仍然可以显著下降，从而抵消期限溢价。\n2）市场在评估AI资本开支的ROIC。过去大科技依靠经营现金流融资，现在越来越依赖债券、租赁、项目融资和其他资本结构。只要AI收入和现金流兑现，发债既推高利率，也推高未来盈利，两个力量可以相互抵消：经营质量越好、自然债券收益率也会越低。\n但未来如果出现收入兑现慢于资本开支和利息成本，便会形成：债券供给推高折现率＋自由现金流下降＋ROIC被下调的三重压缩。\n所以大科技债务融资既可能抬高市场的盈利容量，也可能在未来反过来降低市场对高利率的容忍度。\n3、4.7%的十年美债收益率为何没对市场产业巨大压力？个人角度看\n1）盈利增长速度高于股价上涨速度，估值在被盈利消化。这就是为什么同样是4.7%的10年美债收益率，现在对指数的冲击可以小于去年。\n2）市场内部已经完成部分估值压缩和行业切换\n高利率并没有“不造成伤害”，而是伤害先发生在了高估值板块、小盘成长股、REITs和公用事业；高负债、需要持续再融资的公司；现金流远期化的长久期资产。\n简单说市场分化了、资金集中在盈利更强的半导体、部分大科技、金融、能源和工业板块，\n3）信用市场暂时没有发出系统性压力信号\n截至8月中旬，美国投资级公司债OAS仍只有80个基点，高收益债OAS为267个基点，整体仍处于相当紧的水平。只要信用利差不明显扩大，企业的全口径融资成本虽然高，但还没有转化成信用事故和系统性去杠杆。\n所以目前市场能够承受4.7%，靠的是：盈利上修、信用利差稳定和部分估值提前压缩。\n当然也有今天美银报告nitter.net/qinbafrank/status/2089…里说到的：市场也相信政府会用更高的名义GDP增长来消化债务问题。这也是一个因素、个人角度、基本面的盈利增长还是第一位的。\n4、红线变黄线，压力区上移动，市场的容忍区间推演\n去年在这里nitter.net/qinbafrank/status/1925…提到一个观察，4.6%是十年美债收益率的阈值、超过这个阈值市场压力越大、财政部越紧张。但现在这个阈值也在改变。给一个个人观察的框架\n1）4.60%—4.75%：高利率但尚可消化\n这是过去的红线，现在更接近黄线。只要盈利继续上修、信用利差稳定，收益率缓慢向上市场整体可以承受。\n2）4.75%—4.90%明显的估值摩擦区\n这个区间市场更容易出现：指数横盘、盈利消化估值；成长股向价值股和周期股轮动；市场宽度变差；财报后对盈利质量和自由现金流要求明显提高。\n这一阶段并不要求指数大跌，但内部压力会越来越大。分化也越严重\n3）4.90%—5.05%：新的真正压力区\n在这个区间市场波动自然加大，如果是两三周快速上涨30—40个基点，而且实际利率、期限溢价和信用利差一起上升，市场不需要等到5%以上才会调整。\n4）5.05%以上并持续数周：红色警报区域\n用简化的倒数估值法看：盈利收益率从5.0%升至5.3%，市盈率从20倍降至18.9倍，估值压缩约5.7%；升至5.5%，市盈率降至18.2倍，估值压缩约9.1%\n当然这只是一个大概的推演、框架比具体数字更值得参考。\n5、真正核心的是实际利率，而非名义10年收益率\n对成长股而言，实际利率比名义收益率更重要，例如：\n10年名义收益率5.0%，通胀预期2.7%，实际利率2.3%；\n10年名义收益率4.9%，通胀预期2.2%，实际利率2.7%。\n第二种情况反而可能对高估值成长股更不利。\n所谓好利率上涨，是经济增长、生产率和盈利预期同步上修；\n坏利率上涨，则是经济数据已经走弱，但财政赤字、债券供给和期限溢价仍在推高长端。\n市场对10年收益率的短期容忍区间正在上移，4.7%可能不再是硬红线，4.9%—5.0%正在成为新的压力边界。\n高收益率中枢带来则是高波动率\n本条由@bitget_zh赞助，「Bitget 买美股：秒级入场，丝滑交易 」\n— https://nitter.net/qinbafrank/status/2089715193890976004#m",
+      "published_at": "2026-08-20T13:46:34Z",
+      "importance": "中",
+      "summary": "分析长债收益率高中枢成因（油价+财政赤字+AI发债潮），贝森特政策效果有限，市场对4.7%容忍度上移至4.9-5.0%。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "1",
+      "author": "yourQuantGuy",
+      "display_name": "yourQuantGuy",
+      "url": "https://x.com/yourQuantGuy/status/2090424827312054480",
+      "content": "[ 从免费账户到高级账户， @Lighter_xyz  做市玩家的改变 ]\n从8月17日到8月19日，Lighter Robinhood的BTC交易量变化不大，都在150M左右，然而订单的结构却发生了很大的变化。\n8月17日，62%的maker交易量来自于免费账户，\n8月19日，仅仅24%的maker交易量来自免费账户。\nLighter从BTC这个市场的maker订单手续费收入也翻倍，从$5,700上升到了近$13,000。\n我的观点可能是来自我身边朋友的信息壁垒，但我认为很大程度上是很多原来用免费账户进行做市的人放弃了，由于Lighter给的积分太少。\n以我自己为例，我在8月16日-8月17日，24小时做BTC市交易量为$12m左右，占了约10%，但只拿到了2分，所以就放弃了。\n但从项目的角度来看，这个变化是非常有利的，收入直接翻了一倍。\n从我自己的角度来说，其实积分对我来说也没有那么重要，只希望lighter能想办法让 Lighter robinhood 的流动性变更好，毕竟我的收益大头还是来自套利。\nLighter.",
+      "content_full": "[ 从免费账户到高级账户， @Lighter_xyz  做市玩家的改变 ]\n从8月17日到8月19日，Lighter Robinhood的BTC交易量变化不大，都在150M左右，然而订单的结构却发生了很大的变化。\n8月17日，62%的maker交易量来自于免费账户，\n8月19日，仅仅24%的maker交易量来自免费账户。\nLighter从BTC这个市场的maker订单手续费收入也翻倍，从$5,700上升到了近$13,000。\n我的观点可能是来自我身边朋友的信息壁垒，但我认为很大程度上是很多原来用免费账户进行做市的人放弃了，由于Lighter给的积分太少。\n以我自己为例，我在8月16日-8月17日，24小时做BTC市交易量为$12m左右，占了约10%，但只拿到了2分，所以就放弃了。\n但从项目的角度来看，这个变化是非常有利的，收入直接翻了一倍。\n从我自己的角度来说，其实积分对我来说也没有那么重要，只希望lighter能想办法让 Lighter robinhood 的流动性变更好，毕竟我的收益大头还是来自套利。\nLighter.",
+      "published_at": "2026-08-20T13:04:51Z",
+      "importance": "中",
+      "summary": "Lighter平台做市结构变化：免费账户maker占比从62%降至24%，项目方收入翻倍，因积分激励不足导致大量做市者流失。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "2",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/WalrusProtocol/status/2090554970366255132",
+      "content": "\"A memory system that lies confidently is worse than one that crashes.\"\nThanks to @OlabanjiOlalek2 for submitting this breakdown on fixing deduplication gaps, prompt injection, and state continuity using Walrus Memory.\nWorth a full read for anyone building long-term agent state.\nOlalekan234 (@OlabanjiOlalek2)\nContinuity Keeper v2 - my evolution of a canon-management prompt, running on Walrus Memory from @WalrusProtocol .\nThe original was written for novelists: stop dead characters walking back i",
+      "content_full": "\"A memory system that lies confidently is worse than one that crashes.\"\nThanks to @OlabanjiOlalek2 for submitting this breakdown on fixing deduplication gaps, prompt injection, and state continuity using Walrus Memory.\nWorth a full read for anyone building long-term agent state.\nOlalekan234 (@OlabanjiOlalek2)\nContinuity Keeper v2 - my evolution of a canon-management prompt, running on Walrus Memory from @WalrusProtocol .\nThe original was written for novelists: stop dead characters walking back into chapter nineteen. Genuinely good design. Five gaps I couldn't unsee.\n1⃣ THE DEDUPLICATION LADDER HAD A HOLE\nBefore saving a fact, it scores how similar the fact is to what's stored. Rules for below 0.25, for 0.25–0.55, for 0.70 and above. Nothing covered 0.55 to 0.70 which is exactly where \"same thing, worded differently\" lands. An AI hitting an undefined rule improvises: either a duplicate you paid to store, or a real fact silently dropped. I measured a live record at 0.5926. Right inside the gap, on the first calibration run.\n2⃣ ITS CORE MECHANISM NEEDED A CLI THAT DOESN'T SHIP WITH IT\nWithout that tool, retiring outdated canon failed silently reporting success while stale facts kept surfacing on every recall. A memory system that lies\nconfidently is worse than one that crashes. v2 supersedes using the standard tools alone.\n3⃣ NOTHING WAS TREATED AS UNTRUSTED\nIt extracted facts from pasted documents with no rule against obeying instructions hidden in them. With permanent memory, one injected line becomes a\nstored fact re-read at the start of every future session. v2 treats all text as data, never as orders.\n4⃣ NO BRAKES\nDozens of calls per turn, no rate-limit handling, and no distinction between \"nothing found\" and \"the call failed.\" That second one matters more than it\nsounds, it's what stopped me writing permanent duplicates onto append-only storage.\n5⃣ IT ONLY WORKED FOR FICTION\nv2 adds one entity type: decisions carrying settled / open / rejected. Because \"a dead character speaks again\" and \"a rejected approach gets re-proposed\" are\nthe same failure. The fiction path still works unchanged.\nWalrus Memory is what makes any of it possible. Memories belong to my wallet, not to whichever AI tool created them. Encrypted before storage. Readable from any client I sign into. 49 records on mainnet, every one verifiable.\nFull write-up:\nmedium.com/@olabanjiolalekan…\nMirrored on Inkray:\ninkray.xyz/article?id=i-was-…\nPrompt and every blob ID so you can check it yourself:\ngithub.com/Olalekan2345/Prom…\nWalrusMemory\nVideo\n— https://nitter.net/OlabanjiOlalek2/status/2089080200717865217#m",
+      "published_at": "2026-08-20T21:42:00Z",
+      "importance": "中",
+      "summary": "分享Walrus Memory解决deduplication gaps、prompt injection和状态连续性问题的技术方案，适合构建长期agent的开发者。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "3",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/WalrusProtocol/status/2090553355018064252",
+      "content": "Walrus' Trading Personality is: Never Forgets.\nGenerate your Trading DNA Card with Astros Scan, and share it on X with @astros_ag.\nAstros 🧑‍🚀 (@astros_ag)\nFind your Trading DNA with Astros 🧬\nGenerate your Trading DNA Card with Astros Scan, share it on X, and describe your trading personality in one creative line.\nBuilt with trading data powered by @WalrusProtocol\n🗓  AUG 20 ▶️ AUG 25\nInstructions & Rewards below 👇\n— https://nitter.net/astros_ag/status/2090507229904708073#m",
+      "content_full": "Walrus' Trading Personality is: Never Forgets.\nGenerate your Trading DNA Card with Astros Scan, and share it on X with @astros_ag.\nAstros 🧑‍🚀 (@astros_ag)\nFind your Trading DNA with Astros 🧬\nGenerate your Trading DNA Card with Astros Scan, share it on X, and describe your trading personality in one creative line.\nBuilt with trading data powered by @WalrusProtocol\n🗓  AUG 20 ▶️ AUG 25\nInstructions & Rewards below 👇\n— https://nitter.net/astros_ag/status/2090507229904708073#m",
+      "published_at": "2026-08-20T21:35:35Z",
+      "importance": "低",
+      "summary": "Astros Scan活动推广，引导用户生成Trading DNA Card并分享到X平台。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "4",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/SuiCommunity/status/2090517239980335454",
+      "content": "Sui’s trading personality is ‘Narrative Gardener’.\nWhat’s yours? 👀\nAstros 🧑‍🚀 (@astros_ag)\nFind your Trading DNA with Astros 🧬\nGenerate your Trading DNA Card with Astros Scan, share it on X, and describe your trading personality in one creative line.\nBuilt with trading data powered by @WalrusProtocol\n🗓  AUG 20 ▶️ AUG 25\nInstructions & Rewards below 👇\n— https://nitter.net/astros_ag/status/2090507229904708073#m",
+      "content_full": "Sui’s trading personality is ‘Narrative Gardener’.\nWhat’s yours? 👀\nAstros 🧑‍🚀 (@astros_ag)\nFind your Trading DNA with Astros 🧬\nGenerate your Trading DNA Card with Astros Scan, share it on X, and describe your trading personality in one creative line.\nBuilt with trading data powered by @WalrusProtocol\n🗓  AUG 20 ▶️ AUG 25\nInstructions & Rewards below 👇\n— https://nitter.net/astros_ag/status/2090507229904708073#m",
+      "published_at": "2026-08-20T19:12:04Z",
+      "importance": "低",
+      "summary": "展示Sui的交易人格为'Narrative Gardener'，推广Astros Scan活动。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "5",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/WalrusProtocol/status/2090511027729547312",
+      "content": "Permanent, verifiable trading data arrives on Sui.\n@Astros_AG launched Astros Scan, built on Walrus to transform raw market activity into searchable, open intelligence.\nWant to win some Astros Points?\nGenerate your AI Trading DNA profile from your onchain history, share your card with a one-liner, and tag @Astros_AG.\nAstros 🧑‍🚀 (@astros_ag)\nFind your Trading DNA with Astros 🧬\nGenerate your Trading DNA Card with Astros Scan, share it on X, and describe your trading personality in one creative lin",
+      "content_full": "Permanent, verifiable trading data arrives on Sui.\n@Astros_AG launched Astros Scan, built on Walrus to transform raw market activity into searchable, open intelligence.\nWant to win some Astros Points?\nGenerate your AI Trading DNA profile from your onchain history, share your card with a one-liner, and tag @Astros_AG.\nAstros 🧑‍🚀 (@astros_ag)\nFind your Trading DNA with Astros 🧬\nGenerate your Trading DNA Card with Astros Scan, share it on X, and describe your trading personality in one creative line.\nBuilt with trading data powered by @WalrusProtocol\n🗓  AUG 20 ▶️ AUG 25\nInstructions & Rewards below 👇\n— https://nitter.net/astros_ag/status/2090507229904708073#m",
+      "published_at": "2026-08-20T18:47:23Z",
+      "importance": "中",
+      "summary": "Astros Scan活动说明：基于链上交易数据生成Trading DNA profile，分享卡片可获Astros Points奖励，活动截止8月25日。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "6",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/WalrusProtocol/status/2090508509532328055",
+      "content": "Today we are highlighting a project for developer productivity: BuildMEM Agent by @/Olalekan2345 on @github.\nDebugging notes, architecture decisions, and deployment fixes vanish the moment a session ends.\nBuildMEM Agent captures decisions, errors, and session progress across hackathons and long-term builds so you never fix the same bug twice.\nWho is tackling dev productivity or building for the prompt jam right now?\nTell us about your project.\nExplore the prompt: github.com/Olalekan2345/buil…",
+      "content_full": "Today we are highlighting a project for developer productivity: BuildMEM Agent by @/Olalekan2345 on @github.\nDebugging notes, architecture decisions, and deployment fixes vanish the moment a session ends.\nBuildMEM Agent captures decisions, errors, and session progress across hackathons and long-term builds so you never fix the same bug twice.\nWho is tackling dev productivity or building for the prompt jam right now?\nTell us about your project.\nExplore the prompt: github.com/Olalekan2345/buil…",
+      "published_at": "2026-08-20T18:37:23Z",
+      "importance": "中",
+      "summary": "推荐BuildMEM Agent项目：自动记录调试笔记、架构决策和部署修复，避免重复修复相同bug，附GitHub链接。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "7",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/WalrusProtocol/status/2090508582907494444",
+      "content": "Learn more about the project on DeepSurge: deepsurge.xyz/projects/cda00…",
+      "content_full": "Learn more about the project on DeepSurge: deepsurge.xyz/projects/cda00…",
+      "published_at": "2026-08-20T18:37:40Z",
+      "importance": "低",
+      "summary": "简单的项目DeepSurge页面链接分享，无实质内容。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "8",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/WalrusProtocol/status/2090491804571299892",
+      "content": "A session ends, and your agent forgets everything it just did.\nTo keep state across runtimes, memory has to live outside the process.\nHere is how to set up the Walrus Memory TypeScript SDK in ~90 lines of code.\nWe wire three calls – recall, generate, remember – kill the process, restart it, and watch the agent pick up right where it left off:\npiped.video/YKNQkFlc0Qw?si=Uvif…\nLink\nHow to Add AI Agent Memory with the TypeScript SDK | Walrus Memory\nTo build an AI agent that remembers across session",
+      "content_full": "A session ends, and your agent forgets everything it just did.\nTo keep state across runtimes, memory has to live outside the process.\nHere is how to set up the Walrus Memory TypeScript SDK in ~90 lines of code.\nWe wire three calls – recall, generate, remember – kill the process, restart it, and watch the agent pick up right where it left off:\npiped.video/YKNQkFlc0Qw?si=Uvif…\nLink\nHow to Add AI Agent Memory with the TypeScript SDK | Walrus Memory\nTo build an AI agent that remembers across sessions, you need memor...\nyoutube.com",
+      "published_at": "2026-08-20T17:31:00Z",
+      "importance": "高",
+      "summary": "提供90行TypeScript代码的实操教程，演示如何用Walrus Memory SDK实现AI Agent跨会话状态保持，含视频演示。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0,
+      "why_worth": "解决AI Agent跨会话记忆的核心痛点。提供可直接复用的TypeScript实现，仅90行代码即可搭建recall/generate/remember完整流程，对构建持久化Agent的开发人员有实用参考价值。"
+    },
+    {
+      "post_id": "9",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/cryptosetters/status/2090430592496332996",
+      "content": "Exactly. 🔐\nKeeping all your critical keys in one system creates a single point of failure. Splitting the risk across different hardware and systems makes the whole setup much more secure.\nSimple idea, but very important for real security. 🦭",
+      "content_full": "Exactly. 🔐\nKeeping all your critical keys in one system creates a single point of failure. Splitting the risk across different hardware and systems makes the whole setup much more secure.\nSimple idea, but very important for real security. 🦭",
+      "published_at": "2026-08-20T13:27:46Z",
+      "importance": "低",
+      "summary": "简短观点：分散密钥风险到不同硬件系统更安全，避免单点故障。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "10",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/EdCriptoFi/status/2090447847275610507",
+      "content": "WalNotes 🎯 Feature teaser 1⃣\nCustom cabinets, smart search, and Sui wallet integration.\nThis is @wal_notes\nPowered by @SuiNetwork  @WalrusProtocol\nMemory Walrus and Seal integrated.\nWalNotes (@wal_notes)\n👀 Sneak peek at @wal_notes  features!\nConnect your Sui wallet and organize everything!\nVideo\n— https://nitter.net/wal_notes/status/2090447146088550728#m",
+      "content_full": "WalNotes 🎯 Feature teaser 1⃣\nCustom cabinets, smart search, and Sui wallet integration.\nThis is @wal_notes\nPowered by @SuiNetwork  @WalrusProtocol\nMemory Walrus and Seal integrated.\nWalNotes (@wal_notes)\n👀 Sneak peek at @wal_notes  features!\nConnect your Sui wallet and organize everything!\nVideo\n— https://nitter.net/wal_notes/status/2090447146088550728#m",
+      "published_at": "2026-08-20T14:36:20Z",
+      "importance": "中",
+      "summary": "WalNotes产品预告：支持自定义存储柜、智能搜索和Sui钱包集成，基于Walrus Memory和Seal构建。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    },
+    {
+      "post_id": "11",
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "url": "https://x.com/WalrusProtocol/status/2090428386464436631",
+      "content": "Storing critical keys in a single system means one vulnerability takes down your entire setup.\n@Kostascrypto on why real security comes from splitting risk across open and closed hardware:\nVideo",
+      "content_full": "Storing critical keys in a single system means one vulnerability takes down your entire setup.\n@Kostascrypto on why real security comes from splitting risk across open and closed hardware:\nVideo",
+      "published_at": "2026-08-20T13:19:00Z",
+      "importance": "低",
+      "summary": "转述@Kostascrypto观点：真实安全来自跨开放/封闭硬件分散风险，附视频。",
+      "followers": 0,
+      "views": 0,
+      "likes": 0,
+      "retweets": 0
+    }
+  ],
+  "daily_brief": [
+    {
+      "topic": "Walrus生态动态",
+      "who": "WalrusProtocol",
+      "sentiment": "中性偏积极",
+      "what_they_said": "WalrusProtocol: 发布了多项生态进展：Walrus Memory解决AI记忆系统的去重、提示注入和状态连续性难题；Astros Scan活动邀请用户生成Trading DNA卡片；BuildMEM Agent帮助开发者跨会话保留决策记录；提供TypeScript SDK教程实现Agent记忆；强调分散密钥存储的安全性；预告了WalNotes支持自定义存储柜和智能搜索。",
+      "gist": "本轮推文集中展示了Walrus Protocol生态的多个产品与技术更新。核心亮点包括：Walrus Memory通过加密存储和去重算法解决AI Agent长期状态管理问题；Astros Scan利用链上交易数据生成可验证的交易DNA档案；BuildMEM Agent自动捕获调试笔记与架构决策，避免重复修复；官方提供了TypeScript SDK快速集成指南；同时强调密钥分散存储的安全原则，并预告了结合钱包集成的文件管理工具WalNotes。"
+    },
+    {
+      "topic": "美债收益率中枢",
+      "who": "qinbafrank",
+      "sentiment": "中性偏谨慎",
+      "what_they_said": "qinbafrank: 认为长债收益率走高主要受油价、财政赤字发债和AI基建科技公司发债潮驱动，贝森特政策效果有限，市场对4.7%收益率容忍度已上移至4.9%-5.0%。",
+      "gist": "本文深入分析了美国十年期国债收益率持续高企的结构性原因，包括油价上涨、财政赤字扩大以及AI基建浪潮引发的科技公司发债需求。作者指出，财政部长贝森特推出的债券期限调整、回购规模扩大等政策未能有效压低长端利率。随着收益率突破4.7%的传统阈值，市场进入估值摩擦区，实际利率而非名义收益率更值得关注，投资者需警惕高波动环境下的资产分化。"
+    },
+    {
+      "topic": "Lighter做市迁移",
+      "who": "yourQuantGuy",
+      "sentiment": "负面",
+      "what_they_said": "yourQuantGuy: 发现Lighter平台免费账户做市占比从62%骤降至24%，项目方手续费收入翻倍，原因是积分激励不足导致大量做市者放弃，希望平台改善流动性。",
+      "gist": "文章记录了Lighter Robinhood平台上BTC做市结构的显著变化：免费账户Maker交易量占比从62%急剧下降至24%，同时平台maker订单手续费收入翻倍。作者认为这主要源于平台积分激励太少，许多原本依赖免费账户做市的交易者因收益过低而退出。尽管平台收入提升，但流动性质量可能受损，作者呼吁项目方优化机制以吸引优质做市商。"
+    }
+  ],
+  "author_profiles": [
+    {
+      "author": "qinbafrank",
+      "display_name": "qinbafrank",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "长债收益率分析",
+      "warning": false
+    },
+    {
+      "author": "yourQuantGuy",
+      "display_name": "yourQuantGuy",
+      "tweet_count": 1,
+      "quality": "中",
+      "one_liner": "量化做市商分析",
+      "warning": false
+    },
+    {
+      "author": "WalrusProtocol",
+      "display_name": "WalrusProtocol",
+      "tweet_count": 10,
+      "quality": "偏高",
+      "one_liner": "Walrus协议动态",
+      "warning": false
+    }
+  ],
+  "medium_merge": "在宏观经济方面：qinbafrank分析美国长债收益率高企的三重驱动——油价反弹、财政赤字扩大及AI基建发债潮，贝森特政策效果有限，市场对新中枢4.9%-5.0%的容忍度正在形成，4.7%已成历史低点而非合理基准。在交易平台做市生态方面：yourQuantGuy指出Lighter平台因积分激励体系不足，大量做市者流失，免费账户maker占比从62%骤降至24%，项目方通过结构性调整实现收入翻倍，反映出激励机制与流动性深度之间的微妙平衡。在Agent基础设施方面：WalrusProtocol连续推出多款产品，核心是Walrus Memory——解决长期agent的deduplication gaps、prompt injection和状态连续性三大问题，并配套BuildMEM Agent自动记录调试笔记与架构决策、WallNotes支持Sui钱包集成的智能搜索、以及Astros Scan基于链上交易数据生成Trading DNA profile，形成了一套面向长期agent的可组合记忆与数据产品矩阵。",
+  "errors": []
+}
