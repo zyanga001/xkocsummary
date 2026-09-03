@@ -1,0 +1,78 @@
+name: Probe Free Providers
+
+on:
+  workflow_dispatch:
+    inputs:
+      handles:
+        description: 'comma-separated handles to probe (default VitalikButerin,elonmusk,yujuhao)'
+        required: false
+        default: 'VitalikButerin,elonmusk,yujuhao,0xXIAOc,predictdotfun'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install -q requests
+      - name: Probe providers from GitHub runner
+        run: |
+          cat > /tmp/probe.py << 'PY'
+          import requests, time, json, sys
+          handles = [h.strip() for h in "${{ inputs.handles }}".split(",") if h.strip()]
+          if not handles or handles == [""]:
+              handles = ["VitalikButerin","elonmusk","yujuhao"]
+          UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+          def test_url(name, url):
+              try:
+                  r = requests.get(url, headers={"User-Agent": UA, "Accept":"*/*"}, timeout=10)
+                  body = r.text[:600].replace("\n"," ")
+                  return r.status_code, len(r.text), body[:300]
+              except Exception as e:
+                  return 0, 0, str(e)[:300]
+
+          providers = [
+              ("nitter.net", lambda h: f"https://nitter.net/{h}/rss"),
+              ("xcancel.com", lambda h: f"https://xcancel.com/{h}/rss"),
+              ("nitter.poast.org", lambda h: f"https://nitter.poast.org/{h}/rss"),
+              ("nitter.privacydev.net", lambda h: f"https://nitter.privacydev.net/{h}/rss"),
+              ("nitter.cz", lambda h: f"https://nitter.cz/{h}/rss"),
+              ("nitter.tiekoetter.com", lambda h: f"https://nitter.tiekoetter.com/{h}/rss"),
+              ("cdn.syndication", lambda h: f"https://cdn.syndication.twimg.com/timeline/profile?screen_name={h}"),
+              ("api.fxtwitter.com/user", lambda h: f"https://api.fxtwitter.com/{h}"),
+              ("api.vxTwitter.com/user", lambda h: f"https://api.vxTwitter.com/{h}"),
+              ("publish.oembed", lambda h: f"https://publish.twitter.com/oembed?url=https://twitter.com/{h}"),
+              ("jina_x", lambda h: f"https://cc.bingj.com/cache.cgi?d=1&m=https://x.com/{h}&w=1"),
+          ]
+
+          results = {}
+          for name, fn in providers:
+              print(f"\n=== {name} ===", flush=True)
+              ok = 0
+              for h in handles:
+                  url = fn(h)
+                  code, length, snippet = test_url(name, url)
+                  print(f"{h}: {code} len={length} :: {snippet[:200]}", flush=True)
+                  if code == 200 and length > 200:
+                      ok += 1
+                  time.sleep(0.5)
+              results[name] = ok
+              time.sleep(0.5)
+          print("\n=== SUMMARY (how many handles returned >200 bytes with 200) ===", flush=True)
+          for k,v in results.items():
+              print(f"{k}: {v}/{len(handles)}", flush=True)
+
+          # Also test snscrape / twikit availability (just import check)
+          try:
+              import importlib.util
+              print("snscrape available:", importlib.util.find_spec("snscrape") is not None)
+          except: pass
+          PY
+          python /tmp/probe.py
