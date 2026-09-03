@@ -1,0 +1,90 @@
+name: Probe Playwright X Scrape
+
+on:
+  workflow_dispatch:
+    inputs:
+      handles:
+        description: 'comma-separated handles'
+        default: 'VitalikButerin,elonmusk,yujuhao,0xXIAOc,predictdotfun,VIP8888883,Ludamao_com,AnLaoliu,hanking66,BroBean88'
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install -q playwright
+          npx playwright install --with-deps chromium
+      - name: Scrape X timelines via browser
+        run: |
+          cat > /tmp/scrape.js << 'JS'
+          const { chromium } = require('playwright');
+          const handles = (process.env.HANDLES || 'VitalikButerin,elonmusk').split(',').map(s=>s.trim()).filter(Boolean);
+          const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+          (async () => {
+            const browser = await chromium.launch({ args: ['--no-sandbox','--disable-blink-features=AutomationControlled'] });
+            const context = await browser.newContext({ userAgent: UA, viewport: { width: 1280, height: 900 }, locale: 'en-US' });
+            let totalOk = 0;
+            for (const h of handles) {
+              const url = `https://x.com/${h}`;
+              const page = await context.newPage();
+              console.log(`\n=== ${h} -> ${url} ===`);
+              try {
+                const resp = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20000 });
+                console.log(`goto status: ${resp ? resp.status() : 'no resp'} finalUrl: ${page.url()}`);
+                // wait a bit for JS
+                await page.waitForTimeout(5000);
+                // check if login wall
+                const bodyText = await page.content();
+                const hasLogin = bodyText.includes('Log in') && bodyText.includes('Sign up');
+                const title = await page.title();
+                console.log(`title: ${title} hasLoginWall: ${hasLogin} bodyLen: ${bodyText.length}`);
+                // try to find tweets
+                let tweets = [];
+                try {
+                  await page.waitForSelector('article[data-testid="tweet"]', { timeout: 7000 });
+                  tweets = await page.$$eval('article[data-testid="tweet"]', els => els.map(el => {
+                    const t = el.innerText.slice(0,300).replace(/\n/g,' | ');
+                    const timeEl = el.querySelector('time');
+                    const time = timeEl ? timeEl.getAttribute('datetime') : '';
+                    const linkEl = el.querySelector('a[href*="/status/"]');
+                    const link = linkEl ? linkEl.getAttribute('href') : '';
+                    return { time, link, text: t };
+                  }));
+                } catch (e) {
+                  console.log(`no tweet selector: ${e.message.slice(0,200)}`);
+                }
+                console.log(`found ${tweets.length} tweets`);
+                tweets.slice(0,2).forEach((tw,i)=> console.log(`  [${i}] ${tw.time} ${tw.link} :: ${tw.text.slice(0,150)}`));
+                // also try alternative selector for timeline
+                if (tweets.length === 0) {
+                  const htmlSnippet = bodyText.slice(0,2000).replace(/\n/g,' ');
+                  console.log(`html snippet: ${htmlSnippet.slice(0,800)}`);
+                } else {
+                  totalOk++;
+                }
+              } catch (e) {
+                console.log(`ERR ${h}: ${e.message.slice(0,500)}`);
+              } finally {
+                await page.close();
+                await new Promise(r=>setTimeout(r,1200));
+              }
+            }
+            console.log(`\n=== SUMMARY: ${totalOk}/${handles.length} handles got >=1 tweet ===`);
+            await browser.close();
+            if (totalOk === 0) console.log('RESULT: BROWSER SCRAPE FAILED - no tweets from any handle (likely login wall)');
+            else if (totalOk < handles.length/2) console.log('RESULT: PARTIAL - unstable');
+            else console.log('RESULT: SUCCESS - stable');
+          })();
+          JS
+          HANDLES="${{ inputs.handles }}" node /tmp/scrape.js
