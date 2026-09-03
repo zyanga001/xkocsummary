@@ -15,12 +15,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Install deps
+        run: pip install -q requests
       - name: Test guest token and snscrape
         run: |
           cat > /tmp/probe3.py << 'PY'
           import requests, json, time, sys, re
           UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-          # Public web bearer (known)
           BEARER = "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
           print("=== test guest activate ===")
           try:
@@ -30,73 +31,36 @@ jobs:
           except Exception as e:
               print("guest err", e)
               guest = None
-
           if guest:
-              print("guest_token:", guest[:20]+"...")
-              # try timeline endpoint
-              # Use UserByScreenName
+              print("guest_token ok len", len(guest))
               print("\n=== UserByScreenName ===")
               try:
-                  # This endpoint is used by web client
                   url = "https://api.x.com/graphql/hc-pka9A7gyS3xODIafnrQ/UserByScreenName"
                   params = {"variables": json.dumps({"screen_name":"VitalikButerin"})}
-                  headers = {
-                      "Authorization": f"Bearer {BEARER}",
-                      "x-guest-token": guest,
-                      "User-Agent": UA,
-                      "x-twitter-active-user": "yes",
-                  }
+                  headers = {"Authorization": f"Bearer {BEARER}", "x-guest-token": guest, "User-Agent": UA, "x-twitter-active-user": "yes"}
                   r = requests.get(url, params=params, headers=headers, timeout=12)
-                  print("UserByScreenName:", r.status_code, r.text[:1500])
+                  print("UserByScreenName:", r.status_code, r.text[:2000])
               except Exception as e:
                   print("UserByScreenName err", e)
-
-              print("\n=== Tweet detail test ===")
-              # Try to fetch via fxTwitter timeline alternative: check if guest can fetch timeline via syndication publish?
-              # Also try nitter alternative: try https://api.x.com/2/timeline/profile/295218901.json
-              try:
-                  r = requests.get("https://api.x.com/2/timeline/profile/295218901.json", headers={"Authorization": f"Bearer {BEARER}", "x-guest-token": guest}, timeout=12)
-                  print("timeline/profile:", r.status_code, r.text[:1200])
-              except Exception as e:
-                  print("timeline err", e)
           else:
-              print("no guest token, skip")
-
-          print("\n=== try snscrape on 3.11 ===")
+              print("no guest token")
+          print("\n=== snscrape on 3.11 ===")
           try:
-              import subprocess, sys
+              import subprocess
               subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "snscrape==0.7.0.20230622"])
               import snscrape.modules.twitter as sntwitter
               print("snscrape import ok")
               scraper = sntwitter.TwitterUserScraper("VitalikButerin")
               for i, tweet in enumerate(scraper.get_items()):
-                  print(f"snscrape {i}: {tweet.date} {tweet.id} {tweet.content[:80]}")
+                  print(f"snscrape {i}: {tweet.date} {tweet.id} {str(tweet.content)[:100]}")
                   if i>=1:
                       break
-                  time.sleep(0.2)
+              print("snscrape done")
           except Exception as e:
               import traceback
               traceback.print_exc()
-              print("snscrape err:", e)
-
-          print("\n=== try twikit ===")
-          try:
-              import subprocess, sys
-              subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "twikit"])
-              from twikit import Client
-              print("twikit import ok", Client)
-              client = Client('en-US')
-              # twikit can work with guest? Try get user without login?
-              # It usually needs auth, but try guest flow
-              print("twikit version check done")
-          except Exception as e:
-              import traceback
-              traceback.print_exc()
-
-          print("\n=== try nitter instance list expanded ===")
-          # Try more public nitters from https://github.com/zedeus/nitter/wiki/Instances
-          nitters = ["https://nitter.woodland.cafe","https://nitter.tiekoetter.com","https://nitter.cz","https://nuku.trabun.org"]
-          for base in nitters:
+          print("\n=== public nitter list ===")
+          for base in ["https://nitter.woodland.cafe","https://nitter.tiekoetter.com","https://nitter.cz","https://nuku.trabun.org"]:
               try:
                   r = requests.get(f"{base}/VitalikButerin/rss", headers={"User-Agent": UA}, timeout=8)
                   body = r.text
@@ -104,6 +68,5 @@ jobs:
                   print(f"{base}: {r.status_code} items={items} {body[:200].replace(chr(10),' ')}")
               except Exception as e:
                   print(f"{base} err {e}")
-              time.sleep(0.5)
           PY
           python /tmp/probe3.py
