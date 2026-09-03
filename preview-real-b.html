@@ -1,0 +1,1094 @@
+<title>信号台 · 晚报 07-26 — 真实数据演示（方案B）</title>
+<style>
+  /* ══════════════════════════════════════════════════════════
+     信号台 · 方向 B「EDITORIAL」— 杂志编辑向重设计
+     宋体标题系统 / 章节页区隔 / 蜂群观点光谱 / 刻度尺信号率
+     票券行动项 / 杂志数据栏。无卡片，以「栏线」结构页面。
+     ══════════════════════════════════════════════════════════ */
+  :root {
+    color-scheme: light;
+    --serif: "Songti SC", "STSong", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+    --paper: #F9F7F2;        /* 暖纸面 */
+    --paper-2: #F0EDE3;      /* 章节垫纸 */
+    --card: #FCFBF7;         /* 票券纸 */
+    --ink: #211E19;
+    --ink-2: #50493F;
+    --muted: #6E6960;
+    --line: #D8D2C4;
+    --line-soft: #E8E3D6;
+
+    --accent: #24568C;       /* 品牌：普鲁士蓝（与涨跌红绿分离） */
+    --accent-ink: #1B4370;
+    --accent-weak: #E5EAF0;
+
+    --bull: #1C6B36;         /* 语义：多/涨（validator-passed pair） */
+    --bear: #BE4A66;         /* 语义：空/跌 */
+    --neutral: #7C766B;      /* 光谱中点：中性灰（空心环） */
+
+    --warn-ink: #8A5A00;
+    --warn-bg: #F5E9CB;
+    --ok-ink: #22683A;
+    --ok-bg: #E4EDDD;
+    --demo-bg: #F5E9CB;
+    --demo-ink: #8A5A00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --paper: #17171B;
+      --paper-2: #1F1E24;
+      --card: #1C1C21;
+      --ink: #EAE6DC;
+      --ink-2: #B9B3A6;
+      --muted: #8A867D;
+      --line: #38373D;
+      --line-soft: #26262B;
+      --accent: #8FB3E2;
+      --accent-ink: #A9C6EC;
+      --accent-weak: #202A3A;
+      --bull: #2F9159;
+      --bear: #D6607A;
+      --neutral: #88837A;
+      --warn-ink: #D9B45E;
+      --warn-bg: #2F2812;
+      --ok-ink: #7CC291;
+      --ok-bg: #1C2E20;
+      --demo-bg: #2F2812;
+      --demo-ink: #D9B45E;
+    }
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --paper: #F9F7F2; --paper-2: #F0EDE3; --card: #FCFBF7;
+    --ink: #211E19; --ink-2: #50493F; --muted: #6E6960;
+    --line: #D8D2C4; --line-soft: #E8E3D6;
+    --accent: #24568C; --accent-ink: #1B4370; --accent-weak: #E5EAF0;
+    --bull: #1C6B36; --bear: #BE4A66; --neutral: #7C766B;
+    --warn-ink: #8A5A00; --warn-bg: #F5E9CB; --ok-ink: #22683A; --ok-bg: #E4EDDD;
+    --demo-bg: #F5E9CB; --demo-ink: #8A5A00;
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #17171B; --paper-2: #1F1E24; --card: #1C1C21;
+    --ink: #EAE6DC; --ink-2: #B9B3A6; --muted: #8A867D;
+    --line: #38373D; --line-soft: #26262B;
+    --accent: #8FB3E2; --accent-ink: #A9C6EC; --accent-weak: #202A3A;
+    --bull: #2F9159; --bear: #D6607A; --neutral: #88837A;
+    --warn-ink: #D9B45E; --warn-bg: #2F2812; --ok-ink: #7CC291; --ok-bg: #1C2E20;
+    --demo-bg: #2F2812; --demo-ink: #D9B45E;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  h1, h2, h3, h4, p, figure, figcaption { margin: 0; }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+    .toc a { transition: color .15s ease, border-color .15s ease; }
+  }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.85;
+    font-variant-numeric: tabular-nums;   /* 全站数字表格化对齐 */
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent-weak); }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px;
+  }
+
+  /* ── 演示提示条 ── */
+  .demo-ribbon {
+    background: var(--demo-bg); color: var(--demo-ink);
+    text-align: center; padding: 6px 16px;
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em;
+  }
+
+  .shell { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+
+  /* ══ 报头（nameplate）══ */
+  .masthead { padding-top: 36px; }
+  .masthead-row {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    gap: 12px 20px; flex-wrap: wrap;
+  }
+  .brand {
+    font-family: var(--serif);
+    font-size: 46px; font-weight: 900; letter-spacing: 0.16em;
+    line-height: 1.15;
+  }
+  .brand small {
+    display: block; margin-top: 6px;
+    font-family: var(--mono); font-size: 10px; font-weight: 400;
+    letter-spacing: 0.34em; color: var(--muted);
+  }
+  .issue { text-align: right; padding-bottom: 4px; }
+  .issue .date {
+    font-family: var(--serif); font-size: 17px; font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .issue .slot {
+    display: inline-block; margin-left: 10px; padding: 2px 12px;
+    background: var(--ink); color: var(--paper);
+    font-family: var(--serif); font-size: 14px; font-weight: 700;
+    letter-spacing: 0.3em; text-indent: 0.3em;
+  }
+  .rule-double { border-top: 3px solid var(--ink); margin-top: 18px; }
+  .rule-double::after { content: ""; display: block; height: 1px; background: var(--ink); margin-top: 3px; }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 4px 18px;
+    padding: 9px 0; border-bottom: 1px solid var(--line);
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-2);
+  }
+  .meta-row .dot-ok::before {
+    content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--bull); margin-right: 6px; vertical-align: 1px;
+  }
+
+  /* ══ 目录（tab 栏）══ */
+  .toc {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--paper);
+    display: flex; gap: 0 22px; overflow-x: auto;
+    padding: 2px 0 0; border-bottom: 1px solid var(--line);
+    scrollbar-width: none;
+  }
+  .toc::-webkit-scrollbar { display: none; }
+  .toc a {
+    flex: none; padding: 10px 1px 8px;
+    font-size: 13px; color: var(--ink-2); white-space: nowrap;
+    border-bottom: 2px solid transparent; margin-bottom: -1px;
+  }
+  .toc a:hover { text-decoration: none; color: var(--ink); }
+  .toc a.on { color: var(--ink); font-weight: 700; border-bottom-color: var(--ink); }
+
+  /* ══ 章节页式区隔 ══ */
+  section { padding: 48px 0 4px; scroll-margin-top: 58px; }
+  .eyebrow {
+    border-top: 2.5px solid var(--ink);
+    padding-top: 14px; margin-bottom: 26px;
+    display: grid; grid-template-columns: 1fr auto;
+    column-gap: 24px; row-gap: 2px; align-items: end;
+  }
+  .eyebrow .no {
+    grid-column: 1;
+    font-family: var(--mono); font-size: 11.5px;
+    color: var(--accent); letter-spacing: 0.3em;
+  }
+  .eyebrow h2 {
+    grid-column: 1;
+    font-family: var(--serif); font-size: 27px; font-weight: 900;
+    letter-spacing: 0.08em; line-height: 1.35;
+  }
+  .eyebrow .prov {
+    grid-column: 2; grid-row: 1 / 3; align-self: end;
+    font-size: 11.5px; color: var(--muted); line-height: 1.7;
+    border-left: 2px solid var(--accent); padding-left: 10px;
+    max-width: 240px;
+  }
+
+  /* ══ 01 速览：垫纸导读页 ══ */
+  .band { background: var(--paper-2); padding: 8px 22px 6px; }
+  .tldr-item {
+    display: grid; grid-template-columns: 46px 1fr; gap: 14px;
+    padding: 16px 0; border-bottom: 1px solid var(--line);
+    font-size: 15.5px; line-height: 1.95;
+  }
+  .tldr-item:last-child { border-bottom: none; }
+  .tldr-item b { font-family: var(--serif); font-weight: 900; font-size: 16.5px; }
+  .tldr-item .n {
+    font-family: var(--serif); font-size: 28px; font-weight: 900;
+    color: var(--accent); line-height: 1.35;
+  }
+  .tldr-item .go { font-size: 12px; color: var(--muted); white-space: nowrap; margin-left: 8px; }
+
+  /* ══ 02 行动项：车票 / 撕页票券 ══ */
+  .actions { display: grid; gap: 16px; }
+  .ticket {
+    display: flex; background: var(--card);
+    border: 1px solid var(--line);
+  }
+  .stub {
+    flex: none; width: 106px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 1px; padding: 16px 8px; text-align: center;
+    background: var(--paper-2);
+  }
+  .ticket.urgent .stub { background: var(--warn-bg); }
+  .stub-cap {
+    font-size: 10.5px; letter-spacing: 0.4em; text-indent: 0.4em;
+    color: var(--muted);
+  }
+  .urgent .stub-cap { color: var(--warn-ink); }
+  .stub-date {
+    font-family: var(--serif); font-size: 27px; font-weight: 900;
+    line-height: 1.25; letter-spacing: 0.02em;
+  }
+  .stub-time { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  .stub-chip {
+    margin-top: 7px; font-size: 11.5px; font-weight: 700;
+    padding: 1px 9px; line-height: 1.8; white-space: nowrap;
+  }
+  .urgent .stub-chip { background: var(--warn-ink); color: var(--paper); }
+  .stub-chip.mild { border: 1px solid var(--warn-ink); color: var(--warn-ink); }
+  .stub-chip.calm { border: 1px solid var(--line); color: var(--muted); font-weight: 600; }
+  .tbody {
+    flex: 1; min-width: 0; position: relative;
+    padding: 15px 18px 14px 22px;
+    border-left: 1px dashed var(--line);   /* 撕票孔线 */
+  }
+  .tbody::before, .tbody::after {           /* 打孔 */
+    content: ""; position: absolute; left: -8px;
+    width: 15px; height: 15px; border-radius: 50%;
+    background: var(--paper); border: 1px solid var(--line);
+  }
+  .tbody::before { top: -8.5px; }
+  .tbody::after { bottom: -8.5px; }
+  .t-title { font-family: var(--serif); font-size: 17px; font-weight: 900; line-height: 1.5; }
+  .t-steps { margin-top: 5px; font-size: 13.5px; color: var(--ink-2); }
+  .t-src {
+    margin-top: 9px; padding-top: 8px; border-top: 1px solid var(--line-soft);
+    font-size: 12px; color: var(--muted);
+    display: flex; gap: 4px 16px; flex-wrap: wrap;
+  }
+  .t-src .risk { color: var(--warn-ink); }
+
+  /* ══ 03 焦点话题：无卡片，栏线 + 首字下沉 ══ */
+  .topic { padding: 26px 0 24px; border-bottom: 1px solid var(--line); }
+  .topic:first-of-type { padding-top: 2px; }
+  .topic-kicker {
+    display: flex; gap: 8px 12px; align-items: center; flex-wrap: wrap;
+    font-size: 12px; margin-bottom: 10px;
+  }
+  .chip {
+    display: inline-block; padding: 0 9px; line-height: 1.9;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+    border-radius: 2px;
+  }
+  .chip.new { color: var(--accent-ink); border: 1px solid currentColor; }
+  .chip.track { color: var(--muted); border: 1px solid var(--line); }
+  .topic-kicker .delta { color: var(--muted); }
+  .topic h3 {
+    font-family: var(--serif); font-size: 23px; font-weight: 900;
+    line-height: 1.55; letter-spacing: 0.015em; text-wrap: balance;
+  }
+  .topic-gist {
+    margin-top: 12px; font-size: 15px; line-height: 1.95;
+    text-align: justify; color: var(--ink);
+  }
+  .topic-gist::first-letter {
+    font-family: var(--serif); font-weight: 900;
+    font-size: 42px; line-height: 1;
+    float: left; padding: 7px 10px 0 0;
+    color: var(--accent-ink);
+  }
+
+  /* —— 观点光谱：具名蜂群图 —— */
+  .swarm { margin-top: 20px; }
+  .swarm-cap {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 11.5px; color: var(--muted); margin-bottom: 2px;
+  }
+  .swarm-cap .cl { letter-spacing: 0.24em; }
+  .swarm-cap .cr { font-family: var(--mono); }
+  .swarm-plot { position: relative; height: 102px; overflow-x: clip; }
+  .swarm-plot::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 51px; height: 1px;
+    background: var(--line);
+  }
+  .zt { position: absolute; top: 45px; width: 1px; height: 13px; background: var(--line); }
+  .swd { position: absolute; top: 51px; width: 0; height: 0; }
+  .swd .mk { position: absolute; transform: translate(-50%, -50%); }
+  .swd.bull .mk { width: 10px; height: 10px; border-radius: 50%; background: var(--bull); }
+  .swd.mid .mk {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--neutral);
+  }
+  .swd.bear .mk {
+    width: 9px; height: 9px; background: var(--bear); border-radius: 1.5px;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .swd em {
+    position: absolute; left: 0; transform: translateX(-50%);
+    font-style: normal; white-space: nowrap;
+    font-size: 10.5px; line-height: 1.1; color: var(--ink-2);
+  }
+  .swd::before { content: ""; position: absolute; left: -0.5px; width: 1px; background: var(--line); }
+  .lt em { top: -40px; }  .lt::before { top: -28px; height: 20px; }
+  .la em { top: -23px; }  .la::before { top: -12px; height: 5px; }
+  .lb em { top: 15px; }   .lb::before { top: 7px; height: 6px; }
+  .lc em { top: 33px; }   .lc::before { top: 7px; height: 24px; }
+  .el em { left: -6px; transform: none; }
+  .er em { left: auto; right: -6px; transform: none; }
+  .swarm-zones {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; text-align: center;
+    font-size: 11px; color: var(--muted); letter-spacing: 0.12em; padding-top: 4px;
+  }
+
+  /* —— 数据注脚 —— */
+  .datapoints { display: flex; flex-wrap: wrap; margin-top: 14px; row-gap: 4px; }
+  .datapoints span {
+    font-family: var(--mono); font-size: 12px; color: var(--ink-2);
+    padding: 0 14px; border-left: 1px solid var(--line); line-height: 1.9;
+  }
+  .datapoints span:first-child { border-left: none; padding-left: 0; }
+
+  /* —— 来源折叠 —— */
+  .topic details { margin-top: 14px; border-top: 1px solid var(--line-soft); }
+  .topic summary {
+    cursor: pointer; padding: 10px 0 2px; font-size: 12.5px; color: var(--accent);
+    user-select: none; list-style: none; letter-spacing: 0.02em;
+  }
+  .topic summary::-webkit-details-marker { display: none; }
+  .topic summary::before { content: "▸ "; }
+  .topic details[open] summary::before { content: "▾ "; }
+  .srcline {
+    display: grid; grid-template-columns: 30px 1fr auto; gap: 10px;
+    padding: 9px 0; border-bottom: 1px solid var(--line-soft);
+    font-size: 13.5px; align-items: baseline;
+  }
+  .srcline:last-child { border-bottom: none; }
+  .st {                                        /* 印章式立场标 */
+    font-family: var(--serif); font-size: 11.5px; font-weight: 700;
+    text-align: center; line-height: 1.8;
+    border: 1px solid currentColor; border-radius: 2px;
+    align-self: start; margin-top: 4px;
+  }
+  .st.bull { color: var(--bull); }
+  .st.mid  { color: var(--muted); }
+  .st.bear { color: var(--bear); }
+  .srcline .who { font-weight: 700; }
+  .srcline .eng {
+    font-family: var(--mono); font-size: 11px; color: var(--muted);
+    white-space: nowrap;
+  }
+  .degrade-note {
+    margin-top: 24px; padding: 11px 16px;
+    border-left: 2px solid var(--warn-ink);
+    background: var(--warn-bg); color: var(--warn-ink); font-size: 13px;
+  }
+
+  /* ══ 04 数据切片：杂志数据栏 ══ */
+  .databand {
+    border-top: 2.5px solid var(--ink);
+    display: grid; grid-template-columns: repeat(4, 1fr);
+  }
+  .datum { padding: 16px 12px 14px 18px; border-left: 1px solid var(--line); min-width: 0; }
+  .datum:first-child { border-left: none; padding-left: 0; }
+  .d-lbl { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; color: var(--muted); }
+  .d-val {
+    font-family: var(--serif); font-weight: 900;
+    font-size: clamp(23px, 3.8vw, 31px); line-height: 1.3;
+    margin-top: 4px; letter-spacing: 0.01em;
+  }
+  .d-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .up   { color: var(--bull); font-weight: 700; }
+  .down { color: var(--bear); font-weight: 700; }
+  .footnote {
+    font-size: 12px; color: var(--muted); margin-top: 14px;
+    padding-top: 8px; border-top: 1px dashed var(--line-soft); line-height: 1.8;
+  }
+
+  /* ══ 05 精读：书评式条目 ══ */
+  .read { padding: 18px 0 20px; border-bottom: 1px solid var(--line-soft); }
+  .read:last-of-type { border-bottom: none; }
+  .read h4 { font-family: var(--serif); font-size: 17.5px; font-weight: 900; line-height: 1.65; }
+  .read .why {
+    margin-top: 10px; padding: 1px 0 1px 14px;
+    border-left: 2px solid var(--accent);
+    font-size: 13.5px; color: var(--ink-2); line-height: 1.9;
+  }
+  .read .src { margin-top: 8px; font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+
+  /* ══ 06 扫读：报纸短讯栏 ══ */
+  @media (min-width: 680px) {
+    .skim-wrap { columns: 2; column-gap: 40px; column-rule: 1px solid var(--line-soft); }
+  }
+  .skim-group { break-inside: avoid; margin-bottom: 22px; }
+  .skim-group h4 {
+    display: inline-block; font-family: var(--serif);
+    font-size: 15.5px; font-weight: 900; letter-spacing: 0.06em;
+    padding-bottom: 5px; border-bottom: 2px solid var(--ink); margin-bottom: 2px;
+  }
+  .skim {
+    display: grid; grid-template-columns: 44px auto 1fr auto; gap: 10px;
+    padding: 8px 0; border-bottom: 1px solid var(--line-soft);
+    font-size: 13.5px; align-items: baseline; line-height: 1.75;
+  }
+  .skim .t { font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+  .skim .w { font-weight: 700; color: var(--ink-2); white-space: nowrap; font-size: 12.5px; }
+  .skim .g { color: var(--warn-ink); }
+
+  /* ══ 07 噪音：夹页折叠 ══ */
+  .noise {
+    border-top: 1px dashed var(--line); border-bottom: 1px dashed var(--line);
+    padding: 12px 2px;
+  }
+  .noise summary {
+    cursor: pointer; font-size: 14px; color: var(--ink-2); user-select: none;
+    list-style: none;
+  }
+  .noise summary::-webkit-details-marker { display: none; }
+  .noise summary::before { content: "▸ "; color: var(--muted); }
+  .noise[open] summary::before { content: "▾ "; }
+  .noise .cats { display: flex; flex-wrap: wrap; margin: 12px 0 6px; row-gap: 4px; }
+  .noise .cats span {
+    font-size: 12px; color: var(--muted);
+    padding: 0 14px; border-left: 1px solid var(--line); line-height: 1.8;
+  }
+  .noise .cats span:first-child { border-left: none; padding-left: 0; }
+  .noise-item { font-size: 13px; color: var(--muted); padding: 4px 0; }
+
+  /* ══ 08 博主雷达：刻度尺 ══ */
+  .radar-row {
+    display: grid; grid-template-columns: 24px minmax(150px, 225px) 1fr auto;
+    gap: 6px 18px; align-items: center;
+    padding: 14px 0; border-bottom: 1px solid var(--line-soft);
+  }
+  .radar .rk {
+    font-family: var(--serif); font-weight: 900; font-size: 19px;
+    color: var(--muted); line-height: 1;
+  }
+  .radar .nm { font-weight: 700; font-size: 14.5px; line-height: 1.5; }
+  .radar .nm small { display: block; font-weight: 400; font-size: 11.5px; color: var(--muted); }
+  .ruler-wrap { display: flex; align-items: flex-end; gap: 12px; min-width: 0; }
+  .ruler { position: relative; flex: 1; height: 16px; min-width: 60px; }
+  .ruler::before {                              /* 基线 */
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+    background: var(--line);
+  }
+  .ruler::after {                               /* 刻度：每 5% 小格，每 25% 大格 */
+    content: ""; position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(90deg, var(--line) 0 1px, transparent 1px 25%),
+      repeating-linear-gradient(90deg, var(--line-soft) 0 1px, transparent 1px 5%);
+    background-size: 100% 10px, 100% 5px;
+    background-position: left bottom, left bottom;
+    background-repeat: no-repeat;
+  }
+  .ruler .rf {                                  /* 测量段 */
+    position: absolute; left: 0; bottom: -1px; height: 3px;
+    background: var(--accent); z-index: 1;
+  }
+  .ruler .rn {                                  /* 指针 */
+    position: absolute; bottom: -3px; width: 2px; height: 19px;
+    background: var(--ink); z-index: 2; transform: translateX(-1px);
+  }
+  .pct {
+    font-family: var(--mono); font-size: 12.5px; font-weight: 600;
+    min-width: 92px; text-align: right;
+  }
+  .radar .today { font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+  .radar-warning {
+    margin-top: 18px; padding: 12px 16px;
+    border-left: 2px solid var(--warn-ink);
+    background: var(--warn-bg); color: var(--warn-ink); font-size: 13.5px;
+  }
+  .radar-warning .ops { margin-top: 4px; font-size: 12.5px; }
+
+  /* ══ 09 运行透明度 ══ */
+  .table-scroll { overflow-x: auto; }
+  .runtable { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 13.5px; }
+  .runtable th {
+    text-align: left; font-size: 11px; letter-spacing: 0.18em;
+    color: var(--muted); font-weight: 600;
+    padding: 6px 10px; border-bottom: 2px solid var(--ink);
+  }
+  .runtable td { padding: 10px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  .runtable td:first-child { white-space: nowrap; font-family: var(--serif); font-weight: 900; }
+  .runtable .detail { color: var(--ink-2); }
+  .status { font-size: 12.5px; font-weight: 700; white-space: nowrap; }
+  .status.ok { color: var(--ok-ink); }
+  .status.warn { color: var(--warn-ink); }
+  .runmeta {
+    margin-top: 14px; font-family: var(--mono); font-size: 12px;
+    color: var(--ink-2); line-height: 2.1;
+  }
+
+  /* ══ 版权页 ══ */
+  footer { margin-top: 60px; border-top: 3px solid var(--ink); font-size: 13px; color: var(--muted); line-height: 2; }
+  footer::before { content: ""; display: block; height: 1px; background: var(--ink); margin: 3px 0 18px; }
+  footer b { color: var(--ink); font-family: var(--serif); font-weight: 900; }
+  footer .subs { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+  footer .subs span {
+    padding: 2px 16px; border: 1px solid var(--line);
+    font-size: 12px; letter-spacing: 0.08em; color: var(--ink-2);
+  }
+
+  /* ══ 移动端 ══ */
+  @media (max-width: 640px) {
+    body { font-size: 14.5px; }
+    .brand { font-size: 34px; }
+    .issue { text-align: left; padding-bottom: 0; }
+    .eyebrow { grid-template-columns: 1fr; }
+    .eyebrow .prov { grid-column: 1; grid-row: auto; margin-top: 8px; max-width: none; }
+    .eyebrow h2 { font-size: 23px; }
+    .band { padding: 4px 16px 2px; margin: 0 -4px; }
+    .stub { width: 90px; padding: 14px 6px; }
+    .stub-date { font-size: 23px; }
+    .tbody { padding: 13px 14px 12px 18px; }
+    .databand { grid-template-columns: 1fr 1fr; }
+    .datum { padding: 14px 10px 12px 16px; }
+    .datum:nth-child(odd) { border-left: none; padding-left: 0; }
+    .datum:nth-child(n+3) { border-top: 1px solid var(--line-soft); }
+    .radar-row { grid-template-columns: 24px 1fr auto; }
+    .radar-row .ruler-wrap { grid-column: 1 / -1; grid-row: 2; }
+    .radar .today { grid-row: 1; grid-column: 3; align-self: start; margin-top: 3px; }
+    .skim { grid-template-columns: 40px 1fr auto; }
+    .skim .txt { grid-column: 2 / 4; }
+    .skim .w { font-size: 12px; }
+    .topic-gist::first-letter { font-size: 36px; }
+  }
+
+  .theme-btn { margin-left: auto; border: 1px solid var(--line); background: transparent; color: var(--muted); font-family: var(--sans); font-size: 12px; padding: 2px 12px; border-radius: 100px; cursor: pointer; line-height: 1.8; }
+  .theme-btn:hover { border-color: var(--ink); color: var(--ink); }
+  .digest { padding: 18px 0 0; }
+  .digest-head { font-family: var(--serif); font-weight: 900; font-size: 15px; margin-bottom: 8px; }
+  .digest-head span { font-family: var(--sans); font-weight: 400; color: var(--muted); font-size: 12px; margin-left: 8px; }
+  .digest-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); background: var(--card); }
+  .digest-grid a { display: block; padding: 10px 12px; line-height: 1.5; border-right: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); color: var(--ink); }
+  .digest-grid a:hover { background: var(--paper); text-decoration: none; }
+  .digest-grid a:nth-child(4n) { border-right: none; }
+  .digest-grid b { display: block; font-size: 13.5px; font-family: var(--serif); font-weight: 900; }
+  .digest-grid i { font-style: normal; display: block; font-size: 12.5px; color: var(--accent-ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .digest-grid em { font-style: normal; display: block; font-size: 11.5px; color: var(--muted); }
+  .watch { margin-top: 12px; padding: 8px 0 0; border-top: 1px dashed var(--line); font-size: 13px; color: var(--muted); }
+  .watch b { color: var(--ink); font-weight: 600; }
+  .takeaway { margin: 12px 0 10px; padding-left: 12px; border-left: 3px solid var(--accent); font-family: var(--serif); font-weight: 900; font-size: 15px; line-height: 1.75; color: var(--ink); }
+  @media (max-width: 640px) {
+    .digest-grid { grid-template-columns: repeat(2, 1fr); }
+    .digest-grid a:nth-child(4n) { border-right: 1px solid var(--line-soft); }
+    .digest-grid a:nth-child(2n) { border-right: none; }
+    .takeaway { font-size: 14.5px; }
+  }
+</style>
+
+<div class="demo-ribbon">真实数据演示 — 推文来自 2026-07-26 晚间窗口的真实抓取（199 条 · 60 位博主），分析按新管道标准生成；仅本地预览，未发布</div>
+
+<div class="shell">
+
+  <!-- ═══ 报头 ═══ -->
+  <header class="masthead">
+    <div class="masthead-row">
+      <div class="brand">信号台<small>SIGNALPOST · X KOL DAILY BRIEF</small></div>
+      <div class="issue">
+        <span class="date">2026-07-26</span><span class="slot">晚报</span>
+      </div>
+    </div>
+    <div class="rule-double" aria-hidden="true"></div>
+    <div class="meta-row">
+      <span class="dot-ok">数据完整度 86%</span>
+      <span>窗口 09:00–21:00</span>
+      <span>199 条 → 信号 61 条</span>
+      <span>约 5 分钟读完</span>
+      <a href="https://zyanga001.github.io/xkocsummary/archive/index.html">历史归档 ↗</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="切换日间/夜间配色">🌙 夜间</button>
+    </div>
+  </header>
+
+  <!-- ═══ 本期导读 ═══ -->
+  <section id="digest" class="digest" aria-label="本期导读">
+    <div class="digest-head">本期导读<span>8 个板块 · 点击直达</span></div>
+    <div class="digest-grid">
+      <a href="#tldr"><b>① 速览</b><i>4 条要点</i><em>30 秒读完今天</em></a>
+      <a href="#actions"><b>② 行动项</b><i>7 件</i><em>1 件明早截止</em></a>
+      <a href="#topics"><b>③ 焦点话题</b><i>3 个</i><em>关停潮追踪第 2 天</em></a>
+      <a href="#data"><b>④ 数据切片</b><i>4 项数字</i><em>提取自今日推文</em></a>
+      <a href="#reads"><b>⑤ 精读</b><i>3 条深度</i><em>值得点开原文</em></a>
+      <a href="#skim"><b>⑥ 扫读</b><i>12 条快讯</i><em>每条一句话</em></a>
+      <a href="#noise"><b>⑦ 噪音</b><i>89 条折叠</i><em>不看也不亏</em></a>
+      <a href="#radar"><b>⑧ 博主雷达</b><i>Top 5 排行</i><em>1 条取关预警</em></a>
+    </div>
+  </section>
+
+  <!-- ═══ 目录 ═══ -->
+  <nav class="toc" aria-label="本期目录">
+    <a href="#tldr" class="on">速览</a>
+    <a href="#actions">行动</a>
+    <a href="#topics">话题</a>
+    <a href="#data">数据</a>
+    <a href="#reads">精读</a>
+    <a href="#skim">扫读</a>
+    <a href="#noise">噪音</a>
+    <a href="#radar">博主</a>
+    <a href="#run">运行</a>
+  </nav>
+
+  <!-- ═══ 01 速览 ═══ -->
+  <section id="tldr">
+    <div class="eyebrow">
+      <span class="no">§ 01</span><h2>三十秒速览</h2>
+      <span class="prov">全部 199 条的最短读法</span>
+    </div>
+    <div class="band">
+      <div class="tldr-item"><span class="n">壹</span><div><b>【资金安全】还留在小交易所里的钱，本周搬完</b>——BitMart 成了 30 天内第三家关停的所，5 位博主今天说的是同一句话：现在就提。它的死法可以提前识别：倒闭前储备只剩 $1.91M，而全行业 57% 的储备在币安一家。自查方法见精读②。<a class="go" href="#topics">→ 话题①</a></div></div>
+      <div class="tldr-item"><span class="n">贰</span><div><b>【行情】明早长鑫的高开，数据派给的一致提醒是「看戏，别接」</b>——盘前 ¥42 已是发行价的 4.8 倍，链上挂着 $1,270 万空单，侠爹的套死线画在 ¥30。韩美 $9,500 亿大单利好的是海力士/三星的五年供应链，并不自动等于长鑫首日的价格。<a class="go" href="#topics">→ 话题②</a></div></div>
+      <div class="tldr-item"><span class="n">叁</span><div><b>【任务】今晚只有一件事过期不候</b>：Axis Robotics 任务签到，明早 08:00 截止、官方预告「大事将至」。其余的（Base 35U、OKX 200XP、AURA 8-8）明天做都来得及。<a class="go" href="#actions">→ 行动</a></div></div>
+      <div class="tldr-item"><span class="n">肆</span><div><b>【领回】在 Cascade（CLS）放过钱的人，可以把损失清零了</b>——官方确认被盗资金 100% 返还、数日内开放认领，入口只认官方推文。另有博主用自建「狼波指数」（WWI 0.226，单一博主口径、无公开方法论）把熊市底部预估在今年 11 月前后——当日历备忘，别当共识。<a class="go" href="#actions">→ 行动</a></div></div>
+    </div>
+  </section>
+
+  <!-- ═══ 02 行动项 ═══ -->
+  <section id="actions">
+    <div class="eyebrow">
+      <span class="no">§ 02</span><h2>今日行动项</h2>
+      <span class="prov">自动提取 deadline · 按紧迫度排序</span>
+    </div>
+    <div class="actions">
+
+      <article class="ticket urgent">
+        <div class="stub">
+          <span class="stub-cap">截止</span>
+          <span class="stub-date">07-27</span>
+          <span class="stub-time">08:00</span>
+          <span class="stub-chip">剩约 11 小时</span>
+        </div>
+        <div class="tbody">
+          <h3 class="t-title">Axis Robotics 任务签到</h3>
+          <p class="t-steps">在 7 月 27 日 00:00 UTC（北京时间明早 8 点）前完成全部任务签到；官方预告「有大事将至」</p>
+          <div class="t-src">
+            <span>来源：SuperLeo、@yujuhao（2 源交叉）· <a href="https://x.com/Big_Tea_Rice/status/2081234872279159040" target="_blank" rel="noopener">原文 ↗</a></span>
+            <span class="risk">⚠ 空投未官宣，投入时间自行斟酌</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ticket urgent">
+        <div class="stub">
+          <span class="stub-cap">节点</span>
+          <span class="stub-date">08-26</span>
+          <span class="stub-chip">停止交易</span>
+        </div>
+        <div class="tbody">
+          <h3 class="t-title">BitMart 用户：尽早提币</h3>
+          <p class="t-steps">官方时间表：7-26 停新用户注册与充值 → 8-26 停全部交易 → 提现开放至 2027-01-31。5 位博主一致建议：现在就提，勿等窗口末期拥堵</p>
+          <div class="t-src">
+            <span>来源：BitMart 官方公告 · @0x_xifeng、花轮 等 5 源 · <a href="https://x.com/0x_xifeng/status/2081199857738354754" target="_blank" rel="noopener">原文 ↗</a></span>
+            <span class="risk">⚠ 其他低储备小所与无人维护的小协议，同理撤离（见话题①）</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ticket">
+        <div class="stub">
+          <span class="stub-cap">进行中</span>
+          <span class="stub-chip calm">无截止</span>
+        </div>
+        <div class="tbody">
+          <h3 class="t-title">Base App 新人 Swap 奖励（约 35U）</h3>
+          <p class="t-steps">下载 Base App → 充值 200U+ USDC（BSC 链成本最低）→ 首页入口 Swap 交易量 ≥250U，10U+25U 奖励可叠加；一机一号防女巫</p>
+          <div class="t-src">
+            <span>来源：骄骄（全流程教程）、鱼泡泡（2 源交叉）· <a href="https://x.com/jiao_newlife/status/2081306607879848367" target="_blank" rel="noopener">原文 ↗</a></span>
+            <span class="risk">⚠ 需 200U 底金；教程含邀请码，自行甄别</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ticket">
+        <div class="stub">
+          <span class="stub-cap">绕行</span>
+          <span class="stub-chip calm">故障期间</span>
+        </div>
+        <div class="tbody">
+          <h3 class="t-title">Soneium 末季任务：官方支付故障，按替代路径完成</h3>
+          <p class="t-steps">正常流程因官方支付服务商宕机无法完成；按 Discord 频道公告的替代路径操作（先加入指定频道，再按步骤绕过支付跳转）</p>
+          <div class="t-src">
+            <span>来源：aling2000520（含官方公告截图）· <a href="https://x.com/aling2000520/status/2081350574671552793" target="_blank" rel="noopener">原文 ↗</a></span>
+            <span class="risk">⚠ 只信 Soneium 官方 Discord 的公告，不点私信链接</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ticket">
+        <div class="stub">
+          <span class="stub-cap">开领</span>
+          <span class="stub-date">08-08</span>
+          <span class="stub-time">09:00</span>
+          <span class="stub-chip mild">剩 13 天</span>
+        </div>
+        <div class="tbody">
+          <h3 class="t-title">AURA 第一季空投</h3>
+          <p class="t-steps">今天能做的：入口绑定 X / Discord，开始每日签到与领水；8-8 09:00 开领第一季空投（LitVM 生态测试网 · 官方文档称 $AURA 的 35% 分配社区）</p>
+          <div class="t-src">
+            <span>来源：SuperLeo · <a href="https://x.com/Big_Tea_Rice/status/2081348781564678526" target="_blank" rel="noopener">原文 ↗</a></span>
+            <span class="risk">⚠ 教程含邀请链接；合约与入口以官方渠道为准</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ticket">
+        <div class="stub">
+          <span class="stub-cap">预约</span>
+          <span class="stub-date">08 月</span>
+          <span class="stub-chip calm">赛季开启前</span>
+        </div>
+        <div class="tbody">
+          <h3 class="t-title">OKX 预测第二赛季：预约锁定 200 XP</h3>
+          <p class="t-steps">OKX App → 底部「交易」→ 顶部「链上」→ 预约领取 200 初始 XP；上赛季有「零撸 1 BTC」的宣传案例</p>
+          <div class="t-src">
+            <span>来源：花轮 · <a href="https://x.com/hualun/status/2081334012329800036" target="_blank" rel="noopener">原文 ↗</a></span>
+            <span class="risk">⚠ 收益宣传来自单一博主，谨慎预期</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ticket">
+        <div class="stub">
+          <span class="stub-cap">即将</span>
+          <span class="stub-chip calm">数日内开放</span>
+        </div>
+        <div class="tbody">
+          <h3 class="t-title">Cascade（CLS）被盗资金开放领回</h3>
+          <p class="t-steps">官方公告：涉事方已归还被盗资金，CLS 用户可 100% 领回；资金已存入官方多签地址，未来几天开放认领</p>
+          <div class="t-src">
+            <span>来源：@yujuhao 转 Cascade 官方 · <a href="https://x.com/yujuhao/status/2081274814858465672" target="_blank" rel="noopener">原文 ↗</a></span>
+            <span class="risk">⚠ 认领入口以官方推文为准，谨防钓鱼仿站</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══ 03 焦点话题 ═══ -->
+  <section id="topics">
+    <div class="eyebrow">
+      <span class="no">§ 03</span><h2>焦点话题</h2>
+      <span class="prov">6 个候选聚成 3 个 · 按讨论热度排序</span>
+    </div>
+
+    <!-- 话题 1 -->
+    <article class="topic">
+      <div class="topic-kicker">
+        <span class="chip track">追踪 · 第 2 天</span>
+        <span class="delta">18 位博主 · 32 条来源 · 较上期新增：MSX 创始人喊话收购、BitMart 储备数据曝光</span>
+      </div>
+      <h3>BitMart 停业：交易所关停潮走到第三家</h3>
+      <p class="takeaway">如果只带走一件事：钱只放储备可查的头部所。BitMart 倒闭前储备只剩 $1.91M——信号早就写在储备表上，下一家出事前也会先出现在那里（自查方法见精读②）。</p>
+      <p class="topic-gist">BitMart 今晨公告有序停业，时间表：7-26 01:30 UTC 停新注册与充值 → 8-26 停全部现货/合约交易 → 2027-01-31 正式停运，期间提现持续开放。BMX 昨夜最深 -60%、市值余 $6,400 万；DefiLlama 口径其储备仅 $1.91M（对照：币安 $137.6B，占全行业 57%）。这是今年第三家主动关停的 CEX（AscendEX、BitMEX 之后），不是暴雷、资产可提。倒闭原因指向同一组事实：现货量萎缩、合规成本上升、山寨盘源被币安 Alpha 虹吸、带单老师携客转场。MSX 创始人 Bruce 喊话收购并承诺零手续费，暂无实质动作。观点只剩一个真分歧：连倒三家，算不算熊市见底信号。</p>
+
+      <figure class="swarm">
+        <figcaption class="swarm-cap"><span class="cl">分歧点：连倒三家 = 熊市见底？（图示 11 位代表）</span><span class="cr">见底信号 3 · 只是出清 5 · 风险未尽 3</span></figcaption>
+        <div role="img" aria-label="围绕『连倒三家是否等于熊市见底』的立场分布。认为是见底信号 3 位：福利鸭、0xKevin00、炼金叔叔；认为只是行业出清 5 位：Phyrex、qinbafrank、Jasonwang1211、xiaoyubtc、BlockBeats；认为风险未尽应先提币 3 位：0x_xifeng、silverfang88、花轮。">
+          <div class="swarm-plot">
+            <i class="zt" style="left:33.33%"></i><i class="zt" style="left:66.66%"></i>
+            <span class="swd bull lt el" style="left:4%"><i class="mk"></i><em>福利鸭</em></span>
+            <span class="swd bull la" style="left:14%"><i class="mk"></i><em>0xKevin00</em></span>
+            <span class="swd bull lb" style="left:24%"><i class="mk"></i><em>炼金叔叔</em></span>
+            <span class="swd mid lc" style="left:36%"><i class="mk"></i><em>Phyrex</em></span>
+            <span class="swd mid lt" style="left:42.5%"><i class="mk"></i><em>qinbafrank</em></span>
+            <span class="swd mid la" style="left:49%"><i class="mk"></i><em>Jasonwang1211</em></span>
+            <span class="swd mid lb" style="left:55.5%"><i class="mk"></i><em>xiaoyubtc</em></span>
+            <span class="swd mid lc" style="left:62%"><i class="mk"></i><em>BlockBeats</em></span>
+            <span class="swd bear lt" style="left:72%"><i class="mk"></i><em>0x_xifeng</em></span>
+            <span class="swd bear la" style="left:81%"><i class="mk"></i><em>silverfang88</em></span>
+            <span class="swd bear lb er" style="left:90%"><i class="mk"></i><em>花轮</em></span>
+          </div>
+          <div class="swarm-zones"><span>见底信号</span><span>只是出清</span><span>风险未尽</span></div>
+        </div>
+      </figure>
+
+      <div class="datapoints">
+        <span>BMX 24h 最深 -60% · 市值 $6,400 万</span><span>BitMart 储备仅 $1.91M</span><span>Binance 储备 $137.6B · 占全行业 57%</span><span>2026 年关停项目 95+</span>
+      </div>
+      <p class="watch"><b>▸ 接下来看什么：</b>silverfang88 点名的「下一家二线所」传闻是否发酵——在二线所还有存款的，先按精读②的储备口径自查；持 BMX 者盯 $0.19 关口；MSX 收购有无过户等实质动作。</p>
+      <details>
+        <summary>来源推文 32 条（展开代表性 6 条）</summary>
+        <div class="srcline"><span class="st bear">险</span><div><span class="who">0x_xifeng</span>：又一个交易所倒下，有币抓紧提；无人问津的小协议、小项目同理，别等 rug 了才想起来。</div><span class="eng">10:08 <a href="https://x.com/0x_xifeng/status/2081199857738354754" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st mid">析</span><div><span class="who">Phyrex</span>：BitMart/BitMEX 不是暴雷是业务问题——山寨盘源被币安 Alpha 虹吸、带单老师携客转场，三线所两条命根都断了。</div><span class="eng">15:47 <a href="https://x.com/PhyrexNi/status/2081285337788408076" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st mid">析</span><div><span class="who">qinbafrank</span>：明明没暴雷为何主动关门？用户和资金在向美股迁移，CEX 同时面对链上 DEX 与美股代币化的双面夹击。</div><span class="eng">15:45 <a href="https://x.com/qinbafrank/status/2081284749126156509" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st mid">析</span><div><span class="who">xiaoyubtc</span>：整理了 2026 年 27 个有名有姓的关停/破产项目——a16z、Coinbase 系背书都救不了没有真实需求的项目。</div><span class="eng">13:34 <a href="https://x.com/xiaoyubtc/status/2081251719275831415" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st bull">底</span><div><span class="who">福利鸭</span>：BitMEX、BitMart 接连祭天，深熊将至——按历史剧本，这正是底部区域的标配戏码，准备好腰子。</div><span class="eng">10:28 <a href="https://x.com/0xCryptoUni/status/2081204973476696144" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st bear">险</span><div><span class="who">silverfang88</span>：挤兑面前没有解药，SVB 的剧本会重演——下一个就是某家耳熟能详的二线所，快提币吧。</div><span class="eng">15:33 <a href="https://x.com/silverfang88/status/2081281748218859791" target="_blank" rel="noopener">↗</a></span></div>
+      </details>
+    </article>
+
+    <!-- 话题 2 -->
+    <article class="topic">
+      <div class="topic-kicker">
+        <span class="chip track">追踪 · 第 2 天</span>
+        <span class="delta">12 位博主 · 18 条来源 · 较上期新增：$9,500 亿合作细节、长鑫空单曝光</span>
+      </div>
+      <h3>韩美 AI「超级订单」落地：存储狂欢与长鑫空单对峙</h3>
+      <p class="takeaway">如果只带走一件事：$9,500 亿大单和长鑫首日价格是两回事——大单兑现在海力士/三星的五年供应链上；而长鑫明早的盘前溢价 385%、链上 $1,270 万空单、¥30 估值线，三路数据都指向同一句话：首日追高是去接飞刀。</p>
+      <p class="topic-gist">合作细节：英伟达×海力士推进 $5,000 亿 AI 计划（含 2GW 数据中心、Vera Rubin 芯片 + HBM4）；博通×三星签五年 $2,000 亿 MOU；Anthropic 确认与三星/海力士的供应协议——合计 ≈$9,500 亿，注意多为五年期 MOU 而非到账订单。资金面两头拉扯：韩国年金 7 月净买入海力士 4,258 亿韩元（年内首次月度净买入）；但韩国散户三周加杠杆 $45 亿接外资抛盘，海力士自 6 月高点已 -35%。明早的焦点是长鑫存储：发行价 ¥8.66（市值 ¥5,800 亿），Hyperliquid 盘前 ≈¥42（≈¥2.8 万亿）；鲸鱼 $1,270 万空单的赌注是站不上 3 万亿，侠爹海大给的估值上限是 ¥30（≈2 万亿，理由：海力士利润是长鑫十倍、市值 5.76 万亿）。</p>
+
+      <figure class="swarm">
+        <figcaption class="swarm-cap"><span class="cl">分歧点：存储行情还能追吗？</span><span class="cr">继续看多 4 · 按框架看 4 · 谨慎回避 3</span></figcaption>
+        <div role="img" aria-label="围绕『存储行情还能不能追』的立场分布。继续看多 4 位：hanking66、nft_hu、zichuan_x、川沐；按框架看（先看利润兑现）4 位：hazenlee、DrcDAO、余烬、qinbafrank；谨慎回避（尤其别接长鑫高开）3 位：侠爹海大、0xKevin00、Phyrex。">
+          <div class="swarm-plot">
+            <i class="zt" style="left:33.33%"></i><i class="zt" style="left:66.66%"></i>
+            <span class="swd bull lt el" style="left:4%"><i class="mk"></i><em>hanking66</em></span>
+            <span class="swd bull la" style="left:12%"><i class="mk"></i><em>nft_hu</em></span>
+            <span class="swd bull lb" style="left:20%"><i class="mk"></i><em>zichuan_x</em></span>
+            <span class="swd bull lc" style="left:28%"><i class="mk"></i><em>川沐</em></span>
+            <span class="swd mid lt" style="left:38%"><i class="mk"></i><em>hazenlee</em></span>
+            <span class="swd mid la" style="left:46%"><i class="mk"></i><em>DrcDAO</em></span>
+            <span class="swd mid lb" style="left:54%"><i class="mk"></i><em>余烬</em></span>
+            <span class="swd mid lc" style="left:62%"><i class="mk"></i><em>qinbafrank</em></span>
+            <span class="swd bear lt" style="left:74%"><i class="mk"></i><em>侠爹海大</em></span>
+            <span class="swd bear la" style="left:83%"><i class="mk"></i><em>0xKevin00</em></span>
+            <span class="swd bear lb er" style="left:91%"><i class="mk"></i><em>Phyrex</em></span>
+          </div>
+          <div class="swarm-zones"><span>继续看多</span><span>按框架看</span><span>谨慎回避</span></div>
+        </div>
+      </figure>
+
+      <div class="datapoints">
+        <span>合作规划总额 ≈$9,500 亿</span><span>NVDA×SKHY $5,000 亿</span><span>年金净买入海力士 4,258 亿韩元</span><span>长鑫盘前 ≈¥42 / 发行价 ¥8.66</span><span>鲸鱼空单 $1,270 万</span>
+      </div>
+      <p class="watch"><b>▸ 接下来看什么：</b>明早长鑫开盘落在哪个区间——¥8.66 发行价 / ¥30 侠爹「套死线」 / ¥42 盘前价；下周微软、亚马逊、Meta 财报的资本开支指引是否延续「时间差」逻辑。</p>
+      <details>
+        <summary>来源推文 18 条（展开代表性 5 条）</summary>
+        <div class="srcline"><span class="st bull">多</span><div><span class="who">hanking66</span>：存储已经不是周期股，季报将引爆行情，PE 会被打到资金无法忽视的地步——不要卖出你的股票。</div><span class="eng">15:18 <a href="https://x.com/hanking66/status/2081277916319821903" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st bull">多</span><div><span class="who">nft_hu</span>：周末利好高度集中——国家级项目 + NVDA/SKHY $5,000 亿 + 博通/三星 $2,000 亿，「我们值得拥有一个反弹的一周」。</div><span class="eng">14:04 <a href="https://x.com/nft_hu/status/2081259455354724700" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st bear">空</span><div><span class="who">侠爹海大</span>：海力士利润是长鑫十倍、市值 5.76 万亿——长鑫超过 ¥30（约 2 万亿市值）谁买谁套死。</div><span class="eng">14:01 <a href="https://x.com/xiadadhaida/status/2081258516703269036" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st mid">中</span><div><span class="who">余烬</span>：鲸鱼在 Hyperliquid 以 ≈¥43.5 开 $1,270 万空单，本质是在赌长鑫冲不上 3 万亿市值。</div><span class="eng">10:11 <a href="https://x.com/EmberCN/status/2081200672767402472" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st bear">空</span><div><span class="who">Phyrex</span>：韩国散户三周加杠杆 45 亿美元接外资抛盘，海力士自高点 -35%——新增仓位多数已浮亏。</div><span class="eng">14:47 <a href="https://x.com/PhyrexNi/status/2081270223429374017" target="_blank" rel="noopener">↗</a></span></div>
+      </details>
+    </article>
+
+    <!-- 话题 3 -->
+    <article class="topic">
+      <div class="topic-kicker">
+        <span class="chip new">新话题</span>
+        <span class="delta">9 位博主 · 14 条来源</span>
+      </div>
+      <h3>熊市撸毛清单：任务截止与新入口密集出现</h3>
+      <p class="takeaway">如果只带走一件事：撸毛老玩家炼金叔叔宣布转向现货，判断是「垃圾出清后，资金向头部聚拢」——与话题①多数派的「只是出清」互相印证。任务党看行动区：今晚只有 Axis 过期不候（明早 08:00），其余明天做都来得及；所有入口只认官方渠道，教程里的邀请码自行甄别。</p>
+      <p class="topic-gist">今日有效任务 7 张票券（见行动区），核心三件：Axis Robotics 明早 08:00 截止、官方预告「大事将至」；Base App 新人奖励规则已明确——交易量 100U+/250U+ 对应 10U/25U 可叠加，必须走首页入口 Swap，BSC 链充值成本最低（约 0.5U）；Soneium 末季任务因官方支付服务故障无法正常完成，按 Discord 公告的替代路径可绕行。中期备忘：AURA 8-8 09:00 开领（$AURA 的 35% 分配社区）、OKX 预测第二赛季 200 XP 预约、Cambria 8 月 TGE。纪律被多位博主同时强调：一机一号防女巫、合约地址只认官方渠道。反面声音一条：炼金叔叔宣布从纯撸毛转现货，判断是「垃圾出清后，资金向头部聚拢」。</p>
+
+      <figure class="swarm">
+        <figcaption class="swarm-cap"><span class="cl">分歧点：现在撸毛还值不值？</span><span class="cr">值得照做 6 · 只做零撸 2 · 转向现货 1</span></figcaption>
+        <div role="img" aria-label="围绕『现在撸毛还值不值』的立场分布。值得照做 6 位：yujuhao、VIP8888883、SuperLeo、骄骄、鱼泡泡、花轮；只做零撸与工具 2 位：0xXIAOc、aling2000520；转向现货 1 位：炼金叔叔。">
+          <div class="swarm-plot">
+            <i class="zt" style="left:33.33%"></i><i class="zt" style="left:66.66%"></i>
+            <span class="swd bull lt el" style="left:3%"><i class="mk"></i><em>yujuhao</em></span>
+            <span class="swd bull la" style="left:8.5%"><i class="mk"></i><em>VIP8888883</em></span>
+            <span class="swd bull lb" style="left:14%"><i class="mk"></i><em>SuperLeo</em></span>
+            <span class="swd bull lc" style="left:19.5%"><i class="mk"></i><em>骄骄</em></span>
+            <span class="swd bull lt" style="left:25%"><i class="mk"></i><em>鱼泡泡</em></span>
+            <span class="swd bull la" style="left:30.5%"><i class="mk"></i><em>花轮</em></span>
+            <span class="swd mid lb" style="left:42%"><i class="mk"></i><em>0xXIAOc</em></span>
+            <span class="swd mid lc" style="left:52%"><i class="mk"></i><em>aling2000520</em></span>
+            <span class="swd bear lt er" style="left:82%"><i class="mk"></i><em>炼金叔叔</em></span>
+          </div>
+          <div class="swarm-zones"><span>值得照做</span><span>只做零撸</span><span>转向现货</span></div>
+        </div>
+      </figure>
+
+      <div class="datapoints">
+        <span>明早截止 1 项</span><span>Base 奖励 ≈35U（需 200U 底金）</span><span>AURA 社区分配 35%</span><span>OKX 初始 200 XP</span>
+      </div>
+      <p class="watch"><b>▸ 接下来看什么：</b>Axis 明早截止后是否官宣空投；AURA 8-8 开领入口；Cambria 8 月 TGE 时间表。</p>
+      <details>
+        <summary>来源推文 14 条（展开代表性 4 条）</summary>
+        <div class="srcline"><span class="st bull">参</span><div><span class="who">yujuhao</span>：这些别忘了做——DappOS 空投注册、Cambria 8 月 TGE、OKX XP 预约、Meteora 第二季领取（附各入口）。</div><span class="eng">19:10 <a href="https://x.com/yujuhao/status/2081336226226041082" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st bull">参</span><div><span class="who">骄骄</span>：Base App 新人 35U 全流程——充 200U、Swap 满 250U 交易量，奖励可叠加；一机一号防女巫。</div><span class="eng">17:12 <a href="https://x.com/jiao_newlife/status/2081306607879848367" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st mid">具</span><div><span class="who">aling2000520</span>：Soneium 末季小任务因官方支付服务故障无法正常完成，按 Discord 频道的替代路径可绕行。</div><span class="eng">20:07 <a href="https://x.com/aling2000520/status/2081350574671552793" target="_blank" rel="noopener">↗</a></span></div>
+        <div class="srcline"><span class="st bear">转</span><div><span class="who">炼金叔叔</span>：24 年空投入圈，如今开始买现货——新项目吸不到注意力了，出清之后资金必然向头部聚拢。</div><span class="eng">20:07 <a href="https://x.com/AirdropAlchemis/status/2081350816884293812" target="_blank" rel="noopener">↗</a></span></div>
+      </details>
+    </article>
+
+  </section>
+
+  <!-- ═══ 04 数据切片 ═══ -->
+  <section id="data">
+    <div class="eyebrow">
+      <span class="no">§ 04</span><h2>数据切片</h2>
+      <span class="prov">自今日推文正文提取 · 非行情接口</span>
+    </div>
+    <div class="databand">
+      <div class="datum"><div class="d-lbl">BMX（BitMart 平台币）</div><div class="d-val">-60%</div><div class="d-sub">24h 最深 · 持有者盯 <span class="down">$0.19</span> 关口</div></div>
+      <div class="datum"><div class="d-lbl">Binance 储备占比</div><div class="d-val">57%</div><div class="d-sub">$137.6B / 全行业 $239.8B</div></div>
+      <div class="datum"><div class="d-lbl">长鑫存储 · 盘前</div><div class="d-val">≈¥42</div><div class="d-sub">发行价 ¥8.66 · <span class="up">▲ 385%</span></div></div>
+      <div class="datum"><div class="d-lbl">狼波周期指数 WWI</div><div class="d-val">0.226</div><div class="d-sub">预估底部 2026-11-08 · 单一博主口径</div></div>
+    </div>
+    <p class="footnote">数值由今日推文交叉提取，可能滞后或口径不一，仅作阅读语境——交易决策请以行情终端为准。</p>
+  </section>
+
+  <!-- ═══ 05 值得精读 ═══ -->
+  <section id="reads">
+    <div class="eyebrow">
+      <span class="no">§ 05</span><h2>值得精读</h2>
+      <span class="prov">高价值 · 无法压缩成一句话的 3 条</span>
+    </div>
+    <article class="read">
+      <h4>Phyrex：三线交易所为什么接连倒下（Alpha 虹吸与带单老师迁徙）</h4>
+      <div class="why">💡 为什么值得点开：少见的产业内幕视角——上币费与联合坐庄收益被币安 Alpha 抽干、带单老师携客转场，比「熊市熬死论」更接近一线真相，还预判了后续会倒下的交易所类型。</div>
+      <div class="src">深度推 · 15:47 · <a href="https://x.com/PhyrexNi/status/2081285337788408076" target="_blank" rel="noopener">原文 ↗</a></div>
+    </article>
+    <article class="read">
+      <h4>超作业：用资金储备量给交易所做安全分级（附 DefiLlama 数据口径）</h4>
+      <div class="why">💡 为什么值得点开：给出可自查的方法论——全行业储备 $239.8B、币安一家 $137.6B、BitMart 倒闭前仅剩 $1.91M。下一次关停潮来临前，你可以自己算出该跑谁。</div>
+      <div class="src">数据帖 · 19:08 · <a href="https://x.com/chaozuoye/status/2081335815092019209" target="_blank" rel="noopener">原文 ↗</a></div>
+    </article>
+    <article class="read">
+      <h4>qinbafrank：AI 资本开支的「时间差」框架（以谷歌 Q2 财报为例）</h4>
+      <div class="why">💡 为什么值得点开：用谷歌财报（资本开支 $449 亿、自由现金流 -59 亿、云积压订单 $5,140 亿）讲清「现金先付、利润最后兑现」的路径——看懂下周微软/亚马逊/Meta 财报的钥匙。</div>
+      <div class="src">长文 · 11:55 · <a href="https://x.com/qinbafrank/status/2081226811514753045" target="_blank" rel="noopener">原文 ↗</a></div>
+    </article>
+  </section>
+
+  <!-- ═══ 06 一句话扫读 ═══ -->
+  <section id="skim">
+    <div class="eyebrow">
+      <span class="no">§ 06</span><h2>一句话扫读</h2>
+      <span class="prov">中价值 12 条 · 每条 10 秒</span>
+    </div>
+    <div class="skim-wrap">
+      <div class="skim-group">
+        <h4>市场与宏观</h4>
+        <div class="skim"><span class="t">17:33</span><span class="w">Phyrex</span><span class="txt">油价已传导进美国通胀与利率：CPI 一度 4%+、10 年期美债逼近 4.7%，降息空间被压缩</span><a href="https://x.com/PhyrexNi/status/2081312040770228604" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">15:28</span><span class="w">Phyrex</span><span class="txt">同为石油合约，币安 BZUSDT（布伦特）资金费率长期低于 CLUSDT——做空油价的费率差思路</span><a href="https://x.com/PhyrexNi/status/2081280370235089113" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">19:40</span><span class="w">Jasonwang1211</span><span class="txt">ETH ETF 周内转阴、结束五连入：申赎套利属性大于「机构长持」信号</span><a href="https://x.com/Jasonwang1211/status/2081343799515820255" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">13:35</span><span class="w">BQnanqiao</span><span class="txt">ETH 链 meme 疑似完成探底：SHIB 爆拉、以太系土狗集体 2 倍以上拉盘</span><a href="https://x.com/BQnanqiao/status/2081252141000536202" target="_blank" rel="noopener">↗</a></div>
+      </div>
+      <div class="skim-group">
+        <h4>行业与链上</h4>
+        <div class="skim"><span class="t">17:40</span><span class="w">余烬</span><span class="txt">一 Solana 项目团队解锁 1,380 万枚（$2,194 万）15 分钟内全部进所——解锁即进所是标准砸盘路径；代币名在抓取中丢失，持近期解锁 Solana 系代币者点原文核对是否是你</span><a href="https://x.com/EmberCN/status/2081313813752910276" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">19:00</span><span class="w">Solana 中文</span><span class="txt">Solana 消费卡支出创新高：5 月单月充值 $9,432 万</span><a href="https://x.com/Solana_zh/status/2081333721362207142" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">19:09</span><span class="w">Nazarick_eth</span><span class="txt">TownSquare 公募超募 1.5 倍（$200M FDV）：Sonar 惯例公募结束即 TGE——打新观察列表 +1，具体时间等官推</span><a href="https://x.com/Nazarick_eth/status/2081336218856685714" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">13:59</span><span class="w">Eva 树姐</span><span class="txt">「币安 Alpha + 合约」双上架项目只剩 33 个——盘源在向币安收缩（呼应话题①）：VC 买壳更难，撸 Alpha 的可选池子也在变小</span><a href="https://x.com/EvaCmore/status/2081258179598729507" target="_blank" rel="noopener">↗</a></div>
+      </div>
+      <div class="skim-group">
+        <h4>AI 与大厂</h4>
+        <div class="skim"><span class="t">19:39</span><span class="w">0xKevin00</span><span class="txt">幻方梁文锋内部纪要泄密风波：算力家底与华为卡对比数据外流，性质已上升到国安层面</span><a href="https://x.com/0xKevin00/status/2081343602031267891" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">21:00</span><span class="w">DrcDAO</span><span class="txt">小米 600 亿 AI 投入首批成果：MiMo-V2.5 开源、机器人基础模型任务成功率 57.6%</span><a href="https://x.com/DrcDAO/status/2081363909471338848" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">19:00</span><span class="w">DrcDAO</span><span class="txt">阿里云 AI 收入连续 11 个季度三位数增长，自研 PPU 公共云部署超 10 万张</span><a href="https://x.com/DrcDAO/status/2081333712080511002" target="_blank" rel="noopener">↗</a></div>
+        <div class="skim"><span class="t">20:04</span><span class="w">hazenlee</span><span class="txt">「帆船博弈」视角看中美大模型竞争：紧贴身后就能逼对手把成本曲线拉到撑不住</span><a href="https://x.com/hazenlee/status/2081350003336118499" target="_blank" rel="noopener">↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 07 噪音折叠 ═══ -->
+  <section id="noise">
+    <div class="eyebrow">
+      <span class="no">§ 07</span><h2>噪音折叠</h2>
+      <span class="prov">不渲染 ≠ 不诚实 · 原始数据保留在 run.json</span>
+    </div>
+    <details class="noise">
+      <summary>今日 89 条低价值内容已折叠（点开抽查）</summary>
+      <div class="cats"><span>生活与情绪 45</span><span>营销/喊单/引流 25</span><span>与主题无关 19</span></div>
+      <div class="noise-item">「出门买个霸王茶姬，打开钱包一看亏了一万杯大杯」 — bigbottle44（情绪）</div>
+      <div class="noise-item">「$PCAT 8X 了 已交付 集团频道：t.me/…」 — Ki（喊单引流，今日同类 8 条）</div>
+      <div class="noise-item">「健身房搞笑日常：那些为矫正动作无所不用其极的教练们」 — liuyanxue2（与主题无关）</div>
+      <div class="noise-item">「请问 @grok，我在 @base 有这么多 Discord 角色会有大量空投吗？」 — VIP8888883（无实质）</div>
+      <div class="noise-item">重分类示例：「$ARC 空投标准泄露（连续 12 个月 GM、500 次 wen token、创始人点过赞）」旧管道标为高价值，实为讽刺段子 — 本期按新标准归入噪音。</div>
+    </details>
+  </section>
+
+  <!-- ═══ 08 博主雷达 ═══ -->
+  <section id="radar">
+    <div class="eyebrow">
+      <span class="no">§ 08</span><h2>博主雷达</h2>
+      <span class="prov">近 4 天归档去重统计 · 非单日印象</span>
+    </div>
+    <div class="radar">
+      <div class="radar-row">
+        <span class="rk">1</span>
+        <div class="nm">xiaoyubtc<small>@xiaoyubtc · 项目盘点与行业整理，低频高质</small></div>
+        <div class="ruler-wrap"><div class="ruler" aria-hidden="true"><i class="rf" style="width:73%"></i><i class="rn" style="left:73%"></i></div><span class="pct">73% · 53 条</span></div>
+        <span class="today">今日 1 条</span>
+      </div>
+      <div class="radar-row">
+        <span class="rk">2</span>
+        <div class="nm">wangy112375<small>@wangy112375 · 空投实操教程为主</small></div>
+        <div class="ruler-wrap"><div class="ruler" aria-hidden="true"><i class="rf" style="width:70%"></i><i class="rn" style="left:70%"></i></div><span class="pct">70% · 67 条</span></div>
+        <span class="today">今日 0 条</span>
+      </div>
+      <div class="radar-row">
+        <span class="rk">3</span>
+        <div class="nm">Cursor<small>@cursor_ai · 产品官号，信号率高但与加密主题弱相关</small></div>
+        <div class="ruler-wrap"><div class="ruler" aria-hidden="true"><i class="rf" style="width:64%"></i><i class="rn" style="left:64%"></i></div><span class="pct">64% · 42 条</span></div>
+        <span class="today">今日 0 条</span>
+      </div>
+      <div class="radar-row">
+        <span class="rk">4</span>
+        <div class="nm">VIP8888883<small>@VIP8888883 · 高产撸毛情报，量大且准</small></div>
+        <div class="ruler-wrap"><div class="ruler" aria-hidden="true"><i class="rf" style="width:60%"></i><i class="rn" style="left:60%"></i></div><span class="pct">60% · 200 条</span></div>
+        <span class="today">今日 4 条</span>
+      </div>
+      <div class="radar-row">
+        <span class="rk">5</span>
+        <div class="nm">BitHappy<small>@BitHappy · 行业动态与数据快报</small></div>
+        <div class="ruler-wrap"><div class="ruler" aria-hidden="true"><i class="rf" style="width:60%"></i><i class="rn" style="left:60%"></i></div><span class="pct">60% · 53 条</span></div>
+        <span class="today">今日 0 条</span>
+      </div>
+    </div>
+    <div class="radar-warning">
+      ⚠ <b>@toupaiwang</b> 近 4 天信号率 7%（188 条中仅 2 条高价值），持续低于 15% 阈值；同档还有 @bigbottle44（10%）、@ki_smoon12（11%）。
+      <div class="ops">建议操作：移出关注 · 或再观察 7 天（新管道上线后此处为可点按钮）</div>
+    </div>
+    <p class="footnote">信号率 =（高价值 + 0.5×中价值）/ 总推文，为 4 天累计的历史统计（榜单回答「谁长期值得留」，不是「今天该看谁」——今日活跃度见每行右侧）。本期基于 gh-pages 归档去重统计（唯一推文 15,041 条，剔除旧管道重复抓取 3,499 条）；新管道上线后按 tweet_id 精确计算 7 天滚动窗口。画像来自统计，不让模型「凭印象」评价任何人。</p>
+  </section>
+
+  <!-- ═══ 09 运行透明度 ═══ -->
+  <section id="run">
+    <div class="eyebrow">
+      <span class="no">§ 09</span><h2>运行透明度</h2>
+      <span class="prov">报告可信的前提是过程可见</span>
+    </div>
+    <div class="table-scroll">
+      <table class="runtable">
+        <tr><th>阶段</th><th>状态</th><th>明细</th></tr>
+        <tr><td>抓取</td><td><span class="status warn">⚠ 降级</span></td><td class="detail">214/250 有响应（60 有更新 · 154 无更新 · 36 失败）· 失败率 14%，主因公共 Nitter 实例限流——重建方案第一优先解决项</td></tr>
+        <tr><td>解析去重</td><td><span class="status warn">⚠ 演示</span></td><td class="detail">输入为旧管道原始归档；跨 4 天按 URL 去重时剔除 3,499 条重复（旧管道无 tweet_id 去重）</td></tr>
+        <tr><td>分类抽取</td><td><span class="status ok">✓ 正常</span></td><td class="detail">199/199 · 按新管道 Stage A 标准复核 · 修正示例：「$ARC 空投标准」由高价值改判为讽刺段子</td></tr>
+        <tr><td>话题聚类</td><td><span class="status ok">✓ 正常</span></td><td class="detail">候选 6 → 成型 3（关停潮 · 韩美 AI 订单 · 撸毛清单）· 与上期对齐命中 2（追踪第 2 天）</td></tr>
+        <tr><td>观点综合</td><td><span class="status ok">✓ 正常</span></td><td class="detail">3/3 话题成功 · 光谱人数由代码统计，非模型数数 · 引用均带原推链接</td></tr>
+        <tr><td>渲染发布</td><td><span class="status ok">✓ 正常</span></td><td class="detail">方案 B 模板 · 仅本地预览——未向 GitHub 推送任何内容</td></tr>
+      </table>
+    </div>
+    <div class="runmeta">
+      数据源：gh-pages archive/2026-07-26/run-2（窗口内 199 条 / 60 位博主）· 本页为新管道效果演示（分析由 Claude 按 Stage A–F 标准生成）· token 计量将由新管道 llm_calls 表提供<br>
+      <a href="https://zyanga001.github.io/xkocsummary/archive/2026-07-26/run-2/run.json" target="_blank" rel="noopener">run.json ↗</a> · <a href="https://zyanga001.github.io/xkocsummary/archive/index.html" target="_blank" rel="noopener">历史归档 ↗</a>
+    </div>
+  </section>
+
+  <footer>
+    <div><b>信号台</b> · 每天早晚各一期。内容由 LLM 自动分类与综合，可能有误——任何操作请先点开原文核实；教程类内容常含邀请码/邀请链接，请自行甄别。折叠与降级都不删数据，run.json 永远保留完整现场。</div>
+    <div class="subs"><span>RSS</span><span>邮件订阅</span><span>Telegram 推送</span></div>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var links = document.querySelectorAll('.toc a');
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting && map[e.target.id]) {
+        links.forEach(function (a) { a.classList.remove('on'); });
+        map[e.target.id].classList.add('on');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  document.querySelectorAll('section[id]').forEach(function (s) { observer.observe(s); });
+})();
+(function () {
+  var btn = document.getElementById('themeBtn');
+  var root = document.documentElement;
+  function apply(mode) {
+    root.setAttribute('data-theme', mode);
+    if (btn) btn.textContent = mode === 'dark' ? '☀️ 日间' : '🌙 夜间';
+    try { localStorage.setItem('sp-theme', mode); } catch (e) {}
+  }
+  var saved = 'light';
+  try { saved = localStorage.getItem('sp-theme') || 'light'; } catch (e) {}
+  apply(saved);
+  if (btn) btn.addEventListener('click', function () {
+    apply(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+})();
+</script>
