@@ -1,288 +1,70 @@
 from __future__ import annotations
 
 import argparse
-import json as json_module
-import os
+import json
 import sys
-import time
-from datetime import datetime, timezone
-from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from .archive import build_archive_history, next_run_dir
-from .enrich import enrich_all
-from .llm import LlmClient
 from .output import Progress
-from .reader import Reader
-from .robust_scanner import RobustScanner
-from .scanner_config import scanner_config_from_env
-from .schedule import BEIJING, format_beijing, resolve_report_window
 from .v2_eval import run_eval
-from .v2_pipeline import V2Pipeline
-from .v2_report import render_v2_report, render_v2_index
-from .watchlist import load_authors, load_schedule
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="python -m koc")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    run_v2 = subparsers.add_parser("run-v2", help="Run V2 pipeline and generate 4-segment report")
+    run_v2 = subparsers.add_parser("run-v2", help="Generate the twice-daily intelligence report")
     run_v2.add_argument("--watchlist", default="watchlist.txt")
     run_v2.add_argument("--output", default="output")
     run_v2.add_argument("--schedule", default="config/schedule.json")
     run_v2.add_argument("--format", choices=("human", "json"), default="human")
     run_v2.set_defaults(func=command_run_v2)
 
-    eval_v2 = subparsers.add_parser("eval-v2", help="Compare AI quality labels against human evaluations")
+    eval_v2 = subparsers.add_parser("eval-v2", help="Evaluate AI labels against human judgments")
     eval_v2.add_argument("--watchlist", default="watchlist.txt")
     eval_v2.add_argument("--golden", default="eval/data/评价结果.csv")
     eval_v2.add_argument("--output", default="data/v2")
     eval_v2.add_argument("--format", choices=("human", "json"), default="human")
     eval_v2.set_defaults(func=command_eval_v2)
-
     return parser
 
 
 def command_run_v2(args: argparse.Namespace) -> int:
-    progress = Progress("v2-run", enabled=args.format == "human")
-    started_at = datetime.now(timezone.utc)
-    report_window = resolve_report_window(started_at)
+    from run_brief import main as run_brief_main
 
-    authors = load_authors(args.watchlist)
-    schedule = load_schedule(args.schedule)
-    window = str(schedule.get("window") or "12h")
-
-    progress.log(
-        "时间窗口："
-        f"{report_window.label} {format_beijing(report_window.window_start)}"
-        f" - {format_beijing(report_window.window_end)}"
+    return run_brief_main(
+        output_dir=args.output,
+        watchlist_path=args.watchlist,
+        schedule_path=args.schedule,
     )
-    progress.log(f"计划时间：{format_beijing(report_window.planned_at)}")
-    progress.log(f"关注博主：{len(authors)} 个")
-
-    scanner_config = scanner_config_from_env(os.environ)
-    progress.log(
-        "扫描参数："
-        f"timeout={scanner_config.timeout}s, "
-        f"retries={scanner_config.max_retries}, "
-        f"workers={scanner_config.max_workers}"
-    )
-    scanner = RobustScanner(
-        timeout=scanner_config.timeout,
-        max_retries=scanner_config.max_retries,
-        request_delay=scanner_config.request_delay,
-        log_fn=lambda msg: progress.log(msg),
-    )
-    reader = Reader(prefer_rss_summary=True, request_delay_seconds=0.3)
-
-    all_items: list[dict] = []
-    scan_ok = 0
-    scan_empty = 0
-    scan_fail = 0
-    scan_errors: list[dict[str, str]] = []
-    t_start = time.time()
-
-    scan_max_workers = min(scanner_config.max_workers, len(authors))
-
-    def scan_one(author: str) -> dict:
-        try:
-            result = scanner.scan_user(
-                author,
-                window=window,
-                now=report_window.window_end,
-                window_start=report_window.window_start,
-                window_end=report_window.window_end,
-            )
-            out: dict = {"author": author, "items": [], "error": None}
-            for item in result.items:
-                fetched = reader.fetch_item(item)
-                content = fetched.content_markdown or ""
-                if not content and fetched.rss_summary:
-                    content = fetched.rss_summary
-                out["items"].append({
-                    "username": author,
-                    "url": fetched.url,
-                    "正文": content,
-                    "发布时间": fetched.published_at or "",
-                    "content_markdown": content,
-                    "rss_summary": fetched.rss_summary or "",
-                })
-            if result.errors:
-                out["error"] = result.errors[0].message[:80]
-            out["debug"] = {"items": len(result.items)}
-            return out
-        except Exception as exc:
-            return {"author": author, "items": [], "error": f"{exc.__class__.__name__}: {str(exc)[:60]}", "debug": {"items": 0}}
-
-    done = 0
-    with ThreadPoolExecutor(max_workers=scan_max_workers) as pool:
-        futures = {pool.submit(scan_one, a): a for a in authors}
-        for future in as_completed(futures):
-            try:
-                out = future.result()
-            except Exception:
-                out = {"author": futures[future], "items": [], "error": "future failed", "debug": {"items": 0}}
-            done += 1
-            elapsed = time.time() - t_start
-            avg_per = elapsed / done if done > 0 else 0
-            eta = avg_per * (len(authors) - done)
-            author = out["author"]
-            count = out["debug"]["items"]
-            error = out.get("error")
-            if error:
-                scan_fail += 1
-                scan_errors.append({"author": author, "error": str(error)})
-                progress.log(f"[{done}/{len(authors)}] @{author} ❌ {error[:40]} | 已用{elapsed:.0f}s 剩余{eta:.0f}s")
-            elif count == 0:
-                scan_empty += 1
-                progress.log(f"[{done}/{len(authors)}] @{author} 0条 | 已用{elapsed:.0f}s 剩余{eta:.0f}s")
-            else:
-                scan_ok += 1
-                all_items.extend(out["items"])
-                progress.log(f"[{done}/{len(authors)}] @{author} {count}条 | 累计{len(all_items)}条 | 已用{elapsed:.0f}s 剩余{eta:.0f}s")
-
-    if not all_items:
-        progress.log("没有抓取到任何推文，终止")
-        if scan_errors:
-            error_summary = "; ".join(f"@{e['author']}: {e['error']}" for e in scan_errors[:5])
-            progress.log(f"扫描错误摘要: {error_summary}")
-        return 1
-
-    progress.log(f"扫描完成：{scan_ok} OK / {scan_empty} 无更新 / {scan_fail} 失败")
-    active_authors = len(set(item["username"] for item in all_items))
-    progress.log(f"抓取完成：{len(all_items)} 条推文，来自 {active_authors}/{len(authors)} 位博主有更新")
-
-    t2 = time.time()
-    progress.log("正在获取博主信息和互动数据...")
-    if os.environ.get("ENABLE_ENRICH", "0") == "1":
-        all_items = enrich_all(all_items)
-        progress.log(f"博主信息和互动数据获取完成 ({time.time() - t2:.0f}s)")
-    else:
-        progress.log("跳过 enrich（ENABLE_ENRICH=0），节省 ~15-20 分钟")
-
-    progress.log("阶段1: 质量分类...")
-    t3 = time.time()
-    pipeline = V2Pipeline()
-    result = pipeline.run(all_items)
-    progress.log(f"阶段1完成 ({time.time() - t3:.0f}s)：高 {result.high_count} / 中 {result.medium_count} / 低 {result.low_count}")
-
-    progress.log("阶段2: 聚合日报+博主画像...")
-    progress.log("阶段3: 高价值深读...")
-    progress.log(f"AI分析总耗时 {time.time() - t3:.0f}s")
-
-    progress.log("生成HTML报告...")
-
-    finished_at = datetime.now(timezone.utc)
-    beijing_now = finished_at.astimezone(BEIJING)
-    local_time_str = beijing_now.strftime("%m-%d %H:%M")
-    time_str = beijing_now.strftime("%H:%M")
-    date_str = report_window.planned_at.astimezone(BEIJING).strftime("%Y-%m-%d")
-
-    output_dir = Path(args.output)
-    archive_dir = output_dir / "archive"
-    date_dir = archive_dir / date_str
-    run_num, run_dir = next_run_dir(date_dir)
-    run_dir.mkdir(parents=True, exist_ok=False)
-
-    run_label = f"{local_time_str} · 第{run_num}次更新"
-    run_date_label = f"{date_str} {time_str} · 第{run_num}次更新"
-
-    run_dict = {
-        "run_id": result.run_id,
-        "status": "success",
-        "slot": report_window.slot,
-        "slot_label": report_window.label,
-        "created_at": run_date_label,
-        "window": window,
-        "planned_at": format_beijing(report_window.planned_at),
-        "started_at": format_beijing(started_at),
-        "finished_at": format_beijing(finished_at),
-        "window_start": format_beijing(report_window.window_start),
-        "window_end": format_beijing(report_window.window_end),
-        "delay_seconds": report_window.delay_seconds,
-        "elapsed_seconds": round(time.time() - t_start, 1),
-        "total_tweets": result.total_tweets,
-        "authors_count": result.authors_count,
-        "total_authors": len(authors),
-        "high_count": result.high_count,
-        "medium_count": result.medium_count,
-        "low_count": result.low_count,
-        "scan_ok": scan_ok,
-        "scan_empty": scan_empty,
-        "scan_fail": scan_fail,
-        "scan_elapsed": time.time() - t_start,
-        "scan_errors": scan_errors,
-        "items": result.items,
-        "daily_brief": result.daily_brief,
-        "author_profiles": result.author_profiles,
-        "medium_merge": result.medium_merge,
-        "errors": result.errors,
-    }
-
-    html = render_v2_report(run_dict, run_label=run_label, page_depth=3)
-
-    (run_dir / "report.html").write_text(html, encoding="utf-8")
-    (run_dir / "run.json").write_text(
-        json_module.dumps(run_dict, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-
-    (output_dir / "index.html").write_text(
-        render_v2_report(run_dict, run_label=run_label, page_depth=1), encoding="utf-8"
-    )
-    (output_dir / ".nojekyll").write_text("")
-
-    history = build_archive_history(archive_dir)
-    (archive_dir / "index.html").write_text(
-        render_v2_index(history), encoding="utf-8"
-    )
-
-    progress.log(f"报告生成完成 ({time.time() - t_start:.0f}s)")
-    print()
-    print(f"共关注 {len(authors)} 位博主，{active_authors} 位有更新，共 {len(all_items)} 条推文")
-    print(f"扫描: {scan_ok} OK / {scan_empty} 无更新 / {scan_fail} 失败")
-    print(f"高 {result.high_count} / 中 {result.medium_count} / 低 {result.low_count}")
-    if scan_errors:
-        error_summary = "; ".join(f"@{e['author']}: {e['error']}" for e in scan_errors[:3])
-        print(f"扫描异常: {error_summary}")
-    print()
-    print("输出文件：")
-    print(f"  本期报告: {run_dir}/report.html")
-    print(f"  首页入口: {output_dir / 'index.html'}")
-    print(f"  历史归档: {archive_dir}/index.html")
-
-    return 0
 
 
 def command_eval_v2(args: argparse.Namespace) -> int:
     progress = Progress("eval-v2", enabled=args.format == "human")
     progress.log(f"金色数据集: {args.golden}")
-    progress.log(f"V2输出目录: {args.output}")
-
+    progress.log(f"评估输出目录: {args.output}")
     results = run_eval(
         watchlist_path=args.watchlist,
         golden_path=args.golden,
         output_dir=args.output,
     )
-
     if args.format == "json":
         from .output import print_json
+
         print_json(results)
         return 0
-
     if "error" in results:
         print(f"\n错误: {results['error']}")
         return 1
 
     from .v2_eval import optimize_prompt
+
     suggestions = optimize_prompt(results)
     if suggestions:
-        print()
-        print("Prompt优化建议:")
-        for s in suggestions:
-            print(f"  {s}")
-
+        print("\nPrompt优化建议:")
+        for suggestion in suggestions:
+            print(f"  {suggestion}")
     return 0
+
 
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
@@ -293,7 +75,7 @@ def main(argv: list[str] | None = None) -> int:
         return 130
     except Exception as exc:
         print(
-            json_module.dumps(
+            json.dumps(
                 {
                     "status": "failed",
                     "stage": "cli",

@@ -140,6 +140,27 @@ class ScannerTest(unittest.TestCase):
         self.assertEqual(result.source_url, "https://good.example/sama/rss")
         self.assertEqual([item.tweet_id for item in result.items], ["3"])
 
+    def test_failed_instance_is_deprioritized_for_later_accounts(self):
+        requested = []
+
+        def fetch(url, _timeout):
+            requested.append(url)
+            if "bad.example" in url:
+                raise RuntimeError("403 Forbidden")
+            return RSS
+
+        now = datetime(2026, 6, 8, 12, 0, tzinfo=timezone.utc)
+        scanner = RobustScanner(fetch_text=fetch, max_retries=0)
+        scanner.INSTANCES = ("https://bad.example", "https://good.example")
+
+        first = scanner.scan_user("sama", window="12h", now=now)
+        requested.clear()
+        second = scanner.scan_user("openai", window="12h", now=now)
+
+        self.assertEqual(first.debug["instance_attempts"][0]["status"], "failed")
+        self.assertEqual(second.debug["instance_attempts"][0]["instance"], "https://good.example")
+        self.assertEqual(requested, ["https://good.example/openai/rss"])
+
 
 if __name__ == "__main__":
     unittest.main()

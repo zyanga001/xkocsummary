@@ -5,7 +5,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-def fetch_text(url: str, timeout: int = 12, max_retries: int = 2, backoff_base: float = 1.5) -> str:
+def fetch_text(url: str, timeout: int = 12, max_retries: int = 0, backoff_base: float = 1.5) -> str:
     request = Request(
         url,
         headers={
@@ -44,4 +44,3 @@ def fetch_text(url: str, timeout: int = 12, max_retries: int = 2, backoff_base: 
             raise RuntimeError(msg) from exc
 
     raise last_error or RuntimeError(f"Failed after {max_retries + 1} attempts: {url}")
-

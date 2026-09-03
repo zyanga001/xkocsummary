@@ -8,17 +8,17 @@ class ScannerConfigTest(unittest.TestCase):
         config = scanner_config_from_env({})
 
         self.assertEqual(config.timeout, 15)
-        self.assertEqual(config.max_retries, 3)
+        self.assertEqual(config.max_retries, 1)
         self.assertEqual(config.request_delay, 0.3)
         self.assertEqual(config.max_workers, 4)
 
     def test_uses_faster_settings_inside_github_actions(self):
         config = scanner_config_from_env({"GITHUB_ACTIONS": "true"})
 
-        self.assertEqual(config.timeout, 8)
-        self.assertEqual(config.max_retries, 1)
-        self.assertEqual(config.request_delay, 0.1)
-        self.assertEqual(config.max_workers, 8)
+        self.assertEqual(config.timeout, 15)
+        self.assertEqual(config.max_retries, 0)
+        self.assertEqual(config.request_delay, 0.5)
+        self.assertEqual(config.max_workers, 3)
 
 
 if __name__ == "__main__":

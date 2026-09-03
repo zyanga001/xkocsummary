@@ -14,16 +14,16 @@ class ScannerConfig:
 
 LOCAL_SCANNER_CONFIG = ScannerConfig(
     timeout=15,
-    max_retries=3,
+    max_retries=1,
     request_delay=0.3,
     max_workers=4,
 )
 
 GITHUB_ACTIONS_SCANNER_CONFIG = ScannerConfig(
-    timeout=8,
-    max_retries=1,
-    request_delay=0.1,
-    max_workers=8,
+    timeout=15,
+    max_retries=0,
+    request_delay=0.5,
+    max_workers=3,
 )
 
 

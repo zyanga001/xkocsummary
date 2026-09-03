@@ -69,6 +69,20 @@ class LlmClientTest(unittest.TestCase):
 
         self.assertEqual(len(calls), 2)
 
+    def test_chat_json_rejects_truncated_response(self):
+        def post_json(_payload):
+            return {
+                "choices": [{
+                    "finish_reason": "length",
+                    "message": {"content": '{"items": []}'},
+                }]
+            }
+
+        client = LlmClient(api_key="test-key", post_json=post_json, max_retries=0)
+
+        with self.assertRaisesRegex(RuntimeError, "length"):
+            client.chat_json("system", "user")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -14,6 +14,10 @@ on:
       - 'config/schedule.json'
       - 'koc/**'
       - 'run_brief.py'
+      - 'build_page.py'
+      - 'rubric.md'
+      - 'preview-real-b.html'
+      - 'tests/**'
       - '.github/workflows/brief.yml'
 
 permissions:
@@ -45,6 +49,11 @@ jobs:
             git fetch origin gh-pages --depth=1
             git archive FETCH_HEAD | tar -x -C output
           fi
+
+      - name: Verify code and contracts
+        run: |
+          python -m compileall -q koc run_brief.py build_page.py
+          python -m unittest discover -s tests -v
 
       - name: Generate DAZA Brief
         env:

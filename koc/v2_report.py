@@ -27,7 +27,6 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
     items = result.get("items", [])
     daily_brief = result.get("daily_brief", [])
     author_profiles = result.get("author_profiles", [])
-    medium_merge = result.get("medium_merge", "")
 
     high_items = [i for i in items if i.get("importance") == "高"]
     medium_items = [i for i in items if i.get("importance") == "中"]
@@ -218,7 +217,7 @@ def render_v2_report(result: dict[str, Any], run_label: str = "", page_depth: in
 
   <!-- 日报 -->
   <div class="panel active" id="panel-brief">
-{_render_brief(daily_brief, medium_merge, daily_brief)}
+{_render_brief(daily_brief)}
   </div>
 
   <!-- 高 -->
@@ -317,9 +316,13 @@ def _render_run_details(result: dict[str, Any]) -> str:
         ("覆盖窗口", _join_range(result.get("window_start"), result.get("window_end"))),
         ("延迟", _format_duration(result.get("delay_seconds"))),
         ("总耗时", _format_duration(result.get("elapsed_seconds") or result.get("scan_elapsed"))),
-        ("抓取成功", result.get("scan_ok")),
-        ("无更新", result.get("scan_empty")),
+        ("有可用内容", result.get("scan_ok")),
+        ("窗口内无帖", result.get("scan_no_posts_in_window")),
+        ("所有实例空feed", result.get("scan_empty_all_instances")),
         ("抓取失败", result.get("scan_fail")),
+        ("时间不明条目", result.get("scan_time_uncertain")),
+        ("正文读取失败", result.get("reader_fail")),
+        ("互动数据", result.get("engagement_status")),
     ]
     rows = [
         f'<div class="run-detail-item"><strong>{_t(label)}:</strong> {_t(value)}</div>'
@@ -330,6 +333,25 @@ def _render_run_details(result: dict[str, Any]) -> str:
     errors = _render_scan_errors(result.get("scan_errors", []))
     if errors:
         rows.append(f'<div class="run-detail-errors"><strong>失败名单:</strong>\n{errors}</div>')
+
+    stage_times = result.get("stage_elapsed_seconds") or {}
+    if stage_times:
+        timing = " · ".join(
+            f"{stage} {_format_duration(seconds)}" for stage, seconds in stage_times.items()
+        )
+        rows.append(
+            f'<div class="run-detail-errors"><strong>AI各阶段:</strong> {_t(timing)}</div>'
+        )
+
+    memory_diff = result.get("memory_diff") or {}
+    if memory_diff:
+        memory_text = " · ".join(
+            f"{kind} {', '.join(values) if values else '0'}"
+            for kind, values in memory_diff.items()
+        )
+        rows.append(
+            f'<div class="run-detail-errors"><strong>记忆变化:</strong> {_t(memory_text)}</div>'
+        )
 
     if not rows:
         return ""
@@ -362,34 +384,35 @@ def _render_scan_errors(errors: Any) -> str:
     return _t("\n".join(parts))
 
 
-def _render_brief(daily_brief: list, medium_merge: str, brief_items: list) -> str:
-    parts = []
-    if daily_brief:
-        parts.append('<div class="brief-section"><h2 style="margin-bottom:16px;">📰 今日话题</h2>')
-        for bp in daily_brief:
-            sentiment = bp.get("sentiment", "")
-            sentiment_emoji = {"乐观": "🟢", "观望": "🟡", "担忧": "🔴", "吐槽": "😤", "中性": "⚪"}.get(sentiment, "")
-            what_they_said = bp.get("what_they_said", "")
-            gist = bp.get("gist", "")
-            if not gist or not gist.strip():
-                continue  # 跳过空洞话题
-            parts.append(f"""<div class="brief-topic">
-  <div class="topic-name">{_t(bp.get('topic',''))}</div>
-  <div class="topic-sentiment">{sentiment_emoji} 总体态度: {_t(sentiment)}</div>
-  <div class="topic-gist">{_t(gist)}</div>""")
-            if what_they_said:
-                parts.append(f'  <div class="topic-who" style="margin-top:8px;color:var(--muted);font-size:14px;">各博主观点: {_t(what_they_said)}</div>')
-            parts.append('</div>')
-        parts.append('</div>')
+def _render_brief(events: list) -> str:
+    visible = [event for event in events if event.get("presentation") != "trace"]
+    if not visible:
+        return '<div class="empty-state">本期没有改变判断的事件</div>'
 
-    if medium_merge:
-        parts.append(f"""<div class="brief-section">
-<h3>📝 中等价值内容摘要</h3>
-<div class="medium-merge-block">{_t(medium_merge)}</div>
-</div>""")
-    elif not daily_brief:
-        parts.append('<div class="empty-state">本期没有足够信息生成日报</div>')
-
+    parts = ['<div class="brief-section"><h2 style="margin-bottom:16px;">焦点事件</h2>']
+    for event in visible:
+        theme_path = " / ".join(event.get("theme_path") or [])
+        evidence_rows = []
+        for evidence in event.get("new_evidence") or []:
+            quotes = " / ".join(evidence.get("quotes") or [])
+            evidence_rows.append(
+                f'<li><strong>{_t(evidence.get("post_id"))}</strong>: '
+                f'{_t(evidence.get("claim"))}'
+                f'{f"<br><small>{_t(quotes)}</small>" if quotes else ""}</li>'
+            )
+        unknowns = "".join(
+            f"<li>{_t(value)}</li>" for value in event.get("unknowns") or []
+        )
+        parts.append(f"""<article class="brief-topic">
+  <div class="topic-name">{_t(event.get('title'))}</div>
+  <div class="topic-who">{_t(theme_path)} · 话题{_t(event.get('topic_importance'))} · {_t(event.get('presentation'))} · 置信度{_t(event.get('confidence'))}</div>
+  <div class="topic-gist"><strong>核心判断：</strong>{_t(event.get('thesis'))}</div>
+  <div class="topic-gist"><strong>此前状态：</strong>{_t(event.get('prior_state'))}</div>
+  <div class="topic-gist"><strong>新证据：</strong><ul>{''.join(evidence_rows)}</ul></div>
+  <div class="topic-gist"><strong>判断变化：</strong>{_t(event.get('judgment_delta'))}</div>
+  <div class="topic-gist"><strong>仍未知：</strong><ul>{unknowns}</ul></div>
+</article>""")
+    parts.append("</div>")
     return "\n".join(parts)
 
 
@@ -416,11 +439,9 @@ def _render_quality_list(items: list, level: str, empty_msg: str) -> str:
   <div class="card-meta"><span class="badge {css_level}">{_t(level_cn)}</span> {_t(item.get('published_at','')[:16])}{' · ' + _t(meta) if meta else ''}</div>
   <p>{_t(summary)}</p>"""
 
-        if level == "高" and why_worth:
-            card += f'\n  <div class="why-worth">💡 为什么值得关注：{_t(why_worth)}</div>'
-
-        elif level == "低":
-            card += f'\n  <div class="why-worth" style="border-left-color:var(--low);">不看原因：{_t(summary)}</div>'
+        if why_worth:
+            label = "为什么值得精读" if level == "高" else f"为什么是{level}价值"
+            card += f'\n  <div class="why-worth">{_t(label)}：{_t(why_worth)}</div>'
 
         card += '\n</div>'
         cards.append(card)

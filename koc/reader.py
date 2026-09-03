@@ -82,6 +82,13 @@ class Reader:
                 except Exception as exc:
                     failures.append(exc)
             if not markdown:
+                # jina 失败：先试 fxtwitter 补正文（免费、按 tweet ID 抓单条）
+                fx = self._fetch_fxtwitter(item.url)
+                if fx:
+                    self._attach_content(item, fx)
+                    item.fetch_status = "fxtwitter"
+                    item.content_quality = "medium"
+                    return item
                 message = "; ".join(str(failure) for failure in failures) or "Jina returned no meaningful Markdown body."
                 return self._fallback_from_summary(
                     item,
@@ -97,6 +104,12 @@ class Reader:
             item.fetch_status = "success"
             return item
         except Exception as exc:
+            fx = self._fetch_fxtwitter(item.url)
+            if fx:
+                self._attach_content(item, fx)
+                item.fetch_status = "fxtwitter"
+                item.content_quality = "medium"
+                return item
             return self._fallback_from_summary(
                 item,
                 Failure(
@@ -107,6 +120,22 @@ class Reader:
                     can_continue=bool(item.rss_summary),
                 ),
             )
+
+    def _fetch_fxtwitter(self, url: str) -> str:
+        """fxtwitter 补正文：按 tweet ID 抓单条（免费，Nitter/jina 失败时兜底）。"""
+        try:
+            normalized = normalize_tweet_url(url)
+        except ValueError:
+            return ""
+        try:
+            import json
+            fx_url = f"https://api.fxtwitter.com/{normalized.username}/status/{normalized.tweet_id}"
+            body = self.fetch_text(fx_url, self.timeout)
+            data = json.loads(body)
+            text = (data.get("tweet") or {}).get("text", "")
+            return text.strip()
+        except Exception:
+            return ""
 
     def _fallback_from_summary(self, item: IntelligenceItem, failure: Failure) -> IntelligenceItem:
         if item.rss_summary:

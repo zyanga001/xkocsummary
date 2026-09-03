@@ -98,8 +98,17 @@ class LlmClient:
             "response_format": {"type": "json_object"},
         }
         data = self._post_json_with_retry(payload)
-        content = data["choices"][0]["message"]["content"]
-        return json.loads(content)
+        choice = data["choices"][0]
+        finish_reason = choice.get("finish_reason")
+        if finish_reason not in (None, "stop"):
+            raise RuntimeError(f"LLM response did not finish cleanly: {finish_reason}")
+        content = choice["message"].get("content")
+        if not isinstance(content, str) or not content.strip():
+            raise RuntimeError("LLM response content is empty")
+        parsed = json.loads(content)
+        if not isinstance(parsed, dict):
+            raise RuntimeError("LLM response must be a JSON object")
+        return parsed
 
     def _post_json_with_retry(self, payload: dict[str, Any]) -> dict[str, Any]:
         attempts = self.max_retries + 1
@@ -149,6 +158,7 @@ def _is_transient_error(exc: Exception) -> bool:
     if isinstance(exc, URLError):
         return True
     if isinstance(exc, HTTPError):
-        return exc.code in {429, 500, 502, 503, 504}
+        # 520 = Cloudflare 网关临时错误，退避重试
+        return exc.code in {429, 500, 502, 503, 504, 520}
     text = str(exc).lower()
-    return any(token in text for token in ["timeout", "timed out", "429", "503", "502", "504"])
+    return any(token in text for token in ["timeout", "timed out", "429", "503", "502", "504", "520"])

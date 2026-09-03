@@ -109,6 +109,39 @@ class ReaderTest(unittest.TestCase):
         self.assertIn("真实推文正文", result.content_markdown)
         self.assertEqual(result.errors[0].error_type, "EmptyJinaContent")
 
+    def test_reader_uses_fxtwitter_when_jina_and_summary_fail(self):
+        """jina 失败 + 无 RSS 摘要时，fxtwitter 按 tweet ID 补正文。"""
+        def fetch_sequence(url, timeout):
+            if "r.jina.ai" in url:
+                raise TimeoutError("jina down")
+            if "api.fxtwitter.com" in url:
+                return '{"tweet": {"text": "fxtwitter 补的正文，包含具体信息。"}}'
+            return ""
+
+        item = make_item()
+        item.rss_summary = ""  # 无 RSS 摘要
+        reader = Reader(fetch_text=fetch_sequence)
+
+        result = reader.fetch_item(item)
+
+        self.assertEqual(result.fetch_status, "fxtwitter")
+        self.assertIn("fxtwitter 补的正文", result.content_markdown)
+
+    def test_reader_fails_when_all_sources_fail(self):
+        """jina 失败 + 无摘要 + fxtwitter 也失败 → 如实报告失败。"""
+        def fail(_url, _timeout):
+            raise TimeoutError("all down")
+
+        item = make_item()
+        item.rss_summary = ""
+        reader = Reader(fetch_text=fail)
+
+        result = reader.fetch_item(item)
+
+        self.assertEqual(result.fetch_status, "failed")
+        self.assertEqual(result.content_quality, "empty")
+        self.assertTrue(result.errors)
+
 
 if __name__ == "__main__":
     unittest.main()
