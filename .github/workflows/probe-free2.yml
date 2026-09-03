@@ -1,0 +1,67 @@
+name: Probe Free 2 - xcancel details
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install -q requests
+      - name: Deep probe xcancel
+        run: |
+          cat > /tmp/probe2.py << 'PY'
+          import requests, re, time
+          UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+          handles = ["VIP8888883","Ludamao_com","yujuhao","predictdotfun","CMhOeNnExY","0xXIAOc","aleabitoreddit","AnLaoliu","hanking66","BroBean88"]
+          # also valid ones
+          handles_valid = ["VitalikButerin","elonmusk"]
+
+          def fetch(u):
+              try:
+                  r = requests.get(u, headers={"User-Agent": UA, "Accept":"application/rss+xml,application/xml,*/*"}, timeout=12)
+                  return r.status_code, r.text
+              except Exception as e:
+                  return 0, str(e)
+
+          for h in handles + handles_valid:
+              print("\n===", h, "===")
+              for base in ["https://xcancel.com","https://nitter.net","https://nitter.poast.org"]:
+                  url = f"{base}/{h}/rss"
+                  code, body = fetch(url)
+                  # count items
+                  items = len(re.findall(r"<item>", body))
+                  title = re.search(r"<title>(.*?)</title>", body, re.S)
+                  title_snip = title.group(1)[:120] if title else body[:200].replace("\n"," ")
+                  print(f"{base}: {code} items={items} title={title_snip[:100]} len={len(body)}")
+                  time.sleep(0.6)
+
+          # test alternative xcancel rss domain
+          print("\n=== alt xcancel rss domain ===")
+          for h in ["VIP8888883","VitalikButerin"]:
+              for alt in [f"https://rss.xcancel.com/{h}/rss", f"https://xcancel.com/{h}/rss?format=rss"]:
+                  code, body = fetch(alt)
+                  print(f"{alt}: {code} len={len(body)} {body[:300].replace(chr(10),' ')}")
+                  time.sleep(0.5)
+
+          # test cdn syndication with widget id
+          print("\n=== syndication widget ===")
+          for h in ["VitalikButerin"]:
+              for url in [
+                  f"https://cdn.syndication.twimg.com/timeline/profile?screen_name={h}&with_replies=false",
+                  f"https://syndication.twitter.com/srv/timeline-profile/screenName={h}&showReplies=false",
+              ]:
+                  code, body = fetch(url)
+                  print(f"{url}: {code} len={len(body)} {body[:400]}")
+                  time.sleep(0.5)
+          PY
+          python /tmp/probe2.py
