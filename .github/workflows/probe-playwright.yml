@@ -25,6 +25,7 @@ jobs:
           npm init -y >/dev/null 2>&1
           npm install -q playwright
           npx playwright install --with-deps chromium
+          ls node_modules/playwright -d
       - name: Scrape X timelines via browser
         run: |
           cat > /tmp/scrape.js << 'JS'
