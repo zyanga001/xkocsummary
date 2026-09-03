@@ -198,11 +198,13 @@ def main(
                 print(f"[brief] [{done}/{len(authors)}] @{author} {count}条 | 累计{len(all_items)}条 | {elapsed:.0f}s eta {eta:.0f}s", flush=True)
 
     if not all_items:
-        print("[brief] 没有抓取到任何推文，退出", flush=True)
+        print("[brief] 没有抓取到任何推文，生成诚实空报告", flush=True)
         if scan_errors:
             error_summary = "; ".join(f"@{e['author']}: {e['error']}" for e in scan_errors[:5])
             print(f"[brief] 错误摘要: {error_summary}", flush=True)
-        return 1
+        # Honest empty: do not exit 1, fall through to pipeline with empty items to produce empty but publishable report
+        # Create minimal empty run so Pages still updates and shows diagnosis instead of stale 08-21
+        all_items = []
 
     print(
         "[brief] 扫描完成: "
@@ -222,9 +224,8 @@ def main(
     unique_items, dup_cross = seen_store.filter_new(unique_items)
     print(f"[brief] 去重: 窗口内剔除 {dup_in} · 跨窗口剔除 {dup_cross} · 净新 {len(unique_items)}", flush=True)
     if not unique_items:
-        print("[brief] 去重后无新内容，退出", flush=True)
-        return 1
-    all_items = unique_items
+        print("[brief] 去重后无新内容，生成诚实空报告", flush=True)
+        all_items = []
 
     t2 = time.time()
     if ENABLE_ENRICH:
@@ -234,15 +235,36 @@ def main(
     else:
         print("[brief] 跳过 enrich（ENABLE_ENRICH=0），节省 ~15-20 分钟", flush=True)
 
-    print("[brief] 阶段1: 质量分类...", flush=True)
-    t3 = time.time()
-    pipeline = V2Pipeline()
-    # 记忆层：读上期判断让话题有连续性，跑完存新判断
-    memory = MemoryLayer(output_dir / "state" / "memory.json")
-    if memory.errors:
-        print(f"[brief] ⚠ 记忆层: {memory.errors[0]}", flush=True)
-    result = pipeline.run(all_items, memory_refs=memory.recent_context())
-    print(f"[brief] AI分析完成 ({time.time() - t3:.0f}s) — 高{result.high_count} / 中{result.medium_count} / 低{result.low_count}", flush=True)
+    # Honest empty: if no items after scan/dedupe, create publishable empty result without calling LLM
+    if not all_items:
+        from koc.v2_pipeline import PipelineResult
+        print("[brief] 无可用推文，生成诚实空报告（不调用AI）", flush=True)
+        pipeline = None
+        memory = MemoryLayer(output_dir / "state" / "memory.json")
+        if memory.errors:
+            print(f"[brief] ⚠ 记忆层: {memory.errors[0]}", flush=True)
+        result = PipelineResult(
+            run_id=__import__("datetime").datetime.now(__import__("datetime").timezone.utc).strftime("empty-%Y%m%d-%H%M%S"),
+            created_at=__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+            status="success",
+            total_tweets=0,
+            authors_count=0,
+            no_material_events=True,
+            stage_status={"empty": "success"},
+            stage_elapsed_seconds={},
+            quality_gate={"empty": True, "reason": "no tweets in window"},
+        )
+        # empty result is publishable (status success, no errors)
+    else:
+        print("[brief] 阶段1: 质量分类...", flush=True)
+        t3 = time.time()
+        pipeline = V2Pipeline()
+        # 记忆层：读上期判断让话题有连续性，跑完存新判断
+        memory = MemoryLayer(output_dir / "state" / "memory.json")
+        if memory.errors:
+            print(f"[brief] ⚠ 记忆层: {memory.errors[0]}", flush=True)
+        result = pipeline.run(all_items, memory_refs=memory.recent_context())
+        print(f"[brief] AI分析完成 ({time.time() - t3:.0f}s) — 高{result.high_count} / 中{result.medium_count} / 低{result.low_count}", flush=True)
 
     if not result.publishable:
         failure_dir = output_dir / "failed"
