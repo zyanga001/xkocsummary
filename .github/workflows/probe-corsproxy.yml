@@ -1,0 +1,44 @@
+name: Probe CorsProxy
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cors:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install -q requests
+      - name: Test corsproxy.io
+        run: |
+          cat > /tmp/test_cors.py << 'PY'
+          import requests, re, time, urllib.parse
+          UA = "Mozilla/5.0"
+          handles = ["VitalikButerin","elonmusk","yujuhao","VIP8888883"]
+          proxies = [
+              ("corsproxy.io", lambda u: f"https://corsproxy.io/?{urllib.parse.quote(u)}"),
+              ("allorigins-raw", lambda u: f"https://api.allorigins.win/raw?url={urllib.parse.quote(u)}"),
+          ]
+          for h in handles:
+              target = f"https://xcancel.com/{h}/rss"
+              print(f"\n=== {h} ===")
+              for name, fn in proxies:
+                  url = fn(target)
+                  try:
+                      r = requests.get(url, headers={"User-Agent": UA}, timeout=12)
+                      body = r.text
+                      whitelisted = "whitelisted" in body
+                      items = len(re.findall(r"<item>", body))
+                      print(f"{name}: {r.status_code} whitelisted={whitelisted} items={items} len={len(body)} snippet={body[:200].replace(chr(10),' ')}")
+                  except Exception as e:
+                      print(f"{name} ERR {e}")
+                  time.sleep(0.6)
+          PY
+          python /tmp/test_cors.py
