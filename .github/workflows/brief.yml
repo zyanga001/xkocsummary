@@ -1,11 +1,10 @@
 name: DAZA Brief
 
 on:
-  schedule:
-    # Beijing time 09:10 and 21:10 every day.
-    # GitHub Actions cron uses UTC, so this is 01:10 and 13:10 UTC.
-    # The report itself still uses fixed 09:00/21:00 Beijing windows.
-    - cron: '10 1,13 * * *'
+  # 已搁置：每天两次的定时空跑已暂停，保留手动触发
+  # 如需恢复，把下面这段 schedule 取消注释即可
+  # schedule:
+  #   - cron: '10 1,13 * * *'
   workflow_dispatch:
   push:
     branches: [main]
